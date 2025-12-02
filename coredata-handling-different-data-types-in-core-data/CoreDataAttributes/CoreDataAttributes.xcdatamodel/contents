@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="abstract" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="canonicalTitle" optional="YES" attributeType="String" derived="YES" derivationExpression="canonical:(title)"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="publishDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="publishMonthID" optional="YES" transient="YES" attributeType="String"/>
+        <attribute name="tintColor" optional="YES" attributeType="Transformable" valueTransformerName="ColorToDataTransformer" customClassName="UIColor"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-63" positionY="-18" width="128" height="178"/>
+    </elements>
+</model>

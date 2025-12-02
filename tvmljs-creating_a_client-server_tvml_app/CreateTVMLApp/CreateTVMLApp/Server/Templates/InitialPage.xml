@@ -1,0 +1,21 @@
+<document>
+    <stackTemplate>
+        <banner>
+            <title>Creating a Client-Server TVML App</title>
+        </banner>
+        <collectionList>
+            <shelf>
+                <section>
+                    <lockup onselect="getDocument('/Templates/PageOne.xml')">
+                        <img width="182" height="274" src="http://localhost:9001/Server/Images/Car_Movie_250x375_A.png"/>
+                        <title>Page One</title>
+                    </lockup>
+                    <lockup onselect="getDocument('/Templates/PageTwo.xml')" >
+                        <img width="182" height="274" src="http://localhost:9001/Server/Images/Car_Movie_250x375_C.png"/>
+                        <title>Page 2</title>
+                    </lockup>
+                </section>
+            </shelf>
+        </collectionList>
+    </stackTemplate>
+</document>

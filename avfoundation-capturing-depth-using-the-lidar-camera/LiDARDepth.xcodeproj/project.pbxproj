@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4FF065A2D722C9300B68C9A /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06432D722C9300B68C9A /* CameraController.swift */; };
+		C4FF065B2D722C9300B68C9A /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06442D722C9300B68C9A /* CameraManager.swift */; };
+		C4FF065C2D722C9300B68C9A /* CVPixelBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06452D722C9300B68C9A /* CVPixelBuffer+Extension.swift */; };
+		C4FF065D2D722C9300B68C9A /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06472D722C9300B68C9A /* shaders.metal */; };
+		C4FF065E2D722C9300B68C9A /* MetalContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06492D722C9300B68C9A /* MetalContentView.swift */; };
+		C4FF065F2D722C9300B68C9A /* MetalEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF064A2D722C9300B68C9A /* MetalEnvironment.swift */; };
+		C4FF06602D722C9300B68C9A /* MetalPointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF064B2D722C9300B68C9A /* MetalPointCloud.swift */; };
+		C4FF06612D722C9300B68C9A /* MetalTextureColorThresholdDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF064C2D722C9300B68C9A /* MetalTextureColorThresholdDepth.swift */; };
+		C4FF06622D722C9300B68C9A /* MetalTextureColorZap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF064D2D722C9300B68C9A /* MetalTextureColorZap.swift */; };
+		C4FF06632D722C9300B68C9A /* MetalTextureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF064E2D722C9300B68C9A /* MetalTextureView.swift */; };
+		C4FF06642D722C9300B68C9A /* MetalTextureViewColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF064F2D722C9300B68C9A /* MetalTextureViewColor.swift */; };
+		C4FF06652D722C9300B68C9A /* MetalTextureViewDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06502D722C9300B68C9A /* MetalTextureViewDepth.swift */; };
+		C4FF06662D722C9300B68C9A /* DepthOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06522D722C9300B68C9A /* DepthOverlay.swift */; };
+		C4FF06672D722C9300B68C9A /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06532D722C9300B68C9A /* View+Extensions.swift */; };
+		C4FF06682D722C9300B68C9A /* ZoomOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06542D722C9300B68C9A /* ZoomOnTap.swift */; };
+		C4FF06692D722C9300B68C9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06572D722C9300B68C9A /* ContentView.swift */; };
+		C4FF066A2D722C9300B68C9A /* LiDARDepthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF06582D722C9300B68C9A /* LiDARDepthApp.swift */; };
+		C4FF066B2D722C9300B68C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FF06562D722C9300B68C9A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C34ECABC9005D93C0DF4297 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		1B316151CF7A0D5BA9062FFE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9ED80CBFEB14F0F0F5121BC6 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		C4B70B3A2D722ADE003C1315 /* LiDARDepth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiDARDepth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FF06432D722C9300B68C9A /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		C4FF06442D722C9300B68C9A /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		C4FF06452D722C9300B68C9A /* CVPixelBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Extension.swift"; sourceTree = "<group>"; };
+		C4FF06472D722C9300B68C9A /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		C4FF06492D722C9300B68C9A /* MetalContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalContentView.swift; sourceTree = "<group>"; };
+		C4FF064A2D722C9300B68C9A /* MetalEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalEnvironment.swift; sourceTree = "<group>"; };
+		C4FF064B2D722C9300B68C9A /* MetalPointCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPointCloud.swift; sourceTree = "<group>"; };
+		C4FF064C2D722C9300B68C9A /* MetalTextureColorThresholdDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureColorThresholdDepth.swift; sourceTree = "<group>"; };
+		C4FF064D2D722C9300B68C9A /* MetalTextureColorZap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureColorZap.swift; sourceTree = "<group>"; };
+		C4FF064E2D722C9300B68C9A /* MetalTextureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureView.swift; sourceTree = "<group>"; };
+		C4FF064F2D722C9300B68C9A /* MetalTextureViewColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureViewColor.swift; sourceTree = "<group>"; };
+		C4FF06502D722C9300B68C9A /* MetalTextureViewDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureViewDepth.swift; sourceTree = "<group>"; };
+		C4FF06522D722C9300B68C9A /* DepthOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthOverlay.swift; sourceTree = "<group>"; };
+		C4FF06532D722C9300B68C9A /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		C4FF06542D722C9300B68C9A /* ZoomOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomOnTap.swift; sourceTree = "<group>"; };
+		C4FF06562D722C9300B68C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4FF06572D722C9300B68C9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4FF06582D722C9300B68C9A /* LiDARDepthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiDARDepthApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4B70B372D722ADE003C1315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C42CD530FDC5FDCBE24A185E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9ED80CBFEB14F0F0F5121BC6 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		C4B70B312D722ADE003C1315 = {
+			isa = PBXGroup;
+			children = (
+				1B316151CF7A0D5BA9062FFE /* README.md */,
+				C4FF06592D722C9300B68C9A /* LiDARDepth */,
+				C4B70B3B2D722ADE003C1315 /* Products */,
+				C42CD530FDC5FDCBE24A185E /* Configuration */,
+				EA03DA1400B7EED6A2A7C7E7 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		C4B70B3B2D722ADE003C1315 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4B70B3A2D722ADE003C1315 /* LiDARDepth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4FF06462D722C9300B68C9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF06432D722C9300B68C9A /* CameraController.swift */,
+				C4FF06442D722C9300B68C9A /* CameraManager.swift */,
+				C4FF06452D722C9300B68C9A /* CVPixelBuffer+Extension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4FF06482D722C9300B68C9A /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF06472D722C9300B68C9A /* shaders.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		C4FF06512D722C9300B68C9A /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF06482D722C9300B68C9A /* Shaders */,
+				C4FF06492D722C9300B68C9A /* MetalContentView.swift */,
+				C4FF064A2D722C9300B68C9A /* MetalEnvironment.swift */,
+				C4FF064B2D722C9300B68C9A /* MetalPointCloud.swift */,
+				C4FF064C2D722C9300B68C9A /* MetalTextureColorThresholdDepth.swift */,
+				C4FF064D2D722C9300B68C9A /* MetalTextureColorZap.swift */,
+				C4FF064E2D722C9300B68C9A /* MetalTextureView.swift */,
+				C4FF064F2D722C9300B68C9A /* MetalTextureViewColor.swift */,
+				C4FF06502D722C9300B68C9A /* MetalTextureViewDepth.swift */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		C4FF06552D722C9300B68C9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF06512D722C9300B68C9A /* Metal */,
+				C4FF06522D722C9300B68C9A /* DepthOverlay.swift */,
+				C4FF06532D722C9300B68C9A /* View+Extensions.swift */,
+				C4FF06542D722C9300B68C9A /* ZoomOnTap.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4FF06592D722C9300B68C9A /* LiDARDepth */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF06572D722C9300B68C9A /* ContentView.swift */,
+				C4FF06462D722C9300B68C9A /* Model */,
+				C4FF06552D722C9300B68C9A /* Views */,
+				C4FF06562D722C9300B68C9A /* Assets.xcassets */,
+				C4FF06582D722C9300B68C9A /* LiDARDepthApp.swift */,
+			);
+			path = LiDARDepth;
+			sourceTree = "<group>";
+		};
+		EA03DA1400B7EED6A2A7C7E7 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				0C34ECABC9005D93C0DF4297 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4B70B392D722ADE003C1315 /* LiDARDepth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B70B452D722AE0003C1315 /* Build configuration list for PBXNativeTarget "LiDARDepth" */;
+			buildPhases = (
+				C4B70B362D722ADE003C1315 /* Sources */,
+				C4B70B372D722ADE003C1315 /* Frameworks */,
+				C4B70B382D722ADE003C1315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiDARDepth;
+			productName = LiDARDepth;
+			productReference = C4B70B3A2D722ADE003C1315 /* LiDARDepth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4B70B322D722ADE003C1315 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					C4B70B392D722ADE003C1315 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = C4B70B352D722ADE003C1315 /* Build configuration list for PBXProject "LiDARDepth" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4B70B312D722ADE003C1315;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C4B70B3B2D722ADE003C1315 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4B70B392D722ADE003C1315 /* LiDARDepth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4B70B382D722ADE003C1315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FF066B2D722C9300B68C9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4B70B362D722ADE003C1315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FF065A2D722C9300B68C9A /* CameraController.swift in Sources */,
+				C4FF065B2D722C9300B68C9A /* CameraManager.swift in Sources */,
+				C4FF065C2D722C9300B68C9A /* CVPixelBuffer+Extension.swift in Sources */,
+				C4FF065D2D722C9300B68C9A /* shaders.metal in Sources */,
+				C4FF065E2D722C9300B68C9A /* MetalContentView.swift in Sources */,
+				C4FF065F2D722C9300B68C9A /* MetalEnvironment.swift in Sources */,
+				C4FF06602D722C9300B68C9A /* MetalPointCloud.swift in Sources */,
+				C4FF06612D722C9300B68C9A /* MetalTextureColorThresholdDepth.swift in Sources */,
+				C4FF06622D722C9300B68C9A /* MetalTextureColorZap.swift in Sources */,
+				C4FF06632D722C9300B68C9A /* MetalTextureView.swift in Sources */,
+				C4FF06642D722C9300B68C9A /* MetalTextureViewColor.swift in Sources */,
+				C4FF06652D722C9300B68C9A /* MetalTextureViewDepth.swift in Sources */,
+				C4FF06662D722C9300B68C9A /* DepthOverlay.swift in Sources */,
+				C4FF06672D722C9300B68C9A /* View+Extensions.swift in Sources */,
+				C4FF06682D722C9300B68C9A /* ZoomOnTap.swift in Sources */,
+				C4FF06692D722C9300B68C9A /* ContentView.swift in Sources */,
+				C4FF066A2D722C9300B68C9A /* LiDARDepthApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C4B70B432D722AE0003C1315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED80CBFEB14F0F0F5121BC6 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4B70B442D722AE0003C1315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED80CBFEB14F0F0F5121BC6 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4B70B462D722AE0003C1315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED80CBFEB14F0F0F5121BC6 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app uses the LiDAR camera to capture depth data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.LiDARDepth${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4B70B472D722AE0003C1315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED80CBFEB14F0F0F5121BC6 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app uses the LiDAR camera to capture depth data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.LiDARDepth${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4B70B352D722ADE003C1315 /* Build configuration list for PBXProject "LiDARDepth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B70B432D722AE0003C1315 /* Debug */,
+				C4B70B442D722AE0003C1315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B70B452D722AE0003C1315 /* Build configuration list for PBXNativeTarget "LiDARDepth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B70B462D722AE0003C1315 /* Debug */,
+				C4B70B472D722AE0003C1315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4B70B322D722ADE003C1315 /* Project object */;
+}

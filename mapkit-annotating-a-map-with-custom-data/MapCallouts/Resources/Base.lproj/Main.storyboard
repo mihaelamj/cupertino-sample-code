@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YWH-wE-DgP">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="foU-NR-bBb">
+            <objects>
+                <navigationController storyboardIdentifier="DetailNavController" id="dcZ-wj-0p8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="75X-qn-hUM">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hKd-EI-jjl" kind="relationship" relationship="rootViewController" id="snO-KZ-eHR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMU-8w-xmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="475"/>
+        </scene>
+        <!--Golden Gate Bridge-->
+        <scene sceneID="d5v-4X-9tX">
+            <objects>
+                <viewController id="hKd-EI-jjl" customClass="DetailViewController" customModule="MapCallouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6c-0S-zoU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golden_gate" translatesAutoresizingMaskIntoConstraints="NO" id="K89-Ix-nOr">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="secondarySystemBackgroundColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K89-Ix-nOr" firstAttribute="bottom" secondItem="S6c-0S-zoU" secondAttribute="bottom" id="KMH-Uc-Jc4"/>
+                            <constraint firstItem="KeA-eK-DMK" firstAttribute="trailing" secondItem="K89-Ix-nOr" secondAttribute="trailing" id="Ma7-XF-S13"/>
+                            <constraint firstItem="K89-Ix-nOr" firstAttribute="leading" secondItem="KeA-eK-DMK" secondAttribute="leading" id="lFD-ST-YaW"/>
+                            <constraint firstItem="K89-Ix-nOr" firstAttribute="top" secondItem="KeA-eK-DMK" secondAttribute="top" id="mqy-Ls-BfU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KeA-eK-DMK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Golden Gate Bridge" id="aRj-iJ-jPc">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="A7o-2a-CBH">
+                            <connections>
+                                <action selector="doneAction:" destination="hKd-EI-jjl" id="fkG-9N-wzI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="K89-Ix-nOr" id="9hM-E7-v1z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23b-HA-j9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="473.64532019704433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0zM-pJ-cJ7">
+            <objects>
+                <navigationController storyboardIdentifier="NavController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" toolbarHidden="NO" id="YWH-wE-DgP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5OH-cO-sx5">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Eyg-Du-7aF">
+                        <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Q2x-WI-wPB" kind="relationship" relationship="rootViewController" id="xUf-eI-gpx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqX-fa-4SD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-739.84375" y="-187.5"/>
+        </scene>
+        <!--MainViewController-->
+        <scene sceneID="lek-xW-eY6">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q2x-WI-wPB" userLabel="MainViewController" customClass="MapViewController" customModule="MapCallouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ar6-Fd-zen">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iIg-Sb-dEy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Q2x-WI-wPB" id="Ngc-NJ-gyq"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iIg-Sb-dEy" firstAttribute="trailing" secondItem="A2x-cY-S2p" secondAttribute="trailing" id="CrE-IM-y0b"/>
+                            <constraint firstAttribute="bottom" secondItem="iIg-Sb-dEy" secondAttribute="bottom" id="DlW-eg-axl"/>
+                            <constraint firstItem="iIg-Sb-dEy" firstAttribute="leading" secondItem="A2x-cY-S2p" secondAttribute="leading" id="RvK-s7-y2B"/>
+                            <constraint firstItem="iIg-Sb-dEy" firstAttribute="top" secondItem="ar6-Fd-zen" secondAttribute="top" id="ug6-hv-cah"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A2x-cY-S2p"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Bridge" id="dyZ-Ro-lkR">
+                            <connections>
+                                <action selector="showOnlyBridgeAnnotation:" destination="Q2x-WI-wPB" id="AeF-8O-lQ5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="City" id="5Gn-kw-07Q">
+                            <connections>
+                                <action selector="showOnlySanFranciscoAnnotation:" destination="Q2x-WI-wPB" id="d5o-hB-dkf"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Ferry" id="im6-Qc-sCL">
+                            <connections>
+                                <action selector="showOnlyFerryBuildingAnnotation:" destination="Q2x-WI-wPB" id="Xaq-ju-WpT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Flowers" id="rvl-Iy-U0L">
+                            <connections>
+                                <action selector="showOnlyFlowerAnnotation:" destination="Q2x-WI-wPB" id="WXP-1g-udQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="QSE-7U-4Ei"/>
+                        <barButtonItem title="All" id="BVs-og-Y7K">
+                            <connections>
+                                <action selector="showAllAnnotations:" destination="Q2x-WI-wPB" id="gVQ-YK-9N5"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Map Callouts" id="jVU-xi-FZF"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="iIg-Sb-dEy" id="fFM-eV-QXK"/>
+                        <outlet property="view" destination="ar6-Fd-zen" id="o0u-Hs-3j6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOB-Df-ibI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="-188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="golden_gate" width="609" height="812"/>
+    </resources>
+</document>

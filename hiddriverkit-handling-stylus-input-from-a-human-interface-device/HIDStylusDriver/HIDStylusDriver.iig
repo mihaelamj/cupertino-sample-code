@@ -1,0 +1,121 @@
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+Declares the interface for the service object that dispatches stylus events to the system.
+*/
+
+#ifndef HIDStylusDriver_h
+#define HIDStylusDriver_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+#include <HIDDriverKit/IOUserHIDEventService.iig>
+
+class IOHIDElement;
+class IOHIDDigitizerCollection;
+
+/// - Tag:HIDStylusDriver
+class HIDStylusDriver: public IOUserHIDEventService
+{
+public:
+    
+    /*
+     * The standard startup and tear-down methods from IOService.
+     */
+    virtual bool init() override;
+    
+    virtual void free() override;
+    
+    virtual kern_return_t
+    Start(IOService * provider) override;
+    
+    /*!
+    * @function handleReport
+    *
+    * @abstract
+    * Receives the input data from the device, and dispatches events
+    * based on that data.
+    *
+    * @discussion
+    * The system calls this method each time it receives an updated
+    * input report from the device.
+
+    * @param timestamp
+    * The timestamp of the report.
+    *
+    * @param report
+    * The raw bytes that describe the report. Typically, you don't use
+    * this parameter. Instead, you iterate over the IOHIDElement objects that
+    * the event service provides. However, this parameter is available if you
+    * prefer to read the input report directly.
+    *
+    * @param reportLength
+    * The number of bytes in the report parameter.
+    *
+    * @param type
+    * The report type.
+    *
+    * @param reportID
+    * The report ID. Use this value to determine when an element
+    * contains a new value.
+    */
+    virtual void handleReport(uint64_t timestamp,
+                              uint8_t *report,
+                              uint32_t reportLength,
+                              IOHIDReportType type,
+                              uint32_t reportID) override LOCALONLY;
+    
+    /*!
+     * @function parseElements
+     *
+     * @abstract
+     * Parses the elements returned from IOHIDInterface::getElements() function.
+     * This function will search for supported elements and bucketize them
+     * according to their usage pages/usages.
+     *
+     * @param elements
+     * An array of supported elements to be parsed.
+     *
+     * @return
+     * Returns true on success.
+     */
+    virtual bool parseElements(OSArray *elements) LOCALONLY;
+    
+    /*!
+     * @function parseDigitizerElement
+     *
+     * @abstract
+     * Parses an element to see if it supports digitizer usages.
+     *
+     * @param element
+     * An IOHIDElement object to parse.
+     *
+     * @return
+     * Returns true on success.
+     */
+    virtual bool parseDigitizerElement(IOHIDElement *element) LOCALONLY;
+    
+    /*!
+     * @function handleDigitizerReport
+     *
+     * @abstract
+     * Function called after receiving an input report from the device. Iterates
+     * through digitizer elements and dispatches digitizer events if the element
+     * value has been updated.
+     *
+     * @param timestamp
+     * The timestamp of the input report.
+     *
+     * @param reportID
+     * The report ID.
+     */
+    virtual void handleDigitizerReport(uint64_t timestamp, uint32_t reportID) LOCALONLY;
+    
+    virtual IOHIDDigitizerStylusData *createStylusDataForDigitizerCollection(
+                                        IOHIDDigitizerCollection *collection,
+                                        uint64_t timestamp,
+                                        uint32_t reportID) LOCALONLY;
+};
+
+#endif /* HIDStylusDriver_h */

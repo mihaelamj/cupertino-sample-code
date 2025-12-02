@@ -1,0 +1,25 @@
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+The IOKit Interface Generator file that declares the driver's methods.
+*/
+
+#ifndef NullDriver_h
+#define NullDriver_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+
+class NullDriver: public IOService
+{
+public:
+    virtual bool init(void) override;
+    virtual kern_return_t Start(IOService* provider) override;
+    virtual kern_return_t Stop(IOService* provider) override;
+    virtual void free(void) override;
+
+    virtual kern_return_t NewUserClient(uint32_t type, IOUserClient** userClient) override;
+};
+
+#endif /* NullDriver_h */

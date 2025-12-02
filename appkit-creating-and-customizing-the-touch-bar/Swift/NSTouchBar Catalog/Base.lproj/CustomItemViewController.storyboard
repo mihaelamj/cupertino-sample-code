@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="17008"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Item View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="CustomItemViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="99"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="RWP-mw-ZIF">
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="99"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="36" y="63" width="300" height="16"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSCustomTouchBarItem with NSButton" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="d14-Uk-RXb">
+                                        <rect key="frame" x="109" y="16" width="153" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Custom Button Color" bezelStyle="regularSquare" imagePosition="left" inset="2" id="TYq-WN-vXT">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customize:" target="wyg-tK-EQJ" id="4zP-Tb-iGG"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="fmR-r8-ry4">
+                                        <rect key="frame" x="109" y="38" width="118" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Size Constraint" bezelStyle="regularSquare" imagePosition="left" inset="2" id="H5C-rm-lOc">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customize:" target="wyg-tK-EQJ" id="YJ0-a4-qfb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="372" id="B56-Bc-aer"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="RWP-mw-ZIF" secondAttribute="top" constant="20" symbolic="YES" id="Z6E-Rx-Ad3"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="d14-Uk-RXb" secondAttribute="centerX" id="bwM-dZ-ODV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="99" id="jSX-9C-eLY"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="RWP-mw-ZIF" secondAttribute="centerX" id="jpY-uy-gSU"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fmR-r8-ry4" secondAttribute="trailing" constant="20" symbolic="YES" id="kZN-NF-mf8"/>
+                                    <constraint firstItem="fmR-r8-ry4" firstAttribute="leading" secondItem="d14-Uk-RXb" secondAttribute="leading" id="p7K-Nk-urH"/>
+                                    <constraint firstItem="fmR-r8-ry4" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="8" symbolic="YES" id="rQ9-tz-hhI"/>
+                                    <constraint firstItem="d14-Uk-RXb" firstAttribute="top" secondItem="fmR-r8-ry4" secondAttribute="bottom" constant="6" symbolic="YES" id="zR9-YS-evy"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RWP-mw-ZIF" secondAttribute="bottom" id="It6-F1-oKH"/>
+                            <constraint firstItem="RWP-mw-ZIF" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="WUy-0S-An9"/>
+                            <constraint firstItem="RWP-mw-ZIF" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="r6H-xo-Xih"/>
+                            <constraint firstAttribute="trailing" secondItem="RWP-mw-ZIF" secondAttribute="trailing" id="ysU-3i-xp4"/>
+                        </constraints>
+                    </view>
+                    <touchBar key="touchBar" id="hkm-Dy-Qhq" userLabel="NSTouchBar">
+                        <touchBarItems>
+                            <touchBarItem id="JAc-04-Iqi" userLabel="Button 1">
+                                <viewController key="viewController" id="FSO-fH-fsR">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Voc-wB-CCa">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Button 1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o7w-B8-Wqh">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="Rx8-dT-DMA" userLabel="Push Button">
+                                <viewController key="viewController" id="wJO-zR-Amh">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ovq-hA-iz1">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSBookmarksTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mgg-mr-IJR">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="lSQ-Um-XDB" userLabel="Button 3">
+                                <viewController key="viewController" id="oAH-Xh-7Bf">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ebA-qq-hfk">
+                                        <rect key="frame" x="0.0" y="-12" width="122" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="108" id="JpV-IB-bO5"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Button 3" bezelStyle="rounded" image="NSBookmarksTemplate" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0pV-kl-EjE">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <outlet property="button3WidthConstraint" destination="JpV-IB-bO5" id="8M8-Wg-U3a"/>
+                        <outlet property="sizeConstraint" destination="fmR-r8-ry4" id="ceI-9j-ZyN"/>
+                        <outlet property="useCustomColor" destination="d14-Uk-RXb" id="q7y-Cu-gAx"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSBookmarksTemplate" width="18" height="15"/>
+    </resources>
+</document>

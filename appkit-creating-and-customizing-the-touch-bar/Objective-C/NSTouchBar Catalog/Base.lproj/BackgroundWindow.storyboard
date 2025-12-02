@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TitlebarAccessoryViewController-->
+        <scene sceneID="13s-3X-ZOY">
+            <objects>
+                <viewController storyboardIdentifier="ChangeBackground" id="cP5-Km-gps" userLabel="TitlebarAccessoryViewController" customClass="TitleBarAccessoryViewController" sceneMemberID="viewController">
+                    <view key="view" id="b7i-p2-VGR">
+                        <rect key="frame" x="0.0" y="0.0" width="102" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u4A-Qj-NL4">
+                                <rect key="frame" x="3.5" y="1" width="96" height="19"/>
+                                <buttonCell key="cell" type="roundTextured" title="Set Background" bezelStyle="texturedRounded" alignment="center" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZBq-st-KHn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="11"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="presentPhotos:" target="cP5-Km-gps" id="tDa-qA-72g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="u4A-Qj-NL4" firstAttribute="leading" secondItem="b7i-p2-VGR" secondAttribute="leading" constant="4" id="6Hm-CR-bJ0"/>
+                            <constraint firstItem="u4A-Qj-NL4" firstAttribute="centerY" secondItem="b7i-p2-VGR" secondAttribute="centerY" id="Bjt-fg-Zcs"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u4A-Qj-NL4" secondAttribute="trailing" constant="3" id="sJw-kZ-EfG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="TXI-DB-HZq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="172"/>
+        </scene>
+        <!--BackgroundViewController-->
+        <scene sceneID="08K-BB-pHR">
+            <objects>
+                <customObject id="Ldt-HU-ZmV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="bbO-g7-Wwh" userLabel="BackgroundViewController" customClass="BackgroundViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="lK1-1s-Z1X">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="360"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-dT-lyQ">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="feA-1f-I4F"/>
+                                    <constraint firstAttribute="width" constant="500" id="jyY-o2-2PI"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="V9k-K6-BC1"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hhB-dT-lyQ" firstAttribute="top" secondItem="lK1-1s-Z1X" secondAttribute="top" id="DC4-9l-dt1"/>
+                            <constraint firstItem="hhB-dT-lyQ" firstAttribute="leading" secondItem="lK1-1s-Z1X" secondAttribute="leading" id="mLq-or-0RT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hhB-dT-lyQ" id="pRm-vC-6an"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1199" y="180"/>
+        </scene>
+        <!--BackgroundWindow-->
+        <scene sceneID="buc-fC-gDu">
+            <objects>
+                <windowController storyboardIdentifier="BackgroundWindow" id="rC3-dN-R0m" userLabel="BackgroundWindow" sceneMemberID="viewController">
+                    <window key="window" title="Background Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="BackgroundWindow" animationBehavior="default" id="pzW-4T-3Bg">
+                        <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="629" y="471" width="500" height="360"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <connections>
+                            <outlet property="delegate" destination="rC3-dN-R0m" id="eQ7-Li-iwL"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="bbO-g7-Wwh" kind="relationship" relationship="window.shadowedContentViewController" id="adh-W8-lrC"/>
+                    </connections>
+                </windowController>
+                <customObject id="KXz-26-HUs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-350"/>
+        </scene>
+        <!--BackgroundImagesViewController-->
+        <scene sceneID="Eb2-EL-f5U">
+            <objects>
+                <viewController storyboardIdentifier="BackgroundImagesViewController" id="Rew-YQ-NhK" userLabel="BackgroundImagesViewController" customClass="BackgroundImagesViewController" sceneMemberID="viewController">
+                    <view key="view" appearanceType="aqua" id="BZN-9a-YFq">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-RA-GgZ">
+                                <rect key="frame" x="77" y="200" width="16" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="123" horizontalPageScroll="10" verticalLineScroll="123" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="QE9-in-71W">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="3Na-LE-fLA">
+                                    <rect key="frame" x="1" y="0.0" width="168" height="399"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="123" headerView="Pz9-nn-lb5" viewBased="YES" id="dU0-W4-YDn">
+                                            <rect key="frame" x="0.0" y="0.0" width="169" height="374"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn identifier="name" width="169" minWidth="40" maxWidth="1000" id="7Qh-Vl-8Gz">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Choose a photo:">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="39e-vz-kAc">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <prototypeCellViews>
+                                                        <tableCellView id="j5R-A5-JNH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="123"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2TM-Qj-Yan">
+                                                                    <rect key="frame" x="14" y="12" width="140" height="100"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="C7p-v1-Ldl"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="2TM-Qj-Yan" id="RGo-eD-CT8"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="Rew-YQ-NhK" id="XGm-EM-8g3"/>
+                                                <outlet property="delegate" destination="Rew-YQ-NhK" id="539-Ob-lTu"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="C1k-Ym-YuP">
+                                    <rect key="frame" x="-100" y="-100" width="163" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="5zd-G2-Y8c">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <tableHeaderView key="headerView" id="Pz9-nn-lb5">
+                                    <rect key="frame" x="0.0" y="0.0" width="169" height="25"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableHeaderView>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="progressIndicator" destination="4e1-RA-GgZ" id="IBx-yM-R85"/>
+                        <outlet property="scrollView" destination="QE9-in-71W" id="4Q3-Qf-uw1"/>
+                        <outlet property="tableView" destination="dU0-W4-YDn" id="VsZ-jq-Bb4"/>
+                    </connections>
+                </viewController>
+                <customObject id="dYM-rM-LcE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="200"/>
+        </scene>
+    </scenes>
+</document>

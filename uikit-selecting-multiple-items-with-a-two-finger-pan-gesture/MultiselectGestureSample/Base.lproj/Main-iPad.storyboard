@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.9" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qY-YA-oxm">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.10"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="vfR-Yl-teU">
+            <objects>
+                <splitViewController id="9qY-YA-oxm" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="VMA-hg-mXI" kind="relationship" relationship="masterViewController" id="uJg-db-28l"/>
+                        <segue destination="ilY-lO-2Vh" kind="relationship" relationship="detailViewController" id="wDf-WQ-a7N"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejh-YQ-uQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="217"/>
+        </scene>
+        <!--TableView-->
+        <scene sceneID="SvA-5g-kNr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TableView" id="VMA-hg-mXI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2q-s8-980" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-16"/>
+        </scene>
+        <!--CollectionView-->
+        <scene sceneID="mcH-rJ-SRs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CollectionView" id="ilY-lO-2Vh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhT-oV-etw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="345"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>OtherSettings</string>
+	<key>Icon</key>
+	<string>green_dot@3x</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Some random option</string>
+			<key>Key</key>
+			<string>someRandomOption</string>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Description</key>
+			<string>Select this option to display a confirmation prompt when running in macOS.</string>
+			<key>TrueConfirmationPrompt</key>
+			<dict>
+				<key>Type</key>
+				<string>PSConfirmationPrompt</string>
+				<key>Title</key>
+				<string>Confirmation</string>
+				<key>Prompt</key>
+				<string>Are you sure you want to turn on this random option?</string>
+				<key>ConfirmText</key>
+				<string>Yes</string>
+				<key>DenyText</key>
+				<string>No</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

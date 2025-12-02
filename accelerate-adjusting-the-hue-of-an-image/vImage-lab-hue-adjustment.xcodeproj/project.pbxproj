@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E8CEDA82310367B008A66B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CEDA72310367B008A66B4 /* ContentView.swift */; };
+		3E8CEDAA2310367C008A66B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CEDA92310367C008A66B4 /* Assets.xcassets */; };
+		3E8CEDAD2310367C008A66B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CEDAC2310367C008A66B4 /* Preview Assets.xcassets */; };
+		3E8CEDB02310367C008A66B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CEDAE2310367C008A66B4 /* Main.storyboard */; };
+		3ED185732310433A00164C41 /* LabHueRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED185722310433A00164C41 /* LabHueRotate.swift */; };
+		3ED185752310437400164C41 /* Flowers_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ED185742310437400164C41 /* Flowers_1.png */; };
+		BEEC79E6282D682D00D9CA1E /* HueAdjustmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC79E5282D682D00D9CA1E /* HueAdjustmentApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15AB4DCB0E34F77DF618D446 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		1F5485401F5481B000000001 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3E8CEDA22310367B008A66B4 /* vImage-lab-hue-adjustment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vImage-lab-hue-adjustment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8CEDA72310367B008A66B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E8CEDA92310367C008A66B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E8CEDAC2310367C008A66B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E8CEDAF2310367C008A66B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E8CEDB12310367C008A66B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E8CEDB22310367C008A66B4 /* vImage_lab_hue_adjustment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vImage_lab_hue_adjustment.entitlements; sourceTree = "<group>"; };
+		3ED185722310433A00164C41 /* LabHueRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabHueRotate.swift; sourceTree = "<group>"; };
+		3ED185742310437400164C41 /* Flowers_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flowers_1.png; sourceTree = "<group>"; };
+		556633E8D8F19F47336A6132 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		BEEC79E5282D682D00D9CA1E /* HueAdjustmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAdjustmentApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E8CED9F2310367B008A66B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32B1A6DABAD1B9E6A9E3BFFA /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				15AB4DCB0E34F77DF618D446 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		3E8CED992310367B008A66B4 = {
+			isa = PBXGroup;
+			children = (
+				1F5485401F5481B000000001 /* README.md */,
+				3E8CEDA42310367B008A66B4 /* vImage-lab-hue-adjustment */,
+				3E8CEDA32310367B008A66B4 /* Products */,
+				50F44535B9C3441F47E55664 /* Configuration */,
+				32B1A6DABAD1B9E6A9E3BFFA /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		3E8CEDA32310367B008A66B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E8CEDA22310367B008A66B4 /* vImage-lab-hue-adjustment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E8CEDA42310367B008A66B4 /* vImage-lab-hue-adjustment */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC79E5282D682D00D9CA1E /* HueAdjustmentApp.swift */,
+				3E8CEDA72310367B008A66B4 /* ContentView.swift */,
+				3ED185722310433A00164C41 /* LabHueRotate.swift */,
+				3ED185742310437400164C41 /* Flowers_1.png */,
+				3E8CEDA92310367C008A66B4 /* Assets.xcassets */,
+				3E8CEDAE2310367C008A66B4 /* Main.storyboard */,
+				3E8CEDB12310367C008A66B4 /* Info.plist */,
+				3E8CEDB22310367C008A66B4 /* vImage_lab_hue_adjustment.entitlements */,
+				3E8CEDAB2310367C008A66B4 /* Preview Content */,
+			);
+			path = "vImage-lab-hue-adjustment";
+			sourceTree = "<group>";
+		};
+		3E8CEDAB2310367C008A66B4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E8CEDAC2310367C008A66B4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50F44535B9C3441F47E55664 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				556633E8D8F19F47336A6132 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E8CEDA12310367B008A66B4 /* vImage-lab-hue-adjustment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E8CEDB52310367C008A66B4 /* Build configuration list for PBXNativeTarget "vImage-lab-hue-adjustment" */;
+			buildPhases = (
+				3E8CED9E2310367B008A66B4 /* Sources */,
+				3E8CED9F2310367B008A66B4 /* Frameworks */,
+				3E8CEDA02310367B008A66B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vImage-lab-hue-adjustment";
+			productName = "vImage-lab-hue-adjustment";
+			productReference = 3E8CEDA22310367B008A66B4 /* vImage-lab-hue-adjustment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E8CED9A2310367B008A66B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3E8CEDA12310367B008A66B4 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 3E8CED9D2310367B008A66B4 /* Build configuration list for PBXProject "vImage-lab-hue-adjustment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E8CED992310367B008A66B4;
+			productRefGroup = 3E8CEDA32310367B008A66B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E8CEDA12310367B008A66B4 /* vImage-lab-hue-adjustment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E8CEDA02310367B008A66B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8CEDB02310367C008A66B4 /* Main.storyboard in Resources */,
+				3E8CEDAD2310367C008A66B4 /* Preview Assets.xcassets in Resources */,
+				3ED185752310437400164C41 /* Flowers_1.png in Resources */,
+				3E8CEDAA2310367C008A66B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E8CED9E2310367B008A66B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED185732310433A00164C41 /* LabHueRotate.swift in Sources */,
+				BEEC79E6282D682D00D9CA1E /* HueAdjustmentApp.swift in Sources */,
+				3E8CEDA82310367B008A66B4 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E8CEDAE2310367C008A66B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E8CEDAF2310367C008A66B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E8CEDB32310367C008A66B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556633E8D8F19F47336A6132 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E8CEDB42310367C008A66B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556633E8D8F19F47336A6132 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3E8CEDB62310367C008A66B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556633E8D8F19F47336A6132 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "vImage-lab-hue-adjustment/vImage_lab_hue_adjustment.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"vImage-lab-hue-adjustment/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "vImage-lab-hue-adjustment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vImage-lab-hue-adjustment${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3E8CEDB72310367C008A66B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556633E8D8F19F47336A6132 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "vImage-lab-hue-adjustment/vImage_lab_hue_adjustment.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"vImage-lab-hue-adjustment/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "vImage-lab-hue-adjustment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vImage-lab-hue-adjustment${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E8CED9D2310367B008A66B4 /* Build configuration list for PBXProject "vImage-lab-hue-adjustment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E8CEDB32310367C008A66B4 /* Debug */,
+				3E8CEDB42310367C008A66B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E8CEDB52310367C008A66B4 /* Build configuration list for PBXNativeTarget "vImage-lab-hue-adjustment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E8CEDB62310367C008A66B4 /* Debug */,
+				3E8CEDB72310367C008A66B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E8CED9A2310367B008A66B4 /* Project object */;
+}

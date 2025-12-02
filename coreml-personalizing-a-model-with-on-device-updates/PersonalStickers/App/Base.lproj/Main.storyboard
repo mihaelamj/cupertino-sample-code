@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qcw-ZY-J05">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Canvas View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainCanvasViewController" customModule="PersonalStickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cw-Td-hwJ">
+                                <rect key="frame" x="0.0" y="50" width="1194" height="764"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOu-m2-e9r">
+                                <rect key="frame" x="0.0" y="50" width="1194" height="764"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="c8d-Up-i8l" kind="embed" identifier="embedCanvasView" destinationCreationSelector="makeCanvasViewControllerWithCoder:sender:segueIdentifier:" id="szr-xo-Heg"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0cw-Td-hwJ" firstAttribute="bottom" secondItem="jOu-m2-e9r" secondAttribute="bottom" id="2Mn-l9-XB3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jOu-m2-e9r" secondAttribute="bottom" id="4Bc-mn-d5F"/>
+                            <constraint firstItem="0cw-Td-hwJ" firstAttribute="top" secondItem="jOu-m2-e9r" secondAttribute="top" id="Gsv-o6-Zac"/>
+                            <constraint firstItem="jOu-m2-e9r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZGy-Qq-AeX"/>
+                            <constraint firstItem="0cw-Td-hwJ" firstAttribute="trailing" secondItem="jOu-m2-e9r" secondAttribute="trailing" id="d1a-Ng-ylP"/>
+                            <constraint firstItem="0cw-Td-hwJ" firstAttribute="leading" secondItem="jOu-m2-e9r" secondAttribute="leading" id="f6W-Cw-5ED"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jOu-m2-e9r" secondAttribute="trailing" id="pZP-3C-mGx"/>
+                            <constraint firstItem="jOu-m2-e9r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zkL-bV-Nkj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XW5-6v-RRb">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Reset Model" id="Gb0-wA-GJ1">
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="resetModel" destination="BYZ-38-t0r" id="KKq-tB-L1v"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Add Sticker" id="gBg-n7-4yz">
+                                <connections>
+                                    <action selector="addNewSticker" destination="BYZ-38-t0r" id="vcC-RU-noW"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="stickerView" destination="0cw-Td-hwJ" id="uI3-v4-6er"/>
+                        <segue destination="Z10-kE-rUN" kind="presentation" identifier="addNewSticker" id="xcZ-qf-eWb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846.2311557788945" y="137.41007194244605"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IMh-hJ-a3h">
+            <objects>
+                <navigationController id="Z10-kE-rUN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X6r-HT-FlE">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="T1R-1v-BlV" kind="relationship" relationship="rootViewController" id="UvP-Tl-kNT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGT-KC-R9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600" y="137"/>
+        </scene>
+        <!--Pick a new sticker-->
+        <scene sceneID="75x-GO-r8D">
+            <objects>
+                <collectionViewController id="T1R-1v-BlV" customClass="CreateNewStickerViewController" customModule="PersonalStickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="meS-nA-DBd">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="794"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qsy-Ba-wlK">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="estimatedItemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="emojiCell" id="UIT-o3-Bwf" customClass="EmojiCell" customModule="PersonalStickers" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KVM-Jv-zBm">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="8fn-iF-HaH">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8fn-iF-HaH" firstAttribute="leading" secondItem="KVM-Jv-zBm" secondAttribute="leading" id="VGo-Tt-iD4"/>
+                                        <constraint firstItem="8fn-iF-HaH" firstAttribute="top" secondItem="KVM-Jv-zBm" secondAttribute="top" id="XNU-mN-rR1"/>
+                                        <constraint firstAttribute="trailing" secondItem="8fn-iF-HaH" secondAttribute="trailing" id="j4e-ML-skc"/>
+                                        <constraint firstAttribute="bottom" secondItem="8fn-iF-HaH" secondAttribute="bottom" id="nEK-zo-Dw0"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="50" height="50"/>
+                                <connections>
+                                    <outlet property="label" destination="8fn-iF-HaH" id="ltR-0a-YVY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="T1R-1v-BlV" id="n0y-0H-thm"/>
+                            <outlet property="delegate" destination="T1R-1v-BlV" id="Cau-yN-SLm"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Pick a new sticker" largeTitleDisplayMode="always" id="BXF-J6-xod">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="NVl-P5-kB7">
+                            <connections>
+                                <action selector="cancel" destination="T1R-1v-BlV" id="5LG-9Z-C0O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="meS-nA-DBd" id="ZEJ-Vt-G71"/>
+                        <segue destination="0le-XM-52A" kind="show" identifier="showTrainingView" destinationCreationSelector="makeTrainingViewControllerWithCoder:sender:segueIdentifier:" id="vAH-p6-EVl"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="StF-49-QfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2402" y="135"/>
+        </scene>
+        <!--Show the model examples-->
+        <scene sceneID="HH4-18-ENu">
+            <objects>
+                <viewController id="0le-XM-52A" customClass="ProvideExampleDrawingsViewController" customModule="PersonalStickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RfN-IP-Qfu">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="794"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="CK6-K4-X3m">
+                                <rect key="frame" x="0.0" y="56" width="712" height="738"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-hT-ZrA">
+                                        <rect key="frame" x="0.0" y="0.0" width="712" height="245.5"/>
+                                        <connections>
+                                            <segue destination="u1U-Oa-HyG" kind="embed" identifier="embedExampleViewController1" destinationCreationSelector="makeExampleDrawingViewControllerWithCoder:sender:segueIdentifier:" id="ZsU-nV-gfM"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86V-Ix-Dn2">
+                                        <rect key="frame" x="0.0" y="246.5" width="712" height="245"/>
+                                        <connections>
+                                            <segue destination="u1U-Oa-HyG" kind="embed" identifier="embedExampleViewController2" destinationCreationSelector="makeExampleDrawingViewControllerWithCoder:sender:segueIdentifier:" id="w7u-2k-g8W"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTE-Px-Jb9">
+                                        <rect key="frame" x="0.0" y="492.5" width="712" height="245.5"/>
+                                        <connections>
+                                            <segue destination="u1U-Oa-HyG" kind="embed" identifier="embedExampleViewController3" destinationCreationSelector="makeExampleDrawingViewControllerWithCoder:sender:segueIdentifier:" id="PCf-Za-eK1"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44919001770491035" green="0.44897305222595851" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CK6-K4-X3m" firstAttribute="top" secondItem="488-mz-EuM" secondAttribute="top" id="1Kf-ke-SXc"/>
+                            <constraint firstItem="488-mz-EuM" firstAttribute="trailing" secondItem="CK6-K4-X3m" secondAttribute="trailing" id="Isy-PT-BDV"/>
+                            <constraint firstItem="CK6-K4-X3m" firstAttribute="leading" secondItem="488-mz-EuM" secondAttribute="leading" id="ikg-R3-kPt"/>
+                            <constraint firstItem="488-mz-EuM" firstAttribute="bottom" secondItem="CK6-K4-X3m" secondAttribute="bottom" id="zm6-Pf-kpN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="488-mz-EuM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Show the model examples" largeTitleDisplayMode="always" id="hPk-c7-X8Z">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="AjU-BZ-iuN">
+                            <connections>
+                                <action selector="doneBarButtonTapped:" destination="0le-XM-52A" id="gPn-c7-kay"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneBarButton" destination="AjU-BZ-iuN" id="wPW-Kn-Ib4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ct-zX-FsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3145" y="135"/>
+        </scene>
+        <!--Drawing Canvas View Controller-->
+        <scene sceneID="EWo-ZU-c2F">
+            <objects>
+                <viewController id="c8d-Up-i8l" customClass="DrawingCanvasViewController" customModule="PersonalStickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pb5-eg-urP">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="764"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAf-KK-QAa" customClass="PKCanvasView">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="764"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zU3-u3-3Eq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Ec5-Jh-JZB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="34X-Jd-ccl"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvasView" destination="hAf-KK-QAa" id="VdS-vE-h6R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUU-EY-Qbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846.73366834170849" y="887.76978417266196"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mf2-j7-aTG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qcw-ZY-J05" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IuO-dS-jgV">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="g2N-ge-uYQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWU-qg-mpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.69346733668343" y="137.41007194244605"/>
+        </scene>
+        <!--Example Drawing View Controller-->
+        <scene sceneID="Qjo-pc-hI1">
+            <objects>
+                <viewController id="u1U-Oa-HyG" customClass="ExampleDrawingViewController" customModule="PersonalStickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EH8-uL-j3L">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="245.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-i6-7CU">
+                                <rect key="frame" x="301.5" y="112.5" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCl-vt-HRY">
+                                <rect key="frame" x="0.0" y="0.0" width="712" height="245.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="WRn-MM-g2v" kind="embed" identifier="embedCanvasViewController" destinationCreationSelector="makeCanvasViewControllerWithCoder:sender:segueIdentifier:" id="cyQ-Dg-zTO"/>
+                                </connections>
+                            </containerView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CKK-Mb-y8X">
+                                <rect key="frame" x="40" y="20" width="632" height="205.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CKK-Mb-y8X" firstAttribute="leading" secondItem="EH8-uL-j3L" secondAttribute="leadingMargin" constant="20" id="5RX-Na-UHu"/>
+                            <constraint firstItem="CKK-Mb-y8X" firstAttribute="top" secondItem="EH8-uL-j3L" secondAttribute="topMargin" constant="20" id="AyS-IQ-ral"/>
+                            <constraint firstItem="gCl-vt-HRY" firstAttribute="leading" secondItem="EH8-uL-j3L" secondAttribute="leading" id="Bzp-qw-wJh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CKK-Mb-y8X" secondAttribute="trailing" constant="20" id="NWB-bH-cei"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CKK-Mb-y8X" secondAttribute="bottom" constant="20" id="PuN-7P-dzq"/>
+                            <constraint firstAttribute="trailing" secondItem="gCl-vt-HRY" secondAttribute="trailing" id="anh-oJ-A7p"/>
+                            <constraint firstAttribute="bottom" secondItem="gCl-vt-HRY" secondAttribute="bottom" id="ehd-wo-ydd"/>
+                            <constraint firstItem="tEk-i6-7CU" firstAttribute="centerY" secondItem="EH8-uL-j3L" secondAttribute="centerY" id="hDz-xG-GXK"/>
+                            <constraint firstItem="tEk-i6-7CU" firstAttribute="centerX" secondItem="EH8-uL-j3L" secondAttribute="centerX" id="l1m-fg-kiP"/>
+                            <constraint firstItem="gCl-vt-HRY" firstAttribute="top" secondItem="EH8-uL-j3L" secondAttribute="top" id="o6d-4J-rnH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bvr-iv-hTJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvasContainerView" destination="gCl-vt-HRY" id="1pf-Cb-TAu"/>
+                        <outlet property="imageView" destination="CKK-Mb-y8X" id="lVA-zj-bdF"/>
+                        <outlet property="label" destination="tEk-i6-7CU" id="PW0-1J-NTl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySc-iv-WYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3145" y="668"/>
+        </scene>
+        <!--Drawing Canvas View Controller-->
+        <scene sceneID="NGp-6K-KHp">
+            <objects>
+                <viewController id="WRn-MM-g2v" customClass="DrawingCanvasViewController" customModule="PersonalStickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOd-Vm-D2p">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="245.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-R9-ch3" customClass="PKCanvasView">
+                                <rect key="frame" x="0.0" y="0.0" width="712" height="245"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="odF-I1-HHD"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="633-GD-Pwf"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9X4-WA-Lea"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvasView" destination="U9S-R9-ch3" id="2Wu-X3-nxR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQ6-Ea-Vdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3145" y="973"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PCf-Za-eK1"/>
+    </inferredMetricsTieBreakers>
+</document>

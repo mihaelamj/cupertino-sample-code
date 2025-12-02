@@ -1,0 +1,53 @@
+<document>
+    <head>
+        <style>
+            .expiresSoon {
+                color: rgba(255, 0, 0, 1.0);
+                tv-highlight-color: rgba(255, 20, 20, 1.0);
+            }
+            
+            .expiresLater {
+                color: rgba(0, 0, 0, 1.0);
+            }
+        </style>
+    </head>
+    <stackTemplate>
+        <prototypes>
+            <lockup prototype="beach">
+                <img binding="@src:{url};" width="200" height="300"/>
+                <placeholder tag="title2" />
+                <rules>
+                    <specialize state="({hoursRemaining}-less-than:24)">
+                        <title tag="title2" class="expiresSoon" binding="textContent:{title};" />"
+                    </specialize>
+                    <specialize state="({hoursRemaining}-greater-than-equal:24)">
+                        <title tag="title2" class="expiresLater" binding="textContent:{title};" />"
+                    </specialize>
+                </rules>
+            </lockup>
+            <lockup prototype="cars">
+                <img binding="@src:{url};" width="200" height="300"/>
+                <placeholder tag="title" />
+                <rules>
+                    <specialize state="({hoursRemaining}-less-than:24)">
+                        <title tag="title" class="expiresSoon" binding="textContent:{title};" />"
+                    </specialize>
+                    <specialize state="({hoursRemaining}-greater-than-equal:24)">
+                        <title tag="title" class="expiresLater" binding="textContent:{title};" />"
+                    </specialize>
+                </rules>
+            </lockup>
+        </prototypes>
+        <banner>
+            <title>DataBindings</title>
+        </banner>
+        <collectionList>
+            <shelf>
+                <section binding="items:{images};" />
+            </shelf>
+            <shelf>
+                <section binding="items:{images};" />
+            </shelf>
+        </collectionList>
+    </stackTemplate>
+</document>

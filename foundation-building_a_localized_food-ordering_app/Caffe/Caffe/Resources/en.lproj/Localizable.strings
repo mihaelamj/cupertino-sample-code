@@ -1,0 +1,54 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localization strings for English.
+*/
+
+"^[Fast](rainbow: 'fun') & ^[Delicious](rainbow: 'extreme') Food" = "^[Fast](rainbow: 'fun') & ^[Delicious](rainbow: 'extreme') Food";
+
+// Food Items
+"Food" = "Food";
+"pizza" = "pizza";
+"juice" = "juice";
+"sandwich" = "sandwich";
+"salad" = "salad";
+
+// Food Descriptions
+"Our %@ is made from: %@." = "Our %@ is made from: %@.";
+
+// Ingredients
+"prosciutto" = "prosciutto";
+"cheese" = "cheese";
+"flour" = "flour";
+"tomatoes" = "tomatoes";
+"orange" = "orange";
+"sugar" = "sugar";
+"bread" = "sourdough";
+"lettuce" = "lettuce";
+"ham" = "ham";
+
+// Food Sizes
+"Size" = "Size";
+"small" = "small";
+"large" = "large";
+"huge" = "huge";
+
+// Food Amount
+"Quantity" = "Quantity";
+
+// Add to order button
+"Add ^[%lld %@ %@](inflect: true) to your order" = "Add ^[%lld %@ ^[%@](morphology: { partOfSpeech: \"noun\" })](inflect: true) to your order";
+
+// Order Button
+"Order ^[%lld item](inflect: true) for %@" = "Order ^[%lld item](inflect: true) for %@";
+
+// Receipt
+"Receipt" = "Receipt";
+"^[%lld %@ %@](inflect: true)" = "^[%lld %@ ^[%@](morphology: { partOfSpeech: \"noun\" })](inflect: true)";
+"Tip" = "Tip";
+"Amount" = "Amount";
+"Total" = "Total";
+
+"**Thank you!**" = "**Thank you!**";
+"_Please visit our [website](https://www.example.com)._" = "_Please visit our [website](https://www.example.com)._";

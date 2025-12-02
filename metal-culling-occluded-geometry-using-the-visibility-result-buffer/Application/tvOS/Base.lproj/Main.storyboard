@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="21179.7" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="AAPLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="MTKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="768 / 768" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNG-FJ-ngU">
+                                <rect key="frame" x="1568" y="89" width="256" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="FhD-pg-BXd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qcc-Y3-cZA">
+                                <rect key="frame" x="96" y="68" width="740" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="740" id="tpj-kR-Yc8"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Fragment Counting"/>
+                                    <segment title="Occlusion Culling"/>
+                                </segments>
+                                <connections>
+                                    <action selector="modeChanged:" destination="BV1-FR-VrT" eventType="valueChanged" id="cSc-FE-s3w"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fragment count:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ApQ-f2-gHV">
+                                <rect key="frame" x="1238" y="88" width="314" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fZj-tP-QAA"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZNG-FJ-ngU" firstAttribute="top" secondItem="fZj-tP-QAA" secondAttribute="top" constant="29" id="2rv-5e-coj"/>
+                            <constraint firstItem="fZj-tP-QAA" firstAttribute="trailing" secondItem="ZNG-FJ-ngU" secondAttribute="trailing" constant="16" id="4Qx-RD-FwE"/>
+                            <constraint firstItem="ZNG-FJ-ngU" firstAttribute="leading" secondItem="ApQ-f2-gHV" secondAttribute="trailing" constant="16" id="55x-pi-9mj"/>
+                            <constraint firstItem="qcc-Y3-cZA" firstAttribute="leading" secondItem="fZj-tP-QAA" secondAttribute="leading" constant="16" id="5gV-mB-J7W"/>
+                            <constraint firstItem="ApQ-f2-gHV" firstAttribute="top" secondItem="fZj-tP-QAA" secondAttribute="top" constant="28" id="QCg-CV-ki0"/>
+                            <constraint firstItem="ApQ-f2-gHV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qcc-Y3-cZA" secondAttribute="trailing" constant="16" id="QJN-p1-4YY"/>
+                            <constraint firstItem="ApQ-f2-gHV" firstAttribute="top" secondItem="fZj-tP-QAA" secondAttribute="top" constant="28" id="Tgv-oJ-MDt"/>
+                            <constraint firstItem="qcc-Y3-cZA" firstAttribute="top" secondItem="fZj-tP-QAA" secondAttribute="top" constant="8" id="faI-oy-NLh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_mode" destination="qcc-Y3-cZA" id="9WM-fQ-MJI"/>
+                        <outlet property="_modeDisplay" destination="ApQ-f2-gHV" id="5TF-SN-2Vl"/>
+                        <outlet property="_numDisplay" destination="ZNG-FJ-ngU" id="jwq-wJ-ipc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="-81"/>
+        </scene>
+    </scenes>
+</document>

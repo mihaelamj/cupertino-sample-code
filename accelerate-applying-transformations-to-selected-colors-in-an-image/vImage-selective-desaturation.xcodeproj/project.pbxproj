@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE45B5352A433972001A0E1A /* sprinkles.png in Resources */ = {isa = PBXBuildFile; fileRef = BE45B5342A433972001A0E1A /* sprinkles.png */; };
+		BE45B5372A433994001A0E1A /* SelectiveDesaturator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45B5362A433994001A0E1A /* SelectiveDesaturator.swift */; };
+		BECAB0D92A432AF800B0624E /* vImage_selective_desaturationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB0D82A432AF800B0624E /* vImage_selective_desaturationApp.swift */; };
+		BECAB0DB2A432AF800B0624E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB0DA2A432AF800B0624E /* ContentView.swift */; };
+		BECAB0DD2A432AF900B0624E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECAB0DC2A432AF900B0624E /* Assets.xcassets */; };
+		BECAB0E02A432AF900B0624E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECAB0DF2A432AF900B0624E /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69E0A47AF974CB72C2894E70 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		88C883133B9A03094158AD9B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE45B5342A433972001A0E1A /* sprinkles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprinkles.png; sourceTree = "<group>"; };
+		BE45B5362A433994001A0E1A /* SelectiveDesaturator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectiveDesaturator.swift; sourceTree = "<group>"; };
+		BECAB0D52A432AF800B0624E /* vImage-selective-desaturation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vImage-selective-desaturation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECAB0D82A432AF800B0624E /* vImage_selective_desaturationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vImage_selective_desaturationApp.swift; sourceTree = "<group>"; };
+		BECAB0DA2A432AF800B0624E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BECAB0DC2A432AF900B0624E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BECAB0DF2A432AF900B0624E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BECAB0E12A432AF900B0624E /* vImage_selective_desaturation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vImage_selective_desaturation.entitlements; sourceTree = "<group>"; };
+		F36F0D4C8DCF1759A88CB73A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BECAB0D22A432AF800B0624E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445D424B80F3B92E5DF1B2D1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				69E0A47AF974CB72C2894E70 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		8C6D41AFFFBF55000F8925A4 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				F36F0D4C8DCF1759A88CB73A /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		BECAB0CC2A432AF800B0624E = {
+			isa = PBXGroup;
+			children = (
+				88C883133B9A03094158AD9B /* README.md */,
+				BECAB0D72A432AF800B0624E /* vImage-selective-desaturation */,
+				BECAB0D62A432AF800B0624E /* Products */,
+				445D424B80F3B92E5DF1B2D1 /* Configuration */,
+				8C6D41AFFFBF55000F8925A4 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		BECAB0D62A432AF800B0624E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BECAB0D52A432AF800B0624E /* vImage-selective-desaturation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BECAB0D72A432AF800B0624E /* vImage-selective-desaturation */ = {
+			isa = PBXGroup;
+			children = (
+				BECAB0D82A432AF800B0624E /* vImage_selective_desaturationApp.swift */,
+				BE45B5362A433994001A0E1A /* SelectiveDesaturator.swift */,
+				BECAB0DA2A432AF800B0624E /* ContentView.swift */,
+				BECAB0DC2A432AF900B0624E /* Assets.xcassets */,
+				BECAB0E12A432AF900B0624E /* vImage_selective_desaturation.entitlements */,
+				BE45B5342A433972001A0E1A /* sprinkles.png */,
+				BECAB0DE2A432AF900B0624E /* Preview Content */,
+			);
+			path = "vImage-selective-desaturation";
+			sourceTree = "<group>";
+		};
+		BECAB0DE2A432AF900B0624E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BECAB0DF2A432AF900B0624E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BECAB0D42A432AF800B0624E /* vImage-selective-desaturation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BECAB0E42A432AF900B0624E /* Build configuration list for PBXNativeTarget "vImage-selective-desaturation" */;
+			buildPhases = (
+				BECAB0D12A432AF800B0624E /* Sources */,
+				BECAB0D22A432AF800B0624E /* Frameworks */,
+				BECAB0D32A432AF800B0624E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vImage-selective-desaturation";
+			productName = "vImage-selective-desaturation";
+			productReference = BECAB0D52A432AF800B0624E /* vImage-selective-desaturation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BECAB0CD2A432AF800B0624E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					BECAB0D42A432AF800B0624E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BECAB0D02A432AF800B0624E /* Build configuration list for PBXProject "vImage-selective-desaturation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BECAB0CC2A432AF800B0624E;
+			productRefGroup = BECAB0D62A432AF800B0624E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BECAB0D42A432AF800B0624E /* vImage-selective-desaturation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BECAB0D32A432AF800B0624E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE45B5352A433972001A0E1A /* sprinkles.png in Resources */,
+				BECAB0E02A432AF900B0624E /* Preview Assets.xcassets in Resources */,
+				BECAB0DD2A432AF900B0624E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BECAB0D12A432AF800B0624E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECAB0DB2A432AF800B0624E /* ContentView.swift in Sources */,
+				BECAB0D92A432AF800B0624E /* vImage_selective_desaturationApp.swift in Sources */,
+				BE45B5372A433994001A0E1A /* SelectiveDesaturator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BECAB0E22A432AF900B0624E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E0A47AF974CB72C2894E70 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BECAB0E32A432AF900B0624E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E0A47AF974CB72C2894E70 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BECAB0E52A432AF900B0624E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E0A47AF974CB72C2894E70 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vImage-selective-desaturation/vImage_selective_desaturation.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vImage-selective-desaturation${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BECAB0E62A432AF900B0624E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E0A47AF974CB72C2894E70 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vImage-selective-desaturation/vImage_selective_desaturation.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vImage-selective-desaturation${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BECAB0D02A432AF800B0624E /* Build configuration list for PBXProject "vImage-selective-desaturation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECAB0E22A432AF900B0624E /* Debug */,
+				BECAB0E32A432AF900B0624E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BECAB0E42A432AF900B0624E /* Build configuration list for PBXNativeTarget "vImage-selective-desaturation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECAB0E52A432AF900B0624E /* Debug */,
+				BECAB0E62A432AF900B0624E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BECAB0CD2A432AF800B0624E /* Project object */;
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController storyboardIdentifier="PickerViewController" id="wyg-tK-EQJ" customClass="PickerViewController" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="111"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="RWP-mw-ZIF">
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="111"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="75" width="336" height="16"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSPickerTouchBarItem" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="d14-Uk-RXb">
+                                        <rect key="frame" x="123" y="50" width="124" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Single Selection" bezelStyle="regularSquare" imagePosition="left" inset="2" id="TYq-WN-vXT">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="singleSelectionAction:" target="wyg-tK-EQJ" id="F3h-KX-BJq"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="mYj-Uc-fR6">
+                                        <rect key="frame" x="142" y="31" width="87" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Collapsed" bezelStyle="regularSquare" imagePosition="left" inset="2" id="r4g-Oa-iGW">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="collapsedAction:" target="wyg-tK-EQJ" id="kcg-he-1Fr"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="qip-Ls-4TP">
+                                        <rect key="frame" x="150" y="12" width="70" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Images" bezelStyle="regularSquare" imagePosition="left" inset="2" id="zgd-ty-Ts5">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="imagesAction:" target="wyg-tK-EQJ" id="2iH-Q6-K2M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="372" id="B56-Bc-aer"/>
+                                    <constraint firstItem="mYj-Uc-fR6" firstAttribute="centerX" secondItem="d14-Uk-RXb" secondAttribute="centerX" id="Caz-xS-UMC"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="RWP-mw-ZIF" secondAttribute="top" constant="20" symbolic="YES" id="Z6E-Rx-Ad3"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="RWP-mw-ZIF" secondAttribute="leading" constant="20" symbolic="YES" id="f94-jU-dwW"/>
+                                    <constraint firstItem="d14-Uk-RXb" firstAttribute="centerX" secondItem="RWP-mw-ZIF" secondAttribute="centerX" id="gPA-yG-LeJ"/>
+                                    <constraint firstItem="d14-Uk-RXb" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="8" symbolic="YES" id="h1c-lh-f1L"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="111" id="jSX-9C-eLY"/>
+                                    <constraint firstItem="qip-Ls-4TP" firstAttribute="top" secondItem="mYj-Uc-fR6" secondAttribute="bottom" constant="3" id="mHG-eK-5U5"/>
+                                    <constraint firstItem="qip-Ls-4TP" firstAttribute="centerX" secondItem="RWP-mw-ZIF" secondAttribute="centerX" id="vhO-rD-MWS"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="y0E-aM-Rtx"/>
+                                    <constraint firstItem="mYj-Uc-fR6" firstAttribute="top" secondItem="d14-Uk-RXb" secondAttribute="bottom" constant="3" id="yDB-Wc-Jqd"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RWP-mw-ZIF" secondAttribute="bottom" id="It6-F1-oKH"/>
+                            <constraint firstItem="RWP-mw-ZIF" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="WUy-0S-An9"/>
+                            <constraint firstItem="RWP-mw-ZIF" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="r6H-xo-Xih"/>
+                            <constraint firstAttribute="trailing" secondItem="RWP-mw-ZIF" secondAttribute="trailing" id="ysU-3i-xp4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collapsedState" destination="mYj-Uc-fR6" id="jNN-zj-D9e"/>
+                        <outlet property="imagesState" destination="qip-Ls-4TP" id="zrK-FP-4Gs"/>
+                        <outlet property="singleSelection" destination="d14-Uk-RXb" id="GFE-ef-nYN"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="92.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14784.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14740.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LongFormVideoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRx-Ph-3ka">
+                                <rect key="frame" x="171" y="433" width="72" height="30"/>
+                                <state key="normal" title="Play Video"/>
+                                <connections>
+                                    <action selector="playVideoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8R-dv-P1x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hRx-Ph-3ka" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8mJ-RG-UtG"/>
+                            <constraint firstItem="hRx-Ph-3ka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cee-DA-rUx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playVideoButton" destination="hRx-Ph-3ka" id="ZxZ-HZ-G1a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--Remote Control View Controller-->
+        <scene sceneID="821-1x-4HU">
+            <objects>
+                <viewController storyboardIdentifier="RemoteControlViewControllerID" id="Lyt-8Z-X57" customClass="RemoteControlViewController" customModule="LongFormVideoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cmf-gA-sDX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwz-kO-yMj">
+                                <rect key="frame" x="190" y="431" width="34" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Play"/>
+                                <state key="selected" title="Pause"/>
+                                <connections>
+                                    <action selector="playPauseButtonPressed:" destination="Lyt-8Z-X57" eventType="touchUpInside" id="szX-hP-irC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmg-4t-HtK">
+                                <rect key="frame" x="273" y="431" width="125" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Skip ahead 30s"/>
+                                <connections>
+                                    <action selector="skipAhead30ButtonPressed:" destination="Lyt-8Z-X57" eventType="touchUpInside" id="Wc4-yp-VHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zu-e7-y8J">
+                                <rect key="frame" x="16" y="431" width="115" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Skip back 30s"/>
+                                <connections>
+                                    <action selector="skipBack30ButtonPressed:" destination="Lyt-8Z-X57" eventType="touchUpInside" id="Wic-d3-2cr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Zwz-kO-yMj" firstAttribute="centerX" secondItem="cmf-gA-sDX" secondAttribute="centerX" id="0iY-zu-6PZ"/>
+                            <constraint firstItem="Zwz-kO-yMj" firstAttribute="centerY" secondItem="6Zu-e7-y8J" secondAttribute="centerY" id="4ty-TO-ekj"/>
+                            <constraint firstItem="sNf-00-GF6" firstAttribute="trailing" secondItem="vmg-4t-HtK" secondAttribute="trailing" constant="16" id="A4U-NZ-LBc"/>
+                            <constraint firstItem="Zwz-kO-yMj" firstAttribute="centerY" secondItem="cmf-gA-sDX" secondAttribute="centerY" id="Kek-EQ-WZ5"/>
+                            <constraint firstItem="6Zu-e7-y8J" firstAttribute="leading" secondItem="sNf-00-GF6" secondAttribute="leading" constant="16" id="Xlu-O1-rng"/>
+                            <constraint firstItem="vmg-4t-HtK" firstAttribute="centerY" secondItem="6Zu-e7-y8J" secondAttribute="centerY" id="pBd-3a-P5a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sNf-00-GF6"/>
+                    </view>
+                    <connections>
+                        <outlet property="SkipAhead30Button" destination="vmg-4t-HtK" id="MBO-ZS-zyB"/>
+                        <outlet property="playPauseButton" destination="Zwz-kO-yMj" id="dba-Xv-N0n"/>
+                        <outlet property="skipBack30Button" destination="6Zu-e7-y8J" id="zeM-kl-Nuz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsJ-on-oOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="138"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,23 @@
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+Header for the renderer class that performs Metal setup and per-frame rendering.
+*/
+
+#ifndef AAPLRenderer_h
+#define AAPLRenderer_h
+@import MetalKit;
+
+/// Platform-independent renderer class.
+@interface AAPLRenderer : NSObject<MTKViewDelegate>
+
+- (nonnull instancetype)initWithMetalKitView:(nonnull MTKView *)mtkView;
+
+- (void)updateRenderStateFor:(nonnull MTKView *)mtkView
+           withVisualization:(BOOL)isDebugVisualization
+        subtractionOperation:(BOOL)useSubtraction
+                  iterations:(int)iterations;
+
+@end
+#endif /* AAPLRenderer_h */

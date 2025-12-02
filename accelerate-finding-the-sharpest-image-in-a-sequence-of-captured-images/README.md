@@ -1,0 +1,301 @@
+# Finding the sharpest image in a sequence of captured images
+
+Share image data between vDSP and vImage to compute the sharpest image from a bracketed photo sequence.
+
+## Overview
+
+This sample code project captures a sequence of photographs and uses a combination of routines from vImage and vDSP to order the images by their relative sharpness. This technique is useful in applications such as an image scanner, where your user requires the least blurry captured image. After applying the routines, the app displays the images in a list, with the sharpest image at the top.
+
+![A screenshot of the sample app showing four rows. Each row contains, on the left, the original image, and, on the right, the convolved image. The images are ordered by decreasing sharpness.](Documentation/blur-detection.png)
+
+This project uses [SwiftUI](https://developer.apple.com/documentation/swiftui) to build the user interface,  [AVFoundation](https://developer.apple.com/documentation/avfoundation) to capture a sequence of images, and a method known as _the variance of the Laplacian_ to determine the sharpness of each image. 
+
+Before exploring the code, try building and running the app, and taking photographs of subjects such as documents and signs.
+
+## Configure the capture session
+
+The 3 x 3 Laplacian kernel that this sample uses reports a lot of noise if applied to a full-resolution image. To reduce this noise, the sample uses a downscaled image and defines the capture session's preset to a size that's smaller than the camera's native resolution:
+
+``` swift
+captureSession.sessionPreset = .hd1280x720
+```
+
+To learn more about configuring a capture session, see [Setting Up a Capture Session](https://developer.apple.com/documentation/avfoundation/capture_setup/setting_up_a_capture_session).
+
+## Define the photo settings
+
+The sample defines the [`AVCapturePhotoBracketSettings`](https://developer.apple.com/documentation/avfoundation/avcapturephotobracketsettings) object, which specifies the capture features and settings, in the `BlurDetector.takePhoto()` function.
+
+The sharpness detection algorithm in this sample works on a grayscale image. The camera's YpCbCr pixel formats, either [`kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange`](https://developer.apple.com/documentation/corevideo/1563591-pixel_format_identifiers/kcvpixelformattype_420ypcbcr8biplanarvideorange) or [`kCVPixelFormatType_420YpCbCr8BiPlanarFullRange`](https://developer.apple.com/documentation/corevideo/1563591-pixel_format_identifiers/kcvpixelformattype_420ypcbcr8biplanarfullrange), represent the luminance of the image using one plane and represent color information on separate planes. The code converts the luminance plane to a grayscale image.
+
+The following code checks that the current device supports one or both of these formats: 
+
+``` swift
+let pixelFormat: FourCharCode = {
+    if photoOutput.availablePhotoPixelFormatTypes
+        .contains(kCVPixelFormatType_420YpCbCr8BiPlanarFullRange) {
+        return kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
+    } else if photoOutput.availablePhotoPixelFormatTypes
+        .contains(kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange) {
+        return kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange
+    } else {
+        fatalError("No available YpCbCr formats.")
+    }
+}()
+```
+
+The `exposureSettings` array contains [`AVCaptureAutoExposureBracketedStillImageSettings`](https://developer.apple.com/documentation/avfoundation/avcaptureautoexposurebracketedstillimagesettings) instances and defines the exposure target bias of each as [`currentExposureTargetBias`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624621-currentexposuretargetbias). The [`maxBracketedCapturePhotoCount`](https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648702-maxbracketedcapturephotocount) property of the [`AVCapturePhotoOutput`](https://developer.apple.com/documentation/avfoundation/avcapturephotooutput) object defines the maximum number of items in the array.
+
+``` swift
+let exposureSettings = (0 ..< photoOutput.maxBracketedCapturePhotoCount).map { _ in
+    AVCaptureAutoExposureBracketedStillImageSettings.autoExposureSettings(
+        exposureTargetBias: AVCaptureDevice.currentExposureTargetBias)
+}
+```
+
+The following code uses the array of exposure settings and the first available YpCbCr format type to define the bracketed settings:
+
+``` swift
+let photoSettings = AVCapturePhotoBracketSettings(
+    rawPixelFormatType: 0,
+    processedFormat: [kCVPixelBufferPixelFormatTypeKey as String: pixelFormat],
+    bracketedSettings: exposureSettings)
+```
+
+The `BlurDetector.takePhoto()` function passes the [`AVCapturePhotoBracketSettings`](https://developer.apple.com/documentation/avfoundation/avcapturephotobracketsettings) instance to capture the sequence of images:
+
+``` swift
+photoOutput.capturePhoto(with: photoSettings,
+                         delegate: self)
+```
+
+## Acquire the captured image
+
+For each captured image, AVFoundation calls the [`photoOutput(_:didFinishProcessingPhoto:error:)`](https://developer.apple.com/documentation/avfoundation/avcapturephotocapturedelegate/2873949-photooutput) method.
+
+The sample uses the [`pixelBuffer`](https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873914-pixelbuffer) property of the [`AVCapturePhoto`](https://developer.apple.com/documentation/avfoundation/avcapturephoto) instance that AVFoundation supplies to acquire the uncompressed [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) that contains the captured photograph. While the code is accessing the pixel data of the pixel buffer, it calls [`CVPixelBufferLockBaseAddress`](https://developer.apple.com/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress) to lock the base address:
+
+``` swift
+guard let pixelBuffer = photo.pixelBuffer else {
+    fatalError("Error acquiring pixel buffer.")
+}
+
+CVPixelBufferLockBaseAddress(pixelBuffer,
+                             CVPixelBufferLockFlags.readOnly)
+```
+
+The pixel buffer that AVFoundation vends contains two planes; the plane at index zero contains the luminance data. Because the sample app runs the sharpness detection code in a background thread, it calls [`copyMemory`](https://developer.apple.com/documentation/swift/unsafemutablerawpointer/copymemory(from:bytecount:)) to create a copy of the luminance data:
+
+``` swift
+let width = CVPixelBufferGetWidthOfPlane(pixelBuffer, 0)
+let height = CVPixelBufferGetHeightOfPlane(pixelBuffer, 0)
+let count = width * height
+
+let lumaBaseAddress = CVPixelBufferGetBaseAddressOfPlane(pixelBuffer, 0)
+let lumaRowBytes = CVPixelBufferGetBytesPerRowOfPlane(pixelBuffer, 0)
+
+let lumaCopy = UnsafeMutableRawPointer.allocate(
+    byteCount: count,
+    alignment: MemoryLayout<Pixel_8>.alignment)
+lumaCopy.copyMemory(from: lumaBaseAddress!,
+                    byteCount: count)
+```
+
+After the code has copied the luminance data, it unlocks the pixel buffer's base address and passes the copied luminance data to the processing function in a background thread:
+
+``` swift
+CVPixelBufferUnlockBaseAddress(pixelBuffer,
+                               CVPixelBufferLockFlags.readOnly)
+
+Task(priority: .utility) {
+    self.processImage(data: lumaCopy,
+                      rowBytes: lumaRowBytes,
+                      width: width,
+                      height: height,
+                      sequenceCount: photo.sequenceCount,
+                      expectedCount: photo.resolvedSettings.expectedPhotoCount,
+                      orientation: photo.metadata[ String(kCGImagePropertyOrientation) ] as? UInt32)
+    
+    lumaCopy.deallocate()
+}
+```
+
+## Initialize grayscale source pixel buffer
+
+The following code creates a pixel buffer from data passed to the `BlurDetector.processImage(data:rowBytes:width:height:sequenceCount:expectedCount:orientation:)` function:
+
+``` swift
+let imageBuffer = vImage.PixelBuffer(data: data,
+                                     width: width,
+                                     height: height,
+                                     byteCountPerRow: rowBytes,
+                                     pixelFormat: vImage.Planar8.self)
+```
+
+On return, `sourceBuffer` contains a grayscale representation of the captured image. 
+
+## Create floating point pixels to use with vDSP
+
+vImage buffers store their image data in row-major format. However, when you pass data between vImage and vDSP, be aware that, in some cases, vImage will add extra bytes at the end of each row. For example, the following code declares two 8-bit-per-pixel buffers that are 10 pixels wide:
+
+```
+let buffer0 = try? vImage_Buffer(width: 10,
+                                 height: 5,
+                                 bitsPerPixel: 8)
+
+let buffer1 = vImage.PixelBuffer(width: 10,
+                                 height: 5,
+                                 pixelFormat: vImage.Planar8.self)                               
+```
+
+Although the code defines buffers with 10 bytes per row, to maximize performance, [`vImageBuffer_Init(_:_:_:_:_:)`](https://developer.apple.com/documentation/accelerate/1399064-vimagebuffer_init) and [`init(width:height:pixelFormat:)`](https://developer.apple.com/documentation/accelerate/vimage/pixelbuffer/3951695-init) both initialize a buffer with 16 bytes per row. 
+
+![Diagram showing the visible pixels and the padding of a vImage buffer.](Documentation/vImage_rowBytes.png)
+
+In some cases, this disparity between the row bytes used to hold image data and the buffer's actual row bytes may not affect an app's results. However, the sample app declares a [`vImage.PixelBuffer`](https://developer.apple.com/documentation/accelerate/vimage/pixelbuffer) structure with external memory that has no additional padding. This ensures that the uninitialized data in the row padding doesn't affect the blur detection algorithm.
+
+``` swift
+var laplacianStorage = UnsafeMutableBufferPointer<Float>.allocate(capacity: width * height)
+let laplacianBuffer = vImage.PixelBuffer(data: laplacianStorage.baseAddress!,
+                                         width: width,
+                                         height: height,
+                                         byteCountPerRow: width * MemoryLayout<Float>.stride,
+                                         pixelFormat: vImage.PlanarF.self)
+defer {
+    laplacianStorage.deallocate()
+}
+
+imageBuffer.convert(to: laplacianBuffer)
+```
+
+On return, `laplacianStorage` and `laplacianBuffer` share the same memory that contains a 32-bit version of the image data in the `imageBuffer`.
+
+## Perform the convolution
+
+The Laplacian kernel finds edges in the single-precision pixel values:
+
+``` swift
+let laplacian: [Float] = [-1, -1, -1,
+                          -1,  8, -1,
+                          -1, -1, -1]
+```
+
+The vDSP convolve function performs the convolution in place on the `laplacianStorage` memory:
+
+``` swift
+vDSP.convolve(laplacianStorage,
+              rowCount: height,
+              columnCount: width,
+              with3x3Kernel: laplacian,
+              result: &laplacianStorage)
+```
+
+After the convolution, edges in the image have high values. The following image shows the result after convolution using the Laplacian kernel:
+
+![Photograph after Laplacian convolution. Edges appear as bright areas against a dark background.](Documentation/laplacianCrop.png)
+
+## Calculate the variance
+
+The [`vDSP_normalize`](https://developer.apple.com/documentation/accelerate/1450106-vdsp_normalize) function calculates the standard deviation of the pixel values after the edge detection. The following computed property returns the variance of a single-precision [`AccelerateMutableBuffer`](https://developer.apple.com/documentation/accelerate/acceleratemutablebuffer) instance:
+
+``` swift
+extension AccelerateMutableBuffer where Element == Float {
+    var variance: Float {
+        
+        var mean = Float.nan
+        var standardDeviation = Float.nan
+        
+        self.withUnsafeBufferPointer {
+            vDSP_normalize($0.baseAddress!, 1,
+                           nil, 1,
+                           &mean, &standardDeviation,
+                           vDSP_Length(self.count))
+        }
+        
+        return standardDeviation * standardDeviation
+    }
+}
+```
+
+The sample app uses this value as a measure of relative sharpness. Images with more variance have more detail than those with less variance, and that difference is used to derive the relative sharpness. 
+
+## Create a display image with the correct orientation
+
+The sample app uses the vImage 90º rotation functions in conjunction with the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) object's orientation to create Core Graphics images that are suitable for displaying in the app. The `static BlurDetector.makeImage(fromPlanarBuffer:orientation:)` function accepts a planar buffer (either the grayscale representation of the captured image or the result of the convolution) and the orientation, and returns a `CGImage` instance.
+
+For landscape images, meaning images with an orientation of [`.left`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation/left) or [`.right`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation/right), the function creates a destination buffer with a width equal to the height, and a height equal to the width of the supplied buffer. For portrait images, meaning images with an orientation of [`.up`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation/up) or [`.down`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation/down), the function creates a destination buffer with the same dimensions as the supplied buffer.
+
+``` swift
+var outputBuffer: vImage.PixelBuffer<Format>
+var outputRotation: Int
+
+if orientation == .right || orientation == .left {
+    outputBuffer = vImage.PixelBuffer<Format>(width: sourceBuffer.height,
+                                              height: sourceBuffer.width)
+    
+    outputRotation = orientation == .right ?
+            kRotate90DegreesClockwise : kRotate90DegreesCounterClockwise
+} else if orientation == .up || orientation == .down {
+    outputBuffer = vImage.PixelBuffer<Format>(width: sourceBuffer.width,
+                                              height: sourceBuffer.height)
+    outputRotation = orientation == .down ?
+            kRotate180DegreesClockwise : kRotate0DegreesClockwise
+} else {
+    return nil
+}
+```
+
+The following code populates the destination buffer using either  [`vImageRotate90_Planar8(_:_:_:_:_:)`](https://developer.apple.com/documentation/accelerate/1509176-vimagerotate90_planar8) or [`vImageRotate90_PlanarF(_:_:_:_:_:)`](https://developer.apple.com/documentation/accelerate/1509242-vimagerotate90_planarf):
+
+``` swift
+let imageFormat: vImage_CGImageFormat
+
+let rotateFunction: (UnsafePointer<vImage_Buffer>,
+                     UnsafePointer<vImage_Buffer>,
+                     UInt8) -> vImage_Error
+
+if Format.self == vImage.Planar8.self {
+    imageFormat = vImage_CGImageFormat(
+        bitsPerComponent: 8,
+        bitsPerPixel: 8,
+        colorSpace: CGColorSpaceCreateDeviceGray(),
+        bitmapInfo: .init(rawValue: CGImageAlphaInfo.none.rawValue))!
+    
+    func rotate (src: UnsafePointer<vImage_Buffer>,
+                 dst: UnsafePointer<vImage_Buffer>,
+                 rotation: UInt8) -> vImage_Error {
+        vImageRotate90_Planar8(src, dst, rotation, 0, 0)
+    }
+    rotateFunction = rotate
+} else if Format.self == vImage.PlanarF.self {
+    imageFormat = vImage_CGImageFormat(
+        bitsPerComponent: 32,
+        bitsPerPixel: 32,
+        colorSpace: CGColorSpaceCreateDeviceGray(),
+        bitmapInfo: CGBitmapInfo(rawValue:
+                                    kCGBitmapByteOrder32Host.rawValue |
+                                    CGBitmapInfo.floatComponents.rawValue |
+                                    CGImageAlphaInfo.none.rawValue))!
+    
+    func rotate (src: UnsafePointer<vImage_Buffer>,
+                 dst: UnsafePointer<vImage_Buffer>,
+                 rotation: UInt8) -> vImage_Error {
+        vImageRotate90_PlanarF(src, dst, rotation, 0, 0)
+    }
+    rotateFunction = rotate
+} else {
+    fatalError("This function only supports Planar8 and PlanarF formats.")
+}
+
+sourceBuffer.withUnsafePointerToVImageBuffer { src in
+    outputBuffer.withUnsafePointerToVImageBuffer { dst in
+        _ = rotateFunction(src, dst, UInt8(outputRotation))
+    }
+}
+```
+
+Finally, the function returns a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) from the destination buffer:
+
+``` swift
+return outputBuffer.makeCGImage(cgImageFormat: imageFormat)
+```

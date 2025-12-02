@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ This instrpkg file defines the schemas, modelers, and instruments for modeling Mobile Agent
+ execution intervals.
+ 
+ -->
+<package>
+	<id>com.apple.mobileagents.execution.only.MobileAgentsExecutionModeling</id>
+	<title>Mobile Agents Execution Modeling</title>
+	<owner>
+		<name>Apple Inc.</name>
+	</owner>
+
+    <!-- Modeling Mobile Agent execution steps by utilizing os_signpost messages -->
+    
+    <!-- A Mobile Agent will emit a signpost event when it begins execution at a stop.
+         Since os_signpost will serve as source of external data, make sure to include
+         the os-signpost schema
+     -->
+    
+    <import-schema>os-signpost</import-schema>
+    
+    <!-- The execution of a Mobile Agent can be modeled as an interval. In each interval,
+         the following set of properties are both necessary and sufficient to gather
+         insights about the state of the agent as it executes through stops:
+     
+            * Start time of the execution
+            * Duration of the execution
+            * A description of the agent kind
+            * A description of the stop the agent was visiting during the execution
+            * Which state the agent was in, such as "Executing" or "Revisiting"
+            * A unique identifier for the agent
+            * A string which will combine the aforementioned properties.
+     -->
+    
+    <interval-schema>
+        <id>mobile-agent-execution</id>
+        <title>Mobile Agent Execution</title>
+        
+        <start-column>
+            <mnemonic>start</mnemonic>
+            <title>Start</title>
+            <type>start-time</type>
+        </start-column>
+        
+        <duration-column>
+            <mnemonic>duration</mnemonic>
+            <title>Duration</title>
+            <type>duration</type>
+        </duration-column>
+        
+        <!-- primary-column tags are used to inform the Custom Instruments infrastructure about
+             which columns should be indexed when performing a search through the data, in a similar
+             manner to database indexes.
+         -->
+        <primary-column>
+            <mnemonic>agent-kind</mnemonic>
+            <title>Agent Kind</title>
+            <type>string</type>
+        </primary-column>
+        
+        <column>
+            <mnemonic>agent-kind-code</mnemonic>
+            <title>Agent Kind Code</title>
+            <type>uint64</type>
+        </column>
+    
+        <column>
+            <mnemonic>state</mnemonic>
+            <title>State</title>
+            <type>state</type>
+        </column>
+        
+        <column>
+            <mnemonic>instance</mnemonic>
+            <title>Instance</title>
+            <type>address</type>
+        </column>
+        
+        <column>
+            <mnemonic>stop-kind</mnemonic>
+            <title>Stop Kind</title>
+            <type>string</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity</mnemonic>
+            <title>Activity</title>
+            <type>formatted-label</type>
+        </column>
+        
+    </interval-schema>
+    
+    <modeler>
+        <id>com.apple.mobileagents.execution.modeler</id>
+        <title>Mobile Agent Execution Modeler</title>
+        <purpose>Transforms mobile agent signposts into meaningful execution data</purpose>
+        
+        <production-system>
+            <rule-path>mobile-agent-kind-knowledge.clp</rule-path>
+            <rule-path>mobile-agent-concepts.clp</rule-path>
+            <rule-path>mobile-agent-kind-code-resolution.clp</rule-path>
+            <rule-path>mobile-agent-modeling.clp</rule-path>
+            <rule-path>mobile-agent-recording.clp</rule-path>
+        </production-system>
+        
+        <output>
+            <schema-ref>mobile-agent-execution</schema-ref>
+            <required-input>
+                <schema-ref>os-signpost</schema-ref>
+                <attribute>
+                    <name>category</name>
+                    <string>Mobile Agent</string>
+                </attribute>
+                <attribute>
+                    <name>subsystem</name>
+                    <string>com.apple.dt.utilities</string>
+                </attribute>
+            </required-input>
+        </output>
+        
+        
+    </modeler>
+    
+    <instrument>
+        <id>com.apple.dt.mobile-agents</id>
+        <title>Mobile Agent Execution Activity</title>
+        <category>Behavior</category>
+        <purpose>Tracks the execution of mobile agents.</purpose>
+        <icon>Generic</icon>
+        
+        <create-table>
+            <id>execution-table</id>
+            <schema-ref>mobile-agent-execution</schema-ref>
+        </create-table>
+        
+        
+        <graph>
+            <title>Execution</title>
+            <lane>
+                <title>Agents</title>
+                <table-ref>execution-table</table-ref>
+                <plot>
+                    <value-from>state</value-from>
+                    <label-from>activity</label-from>
+                </plot>
+            </lane>
+        </graph>
+        
+        <list>
+            <title>Execution</title>
+            <table-ref>execution-table</table-ref>
+            <column>start</column>
+            <column>duration</column>
+            <column>agent-kind</column>
+            <column>stop-kind</column>
+            <column>state</column>
+            <column>activity</column>
+        </list>
+    </instrument>
+    
+</package>

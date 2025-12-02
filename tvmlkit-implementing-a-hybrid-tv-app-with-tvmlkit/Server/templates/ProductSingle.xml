@@ -1,0 +1,16 @@
+<document>
+    <stackTemplate style="tv-scrollable-bounds-inset: 650 0 0;" binding="@theme:{theme};">
+        <background>
+            <mediaContent>
+			    <img binding="@src:{backgroundURL};"/>
+            </mediaContent>
+		</background>
+        <collectionList>
+            <banner autoHighlight="true">
+                <button style="tv-position: center">
+                    <text>Button</text>
+                </button>
+            </banner>
+        </collectionList>
+    </stackTemplate>
+</document>

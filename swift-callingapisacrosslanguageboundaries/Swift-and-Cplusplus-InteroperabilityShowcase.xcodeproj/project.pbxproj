@@ -1,0 +1,1318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E63C9A12A004A010012E7AE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E63C9A02A004A010012E7AE /* README.md */; };
+		4ED9DA2D2A00B48D00900041 /* ForestTestSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED9DA252A00B48C00900041 /* ForestTestSupport.framework */; };
+		4ED9DA342A00B48D00900041 /* ForestTestSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9DA332A00B48D00900041 /* ForestTestSupportTests.swift */; };
+		4ED9DA412A00B4BF00900041 /* Tree+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9DA402A00B4BF00900041 /* Tree+Equatable.swift */; };
+		4ED9DA452A015E1900900041 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED9DA442A015E1900900041 /* SwiftUI.framework */; };
+		4ED9DA5A2A01740F00900041 /* Forest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB34F1629FB57A500094CA3 /* Forest.framework */; };
+		FA1B5E3229FB496500D600AE /* SwiftCppInteroperabilityShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B5E3129FB496500D600AE /* SwiftCppInteroperabilityShowcaseApp.swift */; };
+		FA1B5E3429FB496500D600AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B5E3329FB496500D600AE /* ContentView.swift */; };
+		FA1B5E3629FB496600D600AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1B5E3529FB496600D600AE /* Assets.xcassets */; };
+		FA1B5E3929FB496600D600AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1B5E3829FB496600D600AE /* Preview Assets.xcassets */; };
+		FA41DDF72A02B15800B89108 /* EnchantedForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DDF62A02B15800B89108 /* EnchantedForest.swift */; };
+		FA41DE2B2A02B9EE00B89108 /* ForestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41DE2A2A02B9EE00B89108 /* ForestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA41DE2E2A02B9EE00B89108 /* ForestBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA41DE282A02B9ED00B89108 /* ForestBuilder.framework */; };
+		FA41DE2F2A02B9EE00B89108 /* ForestBuilder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA41DE282A02B9ED00B89108 /* ForestBuilder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA41DE342A02BA0D00B89108 /* MagicForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41DE332A02BA0D00B89108 /* MagicForest.swift */; };
+		FA41DE372A02BDB800B89108 /* MagicForestBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA41DE352A02BDB800B89108 /* MagicForestBuilder.mm */; };
+		FA41DE382A02BDB800B89108 /* MagicForestBuilder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FA41DE362A02BDB800B89108 /* MagicForestBuilder.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA41DE3B2A02BDFD00B89108 /* Forest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB34F1629FB57A500094CA3 /* Forest.framework */; };
+		FA68316B29FB5A3800DCF517 /* Forest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA68316929FB5A3800DCF517 /* Forest.cpp */; };
+		FA68316C29FB5A3800DCF517 /* Forest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FA68316A29FB5A3800DCF517 /* Forest.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA68316E29FB5B0200DCF517 /* IntrusiveRefCounted.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FA68316D29FB5AFE00DCF517 /* IntrusiveRefCounted.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA68317029FB5F6F00DCF517 /* Forest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB34F1629FB57A500094CA3 /* Forest.framework */; };
+		FA68317229FB632700DCF517 /* Tree+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68317129FB632700DCF517 /* Tree+UI.swift */; };
+		FAB34F1929FB57A500094CA3 /* Forest.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB34F1829FB57A500094CA3 /* Forest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAB34F1C29FB57A500094CA3 /* Forest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB34F1629FB57A500094CA3 /* Forest.framework */; };
+		FAB34F1D29FB57A500094CA3 /* Forest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAB34F1629FB57A500094CA3 /* Forest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAB34F2329FB57B900094CA3 /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB34F2129FB57B900094CA3 /* Tree.cpp */; };
+		FAB34F2429FB57B900094CA3 /* Tree.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FAB34F2229FB57B900094CA3 /* Tree.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAB34F3029FB591A00094CA3 /* ForestUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB34F2A29FB591900094CA3 /* ForestUI.framework */; };
+		FAB34F3129FB591A00094CA3 /* ForestUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAB34F2A29FB591900094CA3 /* ForestUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAB34F3629FB592600094CA3 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34F3529FB592600094CA3 /* ForestView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ED9DA2E2A00B48D00900041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED9DA242A00B48C00900041;
+			remoteInfo = ForestTestSupport;
+		};
+		4ED9DA302A00B48D00900041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1B5E2D29FB496500D600AE;
+			remoteInfo = "Swift-and-Cplusplus-InteroperabilityShowcase";
+		};
+		4ED9DA362A00B48D00900041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED9DA242A00B48C00900041;
+			remoteInfo = ForestTestSupport;
+		};
+		FA41DE2C2A02B9EE00B89108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA41DE272A02B9ED00B89108;
+			remoteInfo = ForestBuilder;
+		};
+		FA41DE392A02BDF900B89108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB34F1529FB57A500094CA3;
+			remoteInfo = Forest;
+		};
+		FA41DE3C2A02F0EC00B89108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB34F1529FB57A500094CA3;
+			remoteInfo = Forest;
+		};
+		FAB34F1A29FB57A500094CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB34F1529FB57A500094CA3;
+			remoteInfo = Forest;
+		};
+		FAB34F2E29FB591A00094CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB34F2929FB591900094CA3;
+			remoteInfo = ForestRenderer;
+		};
+		FAB34F3729FB597C00094CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1B5E2629FB496500D600AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB34F1529FB57A500094CA3;
+			remoteInfo = Forest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAB34F0929FB535C00094CA3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA41DE2F2A02B9EE00B89108 /* ForestBuilder.framework in Embed Frameworks */,
+				FAB34F3129FB591A00094CA3 /* ForestUI.framework in Embed Frameworks */,
+				FAB34F1D29FB57A500094CA3 /* Forest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E63C9A02A004A010012E7AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4ED9DA252A00B48C00900041 /* ForestTestSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForestTestSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED9DA2C2A00B48D00900041 /* ForestTestSupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForestTestSupportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED9DA332A00B48D00900041 /* ForestTestSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestTestSupportTests.swift; sourceTree = "<group>"; };
+		4ED9DA402A00B4BF00900041 /* Tree+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tree+Equatable.swift"; sourceTree = "<group>"; };
+		4ED9DA442A015E1900900041 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		F5BF47F5811E3946B13A446E /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		FA1B5E2E29FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-and-Cplusplus-InteroperabilityShowcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1B5E3129FB496500D600AE /* SwiftCppInteroperabilityShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCppInteroperabilityShowcaseApp.swift; sourceTree = "<group>"; };
+		FA1B5E3329FB496500D600AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA1B5E3529FB496600D600AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA1B5E3829FB496600D600AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA1B5E3A29FB496600D600AE /* Swift_and_Cplusplus_InteroperabilityShowcase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swift_and_Cplusplus_InteroperabilityShowcase.entitlements; sourceTree = "<group>"; };
+		FA41DDF62A02B15800B89108 /* EnchantedForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchantedForest.swift; sourceTree = "<group>"; };
+		FA41DE282A02B9ED00B89108 /* ForestBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForestBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA41DE2A2A02B9EE00B89108 /* ForestBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForestBuilder.h; sourceTree = "<group>"; };
+		FA41DE332A02BA0D00B89108 /* MagicForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicForest.swift; sourceTree = "<group>"; };
+		FA41DE352A02BDB800B89108 /* MagicForestBuilder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MagicForestBuilder.mm; sourceTree = "<group>"; };
+		FA41DE362A02BDB800B89108 /* MagicForestBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MagicForestBuilder.hpp; sourceTree = "<group>"; };
+		FA68316929FB5A3800DCF517 /* Forest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Forest.cpp; sourceTree = "<group>"; };
+		FA68316A29FB5A3800DCF517 /* Forest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Forest.hpp; sourceTree = "<group>"; };
+		FA68316D29FB5AFE00DCF517 /* IntrusiveRefCounted.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IntrusiveRefCounted.hpp; sourceTree = "<group>"; };
+		FA68317129FB632700DCF517 /* Tree+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tree+UI.swift"; sourceTree = "<group>"; };
+		FAB34F1629FB57A500094CA3 /* Forest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Forest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB34F1829FB57A500094CA3 /* Forest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Forest.h; sourceTree = "<group>"; };
+		FAB34F2129FB57B900094CA3 /* Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tree.cpp; sourceTree = "<group>"; };
+		FAB34F2229FB57B900094CA3 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
+		FAB34F2A29FB591900094CA3 /* ForestUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForestUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB34F3529FB592600094CA3 /* ForestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ED9DA222A00B48C00900041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED9DA292A00B48D00900041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED9DA5A2A01740F00900041 /* Forest.framework in Frameworks */,
+				4ED9DA2D2A00B48D00900041 /* ForestTestSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1B5E2B29FB496500D600AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED9DA452A015E1900900041 /* SwiftUI.framework in Frameworks */,
+				FA41DE2E2A02B9EE00B89108 /* ForestBuilder.framework in Frameworks */,
+				FAB34F3029FB591A00094CA3 /* ForestUI.framework in Frameworks */,
+				FAB34F1C29FB57A500094CA3 /* Forest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA41DE252A02B9ED00B89108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA41DE3B2A02BDFD00B89108 /* Forest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F1329FB57A500094CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F2729FB591900094CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA68317029FB5F6F00DCF517 /* Forest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B99993E0FE2C67B6ECF59AA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		4ED9DA262A00B48D00900041 /* ForestTestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				4ED9DA402A00B4BF00900041 /* Tree+Equatable.swift */,
+			);
+			path = ForestTestSupport;
+			sourceTree = "<group>";
+		};
+		4ED9DA322A00B48D00900041 /* ForestTestSupportTests */ = {
+			isa = PBXGroup;
+			children = (
+				4ED9DA332A00B48D00900041 /* ForestTestSupportTests.swift */,
+			);
+			path = ForestTestSupportTests;
+			sourceTree = "<group>";
+		};
+		A93A297DF33F02D182C43436 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				F5BF47F5811E3946B13A446E /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		FA1B5E2529FB496500D600AE = {
+			isa = PBXGroup;
+			children = (
+				1E63C9A02A004A010012E7AE /* README.md */,
+				FA1B5E3029FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase */,
+				FAB34F1729FB57A500094CA3 /* Forest */,
+				FA41DE292A02B9EE00B89108 /* ForestBuilder */,
+				FAB34F2B29FB591A00094CA3 /* ForestUI */,
+				4ED9DA262A00B48D00900041 /* ForestTestSupport */,
+				4ED9DA322A00B48D00900041 /* ForestTestSupportTests */,
+				FA1B5E2F29FB496500D600AE /* Products */,
+				FA68316F29FB5F6F00DCF517 /* Frameworks */,
+				3B99993E0FE2C67B6ECF59AA /* Configuration */,
+				A93A297DF33F02D182C43436 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1B5E2F29FB496500D600AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B5E2E29FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase.app */,
+				FAB34F1629FB57A500094CA3 /* Forest.framework */,
+				FAB34F2A29FB591900094CA3 /* ForestUI.framework */,
+				4ED9DA252A00B48C00900041 /* ForestTestSupport.framework */,
+				4ED9DA2C2A00B48D00900041 /* ForestTestSupportTests.xctest */,
+				FA41DE282A02B9ED00B89108 /* ForestBuilder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1B5E3029FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B5E3129FB496500D600AE /* SwiftCppInteroperabilityShowcaseApp.swift */,
+				FA1B5E3329FB496500D600AE /* ContentView.swift */,
+				FA41DDF62A02B15800B89108 /* EnchantedForest.swift */,
+				FA1B5E3529FB496600D600AE /* Assets.xcassets */,
+				FA1B5E3A29FB496600D600AE /* Swift_and_Cplusplus_InteroperabilityShowcase.entitlements */,
+				FA1B5E3729FB496600D600AE /* Preview Content */,
+			);
+			path = "Swift-and-Cplusplus-InteroperabilityShowcase";
+			sourceTree = "<group>";
+		};
+		FA1B5E3729FB496600D600AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B5E3829FB496600D600AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA41DE292A02B9EE00B89108 /* ForestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				FA41DE2A2A02B9EE00B89108 /* ForestBuilder.h */,
+				FA41DE332A02BA0D00B89108 /* MagicForest.swift */,
+				FA41DE352A02BDB800B89108 /* MagicForestBuilder.mm */,
+				FA41DE362A02BDB800B89108 /* MagicForestBuilder.hpp */,
+			);
+			path = ForestBuilder;
+			sourceTree = "<group>";
+		};
+		FA68316F29FB5F6F00DCF517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ED9DA442A015E1900900041 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAB34F1729FB57A500094CA3 /* Forest */ = {
+			isa = PBXGroup;
+			children = (
+				FAB34F1829FB57A500094CA3 /* Forest.h */,
+				FAB34F2129FB57B900094CA3 /* Tree.cpp */,
+				FAB34F2229FB57B900094CA3 /* Tree.hpp */,
+				FA68316929FB5A3800DCF517 /* Forest.cpp */,
+				FA68316A29FB5A3800DCF517 /* Forest.hpp */,
+				FA68316D29FB5AFE00DCF517 /* IntrusiveRefCounted.hpp */,
+			);
+			path = Forest;
+			sourceTree = "<group>";
+		};
+		FAB34F2B29FB591A00094CA3 /* ForestUI */ = {
+			isa = PBXGroup;
+			children = (
+				FAB34F3529FB592600094CA3 /* ForestView.swift */,
+				FA68317129FB632700DCF517 /* Tree+UI.swift */,
+			);
+			path = ForestUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4ED9DA202A00B48C00900041 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA41DE232A02B9ED00B89108 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA41DE2B2A02B9EE00B89108 /* ForestBuilder.h in Headers */,
+				FA41DE382A02BDB800B89108 /* MagicForestBuilder.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F1129FB57A500094CA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA68316C29FB5A3800DCF517 /* Forest.hpp in Headers */,
+				FAB34F2429FB57B900094CA3 /* Tree.hpp in Headers */,
+				FAB34F1929FB57A500094CA3 /* Forest.h in Headers */,
+				FA68316E29FB5B0200DCF517 /* IntrusiveRefCounted.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F2529FB591900094CA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4ED9DA242A00B48C00900041 /* ForestTestSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED9DA3E2A00B48D00900041 /* Build configuration list for PBXNativeTarget "ForestTestSupport" */;
+			buildPhases = (
+				4ED9DA202A00B48C00900041 /* Headers */,
+				4ED9DA212A00B48C00900041 /* Sources */,
+				4ED9DA222A00B48C00900041 /* Frameworks */,
+				4ED9DA232A00B48C00900041 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA41DE3D2A02F0EC00B89108 /* PBXTargetDependency */,
+			);
+			name = ForestTestSupport;
+			productName = ForestTestSupport;
+			productReference = 4ED9DA252A00B48C00900041 /* ForestTestSupport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4ED9DA2B2A00B48D00900041 /* ForestTestSupportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED9DA3F2A00B48D00900041 /* Build configuration list for PBXNativeTarget "ForestTestSupportTests" */;
+			buildPhases = (
+				4ED9DA282A00B48D00900041 /* Sources */,
+				4ED9DA292A00B48D00900041 /* Frameworks */,
+				4ED9DA2A2A00B48D00900041 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED9DA2F2A00B48D00900041 /* PBXTargetDependency */,
+				4ED9DA312A00B48D00900041 /* PBXTargetDependency */,
+			);
+			name = ForestTestSupportTests;
+			productName = ForestTestSupportTests;
+			productReference = 4ED9DA2C2A00B48D00900041 /* ForestTestSupportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA1B5E2D29FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1B5E3D29FB496600D600AE /* Build configuration list for PBXNativeTarget "Swift-and-Cplusplus-InteroperabilityShowcase" */;
+			buildPhases = (
+				FA1B5E2A29FB496500D600AE /* Sources */,
+				FA1B5E2B29FB496500D600AE /* Frameworks */,
+				FA1B5E2C29FB496500D600AE /* Resources */,
+				FAB34F0929FB535C00094CA3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB34F1B29FB57A500094CA3 /* PBXTargetDependency */,
+				FAB34F2F29FB591A00094CA3 /* PBXTargetDependency */,
+				4ED9DA372A00B48D00900041 /* PBXTargetDependency */,
+				FA41DE2D2A02B9EE00B89108 /* PBXTargetDependency */,
+			);
+			name = "Swift-and-Cplusplus-InteroperabilityShowcase";
+			productName = "Swift-and-Cplusplus-InteroperabilityShowcase";
+			productReference = FA1B5E2E29FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA41DE272A02B9ED00B89108 /* ForestBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA41DE302A02B9EF00B89108 /* Build configuration list for PBXNativeTarget "ForestBuilder" */;
+			buildPhases = (
+				FA41DE232A02B9ED00B89108 /* Headers */,
+				FA41DE242A02B9ED00B89108 /* Sources */,
+				FA41DE252A02B9ED00B89108 /* Frameworks */,
+				FA41DE262A02B9ED00B89108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA41DE3A2A02BDF900B89108 /* PBXTargetDependency */,
+			);
+			name = ForestBuilder;
+			productName = ForestBuilder;
+			productReference = FA41DE282A02B9ED00B89108 /* ForestBuilder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAB34F1529FB57A500094CA3 /* Forest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB34F1E29FB57A500094CA3 /* Build configuration list for PBXNativeTarget "Forest" */;
+			buildPhases = (
+				FAB34F1129FB57A500094CA3 /* Headers */,
+				FAB34F1229FB57A500094CA3 /* Sources */,
+				FAB34F1329FB57A500094CA3 /* Frameworks */,
+				FAB34F1429FB57A500094CA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Forest;
+			productName = Forest;
+			productReference = FAB34F1629FB57A500094CA3 /* Forest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAB34F2929FB591900094CA3 /* ForestUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB34F3229FB591A00094CA3 /* Build configuration list for PBXNativeTarget "ForestUI" */;
+			buildPhases = (
+				FAB34F2529FB591900094CA3 /* Headers */,
+				FAB34F2629FB591900094CA3 /* Sources */,
+				FAB34F2729FB591900094CA3 /* Frameworks */,
+				FAB34F2829FB591900094CA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB34F3829FB597C00094CA3 /* PBXTargetDependency */,
+			);
+			name = ForestUI;
+			productName = ForestRenderer;
+			productReference = FAB34F2A29FB591900094CA3 /* ForestUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1B5E2629FB496500D600AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					4ED9DA242A00B48C00900041 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					4ED9DA2B2A00B48D00900041 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FA1B5E2D29FB496500D600AE;
+					};
+					FA1B5E2D29FB496500D600AE = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FA41DE272A02B9ED00B89108 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					FAB34F1529FB57A500094CA3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FAB34F2929FB591900094CA3 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = FA1B5E2929FB496500D600AE /* Build configuration list for PBXProject "Swift-and-Cplusplus-InteroperabilityShowcase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA1B5E2529FB496500D600AE;
+			productRefGroup = FA1B5E2F29FB496500D600AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1B5E2D29FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase */,
+				FAB34F1529FB57A500094CA3 /* Forest */,
+				FAB34F2929FB591900094CA3 /* ForestUI */,
+				4ED9DA242A00B48C00900041 /* ForestTestSupport */,
+				4ED9DA2B2A00B48D00900041 /* ForestTestSupportTests */,
+				FA41DE272A02B9ED00B89108 /* ForestBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ED9DA232A00B48C00900041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED9DA2A2A00B48D00900041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1B5E2C29FB496500D600AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E63C9A12A004A010012E7AE /* README.md in Resources */,
+				FA1B5E3929FB496600D600AE /* Preview Assets.xcassets in Resources */,
+				FA1B5E3629FB496600D600AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA41DE262A02B9ED00B89108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F1429FB57A500094CA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F2829FB591900094CA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ED9DA212A00B48C00900041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED9DA412A00B4BF00900041 /* Tree+Equatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED9DA282A00B48D00900041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED9DA342A00B48D00900041 /* ForestTestSupportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1B5E2A29FB496500D600AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1B5E3429FB496500D600AE /* ContentView.swift in Sources */,
+				FA1B5E3229FB496500D600AE /* SwiftCppInteroperabilityShowcaseApp.swift in Sources */,
+				FA41DDF72A02B15800B89108 /* EnchantedForest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA41DE242A02B9ED00B89108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA41DE372A02BDB800B89108 /* MagicForestBuilder.mm in Sources */,
+				FA41DE342A02BA0D00B89108 /* MagicForest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F1229FB57A500094CA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA68316B29FB5A3800DCF517 /* Forest.cpp in Sources */,
+				FAB34F2329FB57B900094CA3 /* Tree.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB34F2629FB591900094CA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB34F3629FB592600094CA3 /* ForestView.swift in Sources */,
+				FA68317229FB632700DCF517 /* Tree+UI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ED9DA2F2A00B48D00900041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED9DA242A00B48C00900041 /* ForestTestSupport */;
+			targetProxy = 4ED9DA2E2A00B48D00900041 /* PBXContainerItemProxy */;
+		};
+		4ED9DA312A00B48D00900041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1B5E2D29FB496500D600AE /* Swift-and-Cplusplus-InteroperabilityShowcase */;
+			targetProxy = 4ED9DA302A00B48D00900041 /* PBXContainerItemProxy */;
+		};
+		4ED9DA372A00B48D00900041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED9DA242A00B48C00900041 /* ForestTestSupport */;
+			targetProxy = 4ED9DA362A00B48D00900041 /* PBXContainerItemProxy */;
+		};
+		FA41DE2D2A02B9EE00B89108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA41DE272A02B9ED00B89108 /* ForestBuilder */;
+			targetProxy = FA41DE2C2A02B9EE00B89108 /* PBXContainerItemProxy */;
+		};
+		FA41DE3A2A02BDF900B89108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB34F1529FB57A500094CA3 /* Forest */;
+			targetProxy = FA41DE392A02BDF900B89108 /* PBXContainerItemProxy */;
+		};
+		FA41DE3D2A02F0EC00B89108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB34F1529FB57A500094CA3 /* Forest */;
+			targetProxy = FA41DE3C2A02F0EC00B89108 /* PBXContainerItemProxy */;
+		};
+		FAB34F1B29FB57A500094CA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB34F1529FB57A500094CA3 /* Forest */;
+			targetProxy = FAB34F1A29FB57A500094CA3 /* PBXContainerItemProxy */;
+		};
+		FAB34F2F29FB591A00094CA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB34F2929FB591900094CA3 /* ForestUI */;
+			targetProxy = FAB34F2E29FB591A00094CA3 /* PBXContainerItemProxy */;
+		};
+		FAB34F3829FB597C00094CA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB34F1529FB57A500094CA3 /* Forest */;
+			targetProxy = FAB34F3729FB597C00094CA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4ED9DA3A2A00B48D00900041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestTestSupport${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4ED9DA3B2A00B48D00900041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestTestSupport${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4ED9DA3C2A00B48D00900041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestTestSupportTests${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-and-Cplusplus-InteroperabilityShowcase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-and-Cplusplus-InteroperabilityShowcase";
+			};
+			name = Debug;
+		};
+		4ED9DA3D2A00B48D00900041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestTestSupportTests${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-and-Cplusplus-InteroperabilityShowcase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-and-Cplusplus-InteroperabilityShowcase";
+			};
+			name = Release;
+		};
+		FA1B5E3B29FB496600D600AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA1B5E3C29FB496600D600AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FA1B5E3E29FB496600D600AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swift-and-Cplusplus-InteroperabilityShowcase/Swift_and_Cplusplus_InteroperabilityShowcase.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift-and-Cplusplus-InteroperabilityShowcase/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Swift-and-Cplusplus-InteroperabilityShowcase${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA1B5E3F29FB496600D600AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swift-and-Cplusplus-InteroperabilityShowcase/Swift_and_Cplusplus_InteroperabilityShowcase.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift-and-Cplusplus-InteroperabilityShowcase/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Swift-and-Cplusplus-InteroperabilityShowcase${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FA41DE312A02B9EF00B89108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = (
+					"-Wl,-hidden-lswiftCxx",
+					"-Wl,-hidden-lswiftCxxStdlib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA41DE322A02B9EF00B89108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = (
+					"-Wl,-hidden-lswiftCxx",
+					"-Wl,-hidden-lswiftCxxStdlib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAB34F1F29FB57A500094CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Forest${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAB34F2029FB57A500094CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Forest${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAB34F3329FB591A00094CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = (
+					"-Wl,-hidden-lswiftCxxStdlib",
+					"-Wl,-hidden-lswiftCxx",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestRenderer${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAB34F3429FB591A00094CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A104E94EBBCD231F0720AC4 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = (
+					"-Wl,-hidden-lswiftCxxStdlib",
+					"-Wl,-hidden-lswiftCxx",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ForestRenderer${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ED9DA3E2A00B48D00900041 /* Build configuration list for PBXNativeTarget "ForestTestSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED9DA3A2A00B48D00900041 /* Debug */,
+				4ED9DA3B2A00B48D00900041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED9DA3F2A00B48D00900041 /* Build configuration list for PBXNativeTarget "ForestTestSupportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED9DA3C2A00B48D00900041 /* Debug */,
+				4ED9DA3D2A00B48D00900041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1B5E2929FB496500D600AE /* Build configuration list for PBXProject "Swift-and-Cplusplus-InteroperabilityShowcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1B5E3B29FB496600D600AE /* Debug */,
+				FA1B5E3C29FB496600D600AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1B5E3D29FB496600D600AE /* Build configuration list for PBXNativeTarget "Swift-and-Cplusplus-InteroperabilityShowcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1B5E3E29FB496600D600AE /* Debug */,
+				FA1B5E3F29FB496600D600AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA41DE302A02B9EF00B89108 /* Build configuration list for PBXNativeTarget "ForestBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA41DE312A02B9EF00B89108 /* Debug */,
+				FA41DE322A02B9EF00B89108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB34F1E29FB57A500094CA3 /* Build configuration list for PBXNativeTarget "Forest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB34F1F29FB57A500094CA3 /* Debug */,
+				FAB34F2029FB57A500094CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB34F3229FB591A00094CA3 /* Build configuration list for PBXNativeTarget "ForestUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB34F3329FB591A00094CA3 /* Debug */,
+				FAB34F3429FB591A00094CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA1B5E2629FB496500D600AE /* Project object */;
+}

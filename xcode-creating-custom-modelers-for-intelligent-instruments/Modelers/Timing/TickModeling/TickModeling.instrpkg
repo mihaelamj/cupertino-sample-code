@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ This instrpkg file uses the tick schema to demonstrate how timing intervals can be collected in your instrument.
+
+ -->
+<package>
+	<id>com.apple.samplecode.TickModeling</id>
+	<title>TickModeling</title>
+	<owner>
+		<name>Apple Inc.</name>
+	</owner>
+    
+    <!-- This instruments distribution package doesn't define any modelers. Instead, it serves to demonstrate
+         a schema that you can utilize within your instruments to keep track of timing ticks. Just as with the
+         MobileAgent instruments in this Xcode project, schemas that aren't defined by you need to be imported.
+         In this case, the tick schema is imported using the <import-schema> XML tag.
+     
+         Similarly to the DataFusionModeling example, this schema also has attributes that can be parameterized.
+         These attributes can be seen by opening the Instruments Inspector and navigating to the "Schemas" tab.
+         For more information on how to specify these attributes, please refer to the DataFusionModeling group
+         in this Xcode project and study `MobileAgentDataFusion.instrpkg`.
+     
+     -->
+    <import-schema>tick</import-schema>
+
+    
+    <!--
+     No custom schemas or modelers are defined here because this example doesn't aim to manipulate the tick
+     data. The tick values will simply be plotted directly. Note that this does not preclude the ability to write
+     custom modelers that utilize the tick schema.
+     
+     In the same way that the MobileAgent modelers use os-signpost in their rules, a modeler can be created that uses
+     tick.
+    -->
+    
+    <instrument>
+        <id>com.apple.samplecode.tickmodeling.instrument</id>
+        <title>Ticks</title>
+        <category>Behavior</category>
+        <purpose>Instrument drawing ticks every 10ms</purpose>
+        <icon>Generic</icon>
+        
+        <create-table>
+            <id>tick-table</id>
+            <schema-ref>tick</schema-ref>
+        </create-table>
+        
+        <graph>
+            <title>Ticks</title>
+            <lane>
+                <title>Ticks</title>
+                <table-ref>tick-table</table-ref>
+                
+                <plot>
+                    <value-from>time</value-from>
+                </plot>
+            </lane>
+        </graph>
+        
+        <list>
+            <title>Ticks</title>
+            <table-ref>tick-table</table-ref>
+            <column>time</column>
+        </list>
+    </instrument>
+</package>

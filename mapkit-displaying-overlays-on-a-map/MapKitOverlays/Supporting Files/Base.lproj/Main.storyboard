@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fVr-dT-z7W">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="PKO-2Q-Nel">
+            <objects>
+                <viewController id="83o-91-kPT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RMk-mK-iNa">
+                        <rect key="frame" x="0.0" y="0.0" width="1045.5" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lme-jW-hEQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0a-NC-eEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="346"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sPf-yV-a3A">
+            <objects>
+                <navigationController id="yWr-bO-pze" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ffQ-w4-o7z">
+                        <rect key="frame" x="0.0" y="24" width="420" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="g76-eh-YaN" kind="relationship" relationship="rootViewController" id="mwr-a7-aka"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azp-81-IK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="-875"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="5AM-rG-Cvw">
+            <objects>
+                <splitViewController allowDoubleColumnStyle="YES" preferredDisplayMode="beside" behavior="tile" presentsWithGesture="NO" primaryBackgroundStyle="sidebar" id="fVr-dT-z7W" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="yWr-bO-pze" kind="relationship" relationship="masterViewController" id="c2H-iU-AN5"/>
+                        <segue destination="83o-91-kPT" kind="relationship" relationship="detailViewController" id="Rzy-jS-70a"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CD5-ow-gW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="-875"/>
+        </scene>
+        <!--MapKit Overlays-->
+        <scene sceneID="Zi0-b0-hrs">
+            <objects>
+                <tableViewController id="g76-eh-YaN" customClass="PrimaryColumnTableViewController" customModule="MapKitOverlays" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="6G5-P2-6oI">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="Lines &amp; Shapes" id="ZDM-Pe-6lm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="J7T-fC-ND3">
+                                        <rect key="frame" x="116" y="55.5" width="288" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J7T-fC-ND3" id="uBD-V0-FRY">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Circle" secondaryText="" image="circle" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="circle" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="52g-xx-oTs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Knk-QT-56W">
+                                        <rect key="frame" x="116" y="100" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Knk-QT-56W" id="L2q-uX-aW2">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Polyline" secondaryText="Line Containing Multiple Points" image="line.diagonal" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="polyline" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="Z3U-nW-r1F"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IS9-w8-WLQ">
+                                        <rect key="frame" x="116" y="157.5" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IS9-w8-WLQ" id="sct-bG-rJX">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Geodesic Polyline" secondaryText="Line Following Earth's Curvature" image="globe" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="geodesicPolyline" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="3Jp-FF-VeW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="J2p-Sb-Jml">
+                                        <rect key="frame" x="116" y="215" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J2p-Sb-Jml" id="jg9-ZO-n5N">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Polygon" secondaryText="Line Segments Form Closed Shape" image="square" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="closedPolygon" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="5FJ-9K-Tgz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="J3S-2l-nyW">
+                                        <rect key="frame" x="116" y="272.5" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J3S-2l-nyW" id="Y9V-9p-YLK">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Polygon" secondaryText="Line Segments Crossing Each Other" image="skew" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="crossedPolygon" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="EXX-oe-g82"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="r5j-Kc-35A">
+                                        <rect key="frame" x="116" y="330" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r5j-Kc-35A" id="NE7-m9-qlI">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Polygon" secondaryText="Containing Interior Polygons" image="scissors" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="interiorPolygon" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="ZLj-nE-3TQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Customized Rendering" id="sOy-go-dgS">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UpD-97-jqv">
+                                        <rect key="frame" x="116" y="443.5" width="288" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UpD-97-jqv" id="1Aa-s3-735">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Gradient Polyline" secondaryText="" image="paintpalette" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="gradientPolyline" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="Ck9-wI-XxX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kzc-66-kpF">
+                                        <rect key="frame" x="116" y="488" width="288" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kzc-66-kpF" id="GBn-Mt-oXP">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Multi-Polygon Renderer" secondaryText="" image="square.filled.on.square" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="multiPolygonRenderer" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="RFG-e2-oQ7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Q5A-FU-HEy">
+                                        <rect key="frame" x="116" y="532.5" width="288" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q5A-FU-HEy" id="S4z-la-KwT">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Blend Modes" secondaryText="" image="square.3.layers.3d.bottom.filled" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="blendModes" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="rXG-XD-Yny"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QGM-TG-5Wl">
+                                        <rect key="frame" x="116" y="577" width="288" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QGM-TG-5Wl" id="lCq-cc-VhL">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Custom Renderer" secondaryText="" image="compass.drawing" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="customRenderer" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="0LL-oJ-2t4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Tile Overlays" id="Oc3-2l-I0f">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PBn-mf-K28">
+                                        <rect key="frame" x="116" y="677.5" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PBn-mf-K28" id="o8V-AC-jgv">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Tile Coordinates" secondaryText="Discover the tile coordinate system" image="location.square" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="tileCoordinates" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="ocR-FF-gov"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pIH-uD-LIu">
+                                        <rect key="frame" x="116" y="735" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pIH-uD-LIu" id="Jf1-9v-oub">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Load Tiles on Device" secondaryText="Loading tiles bundled with the app" image="internaldrive" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="localTiles" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="wYr-ag-tMS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dDG-wG-YJn">
+                                        <rect key="frame" x="116" y="792.5" width="288" height="57.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dDG-wG-YJn" id="PJl-nj-834">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Load Tiles from Server" secondaryText="Using MapKit's loading implementation" image="network" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="serverTiles" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="sNl-Un-j4d"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4Hp-pL-lAq">
+                                        <rect key="frame" x="116" y="850" width="288" height="73.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Hp-pL-lAq" id="25L-is-ZkX">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="73.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <listContentConfiguration key="contentConfiguration" text="Customized Tile Loading" secondaryText="Fine tune how tiles are loaded with a customized loading implementation" image="server.rack" catalog="system" imageToTextPadding="10"/>
+                                        <connections>
+                                            <segue destination="H93-la-raN" kind="custom" identifier="customTileLoading" customClass="SplitViewDetailSegue" customModule="MapKitOverlays" customModuleProvider="target" id="Cqx-AZ-Gpd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="g76-eh-YaN" id="AtN-nr-qF8"/>
+                            <outlet property="delegate" destination="g76-eh-YaN" id="9O5-eU-11D"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="MapKit Overlays" id="TFL-f6-7hz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q69-F1-kdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-875"/>
+        </scene>
+        <!--Overlay Example-->
+        <scene sceneID="gja-lY-TC3">
+            <objects>
+                <viewController id="di1-xO-kGH" customClass="OverlayViewController" customModule="MapKitOverlays" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mT4-6N-Nvl">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwK-2P-hZY">
+                                <rect key="frame" x="0.0" y="74" width="1366" height="950"/>
+                                <standardMapConfiguration key="preferredConfiguration" emphasisStyle="muted"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dex-u2-scq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NwK-2P-hZY" secondAttribute="bottom" id="MHZ-l7-Uwl"/>
+                            <constraint firstItem="NwK-2P-hZY" firstAttribute="top" secondItem="dex-u2-scq" secondAttribute="top" id="P3S-qL-WA0"/>
+                            <constraint firstAttribute="trailing" secondItem="NwK-2P-hZY" secondAttribute="trailing" id="e9d-yN-VW4"/>
+                            <constraint firstItem="NwK-2P-hZY" firstAttribute="leading" secondItem="mT4-6N-Nvl" secondAttribute="leading" id="v4N-qr-XjV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Overlay Example" id="G6y-Y9-yHH">
+                        <barButtonItem key="rightBarButtonItem" image="square.3.layers.3d" catalog="system" id="YXP-Dc-EMJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="layerMenuButton" destination="YXP-Dc-EMJ" id="RwN-kT-Q1C"/>
+                        <outlet property="mapView" destination="NwK-2P-hZY" id="upK-zK-I1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipe-vv-dYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3546" y="-875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dgq-xp-bJb">
+            <objects>
+                <navigationController id="H93-la-raN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SiZ-qZ-Pn1">
+                        <rect key="frame" x="0.0" y="24" width="1366" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="di1-xO-kGH" kind="relationship" relationship="rootViewController" id="ny3-gF-SPi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQa-Ds-Qfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791" y="-875"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cqx-AZ-Gpd"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="compass.drawing" catalog="system" width="99" height="128"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="internaldrive" catalog="system" width="128" height="88"/>
+        <image name="line.diagonal" catalog="system" width="128" height="113"/>
+        <image name="location.square" catalog="system" width="128" height="114"/>
+        <image name="network" catalog="system" width="128" height="123"/>
+        <image name="paintpalette" catalog="system" width="128" height="105"/>
+        <image name="scissors" catalog="system" width="128" height="92"/>
+        <image name="server.rack" catalog="system" width="128" height="93"/>
+        <image name="skew" catalog="system" width="128" height="108"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <image name="square.3.layers.3d" catalog="system" width="128" height="125"/>
+        <image name="square.3.layers.3d.bottom.filled" catalog="system" width="128" height="125"/>
+        <image name="square.filled.on.square" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

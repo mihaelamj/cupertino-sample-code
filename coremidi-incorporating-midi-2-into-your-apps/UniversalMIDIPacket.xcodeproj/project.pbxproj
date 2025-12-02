@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		390076FF24B617EB00C4FE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390076FE24B617EB00C4FE1B /* Assets.xcassets */; };
+		3900772524B61AA100C4FE1B /* MIDIAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900770E24B61AA000C4FE1B /* MIDIAttributes.swift */; };
+		3900772B24B61AA100C4FE1B /* MIDIStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900771024B61AA000C4FE1B /* MIDIStatus.swift */; };
+		3900772E24B61AA100C4FE1B /* PacketChunkDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900771124B61AA000C4FE1B /* PacketChunkDescription.swift */; };
+		3900773724B61AA100C4FE1B /* MIDIAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3900771824B61AA100C4FE1B /* MIDIAdapter.mm */; };
+		3900774024B61AA100C4FE1B /* Partition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900771C24B61AA100C4FE1B /* Partition.swift */; };
+		3900776E24B61FF600C4FE1B /* PacketInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776024B61FF500C4FE1B /* PacketInspector.swift */; };
+		3900776F24B61FF600C4FE1B /* PacketSenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776124B61FF500C4FE1B /* PacketSenderView.swift */; };
+		3900777024B61FF600C4FE1B /* IndexPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776424B61FF500C4FE1B /* IndexPanel.swift */; };
+		3900777124B61FF600C4FE1B /* SliderPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776524B61FF500C4FE1B /* SliderPanel.swift */; };
+		3900777224B61FF600C4FE1B /* TogglePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776624B61FF500C4FE1B /* TogglePanel.swift */; };
+		3900777324B61FF600C4FE1B /* NamedIndexPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776724B61FF500C4FE1B /* NamedIndexPanel.swift */; };
+		3900777524B61FF600C4FE1B /* PacketBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776924B61FF500C4FE1B /* PacketBuilderView.swift */; };
+		3900777824B61FF600C4FE1B /* PacketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776D24B61FF500C4FE1B /* PacketModel.swift */; };
+		3900777A24B6204100C4FE1B /* PacketSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900777924B6204100C4FE1B /* PacketSender.swift */; };
+		391E1A7424BCC712009C817C /* MIDIProtocolIDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E1A7124BCC711009C817C /* MIDIProtocolIDExtensions.swift */; };
+		391E1A7824BCC755009C817C /* MIDIEndpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E1A7524BCC755009C817C /* MIDIEndpointModel.swift */; };
+		393F822124D4293B00AF2C35 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F822024D4293B00AF2C35 /* AppState.swift */; };
+		3946412024CF582D00938ECE /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946411F24CF582D00938ECE /* DataExtensions.swift */; };
+		3946412124CF582D00938ECE /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946411F24CF582D00938ECE /* DataExtensions.swift */; };
+		3946413224D06F8B00938ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3946412824D06F8B00938ECE /* Assets.xcassets */; };
+		3946413424D06F8B00938ECE /* ReceiverOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946412C24D06F8B00938ECE /* ReceiverOptions.swift */; };
+		3946413524D06F8B00938ECE /* PacketReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946412E24D06F8B00938ECE /* PacketReceiver.swift */; };
+		3946413624D06F8B00938ECE /* PacketReceiverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946413024D06F8B00938ECE /* PacketReceiverView.swift */; };
+		3946413724D06F8B00938ECE /* MIDIReceiverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946413124D06F8B00938ECE /* MIDIReceiverApp.swift */; };
+		394D97CB24D6057F00511A1A /* MIDIEndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D97CA24D6057F00511A1A /* MIDIEndpointManager.swift */; };
+		3967F6EC24C06A8E00C038C6 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DEFFDE24B6419A00FA4D12 /* LogModel.swift */; };
+		3967F6F024C06A8E00C038C6 /* MIDIStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900771024B61AA000C4FE1B /* MIDIStatus.swift */; };
+		3967F6F224C06A8E00C038C6 /* MIDIAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3900771824B61AA100C4FE1B /* MIDIAdapter.mm */; };
+		3967F6F624C06A8E00C038C6 /* MIDIEndpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E1A7524BCC755009C817C /* MIDIEndpointModel.swift */; };
+		3967F6F824C06A8E00C038C6 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DFCBA324B634FC00BD4D11 /* UIConstants.swift */; };
+		3967F6FD24C06A8E00C038C6 /* PacketChunkDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900771124B61AA000C4FE1B /* PacketChunkDescription.swift */; };
+		3967F70124C06A8E00C038C6 /* Partition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900771C24B61AA100C4FE1B /* Partition.swift */; };
+		3967F70A24C06A8E00C038C6 /* MIDIProtocolIDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E1A7124BCC711009C817C /* MIDIProtocolIDExtensions.swift */; };
+		3967F70D24C06A8E00C038C6 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DEFFDA24B640ED00FA4D12 /* LogView.swift */; };
+		3967F70E24C06A8E00C038C6 /* MIDIAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900770E24B61AA000C4FE1B /* MIDIAttributes.swift */; };
+		3967F75E24C07D4400C038C6 /* MIDISendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390076FA24B617E900C4FE1B /* MIDISendApp.swift */; };
+		3975D83E24BE09C0005DFAF0 /* PacketChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3975D83D24BE09C0005DFAF0 /* PacketChunkView.swift */; };
+		39A1123224D4408000F40E05 /* DynamicChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1123124D4408000F40E05 /* DynamicChunkView.swift */; };
+		39A1123424D440BD00F40E05 /* MIDIDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1123324D440BC00F40E05 /* MIDIDestinationView.swift */; };
+		39A1123624D4411500F40E05 /* MIDIStatusTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1123524D4411500F40E05 /* MIDIStatusTypeView.swift */; };
+		39A18F2824D448C2001BBFF4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A18F2724D448C2001BBFF4 /* AppState.swift */; };
+		39A18F2924D44ACB001BBFF4 /* PacketChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900776C24B61FF500C4FE1B /* PacketChunk.swift */; };
+		39C2688524C78E2A003EAF47 /* MIDIEventPacketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2688224C78E2A003EAF47 /* MIDIEventPacketExtensions.swift */; };
+		39C2688624C78E2A003EAF47 /* MIDIEventPacketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2688224C78E2A003EAF47 /* MIDIEventPacketExtensions.swift */; };
+		39DEFFDD24B640ED00FA4D12 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DEFFDA24B640ED00FA4D12 /* LogView.swift */; };
+		39DEFFE124B6419A00FA4D12 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DEFFDE24B6419A00FA4D12 /* LogModel.swift */; };
+		39DFCBA624B634FC00BD4D11 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DFCBA324B634FC00BD4D11 /* UIConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		390076F824B617E900C4FE1B /* UMP Send.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMP Send.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		390076FA24B617E900C4FE1B /* MIDISendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISendApp.swift; sourceTree = "<group>"; };
+		390076FE24B617EB00C4FE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3900770324B617EB00C4FE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3900770924B619BC00C4FE1B /* UMPSend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UMPSend.entitlements; sourceTree = "<group>"; };
+		3900770E24B61AA000C4FE1B /* MIDIAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIAttributes.swift; sourceTree = "<group>"; };
+		3900771024B61AA000C4FE1B /* MIDIStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIStatus.swift; sourceTree = "<group>"; };
+		3900771124B61AA000C4FE1B /* PacketChunkDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketChunkDescription.swift; sourceTree = "<group>"; };
+		3900771724B61AA100C4FE1B /* MIDIAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIAdapter.h; sourceTree = "<group>"; };
+		3900771824B61AA100C4FE1B /* MIDIAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MIDIAdapter.mm; sourceTree = "<group>"; };
+		3900771C24B61AA100C4FE1B /* Partition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partition.swift; sourceTree = "<group>"; };
+		3900776024B61FF500C4FE1B /* PacketInspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketInspector.swift; sourceTree = "<group>"; };
+		3900776124B61FF500C4FE1B /* PacketSenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketSenderView.swift; sourceTree = "<group>"; };
+		3900776424B61FF500C4FE1B /* IndexPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPanel.swift; sourceTree = "<group>"; };
+		3900776524B61FF500C4FE1B /* SliderPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderPanel.swift; sourceTree = "<group>"; };
+		3900776624B61FF500C4FE1B /* TogglePanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TogglePanel.swift; sourceTree = "<group>"; };
+		3900776724B61FF500C4FE1B /* NamedIndexPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamedIndexPanel.swift; sourceTree = "<group>"; };
+		3900776924B61FF500C4FE1B /* PacketBuilderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketBuilderView.swift; sourceTree = "<group>"; };
+		3900776C24B61FF500C4FE1B /* PacketChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketChunk.swift; sourceTree = "<group>"; };
+		3900776D24B61FF500C4FE1B /* PacketModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketModel.swift; sourceTree = "<group>"; };
+		3900777924B6204100C4FE1B /* PacketSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketSender.swift; sourceTree = "<group>"; };
+		391E1A7124BCC711009C817C /* MIDIProtocolIDExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIProtocolIDExtensions.swift; sourceTree = "<group>"; };
+		391E1A7524BCC755009C817C /* MIDIEndpointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIEndpointModel.swift; sourceTree = "<group>"; };
+		393F822024D4293B00AF2C35 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3946411F24CF582D00938ECE /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		3946412824D06F8B00938ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3946412924D06F8B00938ECE /* UMPReceiver.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = UMPReceiver.entitlements; sourceTree = "<group>"; };
+		3946412A24D06F8B00938ECE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3946412C24D06F8B00938ECE /* ReceiverOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverOptions.swift; sourceTree = "<group>"; };
+		3946412E24D06F8B00938ECE /* PacketReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketReceiver.swift; sourceTree = "<group>"; };
+		3946413024D06F8B00938ECE /* PacketReceiverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketReceiverView.swift; sourceTree = "<group>"; };
+		3946413124D06F8B00938ECE /* MIDIReceiverApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIReceiverApp.swift; sourceTree = "<group>"; };
+		3946413824D06FC800938ECE /* UMP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UMP-Bridging-Header.h"; sourceTree = "<group>"; };
+		394D97CA24D6057F00511A1A /* MIDIEndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIEndpointManager.swift; sourceTree = "<group>"; };
+		3967F71724C06A8E00C038C6 /* UMP Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMP Receiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3975D83D24BE09C0005DFAF0 /* PacketChunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketChunkView.swift; sourceTree = "<group>"; };
+		39A1123124D4408000F40E05 /* DynamicChunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicChunkView.swift; sourceTree = "<group>"; };
+		39A1123324D440BC00F40E05 /* MIDIDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIDestinationView.swift; sourceTree = "<group>"; };
+		39A1123524D4411500F40E05 /* MIDIStatusTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIStatusTypeView.swift; sourceTree = "<group>"; };
+		39A18F2724D448C2001BBFF4 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		39AC673F24B736650042DE45 /* SingleProducerSingleConsumerQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SingleProducerSingleConsumerQueue.hpp; sourceTree = "<group>"; };
+		39C2688224C78E2A003EAF47 /* MIDIEventPacketExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIEventPacketExtensions.swift; sourceTree = "<group>"; };
+		39DEFFDA24B640ED00FA4D12 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		39DEFFDE24B6419A00FA4D12 /* LogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
+		39DFCBA324B634FC00BD4D11 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		86DA24CCA283AC6C9F3FF322 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		F0C51CDB28EDC18D0049760C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		390076F524B617E900C4FE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3967F71024C06A8E00C038C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		390076F924B617E900C4FE1B /* UMP Send */ = {
+			isa = PBXGroup;
+			children = (
+				390076FA24B617E900C4FE1B /* MIDISendApp.swift */,
+				3900776A24B61FF500C4FE1B /* Models */,
+				3900775E24B61FF500C4FE1B /* Views */,
+				39DFCBA024B6273F00BD4D11 /* Resources */,
+			);
+			name = "UMP Send";
+			path = "UniversalMIDIPacket/UMP Send";
+			sourceTree = "<group>";
+		};
+		3900770A24B61AA000C4FE1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39DEFFDE24B6419A00FA4D12 /* LogModel.swift */,
+				391E1A7524BCC755009C817C /* MIDIEndpointModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3900770D24B61AA000C4FE1B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3900770E24B61AA000C4FE1B /* MIDIAttributes.swift */,
+				3900771024B61AA000C4FE1B /* MIDIStatus.swift */,
+				3900771124B61AA000C4FE1B /* PacketChunkDescription.swift */,
+				39DFCBA324B634FC00BD4D11 /* UIConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3900771524B61AA100C4FE1B /* Realtime */ = {
+			isa = PBXGroup;
+			children = (
+				39AC673F24B736650042DE45 /* SingleProducerSingleConsumerQueue.hpp */,
+				3900771724B61AA100C4FE1B /* MIDIAdapter.h */,
+				3900771824B61AA100C4FE1B /* MIDIAdapter.mm */,
+			);
+			path = Realtime;
+			sourceTree = "<group>";
+		};
+		3900771924B61AA100C4FE1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3900771C24B61AA100C4FE1B /* Partition.swift */,
+				39DEFFDA24B640ED00FA4D12 /* LogView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3900774B24B61CD400C4FE1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3900775E24B61FF500C4FE1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3900776124B61FF500C4FE1B /* PacketSenderView.swift */,
+				3900775F24B61FF500C4FE1B /* Inspector */,
+				3900776224B61FF500C4FE1B /* Builder */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3900775F24B61FF500C4FE1B /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				3900776024B61FF500C4FE1B /* PacketInspector.swift */,
+				3975D83D24BE09C0005DFAF0 /* PacketChunkView.swift */,
+			);
+			path = Inspector;
+			sourceTree = "<group>";
+		};
+		3900776224B61FF500C4FE1B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				3900776324B61FF500C4FE1B /* SubPanels */,
+				3900776924B61FF500C4FE1B /* PacketBuilderView.swift */,
+				39A1123124D4408000F40E05 /* DynamicChunkView.swift */,
+				39A1123324D440BC00F40E05 /* MIDIDestinationView.swift */,
+				39A1123524D4411500F40E05 /* MIDIStatusTypeView.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		3900776324B61FF500C4FE1B /* SubPanels */ = {
+			isa = PBXGroup;
+			children = (
+				3900776424B61FF500C4FE1B /* IndexPanel.swift */,
+				3900776524B61FF500C4FE1B /* SliderPanel.swift */,
+				3900776624B61FF500C4FE1B /* TogglePanel.swift */,
+				3900776724B61FF500C4FE1B /* NamedIndexPanel.swift */,
+			);
+			path = SubPanels;
+			sourceTree = "<group>";
+		};
+		3900776A24B61FF500C4FE1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				393F822024D4293B00AF2C35 /* AppState.swift */,
+				3900777924B6204100C4FE1B /* PacketSender.swift */,
+				3900776C24B61FF500C4FE1B /* PacketChunk.swift */,
+				3900776D24B61FF500C4FE1B /* PacketModel.swift */,
+				394D97CA24D6057F00511A1A /* MIDIEndpointManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		392DBDBA24B612CA0041B5D1 = {
+			isa = PBXGroup;
+			children = (
+				F0C51CDB28EDC18D0049760C /* README.md */,
+				390076F924B617E900C4FE1B /* UMP Send */,
+				3946412624D06F8B00938ECE /* UMP Receiver */,
+				392DBDBF24B612CB0041B5D1 /* Shared */,
+				392DBDC824B612CD0041B5D1 /* Products */,
+				3900774B24B61CD400C4FE1B /* Frameworks */,
+				FCCF238DD0000D7F7BFB21E0 /* Configuration */,
+				B18D6085855E31E7DC8E5A5C /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		392DBDBF24B612CB0041B5D1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3946413824D06FC800938ECE /* UMP-Bridging-Header.h */,
+				39DFCBA224B6344F00BD4D11 /* Extensions */,
+				3900770A24B61AA000C4FE1B /* Models */,
+				3900771524B61AA100C4FE1B /* Realtime */,
+				3900770D24B61AA000C4FE1B /* Utils */,
+				3900771924B61AA100C4FE1B /* Views */,
+			);
+			name = Shared;
+			path = UniversalMIDIPacket/Shared;
+			sourceTree = "<group>";
+		};
+		392DBDC824B612CD0041B5D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				390076F824B617E900C4FE1B /* UMP Send.app */,
+				3967F71724C06A8E00C038C6 /* UMP Receiver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3946412624D06F8B00938ECE /* UMP Receiver */ = {
+			isa = PBXGroup;
+			children = (
+				3946413124D06F8B00938ECE /* MIDIReceiverApp.swift */,
+				3946412B24D06F8B00938ECE /* Models */,
+				3946412F24D06F8B00938ECE /* Views */,
+				3946412724D06F8B00938ECE /* Resources */,
+			);
+			name = "UMP Receiver";
+			path = "UniversalMIDIPacket/UMP Receiver";
+			sourceTree = "<group>";
+		};
+		3946412724D06F8B00938ECE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3946412824D06F8B00938ECE /* Assets.xcassets */,
+				3946412924D06F8B00938ECE /* UMPReceiver.entitlements */,
+				3946412A24D06F8B00938ECE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3946412B24D06F8B00938ECE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39A18F2724D448C2001BBFF4 /* AppState.swift */,
+				3946412E24D06F8B00938ECE /* PacketReceiver.swift */,
+				3946412C24D06F8B00938ECE /* ReceiverOptions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3946412F24D06F8B00938ECE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3946413024D06F8B00938ECE /* PacketReceiverView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39DFCBA024B6273F00BD4D11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3900770924B619BC00C4FE1B /* UMPSend.entitlements */,
+				390076FE24B617EB00C4FE1B /* Assets.xcassets */,
+				3900770324B617EB00C4FE1B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		39DFCBA224B6344F00BD4D11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				391E1A7124BCC711009C817C /* MIDIProtocolIDExtensions.swift */,
+				39C2688224C78E2A003EAF47 /* MIDIEventPacketExtensions.swift */,
+				3946411F24CF582D00938ECE /* DataExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B18D6085855E31E7DC8E5A5C /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				86DA24CCA283AC6C9F3FF322 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		FCCF238DD0000D7F7BFB21E0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		390076F724B617E900C4FE1B /* UMP Send */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3900770424B617EB00C4FE1B /* Build configuration list for PBXNativeTarget "UMP Send" */;
+			buildPhases = (
+				390076F424B617E900C4FE1B /* Sources */,
+				390076F524B617E900C4FE1B /* Frameworks */,
+				390076F624B617E900C4FE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UMP Send";
+			productName = MIDIBuilder;
+			productReference = 390076F824B617E900C4FE1B /* UMP Send.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3967F6EA24C06A8E00C038C6 /* UMP Receiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3967F71424C06A8E00C038C6 /* Build configuration list for PBXNativeTarget "UMP Receiver" */;
+			buildPhases = (
+				3967F6EB24C06A8E00C038C6 /* Sources */,
+				3967F71024C06A8E00C038C6 /* Frameworks */,
+				3967F71224C06A8E00C038C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UMP Receiver";
+			productName = MIDIBuilder;
+			productReference = 3967F71724C06A8E00C038C6 /* UMP Receiver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		392DBDBB24B612CA0041B5D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					390076F724B617E900C4FE1B = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 392DBDBE24B612CA0041B5D1 /* Build configuration list for PBXProject "UniversalMIDIPacket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 392DBDBA24B612CA0041B5D1;
+			productRefGroup = 392DBDC824B612CD0041B5D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				390076F724B617E900C4FE1B /* UMP Send */,
+				3967F6EA24C06A8E00C038C6 /* UMP Receiver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		390076F624B617E900C4FE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390076FF24B617EB00C4FE1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3967F71224C06A8E00C038C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3946413224D06F8B00938ECE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		390076F424B617E900C4FE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39DEFFE124B6419A00FA4D12 /* LogModel.swift in Sources */,
+				3900777124B61FF600C4FE1B /* SliderPanel.swift in Sources */,
+				3900772B24B61AA100C4FE1B /* MIDIStatus.swift in Sources */,
+				39C2688524C78E2A003EAF47 /* MIDIEventPacketExtensions.swift in Sources */,
+				3900773724B61AA100C4FE1B /* MIDIAdapter.mm in Sources */,
+				3900777024B61FF600C4FE1B /* IndexPanel.swift in Sources */,
+				39A1123224D4408000F40E05 /* DynamicChunkView.swift in Sources */,
+				391E1A7824BCC755009C817C /* MIDIEndpointModel.swift in Sources */,
+				3900776E24B61FF600C4FE1B /* PacketInspector.swift in Sources */,
+				39DFCBA624B634FC00BD4D11 /* UIConstants.swift in Sources */,
+				3946412024CF582D00938ECE /* DataExtensions.swift in Sources */,
+				39A1123624D4411500F40E05 /* MIDIStatusTypeView.swift in Sources */,
+				39A18F2924D44ACB001BBFF4 /* PacketChunk.swift in Sources */,
+				3900777A24B6204100C4FE1B /* PacketSender.swift in Sources */,
+				394D97CB24D6057F00511A1A /* MIDIEndpointManager.swift in Sources */,
+				3900772E24B61AA100C4FE1B /* PacketChunkDescription.swift in Sources */,
+				3900777524B61FF600C4FE1B /* PacketBuilderView.swift in Sources */,
+				3900777324B61FF600C4FE1B /* NamedIndexPanel.swift in Sources */,
+				3900777224B61FF600C4FE1B /* TogglePanel.swift in Sources */,
+				3900774024B61AA100C4FE1B /* Partition.swift in Sources */,
+				3900776F24B61FF600C4FE1B /* PacketSenderView.swift in Sources */,
+				3900777824B61FF600C4FE1B /* PacketModel.swift in Sources */,
+				3967F75E24C07D4400C038C6 /* MIDISendApp.swift in Sources */,
+				391E1A7424BCC712009C817C /* MIDIProtocolIDExtensions.swift in Sources */,
+				393F822124D4293B00AF2C35 /* AppState.swift in Sources */,
+				39A1123424D440BD00F40E05 /* MIDIDestinationView.swift in Sources */,
+				39DEFFDD24B640ED00FA4D12 /* LogView.swift in Sources */,
+				3900772524B61AA100C4FE1B /* MIDIAttributes.swift in Sources */,
+				3975D83E24BE09C0005DFAF0 /* PacketChunkView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3967F6EB24C06A8E00C038C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3967F6EC24C06A8E00C038C6 /* LogModel.swift in Sources */,
+				3967F6F024C06A8E00C038C6 /* MIDIStatus.swift in Sources */,
+				3967F6F224C06A8E00C038C6 /* MIDIAdapter.mm in Sources */,
+				3946413624D06F8B00938ECE /* PacketReceiverView.swift in Sources */,
+				3967F6F624C06A8E00C038C6 /* MIDIEndpointModel.swift in Sources */,
+				39C2688624C78E2A003EAF47 /* MIDIEventPacketExtensions.swift in Sources */,
+				3946412124CF582D00938ECE /* DataExtensions.swift in Sources */,
+				3967F6F824C06A8E00C038C6 /* UIConstants.swift in Sources */,
+				39A18F2824D448C2001BBFF4 /* AppState.swift in Sources */,
+				3967F6FD24C06A8E00C038C6 /* PacketChunkDescription.swift in Sources */,
+				3946413424D06F8B00938ECE /* ReceiverOptions.swift in Sources */,
+				3967F70124C06A8E00C038C6 /* Partition.swift in Sources */,
+				3946413724D06F8B00938ECE /* MIDIReceiverApp.swift in Sources */,
+				3967F70A24C06A8E00C038C6 /* MIDIProtocolIDExtensions.swift in Sources */,
+				3946413524D06F8B00938ECE /* PacketReceiver.swift in Sources */,
+				3967F70D24C06A8E00C038C6 /* LogView.swift in Sources */,
+				3967F70E24C06A8E00C038C6 /* MIDIAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3900770524B617EB00C4FE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UniversalMIDIPacket/UMP Send/Resources/UMPSend.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/UniversalMIDIPacket/UMP Send/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UMP Send";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UniversalMIDIPacketSend${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "UMP Send";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3900770624B617EB00C4FE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UniversalMIDIPacket/UMP Send/Resources/UMPSend.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/UniversalMIDIPacket/UMP Send/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UMP Send";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UniversalMIDIPacketSend${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "UMP Send";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		392DBDD924B612CD0041B5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S5585LNN66;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "UniversalMIDIPacket/Shared/UMP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+			};
+			name = Debug;
+		};
+		392DBDDA24B612CD0041B5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S5585LNN66;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "UniversalMIDIPacket/Shared/UMP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+			};
+			name = Release;
+		};
+		3967F71524C06A8E00C038C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UniversalMIDIPacket/UMP Receiver/Resources/UMPReceiver.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/UniversalMIDIPacket/UMP Receiver/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UMP Receiver";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UniversalMIDIPacketReceiver${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "UMP Receiver";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3967F71624C06A8E00C038C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C2545CFBDBA524269716C9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UniversalMIDIPacket/UMP Receiver/Resources/UMPReceiver.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/UniversalMIDIPacket/UMP Receiver/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UMP Receiver";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.UniversalMIDIPacketReceiver${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "UMP Receiver";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3900770424B617EB00C4FE1B /* Build configuration list for PBXNativeTarget "UMP Send" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3900770524B617EB00C4FE1B /* Debug */,
+				3900770624B617EB00C4FE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		392DBDBE24B612CA0041B5D1 /* Build configuration list for PBXProject "UniversalMIDIPacket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392DBDD924B612CD0041B5D1 /* Debug */,
+				392DBDDA24B612CD0041B5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3967F71424C06A8E00C038C6 /* Build configuration list for PBXNativeTarget "UMP Receiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3967F71524C06A8E00C038C6 /* Debug */,
+				3967F71624C06A8E00C038C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 392DBDBB24B612CA0041B5D1 /* Project object */;
+}

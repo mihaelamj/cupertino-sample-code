@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4DB81129E5F31C00D9EFE5 /* CommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB80F29E5F31C00D9EFE5 /* CommandOptions.swift */; };
+		0B4DB81229E5F31C00D9EFE5 /* VTEncoderForTranscoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB81029E5F31C00D9EFE5 /* VTEncoderForTranscoding.swift */; };
+		0B4DB81529E5F33800D9EFE5 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0B4DB81429E5F33800D9EFE5 /* ArgumentParser */; };
+		0B4DB81A29E5F36100D9EFE5 /* VideoSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB81729E5F36100D9EFE5 /* VideoSink.swift */; };
+		0B4DB81B29E5F36100D9EFE5 /* VTEncoderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB81829E5F36100D9EFE5 /* VTEncoderUtil.swift */; };
+		0B4DB81C29E5F36100D9EFE5 /* VideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB81929E5F36100D9EFE5 /* VideoSource.swift */; };
+		0BC8C8BA2A13EA2A00933945 /* RealTimeVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC8C8B92A13EA2A00933945 /* RealTimeVideoSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B4DB80329E5F2FD00D9EFE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0720BE6A0665C1A7D8F6D022 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		0B4DB80529E5F2FD00D9EFE5 /* VTEncoderForTranscoding-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "VTEncoderForTranscoding-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4DB80F29E5F31C00D9EFE5 /* CommandOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandOptions.swift; sourceTree = "<group>"; };
+		0B4DB81029E5F31C00D9EFE5 /* VTEncoderForTranscoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTEncoderForTranscoding.swift; sourceTree = "<group>"; };
+		0B4DB81729E5F36100D9EFE5 /* VideoSink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSink.swift; sourceTree = "<group>"; };
+		0B4DB81829E5F36100D9EFE5 /* VTEncoderUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTEncoderUtil.swift; sourceTree = "<group>"; };
+		0B4DB81929E5F36100D9EFE5 /* VideoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSource.swift; sourceTree = "<group>"; };
+		0BC8C8B92A13EA2A00933945 /* RealTimeVideoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealTimeVideoSource.swift; sourceTree = "<group>"; };
+		5B09F02D0548E8B6DAEFD43F /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		CFE36A2893317E0540D7FB7B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B4DB80229E5F2FD00D9EFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4DB81529E5F33800D9EFE5 /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B4DB7FC29E5F2FD00D9EFE5 = {
+			isa = PBXGroup;
+			children = (
+				CFE36A2893317E0540D7FB7B /* README.md */,
+				0B4DB80729E5F2FD00D9EFE5 /* VTEncoderForTranscoding */,
+				0B4DB81629E5F34200D9EFE5 /* VTEncoderUtils */,
+				0B4DB80629E5F2FD00D9EFE5 /* Products */,
+				5AE9727CB21A4C2DFF60A7EF /* Configuration */,
+				842A9A47F196CC8F05864CFC /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		0B4DB80629E5F2FD00D9EFE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB80529E5F2FD00D9EFE5 /* VTEncoderForTranscoding-Swift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B4DB80729E5F2FD00D9EFE5 /* VTEncoderForTranscoding */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB80F29E5F31C00D9EFE5 /* CommandOptions.swift */,
+				0B4DB81029E5F31C00D9EFE5 /* VTEncoderForTranscoding.swift */,
+			);
+			path = VTEncoderForTranscoding;
+			sourceTree = "<group>";
+		};
+		0B4DB81629E5F34200D9EFE5 /* VTEncoderUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB81729E5F36100D9EFE5 /* VideoSink.swift */,
+				0B4DB81929E5F36100D9EFE5 /* VideoSource.swift */,
+				0BC8C8B92A13EA2A00933945 /* RealTimeVideoSource.swift */,
+				0B4DB81829E5F36100D9EFE5 /* VTEncoderUtil.swift */,
+			);
+			path = VTEncoderUtils;
+			sourceTree = "<group>";
+		};
+		5AE9727CB21A4C2DFF60A7EF /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5B09F02D0548E8B6DAEFD43F /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		842A9A47F196CC8F05864CFC /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				0720BE6A0665C1A7D8F6D022 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B4DB80429E5F2FD00D9EFE5 /* VTEncoderForTranscoding-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4DB80C29E5F2FD00D9EFE5 /* Build configuration list for PBXNativeTarget "VTEncoderForTranscoding-Swift" */;
+			buildPhases = (
+				0B4DB80129E5F2FD00D9EFE5 /* Sources */,
+				0B4DB80229E5F2FD00D9EFE5 /* Frameworks */,
+				0B4DB80329E5F2FD00D9EFE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VTEncoderForTranscoding-Swift";
+			packageProductDependencies = (
+				0B4DB81429E5F33800D9EFE5 /* ArgumentParser */,
+			);
+			productName = VTEncoderForTranscoding;
+			productReference = 0B4DB80529E5F2FD00D9EFE5 /* VTEncoderForTranscoding-Swift */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B4DB7FD29E5F2FD00D9EFE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1700;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					0B4DB80429E5F2FD00D9EFE5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 0B4DB80029E5F2FD00D9EFE5 /* Build configuration list for PBXProject "VTEncoderForTranscoding-Swift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B4DB7FC29E5F2FD00D9EFE5;
+			packageReferences = (
+				0B4DB81329E5F33800D9EFE5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = 0B4DB80629E5F2FD00D9EFE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B4DB80429E5F2FD00D9EFE5 /* VTEncoderForTranscoding-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B4DB80129E5F2FD00D9EFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4DB81229E5F31C00D9EFE5 /* VTEncoderForTranscoding.swift in Sources */,
+				0B4DB81A29E5F36100D9EFE5 /* VideoSink.swift in Sources */,
+				0B4DB81B29E5F36100D9EFE5 /* VTEncoderUtil.swift in Sources */,
+				0B4DB81C29E5F36100D9EFE5 /* VideoSource.swift in Sources */,
+				0B4DB81129E5F31C00D9EFE5 /* CommandOptions.swift in Sources */,
+				0BC8C8BA2A13EA2A00933945 /* RealTimeVideoSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B4DB80A29E5F2FD00D9EFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B09F02D0548E8B6DAEFD43F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = CTR79HYSB7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B4DB80B29E5F2FD00D9EFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B09F02D0548E8B6DAEFD43F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CTR79HYSB7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0B4DB80D29E5F2FD00D9EFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B09F02D0548E8B6DAEFD43F /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0B4DB80E29E5F2FD00D9EFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B09F02D0548E8B6DAEFD43F /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B4DB80029E5F2FD00D9EFE5 /* Build configuration list for PBXProject "VTEncoderForTranscoding-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4DB80A29E5F2FD00D9EFE5 /* Debug */,
+				0B4DB80B29E5F2FD00D9EFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4DB80C29E5F2FD00D9EFE5 /* Build configuration list for PBXNativeTarget "VTEncoderForTranscoding-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4DB80D29E5F2FD00D9EFE5 /* Debug */,
+				0B4DB80E29E5F2FD00D9EFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B4DB81329E5F33800D9EFE5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B4DB81429E5F33800D9EFE5 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B4DB81329E5F33800D9EFE5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0B4DB7FD29E5F2FD00D9EFE5 /* Project object */;
+}

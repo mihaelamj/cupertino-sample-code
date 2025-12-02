@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="landscape" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="VisionTrajectoryDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-IY-4iD">
+                                <rect key="frame" x="542" y="64.333333333333343" width="260" height="107.33333333333334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="VCE-c6-8GB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" imagePlacement="top" title="Upload Video" imagePadding="21" buttonSize="large">
+                                    <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="large" weight="regular"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="uploadVideoForAnalysis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Orj-mo-v3v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an option" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LON-5Z-oMy">
+                                <rect key="frame" x="49.999999999999986" y="40" width="234.66666666666663" height="28.333333333333329"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Upload a prerecorded video file to analyze." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4db-nk-UnD">
+                                <rect key="frame" x="50" y="102.33333333333333" width="386.33333333333331" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Perform trajectory analysis by using the live-camera feed." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hc-SC-byC">
+                                <rect key="frame" x="50" y="140.33333333333334" width="401.33333333333331" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4h2-s7-19u" userLabel="Camera View">
+                                <rect key="frame" x="542" y="201.66666666666666" width="260" height="107.33333333333334"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" imagePlacement="top" title="Live Camera" imagePadding="21" buttonSize="large">
+                                    <imageReference key="image" image="camera.viewfinder" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="large" weight="regular"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startCameraForAnalysis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOf-L7-X3L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DFJ-IY-4iD" firstAttribute="top" secondItem="LON-5Z-oMy" secondAttribute="bottom" constant="-4" id="2PP-Hy-dAt"/>
+                            <constraint firstItem="4h2-s7-19u" firstAttribute="leading" secondItem="DFJ-IY-4iD" secondAttribute="leading" id="9gF-UW-cBL"/>
+                            <constraint firstItem="4db-nk-UnD" firstAttribute="top" secondItem="LON-5Z-oMy" secondAttribute="bottom" constant="34" id="AKz-zI-fHC"/>
+                            <constraint firstItem="4h2-s7-19u" firstAttribute="trailing" secondItem="DFJ-IY-4iD" secondAttribute="trailing" id="Bgx-5D-edk"/>
+                            <constraint firstItem="DFJ-IY-4iD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4db-nk-UnD" secondAttribute="trailing" constant="50" id="HL6-3f-QE3"/>
+                            <constraint firstItem="4h2-s7-19u" firstAttribute="height" secondItem="DFJ-IY-4iD" secondAttribute="height" id="M6j-cd-ELD"/>
+                            <constraint firstItem="5hc-SC-byC" firstAttribute="leading" secondItem="4db-nk-UnD" secondAttribute="leading" id="OWq-j6-lna"/>
+                            <constraint firstItem="5hc-SC-byC" firstAttribute="top" secondItem="4db-nk-UnD" secondAttribute="bottom" constant="14" id="OYU-Sr-4nC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4h2-s7-19u" secondAttribute="bottom" constant="50" id="QCJ-dl-G1T"/>
+                            <constraint firstItem="4h2-s7-19u" firstAttribute="top" secondItem="DFJ-IY-4iD" secondAttribute="bottom" constant="30" id="TNQ-Gp-7Ol"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DFJ-IY-4iD" secondAttribute="trailing" constant="50" id="WLv-pv-a3X"/>
+                            <constraint firstItem="DFJ-IY-4iD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5hc-SC-byC" secondAttribute="trailing" constant="50" id="XH8-dY-7bA"/>
+                            <constraint firstItem="LON-5Z-oMy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="XxB-8f-e1v"/>
+                            <constraint firstItem="DFJ-IY-4iD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LON-5Z-oMy" secondAttribute="trailing" constant="50" id="cBF-Mh-6cP"/>
+                            <constraint firstItem="4db-nk-UnD" firstAttribute="leading" secondItem="LON-5Z-oMy" secondAttribute="leading" id="h50-Ps-IL9"/>
+                            <constraint firstItem="LON-5Z-oMy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="kYi-QT-8SX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="h3a-QN-pq7" kind="show" identifier="ShowAnalysisView" id="hUc-oW-mXQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.464285714285712" y="69.565217391304358"/>
+        </scene>
+        <!--Content Analysis View Controller-->
+        <scene sceneID="OjR-Ol-JfX">
+            <objects>
+                <viewController id="h3a-QN-pq7" customClass="ContentAnalysisViewController" customModule="VisionTrajectoryDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZAY-bE-ojN">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFZ-La-cLY">
+                                <rect key="frame" x="762" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5ZC-FY-aC0"/>
+                                    <constraint firstAttribute="height" constant="50" id="HrC-xt-FDz"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="default" renderingMode="original"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="default" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeRootViewTapped:" destination="h3a-QN-pq7" eventType="touchUpInside" id="0bP-Oh-1aC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kj0-W5-a9q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rFZ-La-cLY" firstAttribute="top" secondItem="Kj0-W5-a9q" secondAttribute="top" id="iCH-YH-fj3"/>
+                            <constraint firstItem="Kj0-W5-a9q" firstAttribute="trailing" secondItem="rFZ-La-cLY" secondAttribute="trailing" constant="40" id="nR2-eL-MX5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lee-tK-rEb"/>
+                    <connections>
+                        <outlet property="closeButton" destination="rFZ-La-cLY" id="O9y-Wl-UzJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCH-Z4-h2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="1116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

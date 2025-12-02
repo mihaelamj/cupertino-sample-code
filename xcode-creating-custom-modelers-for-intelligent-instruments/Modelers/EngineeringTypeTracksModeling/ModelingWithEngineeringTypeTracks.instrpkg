@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ This instrpkg file defines the schemas, modelers, and instruments for modeling the sample app
+ with support for speculation, engineering type tracks, and augmentations.
+ 
+ -->
+
+<package>
+    <id>com.apple.mobileagents.execution.transition.with.type.tracks</id>
+    <title>Mobile Agents Execution And Transition Modeling With Speculation</title>
+    <owner>
+        <name>Apple Inc.</name>
+    </owner>
+    <!-- This custom instrument makes use of a feature known as engineering type tracks to render data onto the Instruments UI.
+         When combined with another powerful feature of Instruments, augmentations, engineering type tracks
+         allow you to specify an engineering type that will be dynamically added onto the Instruments UI alongside your other
+         instruments' tracks as your data tables get populated.
+     
+         As an example, if there were multiple threads executing the Mobile Agents, the responsible threads can be displayed as
+         tracks on the UI, with customizable lanes and titles. The engineering type tracks effectively promote ordinary data types
+         into first-class citizens within the Instruments UI. Augmentations then work with these promoted types to visually
+         render them onto the Instruments UI.
+     
+         This instrument will utilize engineering type tracks and augmentations to display each visited stop as its own track on the
+         UI. Within each of these tracks, the activity of the mobile agents will be displayed. Building on top of the lessons
+         from "ModelingWithPlotTemplates", each stop track will use a plot-template to distinguish between which mobile agents
+         visited it.
+     -->
+    
+    <import-schema>os-signpost</import-schema>
+    
+    <interval-schema>
+        <id>mobile-agent-activity</id>
+        <title>Mobile Agent Activity With Engineering Type Tracks</title>
+        
+        <start-column>
+            <mnemonic>start</mnemonic>
+            <title>Start</title>
+            <type>start-time</type>
+        </start-column>
+        
+        <duration-column>
+            <mnemonic>duration</mnemonic>
+            <title>Duration</title>
+            <type>duration</type>
+        </duration-column>
+        
+        <primary-column>
+            <mnemonic>agent-kind</mnemonic>
+            <title>Agent Kind</title>
+            <type>string</type>
+        </primary-column>
+        
+        <column>
+            <mnemonic>agent-kind-code</mnemonic>
+            <title>Agent Kind Code</title>
+            <type>uint64</type>
+        </column>
+        
+        <column>
+            <mnemonic>state</mnemonic>
+            <title>State</title>
+            <type>state</type>
+        </column>
+        
+        <column>
+            <mnemonic>instance</mnemonic>
+            <title>Instance</title>
+            <type>uint64</type>
+        </column>
+        
+        <column>
+            <mnemonic>stop-kind</mnemonic>
+            <title>Stop Kind</title>
+            <type>string</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity</mnemonic>
+            <title>Activity</title>
+            <type>formatted-label</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity-type</mnemonic>
+            <title>Activity Type</title>
+            <type>event-concept</type>
+        </column>
+        
+    </interval-schema>
+    
+    <modeler>
+        <id>com.apple.mobileagents.execution.transition.etype.tracks.modeler</id>
+        <title>Mobile Agent Execution and Transition Modeler With Engineering Type Tracks</title>
+        <purpose>Transforms mobile agent signposts into meaningful activity data</purpose>
+        
+        <production-system>
+            <rule-path>mobile-agent-kind-knowledge.clp</rule-path>
+            <rule-path>mobile-agent-transition-concepts.clp</rule-path>
+            <rule-path>mobile-agent-execution-concepts.clp</rule-path>
+            <rule-path>mobile-agent-parking-concepts.clp</rule-path>
+            <rule-path>mobile-agent-kind-code-resolution.clp</rule-path>
+            <rule-path>mobile-agent-modeling.clp</rule-path>
+            <rule-path>mobile-agent-recording.clp</rule-path>
+        </production-system>
+        
+        <output>
+            <schema-ref>mobile-agent-activity</schema-ref>
+            <required-input>
+                <schema-ref>os-signpost</schema-ref>
+                <attribute>
+                    <name>category</name>
+                    <string>Mobile Agent</string>
+                </attribute>
+                <attribute>
+                    <name>subsystem</name>
+                    <string>com.apple.dt.utilities</string>
+                </attribute>
+            </required-input>
+        </output>
+        
+        
+    </modeler>
+    
+    <augmentation>
+        <id>com.apple.aug.mobile-agents.engineering.type.tracks</id>
+        <title>Show Mobile Agent Activity by Stop</title>
+        <purpose>Shows Mobile Agent Activity intervals broken down by stop.</purpose>
+    
+        <slice-type-hierarchy>
+             <level>
+                 <slice-type>string</slice-type>
+             </level>
+        </slice-type-hierarchy>
+        
+        <create-table>
+            <id>mobile-agent-activity</id>
+            <schema-ref>mobile-agent-activity</schema-ref>
+        </create-table>
+        
+        <add-graph>
+            <title>Stops</title>
+            <lane>
+                <title>Stops</title>
+                <table-ref>mobile-agent-activity</table-ref>
+                <slice-by-hierarchy>
+                    <slice-by-column>stop-kind</slice-by-column>
+                </slice-by-hierarchy>
+                <plot-template>
+                    <instance-by>agent-kind</instance-by>
+                    <label-format>%s</label-format>
+                    <value-from>state</value-from>
+                    <color-from>activity-type</color-from>
+                    <label-from>activity</label-from>
+                </plot-template>
+            </lane>
+        </add-graph>
+        
+        <add-list>
+            <title>Activity</title>
+            <purpose>Lists Mobile Agent Activity per Stop</purpose>
+            <table-ref>mobile-agent-activity</table-ref>
+            
+            <slice-by-hierarchy>
+                <slice-by-column>stop-kind</slice-by-column>
+            </slice-by-hierarchy>
+            
+            <column>start</column>
+            <column>duration</column>
+            <column>agent-kind</column>
+            <column>state</column>
+            <column>activity</column>
+        </add-list>
+    </augmentation>
+    
+    <instrument>
+        <id>com.apple.dt.mobile-agents.execution.with.etype.tracks</id>
+        <title>Mobile Agent Activity With Engineering Type Tracks</title>
+        <category>Behavior</category>
+        <purpose>Tracks the activity of mobile agents.</purpose>
+        <icon>Generic</icon>
+        
+        <create-table>
+            <id>activity-table</id>
+            <schema-ref>mobile-agent-activity</schema-ref>
+        </create-table>
+        
+        
+        <activate-augmentation>com.apple.aug.mobile-agents.engineering.type.tracks</activate-augmentation>
+        <graph>
+            <title>Activity</title>
+            <lane>
+                <title>Agents</title>
+                <table-ref>activity-table</table-ref>
+                <plot-template>
+                    <instance-by>agent-kind</instance-by>
+                    <label-format>%s</label-format>
+                    <value-from>state</value-from>
+                    <color-from>activity-type</color-from>
+                    <label-from>activity</label-from>
+                </plot-template>
+            </lane>
+        </graph>
+        
+        <list>
+            <title>Activity</title>
+            <table-ref>activity-table</table-ref>
+            <column>start</column>
+            <column>duration</column>
+            <column>agent-kind</column>
+            <column>stop-kind</column>
+            <column>state</column>
+            <column>activity</column>
+        </list>
+        
+        <engineering-type-track>
+            <table-ref>activity-table</table-ref>
+            <hierarchy>
+                <level>
+                    <column>stop-kind</column>
+                </level>
+            </hierarchy>
+        </engineering-type-track>
+        
+    </instrument>
+</package>

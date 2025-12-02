@@ -1,0 +1,71 @@
+ /*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+Headers for the driver's implementation of NetworkingDriverKit
+             API methods, and methods specific to the driver.
+*/
+
+#ifndef _NETWORKINGDRIVERKITSAMPLE_H
+#define _NETWORKINGDRIVERKITSAMPLE_H
+
+#include <NetworkingDriverKit/IOUserNetworkEthernet.iig>
+#include <DriverKit/IOTimerDispatchSource.iig>
+
+class NetworkingDriverKitSample : public IOUserNetworkEthernet
+{
+public:
+    virtual bool
+    init() override;
+
+    virtual kern_return_t
+    Start(IOService * provider) override;
+
+    virtual kern_return_t
+    Stop(IOService * provider) override;
+
+    virtual kern_return_t
+    SetPowerState(uint32_t powerstate) override;
+
+    virtual void
+    free() override;
+
+    virtual kern_return_t
+    SetInterfaceEnable(bool isEnable) override;
+
+    virtual kern_return_t
+    SetPromiscuousModeEnable(bool enable) override;
+
+    virtual kern_return_t
+    SetMulticastAddresses(const IOUserNetworkMACAddress *addresses, uint32_t count) override;
+
+    virtual kern_return_t
+    SetAllMulticastModeEnable(bool enable) override;
+
+    virtual kern_return_t
+    SetWakeOnMagicPacketEnable(bool enable) override;
+
+    virtual kern_return_t
+    SetMTU(uint32_t mtu) override;
+
+    virtual kern_return_t
+    GetMaxTransferUnit(uint32_t *mtu) override;
+
+    virtual kern_return_t
+    SetHardwareAssists(uint32_t hardwareAssists) override;
+
+    virtual kern_return_t
+    GetHardwareAssists(uint32_t *hardwareAssists) override;
+
+    virtual kern_return_t
+    SelectMediaType(IOUserNetworkMediaType mediaType) override;
+
+    virtual void
+    TxPacketAvailable(
+        OSAction * action) TYPE(IODataQueueDispatchSource::DataAvailable);
+    
+    virtual void
+    ReceiveTimer (OSAction *action, uint64_t time) TYPE(IOTimerDispatchSource::TimerOccurred);
+};
+
+#endif /* ! _NETWORKINGDRIVERKITSAMPLE_H */

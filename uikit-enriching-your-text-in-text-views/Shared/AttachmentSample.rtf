@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2682
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0\c0;}
+\margl1440\margr1440\vieww10920\viewh7800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 View-based text attachments became available in iOS 15 and macOS Monterey.  With view-based text attachments, you can use a 
+\f1 UIView
+\f0  or an 
+\f1 NSView
+\f0  as the text attachment.  Events can be handled directly by the attachment view.  This makes event handling with text attachments a whole lot easier, and it's only possible with TextKit 2.\
+\
+This code sample demonstrates how to use the text attachment view provider APIs with 
+\f1 UITextView
+\f0  and 
+\f1 NSTextView
+\f0 .  The text view must be backed by TextKit 2 for this to work.  \
+\
+Create a subclass of 
+\f1 NSTextAttachmentViewProvider
+\f0  and overload its 
+\f1 loadView() 
+\f0 method to create your view-based attachment.  \
+\
+In this override, provide the bounds of your view and set the property 
+\f1 tracksTextAttachmentViewBounds
+\f0  to true, so that the framework consults the text attachment view provider to determine the bounds of the attachment.\
+\
+The 
+\f1 intrinsicContentSize
+\f0  is used to determine the attachment bounds, so make sure your attachment view provides this value.\
+\
+Additionally, create a subclass of 
+\f1 NSTextAttachment
+\f0  and override: \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \cb2 viewProvider(for:location:textContainer:)
+\f0  
+\fs28 \cb1 \
+\
+to return an instance of your custom 
+\f1 NSTextAttachmentViewProvider
+\f0 .  \
+\
+Also override: \
+\
+
+\f1\fs24 image(bounds:attributes:location:textContainer:)
+\f0  
+\fs28 \
+\
+to return 
+\f1 nil
+\f0 .  }

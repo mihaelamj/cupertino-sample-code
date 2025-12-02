@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ This instrpkg file defines the schemas, modelers, and instruments for modeling the sample app
+ and fusing data from time-profile.
+ 
+ -->
+<package>
+    <id>com.apple.mobileagents.execution.only.MobileAgentsExecutionAndTransitionWithTimeSample</id>
+    <title>Mobile Agents Execution And Transition With Time Sample</title>
+    <owner>
+        <name>Apple Inc.</name>
+    </owner>
+    <!-- This Custom Instrument will also fuse data from the time-profile schema.
+         In order to use the time-profile data, it must be imported too, just like
+         with os-signpost. Refer to the <modeler> definition below to also see
+         how you can specify input requirements to your modeler. The modeler for this
+         instrument will need input from time-profile.
+     
+         To make this data easier to parse when viewing it through the Instruments Standard UI,
+         an additional column, activity-type, has been added which will determine if a recorded
+         mobile-agent-activity was an execution or a transition. This distinguishing column is used in
+         the <instrument> tag below to determine the color of the interval that is drawn. This coloring
+         distinction helps to visually separate the execution steps from the transition steps.
+     -->
+    <import-schema>os-signpost</import-schema>
+    <import-schema>time-profile</import-schema>
+    
+    <!-- This Custom Instrument will also fuse sampling data from the time-profile schema.
+         time-profile can sample backtraces, which will be used to annotate cases where
+         a Mobile Agent transitions into the "Failed" state.
+     -->
+    
+    <interval-schema>
+        <id>mobile-agent-activity-with-time-samples</id>
+        <title>Mobile Agent Activity With Time Samples</title>
+        
+        <!-- The Custom Instruments infrastructure provides the ability to add attributes to your schemas.
+             These attributes serve as configurable values that may alter the behavior of your modeler
+             or input sources. Since the time-profile input can operate on multiple processes or just a single
+             process, an attribute is defined below that will determine time-profile's behavior.
+         -->
+        <attribute>
+            <name>target-pid</name>
+            <required>true</required>
+            <note>Single/Multi-process</note>
+            <value-pattern>ALL|SINGLE</value-pattern>
+        </attribute>
+        
+        <start-column>
+            <mnemonic>start</mnemonic>
+            <title>Start</title>
+            <type>start-time</type>
+        </start-column>
+        
+        <duration-column>
+            <mnemonic>duration</mnemonic>
+            <title>Duration</title>
+            <type>duration</type>
+        </duration-column>
+        
+        <primary-column>
+            <mnemonic>agent-kind</mnemonic>
+            <title>Agent Kind</title>
+            <type>string</type>
+        </primary-column>
+        
+        <column>
+            <mnemonic>agent-kind-code</mnemonic>
+            <title>Agent Kind Code</title>
+            <type>uint64</type>
+        </column>
+        
+        <column>
+            <mnemonic>state</mnemonic>
+            <title>State</title>
+            <type>state</type>
+        </column>
+        
+        <column>
+            <mnemonic>instance</mnemonic>
+            <title>Instance</title>
+            <type>address</type>
+        </column>
+        
+        <column>
+            <mnemonic>stop-kind</mnemonic>
+            <title>Stop Kind</title>
+            <type>string</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity</mnemonic>
+            <title>Activity</title>
+            <type>formatted-label</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity-type</mnemonic>
+            <title>Activity Type</title>
+            <type>event-concept</type>
+        </column>
+        
+        <column>
+            <mnemonic>backtrace</mnemonic>
+            <title>Backtrace</title>
+            <type>backtrace</type>
+        </column>
+    </interval-schema>
+
+    <modeler>
+        <id>com.apple.mobileagents.execution.transition.modeler</id>
+        <title>Mobile Agent Execution and Transition Modeler With Time Samples</title>
+        <purpose>Transforms mobile agent signposts into meaningful execution and transition data along with time samples</purpose>
+        
+        <production-system>
+            <rule-path>mobile-agent-kind-knowledge.clp</rule-path>
+            <rule-path>mobile-agent-execution-concepts.clp</rule-path>
+            <rule-path>mobile-agent-transition-concepts.clp</rule-path>
+            <rule-path>mobile-agent-kind-code-resolution.clp</rule-path>
+            <rule-path>mobile-agent-modeling.clp</rule-path>
+            <rule-path>mobile-agent-recording.clp</rule-path>
+        </production-system>
+        <!-- An instance parameter creates a named parameter that can be used once per modeler instance.
+             This instance-parameter will be bound to the target-pid attribute defined on the
+             mobile-agent-activity-with-time-samples schema.
+         -->
+        <instance-parameter>?target-pid</instance-parameter>
+        
+        <output>
+            <schema-ref>mobile-agent-activity-with-time-samples</schema-ref>
+            <!-- When a "target-pid" attribute is defined on the mobile-agent-activity-with-time-samples
+                 schema, bind the ?target-pid instance parameter to it.
+             -->
+            <when>
+                <attribute>
+                    <name>target-pid</name>
+                    <binds-parameter>?target-pid</binds-parameter>
+                </attribute>
+             </when>
+            <required-input>
+                <schema-ref>os-signpost</schema-ref>
+                <attribute>
+                    <name>category</name>
+                    <string>Mobile Agent</string>
+                </attribute>
+                <attribute>
+                    <name>subsystem</name>
+                    <string>com.apple.dt.utilities</string>
+                </attribute>
+            </required-input>
+            <required-input>
+                <schema-ref>time-profile</schema-ref>
+                <!-- The ?target-pid instance parameter was bound to the mobile-agent-activity-with-time-samples
+                     target-pid attribute. Since it now has a value, it can be used to define the required
+                     attribute on time-profile which will determine its sampling behavior.
+                 -->
+                <attribute> <name>target-pid</name> <expression>?target-pid</expression> </attribute>
+                <!-- The following attributes on time-profile are set as:
+                       - Enable high-frequency-sampling
+                       - Disable kernel callstacks
+                       - Enable recording data for waiting/idle threads
+                 
+                       For more information on which attributes a schema requires, please see
+                       the Instruments Inspector and navigate to the "Schemas" tab.
+                 -->
+                <attribute> <name>high-frequency-sampling</name> <expression>1</expression> </attribute>
+                <attribute> <name>needs-kernel-callstack</name> <expression>0</expression> </attribute>
+                <attribute> <name>record-waiting-threads</name> <expression>1</expression> </attribute>
+                <attribute> <name>context-switch-sampling</name> <expression>0</expression> </attribute>
+            </required-input>
+                
+        </output>
+        
+        
+    </modeler>
+    
+    <instrument>
+        <id>com.apple.dt.mobile-agents.execution.transitions.timesamples</id>
+        <title>Mobile Agent Activity With Time Samples</title>
+        <category>Behavior</category>
+        <purpose>Tracks the execution and transitions of mobile agents with time samples.</purpose>
+        <icon>Generic</icon>
+        
+        <import-parameter> <from-scope>trace</from-scope> <name>?target-pid</name> </import-parameter>
+        <create-table>
+            <id>activity-table</id>
+            <schema-ref>mobile-agent-activity-with-time-samples</schema-ref>
+            <attribute> <name>target-pid</name> <parameter-ref>?target-pid</parameter-ref> </attribute>
+        </create-table>
+        
+        <graph>
+            <title>Execution</title>
+            <lane>
+                <title>Agents</title>
+                <table-ref>activity-table</table-ref>
+                <plot>
+                    <value-from>state</value-from>
+                    <label-from>activity</label-from>
+                </plot>
+            </lane>
+        </graph>
+        
+        <list>
+            <title>Execution</title>
+            <table-ref>activity-table</table-ref>
+            <column>start</column>
+            <column>duration</column>
+            <column>agent-kind</column>
+            <column>stop-kind</column>
+            <column>state</column>
+            <column>activity</column>
+            <column>backtrace</column>
+        </list>
+    </instrument>
+</package>

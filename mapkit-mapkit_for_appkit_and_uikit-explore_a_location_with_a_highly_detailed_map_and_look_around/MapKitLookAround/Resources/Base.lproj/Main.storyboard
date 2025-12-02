@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zNl-cU-c23">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.1"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Look around view controllers" minToolsVersion="14.0"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="715-al-KvM">
+            <objects>
+                <navigationController id="zNl-cU-c23" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="k9g-XO-HPV">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mvc-Aa-HPw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="qCp-XR-hUj" kind="relationship" relationship="rootViewController" id="q2I-mE-Ar7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrt-dk-YAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2234" y="65"/>
+        </scene>
+        <!--Tour Guide-->
+        <scene sceneID="Fpe-rC-7XF">
+            <objects>
+                <viewController id="qCp-XR-hUj" customClass="ItineraryViewController" customModule="MapKitLookAround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mc0-tN-VLN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mod-BS-KY2">
+                                <rect key="frame" x="123.66666666666669" y="743" width="128" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Tour" imagePadding="5" cornerStyle="capsule">
+                                    <imageReference key="image" image="car" catalog="system" symbolScale="default" variableValue="0.80000000000000004"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="t8g-wM-3dz" kind="presentation" identifier="showTourMap" modalPresentationStyle="fullScreen" id="ZU2-QS-OWK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ya-ZQ-e9Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mod-BS-KY2" firstAttribute="centerX" secondItem="1ya-ZQ-e9Z" secondAttribute="centerX" id="XeL-uI-5iy"/>
+                            <constraint firstItem="1ya-ZQ-e9Z" firstAttribute="bottom" secondItem="mod-BS-KY2" secondAttribute="bottom" id="cUt-id-YP2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tour Guide" id="LJa-kU-c9e"/>
+                    <connections>
+                        <outlet property="startButton" destination="mod-BS-KY2" id="2RK-Dh-lYO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zT-sN-wP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1365" y="65"/>
+        </scene>
+        <!--Look Around-->
+        <scene sceneID="0qM-SN-Nxs">
+            <objects>
+                <viewController id="t8g-wM-3dz" customClass="TourViewController" customModule="MapKitLookAround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Zx-Di-b1K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4d-r4-Irc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                                <connections>
+                                    <outlet property="delegate" destination="t8g-wM-3dz" id="Tkx-38-bEm"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAO-ik-rde">
+                                <rect key="frame" x="492.66666666666669" y="535" width="91.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.forward.circle.fill" catalog="system" title="Next" imagePadding="6" cornerStyle="medium"/>
+                                <connections>
+                                    <action selector="goToNextStop:" destination="t8g-wM-3dz" eventType="touchUpInside" id="0qC-FG-RxN"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9b-a6-emQ">
+                                <rect key="frame" x="16" y="442" width="200" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Y8m-B7-3cG"/>
+                                    <constraint firstAttribute="width" constant="200" id="jSF-Xz-0Ix"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="ITp-Oy-UEb" kind="embed" id="g3E-6v-Ghm"/>
+                                </connections>
+                            </containerView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B96-u6-RES">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="7JY-OX-Qqy">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5g-Xb-9OP">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="0.0"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="AcH-EH-6c3">
+                                                <rect key="frame" x="0.0" y="0.0" width="360" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYc-li-TxM">
+                                            <rect key="frame" x="0.0" y="60" width="600" height="20.333333333333343"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Oe-Nv-35S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Oe-Nv-35S" firstAttribute="bottom" secondItem="h9b-a6-emQ" secondAttribute="bottom" constant="30" id="0U5-K5-5bk"/>
+                            <constraint firstItem="9Oe-Nv-35S" firstAttribute="bottom" secondItem="OAO-ik-rde" secondAttribute="bottom" constant="30" id="2Fs-dH-qa6"/>
+                            <constraint firstItem="dYc-li-TxM" firstAttribute="top" secondItem="9Oe-Nv-35S" secondAttribute="top" constant="16" id="3Ny-Sk-tlh"/>
+                            <constraint firstAttribute="trailing" secondItem="B96-u6-RES" secondAttribute="trailing" id="4Py-t9-9HV"/>
+                            <constraint firstItem="B96-u6-RES" firstAttribute="top" secondItem="4Zx-Di-b1K" secondAttribute="top" id="5Jr-EV-1UE"/>
+                            <constraint firstItem="9Oe-Nv-35S" firstAttribute="top" secondItem="B96-u6-RES" secondAttribute="bottom" constant="-44" id="A78-wQ-mBu"/>
+                            <constraint firstItem="k4d-r4-Irc" firstAttribute="leading" secondItem="4Zx-Di-b1K" secondAttribute="leading" id="C0K-nB-ob7"/>
+                            <constraint firstItem="9Oe-Nv-35S" firstAttribute="trailing" secondItem="dYc-li-TxM" secondAttribute="trailing" id="C6f-o5-2Hi"/>
+                            <constraint firstItem="k4d-r4-Irc" firstAttribute="bottom" secondItem="4Zx-Di-b1K" secondAttribute="bottom" id="GSQ-1j-TTj"/>
+                            <constraint firstItem="9Oe-Nv-35S" firstAttribute="trailing" secondItem="OAO-ik-rde" secondAttribute="trailing" constant="16" id="Ufj-rJ-Usl"/>
+                            <constraint firstItem="OAO-ik-rde" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Oe-Nv-35S" secondAttribute="leading" symbolic="YES" id="YjE-AY-anB"/>
+                            <constraint firstItem="h9b-a6-emQ" firstAttribute="leading" secondItem="9Oe-Nv-35S" secondAttribute="leading" constant="16" id="cX7-I4-0Ue"/>
+                            <constraint firstItem="dYc-li-TxM" firstAttribute="leading" secondItem="9Oe-Nv-35S" secondAttribute="leading" id="eF5-ja-bec"/>
+                            <constraint firstItem="k4d-r4-Irc" firstAttribute="top" secondItem="4Zx-Di-b1K" secondAttribute="top" id="fld-8W-wAa"/>
+                            <constraint firstAttribute="trailing" secondItem="k4d-r4-Irc" secondAttribute="trailing" id="go8-ew-ubE"/>
+                            <constraint firstItem="B96-u6-RES" firstAttribute="leading" secondItem="4Zx-Di-b1K" secondAttribute="leading" id="opn-LW-oVf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Look Around" id="xHf-LC-pup"/>
+                    <connections>
+                        <outlet property="lookAroundContainerView" destination="h9b-a6-emQ" id="79L-eA-Rke"/>
+                        <outlet property="mapView" destination="k4d-r4-Irc" id="XJ3-WS-uvK"/>
+                        <outlet property="nextButton" destination="OAO-ik-rde" id="Cix-bP-Mte"/>
+                        <outlet property="titleEffectView" destination="B96-u6-RES" id="XxV-XW-kv9"/>
+                        <outlet property="titleLabel" destination="dYc-li-TxM" id="Zf0-ib-VRo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXS-Gh-LOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406.15384615384613" y="64.691943127962077"/>
+        </scene>
+        <!--Look Around View Controller-->
+        <scene sceneID="hPU-Yx-5Ol">
+            <objects>
+                <lookAroundViewController navigationEnabled="YES" showsRoadLabels="YES" id="ITp-Oy-UEb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNm-Wt-huI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.forward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="car" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

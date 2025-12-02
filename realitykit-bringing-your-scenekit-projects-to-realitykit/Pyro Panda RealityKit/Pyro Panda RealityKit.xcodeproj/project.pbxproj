@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E2E81162DD7677A00355288 /* WorldCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2E81152DD7677A00355288 /* WorldCamera */; };
+		5E2E81392DD7687800355288 /* AgentComponent in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2E81382DD7687800355288 /* AgentComponent */; };
+		5E2E813C2DD7688500355288 /* WorldCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2E813B2DD7688500355288 /* WorldCamera */; };
+		5E2E813F2DD7689000355288 /* WASDInput in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2E813E2DD7689000355288 /* WASDInput */; };
+		5E2E81422DD7689800355288 /* ThumbStickView in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2E81412DD7689800355288 /* ThumbStickView */; };
+		5E2E81482DD768AE00355288 /* ControllerInput in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2E81472DD768AE00355288 /* ControllerInput */; };
+		5E2E814B2DD768B600355288 /* CharacterMovement in Frameworks */ = {isa = PBXBuildFile; productRef = 5E2E814A2DD768B600355288 /* CharacterMovement */; };
+		5E9247FE2DE38A1B003172E2 /* ControllerInput in Frameworks */ = {isa = PBXBuildFile; productRef = 5E9247FD2DE38A1B003172E2 /* ControllerInput */; };
+		5E9248002DE38A1B003172E2 /* HapticUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 5E9247FF2DE38A1B003172E2 /* HapticUtility */; };
+		5E9248032DE38A89003172E2 /* CharacterMovement in Frameworks */ = {isa = PBXBuildFile; productRef = 5E9248022DE38A89003172E2 /* CharacterMovement */; };
+		F3030DCA2DDCED9700FAA8BC /* PyroPanda in Frameworks */ = {isa = PBXBuildFile; productRef = F3030DC92DDCED9700FAA8BC /* PyroPanda */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01BF2D7CA748B6E065552336 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		96318F4E0E6B6513F982540C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		D8F80060A6FDB4BF51FEA60B /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		F333A1902D8B3872000D880F /* Pyro Panda RealityKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pyro Panda RealityKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F333A1A42D8B3873000D880F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			platformFiltersByRelativePath = {
+				PyroPandaIcon.icon = (
+					ios,
+					macos,
+				);
+			};
+			target = F333A18F2D8B3872000D880F /* Pyro Panda RealityKit */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F333A1922D8B3872000D880F /* Pyro Panda RealityKit */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F333A1A42D8B3873000D880F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Pyro Panda RealityKit"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F333A18D2D8B3872000D880F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2E814B2DD768B600355288 /* CharacterMovement in Frameworks */,
+				5E2E81482DD768AE00355288 /* ControllerInput in Frameworks */,
+				5E9248002DE38A1B003172E2 /* HapticUtility in Frameworks */,
+				5E2E813F2DD7689000355288 /* WASDInput in Frameworks */,
+				5E9247FE2DE38A1B003172E2 /* ControllerInput in Frameworks */,
+				5E2E813C2DD7688500355288 /* WorldCamera in Frameworks */,
+				5E2E81392DD7687800355288 /* AgentComponent in Frameworks */,
+				5E2E81422DD7689800355288 /* ThumbStickView in Frameworks */,
+				5E2E81162DD7677A00355288 /* WorldCamera in Frameworks */,
+				5E9248032DE38A89003172E2 /* CharacterMovement in Frameworks */,
+				F3030DCA2DDCED9700FAA8BC /* PyroPanda in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E6EC71C0FD3957FCA942D14 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				96318F4E0E6B6513F982540C /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		962C3AF843C1542D8535FCF4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D8F80060A6FDB4BF51FEA60B /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		F333A1872D8B3872000D880F = {
+			isa = PBXGroup;
+			children = (
+				01BF2D7CA748B6E065552336 /* README.md */,
+				F333A1922D8B3872000D880F /* Pyro Panda RealityKit */,
+				F3E8A3292D8C3AF2001CB4C7 /* Frameworks */,
+				F333A1912D8B3872000D880F /* Products */,
+				962C3AF843C1542D8535FCF4 /* Configuration */,
+				8E6EC71C0FD3957FCA942D14 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		F333A1912D8B3872000D880F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F333A1902D8B3872000D880F /* Pyro Panda RealityKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E8A3292D8C3AF2001CB4C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F333A18F2D8B3872000D880F /* Pyro Panda RealityKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F333A1A52D8B3873000D880F /* Build configuration list for PBXNativeTarget "Pyro Panda RealityKit" */;
+			buildPhases = (
+				F333A18C2D8B3872000D880F /* Sources */,
+				F333A18D2D8B3872000D880F /* Frameworks */,
+				F333A18E2D8B3872000D880F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F333A1922D8B3872000D880F /* Pyro Panda RealityKit */,
+			);
+			name = "Pyro Panda RealityKit";
+			packageProductDependencies = (
+				5E2E81152DD7677A00355288 /* WorldCamera */,
+				5E2E81382DD7687800355288 /* AgentComponent */,
+				5E2E813B2DD7688500355288 /* WorldCamera */,
+				5E2E813E2DD7689000355288 /* WASDInput */,
+				5E2E81412DD7689800355288 /* ThumbStickView */,
+				5E2E81472DD768AE00355288 /* ControllerInput */,
+				5E2E814A2DD768B600355288 /* CharacterMovement */,
+				F3030DC92DDCED9700FAA8BC /* PyroPanda */,
+				5E9247FD2DE38A1B003172E2 /* ControllerInput */,
+				5E9247FF2DE38A1B003172E2 /* HapticUtility */,
+				5E9248022DE38A89003172E2 /* CharacterMovement */,
+			);
+			productName = "Fox Game RealityKit";
+			productReference = F333A1902D8B3872000D880F /* Pyro Panda RealityKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F333A1882D8B3872000D880F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1700;
+				LastUpgradeCheck = 1700;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					F333A18F2D8B3872000D880F = {
+						CreatedOnToolsVersion = 17.0;
+					};
+				};
+			};
+			buildConfigurationList = F333A18B2D8B3872000D880F /* Build configuration list for PBXProject "Pyro Panda RealityKit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F333A1872D8B3872000D880F;
+			packageReferences = (
+				5E2E81372DD7687800355288 /* XCLocalSwiftPackageReference "Packages/AgentComponent" */,
+				5E2E813A2DD7688500355288 /* XCLocalSwiftPackageReference "Packages/WorldCamera" */,
+				5E2E813D2DD7689000355288 /* XCLocalSwiftPackageReference "Packages/WASDInput" */,
+				5E2E81402DD7689800355288 /* XCLocalSwiftPackageReference "Packages/ThumbStickView" */,
+				F3030DC82DDCED9700FAA8BC /* XCLocalSwiftPackageReference "Packages/PyroPanda" */,
+				5E9247FC2DE38A1B003172E2 /* XCLocalSwiftPackageReference "Packages/ControllerInput" */,
+				5E9248012DE38A89003172E2 /* XCLocalSwiftPackageReference "Packages/CharacterMovement" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F333A1912D8B3872000D880F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F333A18F2D8B3872000D880F /* Pyro Panda RealityKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F333A18E2D8B3872000D880F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F333A18C2D8B3872000D880F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F333A1A62D8B3873000D880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F80060A6FDB4BF51FEA60B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = PyroPandaIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pyro Panda RK";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.adventure-games";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.pyropanda-rk${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SAMPLE_CODE_DISAMBIGUATOR = "${DEVELOPMENT_TEAM}";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,7";
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		F333A1A72D8B3873000D880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F80060A6FDB4BF51FEA60B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = PyroPandaIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pyro Panda RK";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.adventure-games";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.pyropanda-rk${SAMPLE_CODE_DISAMBIGUATOR}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SAMPLE_CODE_DISAMBIGUATOR = "${DEVELOPMENT_TEAM}";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,7";
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		F333A1A82D8B3873000D880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F80060A6FDB4BF51FEA60B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				XROS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		F333A1A92D8B3873000D880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F80060A6FDB4BF51FEA60B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F333A18B2D8B3872000D880F /* Build configuration list for PBXProject "Pyro Panda RealityKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F333A1A82D8B3873000D880F /* Debug */,
+				F333A1A92D8B3873000D880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F333A1A52D8B3873000D880F /* Build configuration list for PBXNativeTarget "Pyro Panda RealityKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F333A1A62D8B3873000D880F /* Debug */,
+				F333A1A72D8B3873000D880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5E2E81372DD7687800355288 /* XCLocalSwiftPackageReference "Packages/AgentComponent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AgentComponent;
+		};
+		5E2E813A2DD7688500355288 /* XCLocalSwiftPackageReference "Packages/WorldCamera" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/WorldCamera;
+		};
+		5E2E813D2DD7689000355288 /* XCLocalSwiftPackageReference "Packages/WASDInput" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/WASDInput;
+		};
+		5E2E81402DD7689800355288 /* XCLocalSwiftPackageReference "Packages/ThumbStickView" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ThumbStickView;
+		};
+		5E9247FC2DE38A1B003172E2 /* XCLocalSwiftPackageReference "Packages/ControllerInput" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ControllerInput;
+		};
+		5E9248012DE38A89003172E2 /* XCLocalSwiftPackageReference "Packages/CharacterMovement" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/CharacterMovement;
+		};
+		F3030DC82DDCED9700FAA8BC /* XCLocalSwiftPackageReference "Packages/PyroPanda" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PyroPanda;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E2E81152DD7677A00355288 /* WorldCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WorldCamera;
+		};
+		5E2E81382DD7687800355288 /* AgentComponent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AgentComponent;
+		};
+		5E2E813B2DD7688500355288 /* WorldCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WorldCamera;
+		};
+		5E2E813E2DD7689000355288 /* WASDInput */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WASDInput;
+		};
+		5E2E81412DD7689800355288 /* ThumbStickView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThumbStickView;
+		};
+		5E2E81472DD768AE00355288 /* ControllerInput */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ControllerInput;
+		};
+		5E2E814A2DD768B600355288 /* CharacterMovement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CharacterMovement;
+		};
+		5E9247FD2DE38A1B003172E2 /* ControllerInput */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ControllerInput;
+		};
+		5E9247FF2DE38A1B003172E2 /* HapticUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HapticUtility;
+		};
+		5E9248022DE38A89003172E2 /* CharacterMovement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CharacterMovement;
+		};
+		F3030DC92DDCED9700FAA8BC /* PyroPanda */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PyroPanda;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F333A1882D8B3872000D880F /* Project object */;
+}

@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD0459B7280029D4003667EE /* BookingFormModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0459B6280029D4003667EE /* BookingFormModal.swift */; };
+		AD2FA3DE280A4A2B00CEED50 /* FlightLegRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FA3DD280A4A2B00CEED50 /* FlightLegRow.swift */; };
+		AD346811280E685C0072B340 /* FlightSegmentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD346810280E685C0072B340 /* FlightSegmentGenerator.swift */; };
+		AD346813280E70CF0072B340 /* FlightSegmentSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD346812280E70CF0072B340 /* FlightSegmentSectionHeader.swift */; };
+		AD38F0D6281CD0B800FB3D7B /* FlightLegDetailBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38F0D5281CD0B800FB3D7B /* FlightLegDetailBanner.swift */; };
+		AD38F0D8281CD7D500FB3D7B /* FlightLegDetailWeatherGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38F0D7281CD7D500FB3D7B /* FlightLegDetailWeatherGrid.swift */; };
+		AD38F0DA2820559D00FB3D7B /* FlightLegDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38F0D92820559D00FB3D7B /* FlightLegDetailSection.swift */; };
+		AD51B8C72842D32700441192 /* AirportPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51B8C62842D32700441192 /* AirportPicker.swift */; };
+		AD51B8C92842DF3400441192 /* FlightLegInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51B8C82842DF3400441192 /* FlightLegInfo.swift */; };
+		AD6AA6162813373E007581C1 /* FlightLegGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AA6152813373E007581C1 /* FlightLegGenerator.swift */; };
+		AD6AA6182813407A007581C1 /* FlightSegmentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AA6172813407A007581C1 /* FlightSegmentRow.swift */; };
+		AD8715AE27FF95FC00D72D9E /* FlightPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8715AD27FF95FC00D72D9E /* FlightPlannerApp.swift */; };
+		AD8715B027FF95FC00D72D9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8715AF27FF95FC00D72D9E /* ContentView.swift */; };
+		AD8715B227FF95FE00D72D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8715B127FF95FE00D72D9E /* Assets.xcassets */; };
+		AD8715B527FF95FE00D72D9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8715B427FF95FE00D72D9E /* Preview Assets.xcassets */; };
+		AD8715BE27FF97F300D72D9E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD8715BD27FF97F300D72D9E /* README.md */; };
+		AD8715C327FF999A00D72D9E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD8715C227FF999A00D72D9E /* LICENSE.txt */; };
+		AD8715C627FFA45400D72D9E /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = AD8715C527FFA45400D72D9E /* Airports.json */; };
+		AD8715C827FFAE4500D72D9E /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8715C727FFAE4500D72D9E /* Airport.swift */; };
+		AD8715CA27FFB0ED00D72D9E /* AirportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8715C927FFB0ED00D72D9E /* AirportData.swift */; };
+		AD8724F82825FAB000FA7DCE /* PassengerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8724F72825FAB000FA7DCE /* PassengerInfo.swift */; };
+		AD8AD0B428001F3A004AFB4A /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AD0B328001F3A004AFB4A /* FlightData.swift */; };
+		AD93C90928132889007FAE31 /* FlightLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93C90828132889007FAE31 /* FlightLeg.swift */; };
+		ADACD14B2844B48200396610 /* FlightForecastInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADACD14A2844B48200396610 /* FlightForecastInfo.swift */; };
+		ADBACEC52844E5F80070339C /* JourneyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBACEC42844E5F80070339C /* JourneyPicker.swift */; };
+		ADBACEC72844E64D0070339C /* BookingFormAirportDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBACEC62844E64D0070339C /* BookingFormAirportDetails.swift */; };
+		ADBACEC92844E7040070339C /* BookingFormDateDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBACEC82844E7040070339C /* BookingFormDateDetails.swift */; };
+		ADBACECB2844E7960070339C /* BookingFormPassengerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBACECA2844E7960070339C /* BookingFormPassengerDetails.swift */; };
+		ADCFCEE92823A28C00E234C7 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCFCEE82823A28C00E234C7 /* WeatherData.swift */; };
+		ADD4DF9E281158C6006F2D33 /* FlightLegRowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4DF9D281158C6006F2D33 /* FlightLegRowHeader.swift */; };
+		ADD4DFA02811733D006F2D33 /* FlightLegRowFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4DF9F2811733D006F2D33 /* FlightLegRowFooter.swift */; };
+		ADD4DFA228129854006F2D33 /* FlightLegArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4DFA128129854006F2D33 /* FlightLegArrow.swift */; };
+		ADDE564E281BE642000FACCE /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE564D281BE642000FACCE /* FlightInfo.swift */; };
+		ADDE5650281BE67E000FACCE /* FlightJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE564F281BE67E000FACCE /* FlightJourney.swift */; };
+		ADDE5654281BE6EE000FACCE /* BookingFormInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE5653281BE6EE000FACCE /* BookingFormInputData.swift */; };
+		ADDE5656281BE771000FACCE /* AirportPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE5655281BE771000FACCE /* AirportPickerRow.swift */; };
+		ADDE5658281BE8E0000FACCE /* BookingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE5657281BE8E0000FACCE /* BookingForm.swift */; };
+		ADE5B24027FFB3D500F14F01 /* FlightItineraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE5B23F27FFB3D500F14F01 /* FlightItineraryList.swift */; };
+		ADF0D70A281BF2360061622F /* FlightLegDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0D709281BF2360061622F /* FlightLegDetail.swift */; };
+		ADF3D87C280010D8002A7659 /* FlightSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3D87B280010D8002A7659 /* FlightSegment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81E4DD5BEB88526A9FDD6AA7 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		914CB544F8A956BCA3CAD48C /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		AD0459B6280029D4003667EE /* BookingFormModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormModal.swift; sourceTree = "<group>"; };
+		AD2FA3DD280A4A2B00CEED50 /* FlightLegRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegRow.swift; sourceTree = "<group>"; };
+		AD346810280E685C0072B340 /* FlightSegmentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegmentGenerator.swift; sourceTree = "<group>"; };
+		AD346812280E70CF0072B340 /* FlightSegmentSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegmentSectionHeader.swift; sourceTree = "<group>"; };
+		AD38F0D5281CD0B800FB3D7B /* FlightLegDetailBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetailBanner.swift; sourceTree = "<group>"; };
+		AD38F0D7281CD7D500FB3D7B /* FlightLegDetailWeatherGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetailWeatherGrid.swift; sourceTree = "<group>"; };
+		AD38F0D92820559D00FB3D7B /* FlightLegDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetailSection.swift; sourceTree = "<group>"; };
+		AD51B8C62842D32700441192 /* AirportPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportPicker.swift; sourceTree = "<group>"; };
+		AD51B8C82842DF3400441192 /* FlightLegInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegInfo.swift; sourceTree = "<group>"; };
+		AD6AA6152813373E007581C1 /* FlightLegGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegGenerator.swift; sourceTree = "<group>"; };
+		AD6AA6172813407A007581C1 /* FlightSegmentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegmentRow.swift; sourceTree = "<group>"; };
+		AD8715AA27FF95FC00D72D9E /* FlightPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8715AD27FF95FC00D72D9E /* FlightPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPlannerApp.swift; sourceTree = "<group>"; };
+		AD8715AF27FF95FC00D72D9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD8715B127FF95FE00D72D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD8715B427FF95FE00D72D9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD8715BD27FF97F300D72D9E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AD8715C227FF999A00D72D9E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AD8715C527FFA45400D72D9E /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
+		AD8715C727FFAE4500D72D9E /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		AD8715C927FFB0ED00D72D9E /* AirportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportData.swift; sourceTree = "<group>"; };
+		AD8724F72825FAB000FA7DCE /* PassengerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerInfo.swift; sourceTree = "<group>"; };
+		AD8AD0B328001F3A004AFB4A /* FlightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightData.swift; sourceTree = "<group>"; };
+		AD93C90828132889007FAE31 /* FlightLeg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLeg.swift; sourceTree = "<group>"; };
+		ADACD14A2844B48200396610 /* FlightForecastInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightForecastInfo.swift; sourceTree = "<group>"; };
+		ADBACEC42844E5F80070339C /* JourneyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPicker.swift; sourceTree = "<group>"; };
+		ADBACEC62844E64D0070339C /* BookingFormAirportDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormAirportDetails.swift; sourceTree = "<group>"; };
+		ADBACEC82844E7040070339C /* BookingFormDateDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormDateDetails.swift; sourceTree = "<group>"; };
+		ADBACECA2844E7960070339C /* BookingFormPassengerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormPassengerDetails.swift; sourceTree = "<group>"; };
+		ADCFCEE72823868D00E234C7 /* FlightPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlightPlanner.entitlements; sourceTree = "<group>"; };
+		ADCFCEE82823A28C00E234C7 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		ADD4DF9D281158C6006F2D33 /* FlightLegRowHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegRowHeader.swift; sourceTree = "<group>"; };
+		ADD4DF9F2811733D006F2D33 /* FlightLegRowFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegRowFooter.swift; sourceTree = "<group>"; };
+		ADD4DFA128129854006F2D33 /* FlightLegArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegArrow.swift; sourceTree = "<group>"; };
+		ADDE564D281BE642000FACCE /* FlightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
+		ADDE564F281BE67E000FACCE /* FlightJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightJourney.swift; sourceTree = "<group>"; };
+		ADDE5653281BE6EE000FACCE /* BookingFormInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormInputData.swift; sourceTree = "<group>"; };
+		ADDE5655281BE771000FACCE /* AirportPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportPickerRow.swift; sourceTree = "<group>"; };
+		ADDE5657281BE8E0000FACCE /* BookingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingForm.swift; sourceTree = "<group>"; };
+		ADE5B23F27FFB3D500F14F01 /* FlightItineraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightItineraryList.swift; sourceTree = "<group>"; };
+		ADF0D709281BF2360061622F /* FlightLegDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLegDetail.swift; sourceTree = "<group>"; };
+		ADF3D87B280010D8002A7659 /* FlightSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSegment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD8715A727FF95FC00D72D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		119C04B639E17E7A3968C051 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				81E4DD5BEB88526A9FDD6AA7 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		35A8BD40F72FD881625D9B86 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				914CB544F8A956BCA3CAD48C /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		AD116DC928129ADC004E5196 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD8715C727FFAE4500D72D9E /* Airport.swift */,
+				AD8715C927FFB0ED00D72D9E /* AirportData.swift */,
+				ADDE5653281BE6EE000FACCE /* BookingFormInputData.swift */,
+				AD8AD0B328001F3A004AFB4A /* FlightData.swift */,
+				ADACD14A2844B48200396610 /* FlightForecastInfo.swift */,
+				ADDE564D281BE642000FACCE /* FlightInfo.swift */,
+				ADDE564F281BE67E000FACCE /* FlightJourney.swift */,
+				AD93C90828132889007FAE31 /* FlightLeg.swift */,
+				AD6AA6152813373E007581C1 /* FlightLegGenerator.swift */,
+				AD51B8C82842DF3400441192 /* FlightLegInfo.swift */,
+				ADF3D87B280010D8002A7659 /* FlightSegment.swift */,
+				AD346810280E685C0072B340 /* FlightSegmentGenerator.swift */,
+				AD8724F72825FAB000FA7DCE /* PassengerInfo.swift */,
+				ADCFCEE82823A28C00E234C7 /* WeatherData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD116DCA28129AFF004E5196 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD8715AF27FF95FC00D72D9E /* ContentView.swift */,
+				AD116DCB28129FCF004E5196 /* BookingForm */,
+				AD116DCD28129FEC004E5196 /* FlightItineraryList */,
+				AD116DCC28129FDA004E5196 /* FlightLegDetail */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD116DCB28129FCF004E5196 /* BookingForm */ = {
+			isa = PBXGroup;
+			children = (
+				AD51B8C62842D32700441192 /* AirportPicker.swift */,
+				ADDE5655281BE771000FACCE /* AirportPickerRow.swift */,
+				ADDE5657281BE8E0000FACCE /* BookingForm.swift */,
+				ADBACEC62844E64D0070339C /* BookingFormAirportDetails.swift */,
+				ADBACEC82844E7040070339C /* BookingFormDateDetails.swift */,
+				AD0459B6280029D4003667EE /* BookingFormModal.swift */,
+				ADBACECA2844E7960070339C /* BookingFormPassengerDetails.swift */,
+				ADBACEC42844E5F80070339C /* JourneyPicker.swift */,
+			);
+			path = BookingForm;
+			sourceTree = "<group>";
+		};
+		AD116DCC28129FDA004E5196 /* FlightLegDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4DFA128129854006F2D33 /* FlightLegArrow.swift */,
+				ADF0D709281BF2360061622F /* FlightLegDetail.swift */,
+				AD38F0D5281CD0B800FB3D7B /* FlightLegDetailBanner.swift */,
+				AD38F0D92820559D00FB3D7B /* FlightLegDetailSection.swift */,
+				AD38F0D7281CD7D500FB3D7B /* FlightLegDetailWeatherGrid.swift */,
+			);
+			path = FlightLegDetail;
+			sourceTree = "<group>";
+		};
+		AD116DCD28129FEC004E5196 /* FlightItineraryList */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5B23F27FFB3D500F14F01 /* FlightItineraryList.swift */,
+				AD2FA3DD280A4A2B00CEED50 /* FlightLegRow.swift */,
+				ADD4DF9F2811733D006F2D33 /* FlightLegRowFooter.swift */,
+				ADD4DF9D281158C6006F2D33 /* FlightLegRowHeader.swift */,
+				AD6AA6172813407A007581C1 /* FlightSegmentRow.swift */,
+				AD346812280E70CF0072B340 /* FlightSegmentSectionHeader.swift */,
+			);
+			path = FlightItineraryList;
+			sourceTree = "<group>";
+		};
+		AD8715A127FF95FC00D72D9E = {
+			isa = PBXGroup;
+			children = (
+				AD8715BD27FF97F300D72D9E /* README.md */,
+				AD8715AC27FF95FC00D72D9E /* FlightPlanner */,
+				AD8715C127FF999A00D72D9E /* LICENSE */,
+				AD8715AB27FF95FC00D72D9E /* Products */,
+				35A8BD40F72FD881625D9B86 /* Configuration */,
+				119C04B639E17E7A3968C051 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		AD8715AB27FF95FC00D72D9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD8715AA27FF95FC00D72D9E /* FlightPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD8715AC27FF95FC00D72D9E /* FlightPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				AD8715AD27FF95FC00D72D9E /* FlightPlannerApp.swift */,
+				AD116DC928129ADC004E5196 /* Models */,
+				AD8715C427FFA40100D72D9E /* Resources */,
+				AD116DCA28129AFF004E5196 /* Views */,
+			);
+			path = FlightPlanner;
+			sourceTree = "<group>";
+		};
+		AD8715B327FF95FE00D72D9E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD8715B427FF95FE00D72D9E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD8715C127FF999A00D72D9E /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				AD8715C227FF999A00D72D9E /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		AD8715C427FFA40100D72D9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD8715C527FFA45400D72D9E /* Airports.json */,
+				AD8715B127FF95FE00D72D9E /* Assets.xcassets */,
+				ADCFCEE72823868D00E234C7 /* FlightPlanner.entitlements */,
+				AD8715B327FF95FE00D72D9E /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD8715A927FF95FC00D72D9E /* FlightPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8715B827FF95FE00D72D9E /* Build configuration list for PBXNativeTarget "FlightPlanner" */;
+			buildPhases = (
+				AD8715A627FF95FC00D72D9E /* Sources */,
+				AD8715A727FF95FC00D72D9E /* Frameworks */,
+				AD8715A827FF95FC00D72D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightPlanner;
+			productName = FlightPlanner;
+			productReference = AD8715AA27FF95FC00D72D9E /* FlightPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD8715A227FF95FC00D72D9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					AD8715A927FF95FC00D72D9E = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = AD8715A527FF95FC00D72D9E /* Build configuration list for PBXProject "FlightPlanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD8715A127FF95FC00D72D9E;
+			productRefGroup = AD8715AB27FF95FC00D72D9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD8715A927FF95FC00D72D9E /* FlightPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD8715A827FF95FC00D72D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8715C327FF999A00D72D9E /* LICENSE.txt in Resources */,
+				AD8715BE27FF97F300D72D9E /* README.md in Resources */,
+				AD8715C627FFA45400D72D9E /* Airports.json in Resources */,
+				AD8715B527FF95FE00D72D9E /* Preview Assets.xcassets in Resources */,
+				AD8715B227FF95FE00D72D9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD8715A627FF95FC00D72D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADACD14B2844B48200396610 /* FlightForecastInfo.swift in Sources */,
+				ADD4DFA228129854006F2D33 /* FlightLegArrow.swift in Sources */,
+				AD8724F82825FAB000FA7DCE /* PassengerInfo.swift in Sources */,
+				ADDE564E281BE642000FACCE /* FlightInfo.swift in Sources */,
+				ADDE5656281BE771000FACCE /* AirportPickerRow.swift in Sources */,
+				AD8715CA27FFB0ED00D72D9E /* AirportData.swift in Sources */,
+				AD38F0D6281CD0B800FB3D7B /* FlightLegDetailBanner.swift in Sources */,
+				AD8715C827FFAE4500D72D9E /* Airport.swift in Sources */,
+				ADBACEC92844E7040070339C /* BookingFormDateDetails.swift in Sources */,
+				ADBACEC72844E64D0070339C /* BookingFormAirportDetails.swift in Sources */,
+				AD8715B027FF95FC00D72D9E /* ContentView.swift in Sources */,
+				AD38F0D8281CD7D500FB3D7B /* FlightLegDetailWeatherGrid.swift in Sources */,
+				AD8AD0B428001F3A004AFB4A /* FlightData.swift in Sources */,
+				ADD4DF9E281158C6006F2D33 /* FlightLegRowHeader.swift in Sources */,
+				ADBACECB2844E7960070339C /* BookingFormPassengerDetails.swift in Sources */,
+				ADF0D70A281BF2360061622F /* FlightLegDetail.swift in Sources */,
+				ADDE5654281BE6EE000FACCE /* BookingFormInputData.swift in Sources */,
+				AD2FA3DE280A4A2B00CEED50 /* FlightLegRow.swift in Sources */,
+				ADE5B24027FFB3D500F14F01 /* FlightItineraryList.swift in Sources */,
+				ADDE5658281BE8E0000FACCE /* BookingForm.swift in Sources */,
+				AD8715AE27FF95FC00D72D9E /* FlightPlannerApp.swift in Sources */,
+				ADCFCEE92823A28C00E234C7 /* WeatherData.swift in Sources */,
+				AD51B8C72842D32700441192 /* AirportPicker.swift in Sources */,
+				ADDE5650281BE67E000FACCE /* FlightJourney.swift in Sources */,
+				AD6AA6182813407A007581C1 /* FlightSegmentRow.swift in Sources */,
+				AD93C90928132889007FAE31 /* FlightLeg.swift in Sources */,
+				AD6AA6162813373E007581C1 /* FlightLegGenerator.swift in Sources */,
+				ADBACEC52844E5F80070339C /* JourneyPicker.swift in Sources */,
+				AD346813280E70CF0072B340 /* FlightSegmentSectionHeader.swift in Sources */,
+				ADD4DFA02811733D006F2D33 /* FlightLegRowFooter.swift in Sources */,
+				AD0459B7280029D4003667EE /* BookingFormModal.swift in Sources */,
+				ADF3D87C280010D8002A7659 /* FlightSegment.swift in Sources */,
+				AD346811280E685C0072B340 /* FlightSegmentGenerator.swift in Sources */,
+				AD51B8C92842DF3400441192 /* FlightLegInfo.swift in Sources */,
+				AD38F0DA2820559D00FB3D7B /* FlightLegDetailSection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AD8715B627FF95FE00D72D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914CB544F8A956BCA3CAD48C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD8715B727FF95FE00D72D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914CB544F8A956BCA3CAD48C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD8715B927FF95FE00D72D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914CB544F8A956BCA3CAD48C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightPlanner/Resources/FlightPlanner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightPlanner/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.FlightPlanner${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD8715BA27FF95FE00D72D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914CB544F8A956BCA3CAD48C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlightPlanner/Resources/FlightPlanner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightPlanner/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.FlightPlanner${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD8715A527FF95FC00D72D9E /* Build configuration list for PBXProject "FlightPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8715B627FF95FE00D72D9E /* Debug */,
+				AD8715B727FF95FE00D72D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8715B827FF95FE00D72D9E /* Build configuration list for PBXNativeTarget "FlightPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8715B927FF95FE00D72D9E /* Debug */,
+				AD8715BA27FF95FE00D72D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD8715A227FF95FC00D72D9E /* Project object */;
+}

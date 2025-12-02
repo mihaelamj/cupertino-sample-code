@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE37A3852ACDBD57001E9472 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3842ACDBD57001E9472 /* ContentView.swift */; };
+		BE37A3892ACDBD57001E9472 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3882ACDBD57001E9472 /* ViewControllerRepresentable.swift */; };
+		BE37A38C2ACDBD57001E9472 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = BE37A38B2ACDBD57001E9472 /* Synth.aif */; };
+		BE37A38E2ACDBD57001E9472 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A38D2ACDBD57001E9472 /* SimplePlayEngine.swift */; };
+		BE37A3912ACDBD57001E9472 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3902ACDBD57001E9472 /* MIDIManager.swift */; };
+		BE37A3932ACDBD57001E9472 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3922ACDBD57001E9472 /* TypeAliases.swift */; };
+		BE37A3962ACDBD57001E9472 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3952ACDBD57001E9472 /* StringHelpers.swift */; };
+		BE37A3992ACDBD57001E9472 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3982ACDBD57001E9472 /* AudioUnitHostModel.swift */; };
+		BE37A39B2ACDBD57001E9472 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A39A2ACDBD57001E9472 /* AudioUnitViewModel.swift */; };
+		BE37A39D2ACDBD57001E9472 /* vDSP_audio_unitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A39C2ACDBD57001E9472 /* vDSP_audio_unitApp.swift */; };
+		BE37A3A02ACDBD57001E9472 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE37A39F2ACDBD57001E9472 /* Preview Assets.xcassets */; };
+		BE37A3A22ACDBD59001E9472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE37A3A12ACDBD59001E9472 /* Assets.xcassets */; };
+		BE37A3A92ACDBD59001E9472 /* vDSP-audio-unitExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE37A3A82ACDBD59001E9472 /* vDSP-audio-unitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE37A3AE2ACDBD59001E9472 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BE37A3AD2ACDBD59001E9472 /* README.md */; };
+		BE37A3B32ACDBD59001E9472 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3B22ACDBD59001E9472 /* ParameterSpecBase.swift */; };
+		BE37A3B62ACDBD59001E9472 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3B52ACDBD59001E9472 /* CrossPlatform.swift */; };
+		BE37A3B82ACDBD59001E9472 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3B72ACDBD59001E9472 /* String+Utils.swift */; };
+		BE37A3BC2ACDBD59001E9472 /* vDSP_audio_unitExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3BB2ACDBD59001E9472 /* vDSP_audio_unitExtensionAudioUnit.mm */; };
+		BE37A3BF2ACDBD59001E9472 /* vDSP_audio_unitExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = BE37A3BE2ACDBD59001E9472 /* vDSP_audio_unitExtensionAUProcessHelper.hpp */; };
+		BE37A3C12ACDBD59001E9472 /* vDSP_audio_unitExtensionBufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = BE37A3C02ACDBD59001E9472 /* vDSP_audio_unitExtensionBufferedAudioBus.hpp */; };
+		BE37A3C52ACDBD59001E9472 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3C42ACDBD59001E9472 /* Parameters.swift */; };
+		BE37A3C82ACDBD59001E9472 /* vDSP_audio_unitExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = BE37A3C72ACDBD59001E9472 /* vDSP_audio_unitExtensionDSPKernel.hpp */; };
+		BE37A3CB2ACDBD59001E9472 /* vDSP_audio_unitExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3CA2ACDBD59001E9472 /* vDSP_audio_unitExtensionMainView.swift */; };
+		BE37A3CD2ACDBD59001E9472 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3CC2ACDBD59001E9472 /* ParameterSlider.swift */; };
+		BE37A3D22ACDBD59001E9472 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE37A3D02ACDBD59001E9472 /* AudioUnitViewController.xib */; };
+		BE37A3D42ACDBD59001E9472 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3D32ACDBD59001E9472 /* ObservableAUParameter.swift */; };
+		BE37A3D62ACDBD59001E9472 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37A3D52ACDBD59001E9472 /* AudioUnitViewController.swift */; };
+		BE8D28D12ACDC8B5007D45F3 /* BiquadCurveDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D28D02ACDC8B5007D45F3 /* BiquadCurveDisplay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE37A3AA2ACDBD59001E9472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE37A3792ACDBD57001E9472 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE37A3A72ACDBD59001E9472;
+			remoteInfo = "vDSP-audio-unitExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE37A3DD2ACDBD59001E9472 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE37A3A92ACDBD59001E9472 /* vDSP-audio-unitExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2FD307BABF9C1FF11E8797F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7C60B4225954374F5248F579 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		BE37A3812ACDBD57001E9472 /* vDSP-audio-unit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vDSP-audio-unit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE37A3842ACDBD57001E9472 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE37A3882ACDBD57001E9472 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		BE37A38B2ACDBD57001E9472 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		BE37A38D2ACDBD57001E9472 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		BE37A3902ACDBD57001E9472 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		BE37A3922ACDBD57001E9472 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		BE37A3952ACDBD57001E9472 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		BE37A3982ACDBD57001E9472 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		BE37A39A2ACDBD57001E9472 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		BE37A39C2ACDBD57001E9472 /* vDSP_audio_unitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vDSP_audio_unitApp.swift; sourceTree = "<group>"; };
+		BE37A39F2ACDBD57001E9472 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE37A3A12ACDBD59001E9472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE37A3A32ACDBD59001E9472 /* vDSP_audio_unit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vDSP_audio_unit.entitlements; sourceTree = "<group>"; };
+		BE37A3A82ACDBD59001E9472 /* vDSP-audio-unitExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "vDSP-audio-unitExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE37A3AD2ACDBD59001E9472 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE37A3B02ACDBD59001E9472 /* vDSP_audio_unitExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vDSP_audio_unitExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE37A3B22ACDBD59001E9472 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		BE37A3B52ACDBD59001E9472 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		BE37A3B72ACDBD59001E9472 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		BE37A3BA2ACDBD59001E9472 /* vDSP_audio_unitExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vDSP_audio_unitExtensionAudioUnit.h; sourceTree = "<group>"; };
+		BE37A3BB2ACDBD59001E9472 /* vDSP_audio_unitExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = vDSP_audio_unitExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		BE37A3BE2ACDBD59001E9472 /* vDSP_audio_unitExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vDSP_audio_unitExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		BE37A3C02ACDBD59001E9472 /* vDSP_audio_unitExtensionBufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vDSP_audio_unitExtensionBufferedAudioBus.hpp; sourceTree = "<group>"; };
+		BE37A3C32ACDBD59001E9472 /* vDSP_audio_unitExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vDSP_audio_unitExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		BE37A3C42ACDBD59001E9472 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		BE37A3C72ACDBD59001E9472 /* vDSP_audio_unitExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vDSP_audio_unitExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		BE37A3CA2ACDBD59001E9472 /* vDSP_audio_unitExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vDSP_audio_unitExtensionMainView.swift; sourceTree = "<group>"; };
+		BE37A3CC2ACDBD59001E9472 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		BE37A3D12ACDBD59001E9472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		BE37A3D32ACDBD59001E9472 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		BE37A3D52ACDBD59001E9472 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		BE37A3D72ACDBD59001E9472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8D28D02ACDC8B5007D45F3 /* BiquadCurveDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiquadCurveDisplay.swift; sourceTree = "<group>"; };
+		CA2A5C01165DADCED55315BA /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE37A37E2ACDBD57001E9472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE37A3A52ACDBD59001E9472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AAA19AC1C9EA1391A7560FC /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				CA2A5C01165DADCED55315BA /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		BE37A3782ACDBD57001E9472 = {
+			isa = PBXGroup;
+			children = (
+				2FD307BABF9C1FF11E8797F6 /* README.md */,
+				BE37A3832ACDBD57001E9472 /* vDSP-audio-unit */,
+				BE37A3AC2ACDBD59001E9472 /* vDSP-audio-unitExtension */,
+				BE37A3822ACDBD57001E9472 /* Products */,
+				CED549C66BE6F58DAECD6186 /* Configuration */,
+				3AAA19AC1C9EA1391A7560FC /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		BE37A3822ACDBD57001E9472 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3812ACDBD57001E9472 /* vDSP-audio-unit.app */,
+				BE37A3A82ACDBD59001E9472 /* vDSP-audio-unitExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE37A3832ACDBD57001E9472 /* vDSP-audio-unit */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3842ACDBD57001E9472 /* ContentView.swift */,
+				BE37A39C2ACDBD57001E9472 /* vDSP_audio_unitApp.swift */,
+				BE37A3A12ACDBD59001E9472 /* Assets.xcassets */,
+				BE37A3A32ACDBD59001E9472 /* vDSP_audio_unit.entitlements */,
+				BE37A3862ACDBD57001E9472 /* Common */,
+				BE37A3972ACDBD57001E9472 /* Model */,
+				BE37A39E2ACDBD57001E9472 /* Preview Content */,
+			);
+			path = "vDSP-audio-unit";
+			sourceTree = "<group>";
+		};
+		BE37A3862ACDBD57001E9472 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3922ACDBD57001E9472 /* TypeAliases.swift */,
+				BE37A3872ACDBD57001E9472 /* UI */,
+				BE37A38A2ACDBD57001E9472 /* Audio */,
+				BE37A38F2ACDBD57001E9472 /* MIDI */,
+				BE37A3942ACDBD57001E9472 /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BE37A3872ACDBD57001E9472 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3882ACDBD57001E9472 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BE37A38A2ACDBD57001E9472 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A38B2ACDBD57001E9472 /* Synth.aif */,
+				BE37A38D2ACDBD57001E9472 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		BE37A38F2ACDBD57001E9472 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3902ACDBD57001E9472 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		BE37A3942ACDBD57001E9472 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3952ACDBD57001E9472 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		BE37A3972ACDBD57001E9472 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3982ACDBD57001E9472 /* AudioUnitHostModel.swift */,
+				BE37A39A2ACDBD57001E9472 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE37A39E2ACDBD57001E9472 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A39F2ACDBD57001E9472 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE37A3AC2ACDBD59001E9472 /* vDSP-audio-unitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3AD2ACDBD59001E9472 /* README.md */,
+				BE37A3D72ACDBD59001E9472 /* Info.plist */,
+				BE37A3AF2ACDBD59001E9472 /* Common */,
+				BE37A3C22ACDBD59001E9472 /* Parameters */,
+				BE37A3C62ACDBD59001E9472 /* DSP */,
+				BE37A3C92ACDBD59001E9472 /* UI */,
+			);
+			path = "vDSP-audio-unitExtension";
+			sourceTree = "<group>";
+		};
+		BE37A3AF2ACDBD59001E9472 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3B02ACDBD59001E9472 /* vDSP_audio_unitExtension-Bridging-Header.h */,
+				BE37A3B12ACDBD59001E9472 /* Parameters */,
+				BE37A3B42ACDBD59001E9472 /* Utility */,
+				BE37A3B92ACDBD59001E9472 /* Audio Unit */,
+				BE37A3BD2ACDBD59001E9472 /* DSP */,
+				BE37A3CE2ACDBD59001E9472 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BE37A3B12ACDBD59001E9472 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3B22ACDBD59001E9472 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		BE37A3B42ACDBD59001E9472 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3B52ACDBD59001E9472 /* CrossPlatform.swift */,
+				BE37A3B72ACDBD59001E9472 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BE37A3B92ACDBD59001E9472 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3BA2ACDBD59001E9472 /* vDSP_audio_unitExtensionAudioUnit.h */,
+				BE37A3BB2ACDBD59001E9472 /* vDSP_audio_unitExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		BE37A3BD2ACDBD59001E9472 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3BE2ACDBD59001E9472 /* vDSP_audio_unitExtensionAUProcessHelper.hpp */,
+				BE37A3C02ACDBD59001E9472 /* vDSP_audio_unitExtensionBufferedAudioBus.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		BE37A3C22ACDBD59001E9472 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3C32ACDBD59001E9472 /* vDSP_audio_unitExtensionParameterAddresses.h */,
+				BE37A3C42ACDBD59001E9472 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		BE37A3C62ACDBD59001E9472 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3C72ACDBD59001E9472 /* vDSP_audio_unitExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		BE37A3C92ACDBD59001E9472 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3CA2ACDBD59001E9472 /* vDSP_audio_unitExtensionMainView.swift */,
+				BE37A3CC2ACDBD59001E9472 /* ParameterSlider.swift */,
+				BE8D28D02ACDC8B5007D45F3 /* BiquadCurveDisplay.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BE37A3CE2ACDBD59001E9472 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3D32ACDBD59001E9472 /* ObservableAUParameter.swift */,
+				BE37A3D52ACDBD59001E9472 /* AudioUnitViewController.swift */,
+				BE37A3CF2ACDBD59001E9472 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BE37A3CF2ACDBD59001E9472 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BE37A3D02ACDBD59001E9472 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		CED549C66BE6F58DAECD6186 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7C60B4225954374F5248F579 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE37A3802ACDBD57001E9472 /* vDSP-audio-unit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE37A3DE2ACDBD59001E9472 /* Build configuration list for PBXNativeTarget "vDSP-audio-unit" */;
+			buildPhases = (
+				BE37A37D2ACDBD57001E9472 /* Sources */,
+				BE37A37E2ACDBD57001E9472 /* Frameworks */,
+				BE37A37F2ACDBD57001E9472 /* Resources */,
+				BE37A3DD2ACDBD59001E9472 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE37A3AB2ACDBD59001E9472 /* PBXTargetDependency */,
+			);
+			name = "vDSP-audio-unit";
+			productName = "vDSP-audio-unit";
+			productReference = BE37A3812ACDBD57001E9472 /* vDSP-audio-unit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE37A3A72ACDBD59001E9472 /* vDSP-audio-unitExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE37A3DA2ACDBD59001E9472 /* Build configuration list for PBXNativeTarget "vDSP-audio-unitExtension" */;
+			buildPhases = (
+				BE37A3A42ACDBD59001E9472 /* Sources */,
+				BE37A3A52ACDBD59001E9472 /* Frameworks */,
+				BE37A3A62ACDBD59001E9472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vDSP-audio-unitExtension";
+			productName = "vDSP-audio-unitExtension";
+			productReference = BE37A3A82ACDBD59001E9472 /* vDSP-audio-unitExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE37A3792ACDBD57001E9472 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					BE37A3802ACDBD57001E9472 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					BE37A3A72ACDBD59001E9472 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = BE37A37C2ACDBD57001E9472 /* Build configuration list for PBXProject "vDSP-audio-unit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE37A3782ACDBD57001E9472;
+			productRefGroup = BE37A3822ACDBD57001E9472 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE37A3802ACDBD57001E9472 /* vDSP-audio-unit */,
+				BE37A3A72ACDBD59001E9472 /* vDSP-audio-unitExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE37A37F2ACDBD57001E9472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE37A3A02ACDBD57001E9472 /* Preview Assets.xcassets in Resources */,
+				BE37A3A22ACDBD59001E9472 /* Assets.xcassets in Resources */,
+				BE37A38C2ACDBD57001E9472 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE37A3A62ACDBD59001E9472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE37A3C12ACDBD59001E9472 /* vDSP_audio_unitExtensionBufferedAudioBus.hpp in Resources */,
+				BE37A3D22ACDBD59001E9472 /* AudioUnitViewController.xib in Resources */,
+				BE37A3C82ACDBD59001E9472 /* vDSP_audio_unitExtensionDSPKernel.hpp in Resources */,
+				BE37A3BF2ACDBD59001E9472 /* vDSP_audio_unitExtensionAUProcessHelper.hpp in Resources */,
+				BE37A3AE2ACDBD59001E9472 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE37A37D2ACDBD57001E9472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE37A3992ACDBD57001E9472 /* AudioUnitHostModel.swift in Sources */,
+				BE37A39B2ACDBD57001E9472 /* AudioUnitViewModel.swift in Sources */,
+				BE37A3852ACDBD57001E9472 /* ContentView.swift in Sources */,
+				BE37A39D2ACDBD57001E9472 /* vDSP_audio_unitApp.swift in Sources */,
+				BE37A3892ACDBD57001E9472 /* ViewControllerRepresentable.swift in Sources */,
+				BE37A3962ACDBD57001E9472 /* StringHelpers.swift in Sources */,
+				BE37A3912ACDBD57001E9472 /* MIDIManager.swift in Sources */,
+				BE37A3932ACDBD57001E9472 /* TypeAliases.swift in Sources */,
+				BE37A38E2ACDBD57001E9472 /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE37A3A42ACDBD59001E9472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE37A3C52ACDBD59001E9472 /* Parameters.swift in Sources */,
+				BE37A3BC2ACDBD59001E9472 /* vDSP_audio_unitExtensionAudioUnit.mm in Sources */,
+				BE37A3D42ACDBD59001E9472 /* ObservableAUParameter.swift in Sources */,
+				BE37A3B32ACDBD59001E9472 /* ParameterSpecBase.swift in Sources */,
+				BE8D28D12ACDC8B5007D45F3 /* BiquadCurveDisplay.swift in Sources */,
+				BE37A3B62ACDBD59001E9472 /* CrossPlatform.swift in Sources */,
+				BE37A3D62ACDBD59001E9472 /* AudioUnitViewController.swift in Sources */,
+				BE37A3CD2ACDBD59001E9472 /* ParameterSlider.swift in Sources */,
+				BE37A3B82ACDBD59001E9472 /* String+Utils.swift in Sources */,
+				BE37A3CB2ACDBD59001E9472 /* vDSP_audio_unitExtensionMainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE37A3AB2ACDBD59001E9472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE37A3A72ACDBD59001E9472 /* vDSP-audio-unitExtension */;
+			targetProxy = BE37A3AA2ACDBD59001E9472 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE37A3D02ACDBD59001E9472 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE37A3D12ACDBD59001E9472 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE37A3D82ACDBD59001E9472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C60B4225954374F5248F579 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE37A3D92ACDBD59001E9472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C60B4225954374F5248F579 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BE37A3DB2ACDBD59001E9472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C60B4225954374F5248F579 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "vDSP-audio-unitExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "vDSP-audio-unitExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vDSP-audio-unit${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "vDSP-audio-unitExtension/Common/vDSP_audio_unitExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE37A3DC2ACDBD59001E9472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C60B4225954374F5248F579 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "vDSP-audio-unitExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "vDSP-audio-unitExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vDSP-audio-unit${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "vDSP-audio-unitExtension/Common/vDSP_audio_unitExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BE37A3DF2ACDBD59001E9472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C60B4225954374F5248F579 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vDSP-audio-unit/vDSP_audio_unit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vDSP-audio-unit/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = vDSP_audio_unit;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vDSP-audio-unit${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE37A3E02ACDBD59001E9472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C60B4225954374F5248F579 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vDSP-audio-unit/vDSP_audio_unit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vDSP-audio-unit/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = vDSP_audio_unit;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vDSP-audio-unit${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE37A37C2ACDBD57001E9472 /* Build configuration list for PBXProject "vDSP-audio-unit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE37A3D82ACDBD59001E9472 /* Debug */,
+				BE37A3D92ACDBD59001E9472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE37A3DA2ACDBD59001E9472 /* Build configuration list for PBXNativeTarget "vDSP-audio-unitExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE37A3DB2ACDBD59001E9472 /* Debug */,
+				BE37A3DC2ACDBD59001E9472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE37A3DE2ACDBD59001E9472 /* Build configuration list for PBXNativeTarget "vDSP-audio-unit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE37A3DF2ACDBD59001E9472 /* Debug */,
+				BE37A3E02ACDBD59001E9472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE37A3792ACDBD57001E9472 /* Project object */;
+}

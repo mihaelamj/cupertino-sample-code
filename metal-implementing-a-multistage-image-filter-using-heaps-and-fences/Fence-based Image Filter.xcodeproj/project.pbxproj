@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AAE8FAC1FE48FFA006ACED2 /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8F9B1FE48FFA006ACED2 /* AAPLAppDelegate.m */; };
+		3AAE8FAD1FE48FFA006ACED2 /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8F9B1FE48FFA006ACED2 /* AAPLAppDelegate.m */; };
+		3AAE8FB11FE48FFA006ACED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE8F9F1FE48FFA006ACED2 /* LaunchScreen.storyboard */; };
+		3AAE8FB31FE48FFA006ACED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE8FA11FE48FFA006ACED2 /* Main.storyboard */; };
+		3AAE8FB81FE48FFA006ACED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE8FA61FE48FFA006ACED2 /* Main.storyboard */; };
+		3AAE8FBC1FE48FFA006ACED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8FA91FE48FFA006ACED2 /* main.m */; };
+		3AAE8FBD1FE48FFA006ACED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8FA91FE48FFA006ACED2 /* main.m */; };
+		3AAE8FBE1FE48FFA006ACED2 /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8FAB1FE48FFA006ACED2 /* AAPLViewController.m */; };
+		3AAE8FBF1FE48FFA006ACED2 /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8FAB1FE48FFA006ACED2 /* AAPLViewController.m */; };
+		3AAE8FED1FE4983C006ACED2 /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8FAB1FE48FFA006ACED2 /* AAPLViewController.m */; };
+		3AAE8FEF1FE49844006ACED2 /* AAPLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A542F1D2DB9C4005B987B /* AAPLFilter.m */; };
+		3AAE8FF01FE49844006ACED2 /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54321D2DB9C4005B987B /* AAPLRenderer.m */; };
+		3AAE8FF41FE4985A006ACED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE8FA91FE48FFA006ACED2 /* main.m */; };
+		3AE06B0C1FE4A5450044C03F /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3AE06B0B1FE4A5450044C03F /* Images */; };
+		3AE06B0D1FE4A5450044C03F /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3AE06B0B1FE4A5450044C03F /* Images */; };
+		3AE06B0E1FE4A5450044C03F /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3AE06B0B1FE4A5450044C03F /* Images */; };
+		3AE06B101FE4A9EA0044C03F /* APPLFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54301D2DB9C4005B987B /* APPLFilter.metal */; };
+		3AE06B111FE4A9EA0044C03F /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54351D2DB9C4005B987B /* AAPLShaders.metal */; };
+		AB0A53E01D2DB575005B987B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A53DF1D2DB575005B987B /* Metal.framework */; };
+		AB0A53E21D2DB575005B987B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A53E11D2DB575005B987B /* MetalKit.framework */; };
+		AB0A53E41D2DB575005B987B /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A53E31D2DB575005B987B /* ModelIO.framework */; };
+		AB0A540E1D2DB998005B987B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A53DF1D2DB575005B987B /* Metal.framework */; };
+		AB0A540F1D2DB998005B987B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A53E11D2DB575005B987B /* MetalKit.framework */; };
+		AB0A54101D2DB998005B987B /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A53E31D2DB575005B987B /* ModelIO.framework */; };
+		AB0A54381D2DB9C4005B987B /* AAPLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A542F1D2DB9C4005B987B /* AAPLFilter.m */; };
+		AB0A54391D2DB9C4005B987B /* APPLFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54301D2DB9C4005B987B /* APPLFilter.metal */; };
+		AB0A543A1D2DB9C4005B987B /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54321D2DB9C4005B987B /* AAPLRenderer.m */; };
+		AB0A543D1D2DB9C4005B987B /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54351D2DB9C4005B987B /* AAPLShaders.metal */; };
+		AB0A54431D2DBA07005B987B /* AAPLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A542F1D2DB9C4005B987B /* AAPLFilter.m */; };
+		AB0A54441D2DBA07005B987B /* APPLFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54301D2DB9C4005B987B /* APPLFilter.metal */; };
+		AB0A54461D2DBA07005B987B /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54321D2DB9C4005B987B /* AAPLRenderer.m */; };
+		AB0A54481D2DBA07005B987B /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AB0A54351D2DB9C4005B987B /* AAPLShaders.metal */; };
+		EB373D9B2CDB282A00EA0E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE8FE91FE49797006ACED2 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		3AAE8F9B1FE48FFA006ACED2 /* AAPLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAppDelegate.m; sourceTree = "<group>"; };
+		3AAE8F9C1FE48FFA006ACED2 /* AAPLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLViewController.h; sourceTree = "<group>"; };
+		3AAE8FA01FE48FFA006ACED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AAE8FA21FE48FFA006ACED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AAE8FA31FE48FFA006ACED2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AAE8FA71FE48FFA006ACED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AAE8FA81FE48FFA006ACED2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AAE8FA91FE48FFA006ACED2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AAE8FAA1FE48FFA006ACED2 /* AAPLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLAppDelegate.h; sourceTree = "<group>"; };
+		3AAE8FAB1FE48FFA006ACED2 /* AAPLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLViewController.m; sourceTree = "<group>"; };
+		3AAE8FD11FE49728006ACED2 /* Image Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAE8FE91FE49797006ACED2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3AAE8FEA1FE49797006ACED2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AE06B0B1FE4A5450044C03F /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		3AE06B121FE4C9F50044C03F /* AAPLShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
+		65801BDEE25C9EC63C242D8F /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		AB0A53DD1D2DB575005B987B /* Image Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0A53DF1D2DB575005B987B /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		AB0A53E11D2DB575005B987B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		AB0A53E31D2DB575005B987B /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		AB0A540D1D2DB998005B987B /* Image Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0A542E1D2DB9C4005B987B /* AAPLFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLFilter.h; sourceTree = "<group>"; };
+		AB0A542F1D2DB9C4005B987B /* AAPLFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLFilter.m; sourceTree = "<group>"; };
+		AB0A54301D2DB9C4005B987B /* APPLFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = APPLFilter.metal; sourceTree = "<group>"; };
+		AB0A54311D2DB9C4005B987B /* AAPLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLRenderer.h; sourceTree = "<group>"; };
+		AB0A54321D2DB9C4005B987B /* AAPLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLRenderer.m; sourceTree = "<group>"; };
+		AB0A54351D2DB9C4005B987B /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
+		B5EE3C6F1D06705200142200 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AAE8FCE1FE49728006ACED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0A53DA1D2DB575005B987B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0A53E41D2DB575005B987B /* ModelIO.framework in Frameworks */,
+				AB0A53E01D2DB575005B987B /* Metal.framework in Frameworks */,
+				AB0A53E21D2DB575005B987B /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0A540A1D2DB998005B987B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0A54101D2DB998005B987B /* ModelIO.framework in Frameworks */,
+				AB0A540E1D2DB998005B987B /* Metal.framework in Frameworks */,
+				AB0A540F1D2DB998005B987B /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2685D0F4D2D94A781DDE6CB3 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				65801BDEE25C9EC63C242D8F /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+		3AAE8F9A1FE48FFA006ACED2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3AAE8FAA1FE48FFA006ACED2 /* AAPLAppDelegate.h */,
+				3AAE8F9B1FE48FFA006ACED2 /* AAPLAppDelegate.m */,
+				3AAE8F9C1FE48FFA006ACED2 /* AAPLViewController.h */,
+				3AAE8FAB1FE48FFA006ACED2 /* AAPLViewController.m */,
+				3AAE8FA91FE48FFA006ACED2 /* main.m */,
+				3AAE8FD21FE49728006ACED2 /* macOS */,
+				3AAE8F9D1FE48FFA006ACED2 /* iOS */,
+				3AAE8FA41FE48FFA006ACED2 /* tvOS */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3AAE8F9D1FE48FFA006ACED2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AAE8F9F1FE48FFA006ACED2 /* LaunchScreen.storyboard */,
+				3AAE8FA11FE48FFA006ACED2 /* Main.storyboard */,
+				3AAE8FA31FE48FFA006ACED2 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3AAE8FA41FE48FFA006ACED2 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AAE8FA61FE48FFA006ACED2 /* Main.storyboard */,
+				3AAE8FA81FE48FFA006ACED2 /* Info.plist */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		3AAE8FD21FE49728006ACED2 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AAE8FE91FE49797006ACED2 /* Main.storyboard */,
+				3AAE8FEA1FE49797006ACED2 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		4E7BE4C1987B92AFFB4ECDAD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		AB0A53DE1D2DB575005B987B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A53DF1D2DB575005B987B /* Metal.framework */,
+				AB0A53E11D2DB575005B987B /* MetalKit.framework */,
+				AB0A53E31D2DB575005B987B /* ModelIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB0A54081D2DB86B005B987B /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A54311D2DB9C4005B987B /* AAPLRenderer.h */,
+				AB0A54321D2DB9C4005B987B /* AAPLRenderer.m */,
+				AB0A542E1D2DB9C4005B987B /* AAPLFilter.h */,
+				AB0A542F1D2DB9C4005B987B /* AAPLFilter.m */,
+				3AE06B121FE4C9F50044C03F /* AAPLShaderTypes.h */,
+				AB0A54301D2DB9C4005B987B /* APPLFilter.metal */,
+				AB0A54351D2DB9C4005B987B /* AAPLShaders.metal */,
+				3AE06B0B1FE4A5450044C03F /* Images */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		AB8CD52A1CF37803000FB6CD = {
+			isa = PBXGroup;
+			children = (
+				B5EE3C6F1D06705200142200 /* README.md */,
+				AB0A54081D2DB86B005B987B /* Renderer */,
+				3AAE8F9A1FE48FFA006ACED2 /* Application */,
+				AB0A53DE1D2DB575005B987B /* Frameworks */,
+				AB8CD5341CF37803000FB6CD /* Products */,
+				4E7BE4C1987B92AFFB4ECDAD /* Configuration */,
+				2685D0F4D2D94A781DDE6CB3 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		AB8CD5341CF37803000FB6CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A53DD1D2DB575005B987B /* Image Filter.app */,
+				AB0A540D1D2DB998005B987B /* Image Filter.app */,
+				3AAE8FD11FE49728006ACED2 /* Image Filter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AAE8FD01FE49728006ACED2 /* macOS - Image Filter (Fence-based) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AAE8FE41FE4972A006ACED2 /* Build configuration list for PBXNativeTarget "macOS - Image Filter (Fence-based)" */;
+			buildPhases = (
+				3AAE8FCD1FE49728006ACED2 /* Sources */,
+				3AAE8FCE1FE49728006ACED2 /* Frameworks */,
+				3AAE8FCF1FE49728006ACED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macOS - Image Filter (Fence-based)";
+			productName = macOS;
+			productReference = 3AAE8FD11FE49728006ACED2 /* Image Filter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB0A53DC1D2DB575005B987B /* tvOS -  Image Filter (Fence-based) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0A53FA1D2DB576005B987B /* Build configuration list for PBXNativeTarget "tvOS -  Image Filter (Fence-based)" */;
+			buildPhases = (
+				AB0A53D91D2DB575005B987B /* Sources */,
+				AB0A53DA1D2DB575005B987B /* Frameworks */,
+				AB0A53DB1D2DB575005B987B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS -  Image Filter (Fence-based)";
+			productName = "MetalHeapsAndFences-tvOS";
+			productReference = AB0A53DD1D2DB575005B987B /* Image Filter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB0A540C1D2DB998005B987B /* iOS - Image Filter (Fence-based) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0A54271D2DB999005B987B /* Build configuration list for PBXNativeTarget "iOS - Image Filter (Fence-based)" */;
+			buildPhases = (
+				AB0A54091D2DB998005B987B /* Sources */,
+				AB0A540A1D2DB998005B987B /* Frameworks */,
+				AB0A540B1D2DB998005B987B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS - Image Filter (Fence-based)";
+			productName = "MetalHeapsAndFences-iOS";
+			productReference = AB0A540D1D2DB998005B987B /* Image Filter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB8CD52B1CF37803000FB6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3AAE8FD01FE49728006ACED2 = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = A93A5CM278;
+						ProvisioningStyle = Automatic;
+					};
+					AB0A53DC1D2DB575005B987B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A93A5CM278;
+						ProvisioningStyle = Automatic;
+					};
+					AB0A540C1D2DB998005B987B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A93A5CM278;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AB8CD52E1CF37803000FB6CD /* Build configuration list for PBXProject "Fence-based Image Filter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = AB8CD52A1CF37803000FB6CD;
+			productRefGroup = AB8CD5341CF37803000FB6CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB0A540C1D2DB998005B987B /* iOS - Image Filter (Fence-based) */,
+				AB0A53DC1D2DB575005B987B /* tvOS -  Image Filter (Fence-based) */,
+				3AAE8FD01FE49728006ACED2 /* macOS - Image Filter (Fence-based) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AAE8FCF1FE49728006ACED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB373D9B2CDB282A00EA0E33 /* Main.storyboard in Resources */,
+				3AE06B0C1FE4A5450044C03F /* Images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0A53DB1D2DB575005B987B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AAE8FB81FE48FFA006ACED2 /* Main.storyboard in Resources */,
+				3AE06B0E1FE4A5450044C03F /* Images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0A540B1D2DB998005B987B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE06B0D1FE4A5450044C03F /* Images in Resources */,
+				3AAE8FB11FE48FFA006ACED2 /* LaunchScreen.storyboard in Resources */,
+				3AAE8FB31FE48FFA006ACED2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AAE8FCD1FE49728006ACED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE06B111FE4A9EA0044C03F /* AAPLShaders.metal in Sources */,
+				3AAE8FED1FE4983C006ACED2 /* AAPLViewController.m in Sources */,
+				3AAE8FEF1FE49844006ACED2 /* AAPLFilter.m in Sources */,
+				3AE06B101FE4A9EA0044C03F /* APPLFilter.metal in Sources */,
+				3AAE8FF01FE49844006ACED2 /* AAPLRenderer.m in Sources */,
+				3AAE8FF41FE4985A006ACED2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0A53D91D2DB575005B987B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0A543A1D2DB9C4005B987B /* AAPLRenderer.m in Sources */,
+				AB0A543D1D2DB9C4005B987B /* AAPLShaders.metal in Sources */,
+				AB0A54391D2DB9C4005B987B /* APPLFilter.metal in Sources */,
+				AB0A54381D2DB9C4005B987B /* AAPLFilter.m in Sources */,
+				3AAE8FBE1FE48FFA006ACED2 /* AAPLViewController.m in Sources */,
+				3AAE8FAC1FE48FFA006ACED2 /* AAPLAppDelegate.m in Sources */,
+				3AAE8FBC1FE48FFA006ACED2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0A54091D2DB998005B987B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0A54431D2DBA07005B987B /* AAPLFilter.m in Sources */,
+				AB0A54441D2DBA07005B987B /* APPLFilter.metal in Sources */,
+				AB0A54461D2DBA07005B987B /* AAPLRenderer.m in Sources */,
+				3AAE8FBF1FE48FFA006ACED2 /* AAPLViewController.m in Sources */,
+				3AAE8FAD1FE48FFA006ACED2 /* AAPLAppDelegate.m in Sources */,
+				3AAE8FBD1FE48FFA006ACED2 /* main.m in Sources */,
+				AB0A54481D2DBA07005B987B /* AAPLShaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AAE8F9F1FE48FFA006ACED2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AAE8FA01FE48FFA006ACED2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3AAE8FA11FE48FFA006ACED2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AAE8FA21FE48FFA006ACED2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AAE8FA61FE48FFA006ACED2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AAE8FA71FE48FFA006ACED2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AAE8FE51FE4972A006ACED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TARGET_MACOS=1",
+				);
+				INFOPLIST_FILE = Application/macOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Fence-based-Image-Filter${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Image Filter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AAE8FE61FE4972A006ACED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_MACOS=1";
+				INFOPLIST_FILE = Application/macOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Fence-based-Image-Filter${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Image Filter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB0A53F81D2DB576005B987B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TARGET_TVOS=1",
+				);
+				INFOPLIST_FILE = Application/tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Fence-based-Image-Filter${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Image Filter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		AB0A53F91D2DB576005B987B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_TVOS=1";
+				INFOPLIST_FILE = Application/tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Fence-based-Image-Filter${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Image Filter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		AB0A54281D2DB999005B987B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TARGET_IOS=1",
+				);
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Fence-based-Image-Filter${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Image Filter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB0A54291D2DB999005B987B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Fence-based-Image-Filter${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Image Filter";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		AB8CD54B1CF37804000FB6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPRESSION = lossless;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB8CD54C1CF37804000FB6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6ECAFADE37F5DFE4D514CD /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPRESSION = "respect-asset-catalog";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AAE8FE41FE4972A006ACED2 /* Build configuration list for PBXNativeTarget "macOS - Image Filter (Fence-based)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AAE8FE51FE4972A006ACED2 /* Debug */,
+				3AAE8FE61FE4972A006ACED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0A53FA1D2DB576005B987B /* Build configuration list for PBXNativeTarget "tvOS -  Image Filter (Fence-based)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0A53F81D2DB576005B987B /* Debug */,
+				AB0A53F91D2DB576005B987B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0A54271D2DB999005B987B /* Build configuration list for PBXNativeTarget "iOS - Image Filter (Fence-based)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0A54281D2DB999005B987B /* Debug */,
+				AB0A54291D2DB999005B987B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8CD52E1CF37803000FB6CD /* Build configuration list for PBXProject "Fence-based Image Filter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8CD54B1CF37804000FB6CD /* Debug */,
+				AB8CD54C1CF37804000FB6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB8CD52B1CF37803000FB6CD /* Project object */;
+}

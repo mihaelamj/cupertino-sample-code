@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeychainAuthenticator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n6q-8c-17t">
+                                <rect key="frame" x="132" y="233" width="110" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-jE-AcC">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="66.5"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="tapAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOW-Vc-4xX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T23-Vm-qWf">
+                                        <rect key="frame" x="0.0" y="66.5" width="110" height="67"/>
+                                        <state key="normal" title="Read"/>
+                                        <connections>
+                                            <action selector="tapRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZD-HA-H70"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV6-oj-5E3">
+                                        <rect key="frame" x="0.0" y="133.5" width="110" height="66.5"/>
+                                        <state key="normal" title="Delete"/>
+                                        <connections>
+                                            <action selector="tapDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7W-Mr-Fe8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap a button to add, read, or delete the credentials." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yA-M2-rXt">
+                                <rect key="frame" x="10" y="616" width="355" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n6q-8c-17t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="6w0-Qu-RKq"/>
+                            <constraint firstItem="n6q-8c-17t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="G6C-PI-sgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6yA-M2-rXt" secondAttribute="bottom" constant="10" id="RcR-95-2Mk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6yA-M2-rXt" secondAttribute="trailing" constant="10" id="hJd-d6-VgR"/>
+                            <constraint firstItem="n6q-8c-17t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nzq-fh-jzm"/>
+                            <constraint firstItem="n6q-8c-17t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="213" id="sKX-xI-xZd"/>
+                            <constraint firstItem="6yA-M2-rXt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="z1w-rl-pAz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="6yA-M2-rXt" id="Ygb-Hi-KL9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

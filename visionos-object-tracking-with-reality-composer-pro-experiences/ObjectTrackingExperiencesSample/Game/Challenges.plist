@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>description</key>
+	<string>Welcome! You arrive at the gates of the forest. It’s time to go in.</string>
+	<key>instructions</key>
+	<string>Tap any letter to enter</string>
+	<key>sceneName</key>
+	<string>Forest</string>
+	<key>outcomes</key>
+	<array>
+		<dict>
+			<key>playerInput</key>
+			<dict>
+				<key>type</key>
+				<string>anyKey</string>
+			</dict>
+			<key>outcomeChallenge</key>
+			<dict>
+				<key>description</key>
+				<string>You hear a growl. A ferocious bear appears! </string>
+				<key>instructions</key>
+				<string>Tap F to face, H to hide</string>
+				<key>sceneName</key>
+				<string>Bear</string>
+				<key>outcomes</key>
+				<array>
+					<dict>
+						<key>playerInput</key>
+						<dict>
+							<key>type</key>
+							<string>letter</string>
+							<key>value</key>
+							<string>F</string>
+						</dict>
+						<key>outcomeChallenge</key>
+						<dict>
+							<key>description</key>
+							<string>You&apos;re ready to use the power of your Magic Keyboard over this dangerous bear.</string>
+							<key>instructions</key>
+							<string>Drag the pin and place it on the return key to strike</string>
+							<key>sceneName</key>
+							<string>BearPin</string>
+							<key>outcomes</key>
+							<array>
+								<dict>
+									<key>playerInput</key>
+									<dict>
+										<key>type</key>
+										<string>keyCollision</string>
+										<key>value</key>
+										<string>RETURN</string>
+									</dict>
+									<key>outcomeChallenge</key>
+									<dict>
+										<key>description</key>
+										<string>A mysterious door blocks your path. It has a riddle: &quot;I live in the forest and love to glide. With eight legs, I spin my web wide. What am I?&quot;</string>
+										<key>instructions</key>
+										<string>Type your answer by tapping each key (tap &apos;delete&apos; if needed)</string>
+										<key>sceneName</key>
+										<string>Door</string>
+										<key>outcomes</key>
+										<array>
+											<dict>
+												<key>playerInput</key>
+												<dict>
+													<key>type</key>
+													<string>word</string>
+													<key>value</key>
+													<string>SPIDER</string>
+												</dict>
+												<key>outcomeChallenge</key>
+												<dict>
+													<key>description</key>
+													<string>Congratulations! By opening the mysterious door, you freed the fairy who brought light to the forest! </string>
+													<key>instructions</key>
+													<string>Tap any letter to start again</string>
+													<key>sceneName</key>
+													<string>End</string>
+													<key>outcomes</key>
+													<array>
+														<dict>
+															<key>playerInput</key>
+															<dict>
+																<key>type</key>
+																<string>anyKey</string>
+															</dict>
+														</dict>
+													</array>
+												</dict>
+											</dict>
+										</array>
+									</dict>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+					<dict>
+						<key>playerInput</key>
+						<dict>
+							<key>type</key>
+							<string>letter</string>
+							<key>value</key>
+							<string>H</string>
+						</dict>
+						<key>outcomeChallenge</key>
+						<dict>
+							<key>description</key>
+							<string>Fear can stop you from doing amazing things!</string>
+							<key>instructions</key>
+							<string>Tap any letter to try again</string>
+							<key>sceneName</key>
+							<string>GameOver</string>
+							<key>outcomes</key>
+							<array>
+								<dict>
+									<key>playerInput</key>
+									<dict>
+										<key>type</key>
+										<string>anyKey</string>
+									</dict>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

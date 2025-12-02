@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="op5-2v-yIp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.3"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Render View Controller-->
+        <scene sceneID="g22-Fa-qtx">
+            <objects>
+                <viewController id="HEW-MQ-mOs" customClass="AAPLRenderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oTb-vw-PTF"/>
+                        <viewControllerLayoutGuide type="bottom" id="vfT-Ka-Buu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AEv-Uv-z0K" customClass="MTKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UMM-rt-nGo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fX-78-OBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="530"/>
+        </scene>
+        <!--Configuration View Controller-->
+        <scene sceneID="1h7-gq-kRr">
+            <objects>
+                <viewController id="vCs-s7-VJw" customClass="AAPLConfigurationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C7D-cQ-HEz"/>
+                        <viewControllerLayoutGuide type="bottom" id="zis-uX-LTs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tK1-mm-94u" customClass="MTKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visualization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XM-Ug-FOm">
+                                <rect key="frame" x="125" y="108" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PkT-ts-1GY">
+                                <rect key="frame" x="125" y="137" width="146" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="aHg-6q-4ps"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Normal"/>
+                                    <segment title="Debug"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectVisualizationType:" destination="vCs-s7-VJw" eventType="valueChanged" id="4My-OU-nFo"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BX5-LK-VWS">
+                                <rect key="frame" x="125" y="204" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mhh-ak-7OV">
+                                <rect key="frame" x="125" y="233" width="146" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="CyG-8H-sun"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Add"/>
+                                    <segment title="Subtract"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectOperation:" destination="vCs-s7-VJw" eventType="valueChanged" id="RQ9-ll-Cx7"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iterations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gek-AA-GFU">
+                                <rect key="frame" x="125" y="304" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="GT9-qk-fTT">
+                                <rect key="frame" x="125" y="333" width="146" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="OIo-YK-vbU"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="4"/>
+                                    <segment title="16"/>
+                                    <segment title="64"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectIterations:" destination="vCs-s7-VJw" eventType="valueChanged" id="L91-3c-nyF"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GT9-qk-fTT" firstAttribute="top" secondItem="Gek-AA-GFU" secondAttribute="bottom" constant="8" symbolic="YES" id="95k-Dg-Og3"/>
+                            <constraint firstItem="5XM-Ug-FOm" firstAttribute="leading" secondItem="tK1-mm-94u" secondAttribute="leading" constant="125" id="HdB-v1-3c3"/>
+                            <constraint firstItem="BX5-LK-VWS" firstAttribute="leading" secondItem="tK1-mm-94u" secondAttribute="leading" constant="125" id="KRQ-Ur-MAl"/>
+                            <constraint firstItem="Gek-AA-GFU" firstAttribute="top" secondItem="C7D-cQ-HEz" secondAttribute="bottom" constant="260" id="PcO-sI-NDv"/>
+                            <constraint firstItem="GT9-qk-fTT" firstAttribute="leading" secondItem="Gek-AA-GFU" secondAttribute="trailing" constant="-72" id="RxF-Vy-jyN"/>
+                            <constraint firstItem="Gek-AA-GFU" firstAttribute="leading" secondItem="tK1-mm-94u" secondAttribute="leading" constant="125" id="Ry2-Ka-yFM"/>
+                            <constraint firstItem="mhh-ak-7OV" firstAttribute="leading" secondItem="BX5-LK-VWS" secondAttribute="trailing" constant="-76" id="YJp-s2-VoU"/>
+                            <constraint firstItem="BX5-LK-VWS" firstAttribute="top" secondItem="C7D-cQ-HEz" secondAttribute="bottom" constant="160" id="m5T-9n-YO1"/>
+                            <constraint firstItem="PkT-ts-1GY" firstAttribute="top" secondItem="5XM-Ug-FOm" secondAttribute="bottom" constant="8" symbolic="YES" id="oCX-FM-TbK"/>
+                            <constraint firstItem="PkT-ts-1GY" firstAttribute="leading" secondItem="5XM-Ug-FOm" secondAttribute="trailing" constant="-96" id="pvW-4d-YNj"/>
+                            <constraint firstItem="mhh-ak-7OV" firstAttribute="top" secondItem="BX5-LK-VWS" secondAttribute="bottom" constant="8" symbolic="YES" id="px3-bL-rW2"/>
+                            <constraint firstItem="5XM-Ug-FOm" firstAttribute="top" secondItem="C7D-cQ-HEz" secondAttribute="bottom" constant="64" id="thw-Vo-ufQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V8l-r4-vPj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pD5-ZV-r4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846.376811594203" y="-192.85714285714286"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="tpA-14-9h0">
+            <objects>
+                <splitViewController id="op5-2v-yIp" customClass="AAPLSplitViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TJO-hQ-cmx"/>
+                    <connections>
+                        <segue destination="HEW-MQ-mOs" kind="relationship" relationship="detailViewController" id="zD4-6x-lWX"/>
+                        <segue destination="vCs-s7-VJw" kind="relationship" relationship="masterViewController" id="VKY-VX-8Qm"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSm-Qy-DCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		400E4E2B2BA769C70052B8D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400E4E2A2BA769C70052B8D0 /* ContentView.swift */; };
+		400E4E2D2BA76A780052B8D0 /* CommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400E4E2C2BA76A780052B8D0 /* CommandView.swift */; };
+		4047836720ACE3F700E04A72 /* FileTransferObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047836620ACE3F700E04A72 /* FileTransferObservers.swift */; };
+		4047836820ACE3F700E04A72 /* FileTransferObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047836620ACE3F700E04A72 /* FileTransferObservers.swift */; };
+		4076077E1E8183AF00A6A8EA /* SessionCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4076077C1E8183AF00A6A8EA /* SessionCommands.swift */; };
+		407607861E81A7F000A6A8EA /* TestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407607851E81A7F000A6A8EA /* TestDataProvider.swift */; };
+		407607871E81A7F000A6A8EA /* TestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407607851E81A7F000A6A8EA /* TestDataProvider.swift */; };
+		4084B0231EA057EF00ACA046 /* SessionCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4076077C1E8183AF00A6A8EA /* SessionCommands.swift */; };
+		40AB57A52B59F6BC00D879D2 /* SimpleWatchConnectivityWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FEB6D22AD75CFE00BDA200 /* SimpleWatchConnectivityWatchApp.swift */; };
+		40AF22991F29236300E6D1A8 /* SessionDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF22981F29236300E6D1A8 /* SessionDelegator.swift */; };
+		40AF229A1F29236300E6D1A8 /* SessionDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF22981F29236300E6D1A8 /* SessionDelegator.swift */; };
+		40AF2DF22C3DCB6E00CBE9D4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AF2DF12C3DCB6E00CBE9D4 /* WidgetKit.framework */; };
+		40AF2DF42C3DCB6E00CBE9D4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AF2DF32C3DCB6E00CBE9D4 /* SwiftUI.framework */; };
+		40AF2DF72C3DCB6E00CBE9D4 /* SimpleWatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF2DF62C3DCB6E00CBE9D4 /* SimpleWatchWidget.swift */; };
+		40AF2DF92C3DCB6F00CBE9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AF2DF82C3DCB6F00CBE9D4 /* Assets.xcassets */; };
+		40AF2DFD2C3DCB6F00CBE9D4 /* SimpleWatchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40AF2DEF2C3DCB6E00CBE9D4 /* SimpleWatchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40AF2E082C3DEE6900CBE9D4 /* WidgetSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF2E072C3DEE6900CBE9D4 /* WidgetSupport.swift */; };
+		40AF2E0A2C3DEE6900CBE9D4 /* WidgetSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF2E072C3DEE6900CBE9D4 /* WidgetSupport.swift */; };
+		40AF2E0C2C3DF46E00CBE9D4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC7D0E1EA8186200A93AFB /* Logger.swift */; };
+		40B6B1CE2C361EDD008ECE83 /* UserInfoTransfersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B6B1CD2C361EDD008ECE83 /* UserInfoTransfersView.swift */; };
+		40B6B1D02C363E61008ECE83 /* FileTransfersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B6B1CF2C363E61008ECE83 /* FileTransfersView.swift */; };
+		40C02A9A20A27F28006F07AE /* CommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C02A9920A27F28006F07AE /* CommandsViewController.swift */; };
+		40D46F4F1E8065200077A7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D46F4E1E8065200077A7B7 /* AppDelegate.swift */; };
+		40D46F511E8065200077A7B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D46F501E8065200077A7B7 /* MainViewController.swift */; };
+		40D46F541E8065200077A7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F521E8065200077A7B7 /* Main.storyboard */; };
+		40D46F591E8065200077A7B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F571E8065200077A7B7 /* LaunchScreen.storyboard */; };
+		40D46F5E1E8065200077A7B7 /* SimpleWatchConnectivity Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40D46F5D1E8065200077A7B7 /* SimpleWatchConnectivity Watch App.app */; };
+		40D46F741E8065200077A7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D46F731E8065200077A7B7 /* AppDelegate.swift */; };
+		40D8B77920A554A5005F7D76 /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B77820A554A5005F7D76 /* CommandStatus.swift */; };
+		40D8B77A20A554A5005F7D76 /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B77820A554A5005F7D76 /* CommandStatus.swift */; };
+		40D8B77C20A554B6005F7D76 /* SessionTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B77B20A554B5005F7D76 /* SessionTransfer.swift */; };
+		40D8B77D20A554B6005F7D76 /* SessionTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B77B20A554B5005F7D76 /* SessionTransfer.swift */; };
+		40D8B78120A5FD29005F7D76 /* FileTransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B78020A5FD29005F7D76 /* FileTransfersViewController.swift */; };
+		40D8B78720A6375D005F7D76 /* UserInfoTransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B78620A6375C005F7D76 /* UserInfoTransfersViewController.swift */; };
+		40DC7D0F1EA8186200A93AFB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC7D0E1EA8186200A93AFB /* Logger.swift */; };
+		40DC7D101EA8186200A93AFB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC7D0E1EA8186200A93AFB /* Logger.swift */; };
+		40FEB6D12AD71F6C00BDA200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40FEB6D02AD71F6C00BDA200 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40AF2DFB2C3DCB6F00CBE9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40D46F431E8065200077A7B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40AF2DEE2C3DCB6E00CBE9D4;
+			remoteInfo = SimpleWatchWidgetExtension;
+		};
+		40D46F5F1E8065200077A7B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40D46F431E8065200077A7B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40D46F5C1E8065200077A7B7;
+			remoteInfo = "SimpleWatchConnectivity WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40AF2DFE2C3DCB6F00CBE9D4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				40AF2DFD2C3DCB6F00CBE9D4 /* SimpleWatchWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F811E8065200077A7B7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				40D46F5E1E8065200077A7B7 /* SimpleWatchConnectivity Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		400E4E2A2BA769C70052B8D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		400E4E2C2BA76A780052B8D0 /* CommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandView.swift; sourceTree = "<group>"; };
+		4047836620ACE3F700E04A72 /* FileTransferObservers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileTransferObservers.swift; path = Shared/FileTransferObservers.swift; sourceTree = "<group>"; };
+		4076077C1E8183AF00A6A8EA /* SessionCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionCommands.swift; path = Shared/SessionCommands.swift; sourceTree = "<group>"; };
+		407607851E81A7F000A6A8EA /* TestDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestDataProvider.swift; path = Shared/TestDataProvider.swift; sourceTree = "<group>"; };
+		40AF22981F29236300E6D1A8 /* SessionDelegator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionDelegator.swift; path = Shared/SessionDelegator.swift; sourceTree = "<group>"; };
+		40AF2DEF2C3DCB6E00CBE9D4 /* SimpleWatchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleWatchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		40AF2DF12C3DCB6E00CBE9D4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		40AF2DF32C3DCB6E00CBE9D4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		40AF2DF62C3DCB6E00CBE9D4 /* SimpleWatchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWatchWidget.swift; sourceTree = "<group>"; };
+		40AF2DF82C3DCB6F00CBE9D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40AF2DFA2C3DCB6F00CBE9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40AF2E022C3DE76A00CBE9D4 /* SimpleWatchWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SimpleWatchWidgetExtension.entitlements; path = SimpleWatchWidget/SimpleWatchWidgetExtension.entitlements; sourceTree = SOURCE_ROOT; };
+		40AF2E072C3DEE6900CBE9D4 /* WidgetSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WidgetSupport.swift; path = Shared/WidgetSupport.swift; sourceTree = "<group>"; };
+		40B6B1CD2C361EDD008ECE83 /* UserInfoTransfersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTransfersView.swift; sourceTree = "<group>"; };
+		40B6B1CF2C363E61008ECE83 /* FileTransfersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTransfersView.swift; sourceTree = "<group>"; };
+		40C02A9920A27F28006F07AE /* CommandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsViewController.swift; sourceTree = "<group>"; };
+		40D46F4B1E8065200077A7B7 /* SimpleWatchConnectivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWatchConnectivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D46F4E1E8065200077A7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40D46F501E8065200077A7B7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		40D46F531E8065200077A7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40D46F581E8065200077A7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40D46F5A1E8065200077A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D46F5D1E8065200077A7B7 /* SimpleWatchConnectivity Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleWatchConnectivity Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D46F671E8065200077A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D46F731E8065200077A7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40D8B77820A554A5005F7D76 /* CommandStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommandStatus.swift; path = Shared/CommandStatus.swift; sourceTree = "<group>"; };
+		40D8B77B20A554B5005F7D76 /* SessionTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionTransfer.swift; path = Shared/SessionTransfer.swift; sourceTree = "<group>"; };
+		40D8B78020A5FD29005F7D76 /* FileTransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTransfersViewController.swift; sourceTree = "<group>"; };
+		40D8B78620A6375C005F7D76 /* UserInfoTransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTransfersViewController.swift; sourceTree = "<group>"; };
+		40DC7D0E1EA8186200A93AFB /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Shared/Logger.swift; sourceTree = "<group>"; };
+		40DC7D141EA81D8100A93AFB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		40E1690B27A20D30003BDD50 /* SimpleWatchConnectivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleWatchConnectivity.entitlements; sourceTree = "<group>"; };
+		40E1690C27A20D3F003BDD50 /* SimpleWatchConnectivity Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SimpleWatchConnectivity Watch App.entitlements"; sourceTree = "<group>"; };
+		40FEB6D02AD71F6C00BDA200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40FEB6D22AD75CFE00BDA200 /* SimpleWatchConnectivityWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWatchConnectivityWatchApp.swift; sourceTree = "<group>"; };
+		553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		D88A2A1442F9DEE76CB24A7A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40AF2DEC2C3DCB6E00CBE9D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40AF2DF42C3DCB6E00CBE9D4 /* SwiftUI.framework in Frameworks */,
+				40AF2DF22C3DCB6E00CBE9D4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F481E8065200077A7B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F691E8065200077A7B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4076077B1E81834B00A6A8EA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				407607851E81A7F000A6A8EA /* TestDataProvider.swift */,
+				40D8B77820A554A5005F7D76 /* CommandStatus.swift */,
+				4076077C1E8183AF00A6A8EA /* SessionCommands.swift */,
+				40AF22981F29236300E6D1A8 /* SessionDelegator.swift */,
+				40D8B77B20A554B5005F7D76 /* SessionTransfer.swift */,
+				4047836620ACE3F700E04A72 /* FileTransferObservers.swift */,
+				40DC7D0E1EA8186200A93AFB /* Logger.swift */,
+				40AF2E072C3DEE6900CBE9D4 /* WidgetSupport.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		40AF2DF02C3DCB6E00CBE9D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40AF2DF12C3DCB6E00CBE9D4 /* WidgetKit.framework */,
+				40AF2DF32C3DCB6E00CBE9D4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40AF2DF52C3DCB6E00CBE9D4 /* SimpleWatchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				40AF2E022C3DE76A00CBE9D4 /* SimpleWatchWidgetExtension.entitlements */,
+				40AF2DF62C3DCB6E00CBE9D4 /* SimpleWatchWidget.swift */,
+				40AF2DF82C3DCB6F00CBE9D4 /* Assets.xcassets */,
+				40AF2DFA2C3DCB6F00CBE9D4 /* Info.plist */,
+			);
+			path = SimpleWatchWidget;
+			sourceTree = "<group>";
+		};
+		40D46F421E8065200077A7B7 = {
+			isa = PBXGroup;
+			children = (
+				40DC7D141EA81D8100A93AFB /* README.md */,
+				4076077B1E81834B00A6A8EA /* Shared */,
+				40D46F4D1E8065200077A7B7 /* SimpleWatchConnectivity */,
+				40D46F611E8065200077A7B7 /* SimpleWatchConnectivity Watch App */,
+				40AF2DF52C3DCB6E00CBE9D4 /* SimpleWatchWidget */,
+				40AF2DF02C3DCB6E00CBE9D4 /* Frameworks */,
+				40D46F4C1E8065200077A7B7 /* Products */,
+				B6CCE5FF3493355C169F8933 /* Configuration */,
+				A501F6E6C8BB96340ABE4297 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		40D46F4C1E8065200077A7B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40D46F4B1E8065200077A7B7 /* SimpleWatchConnectivity.app */,
+				40D46F5D1E8065200077A7B7 /* SimpleWatchConnectivity Watch App.app */,
+				40AF2DEF2C3DCB6E00CBE9D4 /* SimpleWatchWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40D46F4D1E8065200077A7B7 /* SimpleWatchConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				40E1690B27A20D30003BDD50 /* SimpleWatchConnectivity.entitlements */,
+				40D46F4E1E8065200077A7B7 /* AppDelegate.swift */,
+				40D46F501E8065200077A7B7 /* MainViewController.swift */,
+				40C02A9920A27F28006F07AE /* CommandsViewController.swift */,
+				40D8B78620A6375C005F7D76 /* UserInfoTransfersViewController.swift */,
+				40D8B78020A5FD29005F7D76 /* FileTransfersViewController.swift */,
+				40D46F521E8065200077A7B7 /* Main.storyboard */,
+				40D46F571E8065200077A7B7 /* LaunchScreen.storyboard */,
+				40D46F5A1E8065200077A7B7 /* Info.plist */,
+			);
+			path = SimpleWatchConnectivity;
+			sourceTree = "<group>";
+		};
+		40D46F611E8065200077A7B7 /* SimpleWatchConnectivity Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				40E1690C27A20D3F003BDD50 /* SimpleWatchConnectivity Watch App.entitlements */,
+				40D46F731E8065200077A7B7 /* AppDelegate.swift */,
+				40FEB6D22AD75CFE00BDA200 /* SimpleWatchConnectivityWatchApp.swift */,
+				400E4E2A2BA769C70052B8D0 /* ContentView.swift */,
+				400E4E2C2BA76A780052B8D0 /* CommandView.swift */,
+				40B6B1CD2C361EDD008ECE83 /* UserInfoTransfersView.swift */,
+				40B6B1CF2C363E61008ECE83 /* FileTransfersView.swift */,
+				40FEB6D02AD71F6C00BDA200 /* Assets.xcassets */,
+				40D46F671E8065200077A7B7 /* Info.plist */,
+			);
+			path = "SimpleWatchConnectivity Watch App";
+			sourceTree = "<group>";
+		};
+		A501F6E6C8BB96340ABE4297 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				D88A2A1442F9DEE76CB24A7A /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+		B6CCE5FF3493355C169F8933 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40AF2DEE2C3DCB6E00CBE9D4 /* SimpleWatchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40AF2E012C3DCB6F00CBE9D4 /* Build configuration list for PBXNativeTarget "SimpleWatchWidgetExtension" */;
+			buildPhases = (
+				40AF2DEB2C3DCB6E00CBE9D4 /* Sources */,
+				40AF2DEC2C3DCB6E00CBE9D4 /* Frameworks */,
+				40AF2DED2C3DCB6E00CBE9D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleWatchWidgetExtension;
+			productName = SimpleWatchWidgetExtension;
+			productReference = 40AF2DEF2C3DCB6E00CBE9D4 /* SimpleWatchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		40D46F4A1E8065200077A7B7 /* SimpleWatchConnectivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D46F821E8065200077A7B7 /* Build configuration list for PBXNativeTarget "SimpleWatchConnectivity" */;
+			buildPhases = (
+				40D46F471E8065200077A7B7 /* Sources */,
+				40D46F481E8065200077A7B7 /* Frameworks */,
+				40D46F491E8065200077A7B7 /* Resources */,
+				40D46F811E8065200077A7B7 /* Embed Watch Content */,
+				40F176CA1EAE798400D9AC9F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40D46F601E8065200077A7B7 /* PBXTargetDependency */,
+			);
+			name = SimpleWatchConnectivity;
+			productName = SimpleWatchConnectivity;
+			productReference = 40D46F4B1E8065200077A7B7 /* SimpleWatchConnectivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40D46F5C1E8065200077A7B7 /* SimpleWatchConnectivity Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D46F7E1E8065200077A7B7 /* Build configuration list for PBXNativeTarget "SimpleWatchConnectivity Watch App" */;
+			buildPhases = (
+				40D46F5B1E8065200077A7B7 /* Resources */,
+				40D46F681E8065200077A7B7 /* Sources */,
+				40D46F691E8065200077A7B7 /* Frameworks */,
+				40F176CB1EAE79BF00D9AC9F /* ShellScript */,
+				40AF2DFE2C3DCB6F00CBE9D4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40AF2DFC2C3DCB6F00CBE9D4 /* PBXTargetDependency */,
+			);
+			name = "SimpleWatchConnectivity Watch App";
+			productName = "SimpleWatchConnectivity WatchKit App";
+			productReference = 40D46F5D1E8065200077A7B7 /* SimpleWatchConnectivity Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40D46F431E8065200077A7B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					40AF2DEE2C3DCB6E00CBE9D4 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					40D46F4A1E8065200077A7B7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = MV96W6463W;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					40D46F5C1E8065200077A7B7 = {
+						CreatedOnToolsVersion = 8.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 40D46F461E8065200077A7B7 /* Build configuration list for PBXProject "SimpleWatchConnectivity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40D46F421E8065200077A7B7;
+			productRefGroup = 40D46F4C1E8065200077A7B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40D46F4A1E8065200077A7B7 /* SimpleWatchConnectivity */,
+				40D46F5C1E8065200077A7B7 /* SimpleWatchConnectivity Watch App */,
+				40AF2DEE2C3DCB6E00CBE9D4 /* SimpleWatchWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40AF2DED2C3DCB6E00CBE9D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40AF2DF92C3DCB6F00CBE9D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F491E8065200077A7B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D46F591E8065200077A7B7 /* LaunchScreen.storyboard in Resources */,
+				40D46F541E8065200077A7B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F5B1E8065200077A7B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FEB6D12AD71F6C00BDA200 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40F176CA1EAE798400D9AC9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n";
+			showEnvVarsInLog = 0;
+		};
+		40F176CB1EAE79BF00D9AC9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40AF2DEB2C3DCB6E00CBE9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40AF2E0C2C3DF46E00CBE9D4 /* Logger.swift in Sources */,
+				40AF2DF72C3DCB6E00CBE9D4 /* SimpleWatchWidget.swift in Sources */,
+				40AF2E0A2C3DEE6900CBE9D4 /* WidgetSupport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F471E8065200077A7B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D46F511E8065200077A7B7 /* MainViewController.swift in Sources */,
+				40D8B77920A554A5005F7D76 /* CommandStatus.swift in Sources */,
+				407607861E81A7F000A6A8EA /* TestDataProvider.swift in Sources */,
+				40D46F4F1E8065200077A7B7 /* AppDelegate.swift in Sources */,
+				40D8B77C20A554B6005F7D76 /* SessionTransfer.swift in Sources */,
+				40DC7D0F1EA8186200A93AFB /* Logger.swift in Sources */,
+				40C02A9A20A27F28006F07AE /* CommandsViewController.swift in Sources */,
+				40AF22991F29236300E6D1A8 /* SessionDelegator.swift in Sources */,
+				4084B0231EA057EF00ACA046 /* SessionCommands.swift in Sources */,
+				40D8B78720A6375D005F7D76 /* UserInfoTransfersViewController.swift in Sources */,
+				4047836720ACE3F700E04A72 /* FileTransferObservers.swift in Sources */,
+				40D8B78120A5FD29005F7D76 /* FileTransfersViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F681E8065200077A7B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D8B77D20A554B6005F7D76 /* SessionTransfer.swift in Sources */,
+				40AF229A1F29236300E6D1A8 /* SessionDelegator.swift in Sources */,
+				40D8B77A20A554A5005F7D76 /* CommandStatus.swift in Sources */,
+				400E4E2D2BA76A780052B8D0 /* CommandView.swift in Sources */,
+				40D46F741E8065200077A7B7 /* AppDelegate.swift in Sources */,
+				407607871E81A7F000A6A8EA /* TestDataProvider.swift in Sources */,
+				40DC7D101EA8186200A93AFB /* Logger.swift in Sources */,
+				400E4E2B2BA769C70052B8D0 /* ContentView.swift in Sources */,
+				40B6B1CE2C361EDD008ECE83 /* UserInfoTransfersView.swift in Sources */,
+				40AF2E082C3DEE6900CBE9D4 /* WidgetSupport.swift in Sources */,
+				40AB57A52B59F6BC00D879D2 /* SimpleWatchConnectivityWatchApp.swift in Sources */,
+				4076077E1E8183AF00A6A8EA /* SessionCommands.swift in Sources */,
+				4047836820ACE3F700E04A72 /* FileTransferObservers.swift in Sources */,
+				40B6B1D02C363E61008ECE83 /* FileTransfersView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40AF2DFC2C3DCB6F00CBE9D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40AF2DEE2C3DCB6E00CBE9D4 /* SimpleWatchWidgetExtension */;
+			targetProxy = 40AF2DFB2C3DCB6F00CBE9D4 /* PBXContainerItemProxy */;
+		};
+		40D46F601E8065200077A7B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40D46F5C1E8065200077A7B7 /* SimpleWatchConnectivity Watch App */;
+			targetProxy = 40D46F5F1E8065200077A7B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40D46F521E8065200077A7B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40D46F531E8065200077A7B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40D46F571E8065200077A7B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40D46F581E8065200077A7B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40AF2DFF2C3DCB6F00CBE9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = SimpleWatchWidget/SimpleWatchWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleWatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleWatchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleWatchConnectivity${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp.SimpleWatchWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		40AF2E002C3DCB6F00CBE9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = SimpleWatchWidget/SimpleWatchWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleWatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleWatchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleWatchConnectivity${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp.SimpleWatchWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		40D46F781E8065200077A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40D46F791E8065200077A7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40D46F7F1E8065200077A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SimpleWatchConnectivity Watch App/SimpleWatchConnectivity Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "SimpleWatchConnectivity Watch App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleWatchConnectivity${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		40D46F801E8065200077A7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SimpleWatchConnectivity Watch App/SimpleWatchConnectivity Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = "SimpleWatchConnectivity Watch App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleWatchConnectivity${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		40D46F831E8065200077A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleWatchConnectivity/SimpleWatchConnectivity.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = SimpleWatchConnectivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleWatchConnectivity${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		40D46F841E8065200077A7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleWatchConnectivity/SimpleWatchConnectivity.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = SimpleWatchConnectivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleWatchConnectivity${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40AF2E012C3DCB6F00CBE9D4 /* Build configuration list for PBXNativeTarget "SimpleWatchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40AF2DFF2C3DCB6F00CBE9D4 /* Debug */,
+				40AF2E002C3DCB6F00CBE9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40D46F461E8065200077A7B7 /* Build configuration list for PBXProject "SimpleWatchConnectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D46F781E8065200077A7B7 /* Debug */,
+				40D46F791E8065200077A7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40D46F7E1E8065200077A7B7 /* Build configuration list for PBXNativeTarget "SimpleWatchConnectivity Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D46F7F1E8065200077A7B7 /* Debug */,
+				40D46F801E8065200077A7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40D46F821E8065200077A7B7 /* Build configuration list for PBXNativeTarget "SimpleWatchConnectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D46F831E8065200077A7B7 /* Debug */,
+				40D46F841E8065200077A7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40D46F431E8065200077A7B7 /* Project object */;
+}

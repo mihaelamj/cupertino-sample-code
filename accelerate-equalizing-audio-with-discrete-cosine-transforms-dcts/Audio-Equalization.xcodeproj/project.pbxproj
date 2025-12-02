@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE0B08E529D47D7100680437 /* AudioUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B08E429D47D7100680437 /* AudioUtilities.swift */; };
+		BE0B08E729D47DA800680437 /* DrumLoopProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B08E629D47DA800680437 /* DrumLoopProvider.swift */; };
+		BE0BBAFF29D592B000249D87 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3EC38080218720060080B74A /* README.md */; };
+		BE0BBB0129D5930100249D87 /* Rhythm.aif in Resources */ = {isa = PBXBuildFile; fileRef = BE0BBB0029D5930100249D87 /* Rhythm.aif */; };
+		BE12F4FA29D3410F003E8024 /* AudioEqualizationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE12F4F929D3410F003E8024 /* AudioEqualizationApp.swift */; };
+		BE12F4FC29D3410F003E8024 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE12F4FB29D3410F003E8024 /* ContentView.swift */; };
+		BE12F4FE29D34112003E8024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE12F4FD29D34112003E8024 /* Assets.xcassets */; };
+		BE12F50129D34112003E8024 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE12F50029D34112003E8024 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EC38080218720060080B74A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		796C77FF302274ED2A49BEDA /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		8B9294A7B22AAC42DE28BFA8 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		BE0B08E429D47D7100680437 /* AudioUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtilities.swift; sourceTree = "<group>"; };
+		BE0B08E629D47DA800680437 /* DrumLoopProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumLoopProvider.swift; sourceTree = "<group>"; };
+		BE0BBB0029D5930100249D87 /* Rhythm.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rhythm.aif; sourceTree = "<group>"; };
+		BE12F4F729D3410F003E8024 /* AudioEqualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioEqualization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE12F4F929D3410F003E8024 /* AudioEqualizationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEqualizationApp.swift; sourceTree = "<group>"; };
+		BE12F4FB29D3410F003E8024 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE12F4FD29D34112003E8024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE12F50029D34112003E8024 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE12F50229D34112003E8024 /* AudioEqualization.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioEqualization.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE12F4F429D3410F003E8024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A446D7191C784A2CA0416C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8B9294A7B22AAC42DE28BFA8 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		3E9F2C722187130D00235517 = {
+			isa = PBXGroup;
+			children = (
+				3EC38080218720060080B74A /* README.md */,
+				BE12F4F829D3410F003E8024 /* AudioEqualization */,
+				3E9F2C7C2187130D00235517 /* Products */,
+				09A446D7191C784A2CA0416C /* Configuration */,
+				6BE413DFEC423052C9D8841B /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		3E9F2C7C2187130D00235517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE12F4F729D3410F003E8024 /* AudioEqualization.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BE413DFEC423052C9D8841B /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				796C77FF302274ED2A49BEDA /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		BE12F4F829D3410F003E8024 /* AudioEqualization */ = {
+			isa = PBXGroup;
+			children = (
+				BE12F4F929D3410F003E8024 /* AudioEqualizationApp.swift */,
+				BE0B08E629D47DA800680437 /* DrumLoopProvider.swift */,
+				BE0B08E429D47D7100680437 /* AudioUtilities.swift */,
+				BE12F4FB29D3410F003E8024 /* ContentView.swift */,
+				BE12F4FD29D34112003E8024 /* Assets.xcassets */,
+				BE12F50229D34112003E8024 /* AudioEqualization.entitlements */,
+				BE0BBB0029D5930100249D87 /* Rhythm.aif */,
+				BE12F4FF29D34112003E8024 /* Preview Content */,
+			);
+			path = AudioEqualization;
+			sourceTree = "<group>";
+		};
+		BE12F4FF29D34112003E8024 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE12F50029D34112003E8024 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE12F4F629D3410F003E8024 /* AudioEqualization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE12F50529D34112003E8024 /* Build configuration list for PBXNativeTarget "AudioEqualization" */;
+			buildPhases = (
+				BE12F4F329D3410F003E8024 /* Sources */,
+				BE12F4F429D3410F003E8024 /* Frameworks */,
+				BE12F4F529D3410F003E8024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioEqualization;
+			productName = AudioEqualization;
+			productReference = BE12F4F729D3410F003E8024 /* AudioEqualization.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E9F2C732187130D00235517 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					BE12F4F629D3410F003E8024 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 3E9F2C762187130D00235517 /* Build configuration list for PBXProject "Audio-Equalization" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E9F2C722187130D00235517;
+			productRefGroup = 3E9F2C7C2187130D00235517 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE12F4F629D3410F003E8024 /* AudioEqualization */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE12F4F529D3410F003E8024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0BBB0129D5930100249D87 /* Rhythm.aif in Resources */,
+				BE0BBAFF29D592B000249D87 /* README.md in Resources */,
+				BE12F50129D34112003E8024 /* Preview Assets.xcassets in Resources */,
+				BE12F4FE29D34112003E8024 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE12F4F329D3410F003E8024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0B08E729D47DA800680437 /* DrumLoopProvider.swift in Sources */,
+				BE12F4FC29D3410F003E8024 /* ContentView.swift in Sources */,
+				BE12F4FA29D3410F003E8024 /* AudioEqualizationApp.swift in Sources */,
+				BE0B08E529D47D7100680437 /* AudioUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3E9F2C8B2187130E00235517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9294A7B22AAC42DE28BFA8 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E9F2C8C2187130E00235517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9294A7B22AAC42DE28BFA8 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE12F50329D34112003E8024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9294A7B22AAC42DE28BFA8 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = AudioEqualization/AudioEqualization.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AudioEqualization/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Apple Inc. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AudioEqualization${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE12F50429D34112003E8024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9294A7B22AAC42DE28BFA8 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = AudioEqualization/AudioEqualization.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AudioEqualization/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Apple Inc. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AudioEqualization${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E9F2C762187130D00235517 /* Build configuration list for PBXProject "Audio-Equalization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E9F2C8B2187130E00235517 /* Debug */,
+				3E9F2C8C2187130E00235517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE12F50529D34112003E8024 /* Build configuration list for PBXNativeTarget "AudioEqualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE12F50329D34112003E8024 /* Debug */,
+				BE12F50429D34112003E8024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E9F2C732187130D00235517 /* Project object */;
+}

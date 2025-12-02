@@ -1,0 +1,98 @@
+{
+    "schemaVersion": 1,
+    "orderTypeIdentifier": "order.com.apple.wallet.dev.bakery",
+    "orderIdentifier": "sample_bakery_order",
+    "orderType": "ecommerce",
+    "orderNumber": "BA050796",
+    "createdAt": "2022-06-02T12:30:00Z",
+    "updatedAt": "2022-06-09T18:00:00Z",
+    "status": "completed",
+    "merchant": {
+        "displayName": "Bakery",
+        "merchantIdentifier": "com.example.store",
+        "logo": "bakery_logo.png",
+        "url": "https://www.example.com/"
+    },
+    "payment": {
+        "status": "paid",
+        "total": { "amount": 28.8, "currency": "USD" },
+        "summaryItems": [
+            { "label": "Subtotal", "value": { "amount": 24, "currency": "USD" } },
+            { "label": "Tax", "value": { "amount": 4.8, "currency": "USD" } }
+        ],
+        "paymentMethods": ["•••• 1234"]
+    },
+    "lineItems": [
+        {
+            "image": "pastry.png",
+            "price": { "amount": 0.8, "currency": "USD" },
+            "quantity": 10,
+            "title": "Pain au Chocolate"
+        },
+        {
+            "image": "cheesecake.png",
+            "price": { "amount": 1.2, "currency": "USD" },
+            "quantity": 5,
+            "subtitle": "May contain nuts",
+            "title": "Cheesecake Slice"
+        },
+        {
+            "image": "spongecake.png",
+            "price": { "amount": 1.2, "currency": "USD" },
+            "quantity": 10,
+            "subtitle": "May contain nuts",
+            "title": "Sponge Cake Slice"
+        }
+    ],
+    "fulfillments": [
+        {
+            "status": "pickedUp",
+            "statusDescription": "All done and crusted. We hope you love your order!",
+            "fulfillmentIdentifier": "pickup.1",
+            "fulfillmentType": "pickup",
+            "displayName": "Bakery",
+            "lineItems" : [
+                {
+                    "image": "pastry.png",
+                    "price": { "amount": 0.8, "currency": "USD" },
+                    "quantity": 10,
+                    "title": "Pain au Chocolate"
+                },
+                {
+                    "image": "cheesecake.png",
+                    "price": { "amount": 1.2, "currency": "USD" },
+                    "quantity": 5,
+                    "subtitle": "May contain nuts",
+                    "title": "Cheesecake Slice"
+                },
+                {
+                    "image": "spongecake.png",
+                    "price": { "amount": 1.2, "currency": "USD" },
+                    "quantity": 10,
+                    "subtitle": "May contain nuts",
+                    "title": "Sponge Cake Slice"
+                }
+            ],
+            "address": {
+                "addressLines": [
+                    "1 Infinite Loop"
+                ],
+                "locality": "Cupertino",
+                "administrativeArea": "California",
+                "postalCode": "95014",
+                "countryCode": "US"
+            },
+            "notes": "1. We'll let you know when your order is ready for pickup.\n\n2. Once the order is ready, make sure that you bring your photo ID and have your barcode before heading to the pickup location.\n\n3. When arriving at the pickup location, present your photo ID and barcode to an associate to receive your order.\n\nIf you don't pick up your order on time, we will eventually send you a reminder with a \"pick up by\" date. If you haven't picked up your order by that date, we'll cancel and refund your order and return the items to our inventory.",
+            "pickupAt": "2022-06-09T17:00:00Z",
+            "pickedUpAt": "2022-06-09T17:01:00Z",
+            "pickupWindowDuration": "P0Y0M0DT0H30M0S",
+            "barcode": {
+                "altText": "51039235023",
+                "format": "code128",
+                "message": "51039235023",
+                "messageEncoding": "iso-8859-1"
+            }
+        }
+    ],
+    "orderManagementURL": "https://www.example.com/"
+}

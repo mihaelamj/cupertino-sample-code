@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E1F08B729EDE5A30053DC48 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61548929E0934300738FCA /* Manifest.swift */; };
+		7E1F08B829EDE5A60053DC48 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070686029DB87D900E9B8E8 /* Session.swift */; };
+		7E1F08B929EDE5A90053DC48 /* LocalSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070686229DBAEB800E9B8E8 /* LocalSession.swift */; };
+		7E1F08C929EE12CC0053DC48 /* SharedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F08C829EE12CC0053DC48 /* SharedSettings.swift */; };
+		7E1F08CA29EE12CC0053DC48 /* SharedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F08C829EE12CC0053DC48 /* SharedSettings.swift */; };
+		7E61548A29E0934300738FCA /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61548929E0934300738FCA /* Manifest.swift */; };
+		7E6FDE0C29E86B6F00EC25C0 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDE0B29E86B6F00EC25C0 /* SessionDescription.swift */; };
+		7E6FDE0F29E8B23500EC25C0 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDE0E29E8B23500EC25C0 /* SessionManager.swift */; };
+		7E70E11329E5F7B7009A9463 /* VideoSelectorSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E70E11229E5F7B7009A9463 /* VideoSelectorSidebar.swift */; };
+		7E70E11529E5F99F009A9463 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E70E11429E5F99F009A9463 /* DetailView.swift */; };
+		7EF8A70A29EDC42F00F7DF03 /* BackgroundDownloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8A70929EDC42F00F7DF03 /* BackgroundDownloadHandler.swift */; };
+		7EF8A70F29EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 7EF8A70729EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C017B2B52A047F41007DECBC /* PreviewSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017B2B42A047F41007DECBC /* PreviewSessionManager.swift */; };
+		C070684629DB5B1C00E9B8E8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070684529DB5B1C00E9B8E8 /* App.swift */; };
+		C070684829DB5B1C00E9B8E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070684729DB5B1C00E9B8E8 /* ContentView.swift */; };
+		C070684A29DB5B1E00E9B8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C070684929DB5B1E00E9B8E8 /* Assets.xcassets */; };
+		C070684E29DB5B1E00E9B8E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C070684D29DB5B1E00E9B8E8 /* Preview Assets.xcassets */; };
+		C070685E29DB86F100E9B8E8 /* VideoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070685D29DB86F100E9B8E8 /* VideoSelector.swift */; };
+		C070686129DB87D900E9B8E8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070686029DB87D900E9B8E8 /* Session.swift */; };
+		C070686329DBAEB800E9B8E8 /* LocalSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070686229DBAEB800E9B8E8 /* LocalSession.swift */; };
+		C070686529DBBAD300E9B8E8 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070686429DBBAD300E9B8E8 /* Thumbnail.swift */; };
+		C078BD512CCAE4120091B6F3 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078BD502CCAE4120091B6F3 /* Gallery.swift */; platformFilters = (tvos, ); };
+		C078BD532CCAE6930091B6F3 /* SessionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078BD522CCAE6930091B6F3 /* SessionPage.swift */; platformFilters = (tvos, ); };
+		C08DFF632A12CD0B00152F27 /* BackgroundAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DFF622A12CD0B00152F27 /* BackgroundAssets.framework */; };
+		C08DFF652A12CD1200152F27 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DFF642A12CD1200152F27 /* SwiftUI.framework */; };
+		C08DFF662A12CD1900152F27 /* BackgroundAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DFF622A12CD0B00152F27 /* BackgroundAssets.framework */; };
+		C08DFF682A12CD2C00152F27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08DFF672A12CD2C00152F27 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EF8A70D29EDC42F00F7DF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C070683A29DB5B1C00E9B8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EF8A70629EDC42F00F7DF03;
+			remoteInfo = "WWDC Sessions Background Assets Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EF8A71029EDC42F00F7DF03 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				7EF8A70F29EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22F3075ED70045B397A2A348 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7E1F08C829EE12CC0053DC48 /* SharedSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedSettings.swift; sourceTree = "<group>"; };
+		7E61548929E0934300738FCA /* Manifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manifest.swift; sourceTree = "<group>"; };
+		7E6FDE0B29E86B6F00EC25C0 /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		7E6FDE0E29E8B23500EC25C0 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		7E70E11229E5F7B7009A9463 /* VideoSelectorSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSelectorSidebar.swift; sourceTree = "<group>"; };
+		7E70E11429E5F99F009A9463 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7EF8A70729EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = "WWDC Sessions Background Assets Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF8A70929EDC42F00F7DF03 /* BackgroundDownloadHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadHandler.swift; sourceTree = "<group>"; };
+		7EF8A70B29EDC42F00F7DF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF8A70C29EDC42F00F7DF03 /* WWDC_Sessions_Background_Assets_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WWDC_Sessions_Background_Assets_Extension.entitlements; sourceTree = "<group>"; };
+		7EF8A71829EDC94200F7DF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		B319E3315D728D6699BF2E1D /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		C017B2B42A047F41007DECBC /* PreviewSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewSessionManager.swift; sourceTree = "<group>"; };
+		C070684229DB5B1C00E9B8E8 /* WWDC Sessions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC Sessions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C070684529DB5B1C00E9B8E8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		C070684729DB5B1C00E9B8E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C070684929DB5B1E00E9B8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C070684B29DB5B1E00E9B8E8 /* WWDC_Sessions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WWDC_Sessions.entitlements; sourceTree = "<group>"; };
+		C070684D29DB5B1E00E9B8E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C070685D29DB86F100E9B8E8 /* VideoSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSelector.swift; sourceTree = "<group>"; };
+		C070686029DB87D900E9B8E8 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		C070686229DBAEB800E9B8E8 /* LocalSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSession.swift; sourceTree = "<group>"; };
+		C070686429DBBAD300E9B8E8 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		C078BD502CCAE4120091B6F3 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		C078BD522CCAE6930091B6F3 /* SessionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPage.swift; sourceTree = "<group>"; };
+		C08DFF622A12CD0B00152F27 /* BackgroundAssets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundAssets.framework; path = System/Library/Frameworks/BackgroundAssets.framework; sourceTree = SDKROOT; };
+		C08DFF642A12CD1200152F27 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C08DFF672A12CD2C00152F27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EF8A70429EDC42F00F7DF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08DFF662A12CD1900152F27 /* BackgroundAssets.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C070683F29DB5B1C00E9B8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08DFF682A12CD2C00152F27 /* AVFoundation.framework in Frameworks */,
+				C08DFF652A12CD1200152F27 /* SwiftUI.framework in Frameworks */,
+				C08DFF632A12CD0B00152F27 /* BackgroundAssets.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EF8A70829EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7EF8A70929EDC42F00F7DF03 /* BackgroundDownloadHandler.swift */,
+				7EF8A70B29EDC42F00F7DF03 /* Info.plist */,
+				7EF8A70C29EDC42F00F7DF03 /* WWDC_Sessions_Background_Assets_Extension.entitlements */,
+			);
+			path = "WWDC Sessions Background Assets Extension";
+			sourceTree = "<group>";
+		};
+		A50A75A17AD2E9619A71AE3E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		C070683929DB5B1C00E9B8E8 = {
+			isa = PBXGroup;
+			children = (
+				22F3075ED70045B397A2A348 /* README.md */,
+				C0BF78AD29F749F100CF5478 /* Shared */,
+				C070684429DB5B1C00E9B8E8 /* WWDC Sessions */,
+				7EF8A70829EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension */,
+				C070684329DB5B1C00E9B8E8 /* Products */,
+				C070686E29DBC60A00E9B8E8 /* Frameworks */,
+				A50A75A17AD2E9619A71AE3E /* Configuration */,
+				CFD4EF5687660FA2ABC77915 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		C070684329DB5B1C00E9B8E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C070684229DB5B1C00E9B8E8 /* WWDC Sessions.app */,
+				7EF8A70729EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C070684429DB5B1C00E9B8E8 /* WWDC Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				7EF8A71829EDC94200F7DF03 /* Info.plist */,
+				C070685F29DB879200E9B8E8 /* Session */,
+				C070685A29DB7A4E00E9B8E8 /* Views */,
+				C070684529DB5B1C00E9B8E8 /* App.swift */,
+				C070684729DB5B1C00E9B8E8 /* ContentView.swift */,
+				C070684929DB5B1E00E9B8E8 /* Assets.xcassets */,
+				C070684B29DB5B1E00E9B8E8 /* WWDC_Sessions.entitlements */,
+				C070684C29DB5B1E00E9B8E8 /* Preview Content */,
+			);
+			path = "WWDC Sessions";
+			sourceTree = "<group>";
+		};
+		C070684C29DB5B1E00E9B8E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C070684D29DB5B1E00E9B8E8 /* Preview Assets.xcassets */,
+				C017B2B42A047F41007DECBC /* PreviewSessionManager.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C070685A29DB7A4E00E9B8E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C078BD4F2CCAE3EE0091B6F3 /* tvOS */,
+				C070686429DBBAD300E9B8E8 /* Thumbnail.swift */,
+				7E70E11229E5F7B7009A9463 /* VideoSelectorSidebar.swift */,
+				C070685D29DB86F100E9B8E8 /* VideoSelector.swift */,
+				7E70E11429E5F99F009A9463 /* DetailView.swift */,
+				7E6FDE0B29E86B6F00EC25C0 /* SessionDescription.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C070685F29DB879200E9B8E8 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				7E6FDE0E29E8B23500EC25C0 /* SessionManager.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		C070686E29DBC60A00E9B8E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C08DFF672A12CD2C00152F27 /* AVFoundation.framework */,
+				C08DFF642A12CD1200152F27 /* SwiftUI.framework */,
+				C08DFF622A12CD0B00152F27 /* BackgroundAssets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C078BD4F2CCAE3EE0091B6F3 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				C078BD502CCAE4120091B6F3 /* Gallery.swift */,
+				C078BD522CCAE6930091B6F3 /* SessionPage.swift */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		C08DFF612A12CC3C00152F27 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				C070686029DB87D900E9B8E8 /* Session.swift */,
+				C070686229DBAEB800E9B8E8 /* LocalSession.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		C0BF78AD29F749F100CF5478 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C08DFF612A12CC3C00152F27 /* Session */,
+				7E61548929E0934300738FCA /* Manifest.swift */,
+				7E1F08C829EE12CC0053DC48 /* SharedSettings.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CFD4EF5687660FA2ABC77915 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				B319E3315D728D6699BF2E1D /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EF8A70629EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF8A71329EDC42F00F7DF03 /* Build configuration list for PBXNativeTarget "WWDC Sessions Background Assets Extension" */;
+			buildPhases = (
+				7EF8A70329EDC42F00F7DF03 /* Sources */,
+				7EF8A70429EDC42F00F7DF03 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WWDC Sessions Background Assets Extension";
+			productName = "WWDC Sessions Background Assets Extension";
+			productReference = 7EF8A70729EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		C070684129DB5B1C00E9B8E8 /* WWDC Sessions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C070685129DB5B1E00E9B8E8 /* Build configuration list for PBXNativeTarget "WWDC Sessions" */;
+			buildPhases = (
+				C070683E29DB5B1C00E9B8E8 /* Sources */,
+				C070683F29DB5B1C00E9B8E8 /* Frameworks */,
+				C070684029DB5B1C00E9B8E8 /* Resources */,
+				7EF8A71029EDC42F00F7DF03 /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EF8A70E29EDC42F00F7DF03 /* PBXTargetDependency */,
+			);
+			name = "WWDC Sessions";
+			productName = "WWDC Sessions";
+			productReference = C070684229DB5B1C00E9B8E8 /* WWDC Sessions.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C070683A29DB5B1C00E9B8E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					7EF8A70629EDC42F00F7DF03 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					C070684129DB5B1C00E9B8E8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = C070683D29DB5B1C00E9B8E8 /* Build configuration list for PBXProject "WWDC Sessions" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C070683929DB5B1C00E9B8E8;
+			productRefGroup = C070684329DB5B1C00E9B8E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C070684129DB5B1C00E9B8E8 /* WWDC Sessions */,
+				7EF8A70629EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C070684029DB5B1C00E9B8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C070684E29DB5B1E00E9B8E8 /* Preview Assets.xcassets in Resources */,
+				C070684A29DB5B1E00E9B8E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EF8A70329EDC42F00F7DF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1F08CA29EE12CC0053DC48 /* SharedSettings.swift in Sources */,
+				7E1F08B929EDE5A90053DC48 /* LocalSession.swift in Sources */,
+				7E1F08B829EDE5A60053DC48 /* Session.swift in Sources */,
+				7E1F08B729EDE5A30053DC48 /* Manifest.swift in Sources */,
+				7EF8A70A29EDC42F00F7DF03 /* BackgroundDownloadHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C070683E29DB5B1C00E9B8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C070686129DB87D900E9B8E8 /* Session.swift in Sources */,
+				7E61548A29E0934300738FCA /* Manifest.swift in Sources */,
+				C078BD512CCAE4120091B6F3 /* Gallery.swift in Sources */,
+				7E1F08C929EE12CC0053DC48 /* SharedSettings.swift in Sources */,
+				C070684829DB5B1C00E9B8E8 /* ContentView.swift in Sources */,
+				C078BD532CCAE6930091B6F3 /* SessionPage.swift in Sources */,
+				C070686329DBAEB800E9B8E8 /* LocalSession.swift in Sources */,
+				C070684629DB5B1C00E9B8E8 /* App.swift in Sources */,
+				C017B2B52A047F41007DECBC /* PreviewSessionManager.swift in Sources */,
+				C070685E29DB86F100E9B8E8 /* VideoSelector.swift in Sources */,
+				7E70E11529E5F99F009A9463 /* DetailView.swift in Sources */,
+				7E6FDE0C29E86B6F00EC25C0 /* SessionDescription.swift in Sources */,
+				C070686529DBBAD300E9B8E8 /* Thumbnail.swift in Sources */,
+				7E70E11329E5F7B7009A9463 /* VideoSelectorSidebar.swift in Sources */,
+				7E6FDE0F29E8B23500EC25C0 /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EF8A70E29EDC42F00F7DF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EF8A70629EDC42F00F7DF03 /* WWDC Sessions Background Assets Extension */;
+			targetProxy = 7EF8A70D29EDC42F00F7DF03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7EF8A71129EDC42F00F7DF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WWDC Sessions Background Assets Extension/WWDC_Sessions_Background_Assets_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WWDC Sessions Background Assets Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WWDC Sessions Background Assets Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.WWDC-Sessions${SAMPLE_CODE_DISAMBIGUATOR}.downloader-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		7EF8A71229EDC42F00F7DF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WWDC Sessions Background Assets Extension/WWDC_Sessions_Background_Assets_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WWDC Sessions Background Assets Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WWDC Sessions Background Assets Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.WWDC-Sessions${SAMPLE_CODE_DISAMBIGUATOR}.downloader-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C070684F29DB5B1E00E9B8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 100;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY = YES;
+				SWIFT_UPCOMING_FEATURE_INTERNAL_IMPORTS_BY_DEFAULT = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 18.4;
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		C070685029DB5B1E00E9B8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 100;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY = YES;
+				SWIFT_UPCOMING_FEATURE_INTERNAL_IMPORTS_BY_DEFAULT = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 18.4;
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		C070685229DB5B1E00E9B8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WWDC Sessions/WWDC_Sessions.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"WWDC Sessions/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WWDC Sessions";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.WWDC-Sessions${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		C070685329DB5B1E00E9B8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D57BDE52110A72E6B298D5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WWDC Sessions/WWDC_Sessions.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"WWDC Sessions/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WWDC Sessions";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.WWDC-Sessions${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EF8A71329EDC42F00F7DF03 /* Build configuration list for PBXNativeTarget "WWDC Sessions Background Assets Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF8A71129EDC42F00F7DF03 /* Debug */,
+				7EF8A71229EDC42F00F7DF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C070683D29DB5B1C00E9B8E8 /* Build configuration list for PBXProject "WWDC Sessions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C070684F29DB5B1E00E9B8E8 /* Debug */,
+				C070685029DB5B1E00E9B8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C070685129DB5B1E00E9B8E8 /* Build configuration list for PBXNativeTarget "WWDC Sessions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C070685229DB5B1E00E9B8E8 /* Debug */,
+				C070685329DB5B1E00E9B8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C070683A29DB5B1C00E9B8E8 /* Project object */;
+}

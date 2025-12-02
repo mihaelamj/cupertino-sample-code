@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010568EE219DE7DC00D0B9EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010568ED219DE7DC00D0B9EF /* AppDelegate.swift */; };
+		010568F0219DE7DC00D0B9EF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010568EF219DE7DC00D0B9EF /* MapViewController.swift */; };
+		010568F2219DE7DD00D0B9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010568F1219DE7DD00D0B9EF /* Assets.xcassets */; };
+		010568F5219DE7DD00D0B9EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010568F3219DE7DD00D0B9EF /* Main.storyboard */; };
+		01056904219DE8AF00D0B9EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01056903219DE8AF00D0B9EF /* AppDelegate.swift */; };
+		01056906219DE8AF00D0B9EF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01056905219DE8AF00D0B9EF /* MapViewController.swift */; };
+		01056909219DE8AF00D0B9EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01056907219DE8AF00D0B9EF /* Main.storyboard */; };
+		0105690B219DE8B000D0B9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0105690A219DE8B000D0B9EF /* Assets.xcassets */; };
+		0105690E219DE8B000D0B9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0105690C219DE8B000D0B9EF /* LaunchScreen.storyboard */; };
+		01056916219DFA4600D0B9EF /* AppleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01056915219DFA4600D0B9EF /* AppleStore.swift */; };
+		01056917219DFA4600D0B9EF /* AppleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01056915219DFA4600D0B9EF /* AppleStore.swift */; };
+		0105691C21AEF31C00D0B9EF /* AppleStoreDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105691B21AEF31C00D0B9EF /* AppleStoreDirectory.swift */; };
+		0105691D21AEF31C00D0B9EF /* AppleStoreDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105691B21AEF31C00D0B9EF /* AppleStoreDirectory.swift */; };
+		0105691F21AF3AAB00D0B9EF /* InitialMapRegionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105691E21AF3AAB00D0B9EF /* InitialMapRegionState.swift */; };
+		0105692021AF3AAB00D0B9EF /* InitialMapRegionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105691E21AF3AAB00D0B9EF /* InitialMapRegionState.swift */; };
+		0105692221AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105692121AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift */; };
+		0105692321AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105692121AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift */; };
+		015DCB7C21B1C3C5005AFF89 /* AppleStoreAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015DCB7B21B1C3C5005AFF89 /* AppleStoreAnnotation.swift */; };
+		015DCB7D21B1C3C5005AFF89 /* AppleStoreAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015DCB7B21B1C3C5005AFF89 /* AppleStoreAnnotation.swift */; };
+		015DCB8121B1C5C0005AFF89 /* StoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015DCB8021B1C5C0005AFF89 /* StoreDetailViewController.swift */; };
+		015DCB8321B1C5DD005AFF89 /* StoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015DCB8221B1C5DD005AFF89 /* StoreDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		010568EA219DE7DC00D0B9EF /* HandoffMapViewerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandoffMapViewerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		010568ED219DE7DC00D0B9EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		010568EF219DE7DC00D0B9EF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		010568F1219DE7DD00D0B9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		010568F4219DE7DD00D0B9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		010568F6219DE7DD00D0B9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010568F7219DE7DD00D0B9EF /* HandoffMapViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HandoffMapViewer.entitlements; sourceTree = "<group>"; };
+		01056901219DE8AF00D0B9EF /* HandoffMapViewerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandoffMapViewerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01056903219DE8AF00D0B9EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01056905219DE8AF00D0B9EF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		01056908219DE8AF00D0B9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0105690A219DE8B000D0B9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0105690D219DE8B000D0B9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0105690F219DE8B000D0B9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01056914219DE8F100D0B9EF /* HandoffMapViewerIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HandoffMapViewerIOS.entitlements; sourceTree = "<group>"; };
+		01056915219DFA4600D0B9EF /* AppleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStore.swift; sourceTree = "<group>"; };
+		0105691B21AEF31C00D0B9EF /* AppleStoreDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreDirectory.swift; sourceTree = "<group>"; };
+		0105691E21AF3AAB00D0B9EF /* InitialMapRegionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialMapRegionState.swift; sourceTree = "<group>"; };
+		0105692121AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+HandoffMapViewer.swift"; sourceTree = "<group>"; };
+		015DCB7B21B1C3C5005AFF89 /* AppleStoreAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreAnnotation.swift; sourceTree = "<group>"; };
+		015DCB8021B1C5C0005AFF89 /* StoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailViewController.swift; sourceTree = "<group>"; };
+		015DCB8221B1C5DD005AFF89 /* StoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailViewController.swift; sourceTree = "<group>"; };
+		015DCB8721B71F83005AFF89 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ADB6798F3F0575E3A676C369 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		010568E7219DE7DC00D0B9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010568FE219DE8AF00D0B9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007164A6AD28E866A30B03E4 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				ADB6798F3F0575E3A676C369 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		010568E1219DE7DC00D0B9EF = {
+			isa = PBXGroup;
+			children = (
+				015DCB8721B71F83005AFF89 /* README.md */,
+				010568EC219DE7DC00D0B9EF /* HandoffMapViewerMac */,
+				01056902219DE8AF00D0B9EF /* HandoffMapViewerIOS */,
+				01056913219DE8BF00D0B9EF /* Shared sources */,
+				010568EB219DE7DC00D0B9EF /* Products */,
+				9CF4926A1B40F9A89BD638F1 /* Configuration */,
+				007164A6AD28E866A30B03E4 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		010568EB219DE7DC00D0B9EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				010568EA219DE7DC00D0B9EF /* HandoffMapViewerMac.app */,
+				01056901219DE8AF00D0B9EF /* HandoffMapViewerIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		010568EC219DE7DC00D0B9EF /* HandoffMapViewerMac */ = {
+			isa = PBXGroup;
+			children = (
+				010568ED219DE7DC00D0B9EF /* AppDelegate.swift */,
+				010568EF219DE7DC00D0B9EF /* MapViewController.swift */,
+				015DCB8021B1C5C0005AFF89 /* StoreDetailViewController.swift */,
+				010568F1219DE7DD00D0B9EF /* Assets.xcassets */,
+				010568F3219DE7DD00D0B9EF /* Main.storyboard */,
+				010568F6219DE7DD00D0B9EF /* Info.plist */,
+				010568F7219DE7DD00D0B9EF /* HandoffMapViewer.entitlements */,
+			);
+			path = HandoffMapViewerMac;
+			sourceTree = "<group>";
+		};
+		01056902219DE8AF00D0B9EF /* HandoffMapViewerIOS */ = {
+			isa = PBXGroup;
+			children = (
+				01056914219DE8F100D0B9EF /* HandoffMapViewerIOS.entitlements */,
+				01056903219DE8AF00D0B9EF /* AppDelegate.swift */,
+				01056905219DE8AF00D0B9EF /* MapViewController.swift */,
+				015DCB8221B1C5DD005AFF89 /* StoreDetailViewController.swift */,
+				01056907219DE8AF00D0B9EF /* Main.storyboard */,
+				0105690A219DE8B000D0B9EF /* Assets.xcassets */,
+				0105690C219DE8B000D0B9EF /* LaunchScreen.storyboard */,
+				0105690F219DE8B000D0B9EF /* Info.plist */,
+			);
+			path = HandoffMapViewerIOS;
+			sourceTree = "<group>";
+		};
+		01056913219DE8BF00D0B9EF /* Shared sources */ = {
+			isa = PBXGroup;
+			children = (
+				01056915219DFA4600D0B9EF /* AppleStore.swift */,
+				015DCB7B21B1C3C5005AFF89 /* AppleStoreAnnotation.swift */,
+				0105691B21AEF31C00D0B9EF /* AppleStoreDirectory.swift */,
+				0105691E21AF3AAB00D0B9EF /* InitialMapRegionState.swift */,
+				0105692121AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift */,
+			);
+			path = "Shared sources";
+			sourceTree = "<group>";
+		};
+		9CF4926A1B40F9A89BD638F1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		010568E9219DE7DC00D0B9EF /* HandoffMapViewerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010568FA219DE7DD00D0B9EF /* Build configuration list for PBXNativeTarget "HandoffMapViewerMac" */;
+			buildPhases = (
+				010568E6219DE7DC00D0B9EF /* Sources */,
+				010568E7219DE7DC00D0B9EF /* Frameworks */,
+				010568E8219DE7DC00D0B9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandoffMapViewerMac;
+			productName = HandoffMapViewer;
+			productReference = 010568EA219DE7DC00D0B9EF /* HandoffMapViewerMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01056900219DE8AF00D0B9EF /* HandoffMapViewerIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01056910219DE8B000D0B9EF /* Build configuration list for PBXNativeTarget "HandoffMapViewerIOS" */;
+			buildPhases = (
+				010568FD219DE8AF00D0B9EF /* Sources */,
+				010568FE219DE8AF00D0B9EF /* Frameworks */,
+				010568FF219DE8AF00D0B9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandoffMapViewerIOS;
+			productName = HandoffMapViewerIOS;
+			productReference = 01056901219DE8AF00D0B9EF /* HandoffMapViewerIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		010568E2219DE7DC00D0B9EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					010568E9219DE7DC00D0B9EF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					01056900219DE8AF00D0B9EF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 010568E5219DE7DC00D0B9EF /* Build configuration list for PBXProject "HandoffMapViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 010568E1219DE7DC00D0B9EF;
+			productRefGroup = 010568EB219DE7DC00D0B9EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				010568E9219DE7DC00D0B9EF /* HandoffMapViewerMac */,
+				01056900219DE8AF00D0B9EF /* HandoffMapViewerIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		010568E8219DE7DC00D0B9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010568F2219DE7DD00D0B9EF /* Assets.xcassets in Resources */,
+				010568F5219DE7DD00D0B9EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010568FF219DE8AF00D0B9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0105690E219DE8B000D0B9EF /* LaunchScreen.storyboard in Resources */,
+				0105690B219DE8B000D0B9EF /* Assets.xcassets in Resources */,
+				01056909219DE8AF00D0B9EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		010568E6219DE7DC00D0B9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0105691C21AEF31C00D0B9EF /* AppleStoreDirectory.swift in Sources */,
+				0105691F21AF3AAB00D0B9EF /* InitialMapRegionState.swift in Sources */,
+				010568F0219DE7DC00D0B9EF /* MapViewController.swift in Sources */,
+				010568EE219DE7DC00D0B9EF /* AppDelegate.swift in Sources */,
+				01056916219DFA4600D0B9EF /* AppleStore.swift in Sources */,
+				015DCB8121B1C5C0005AFF89 /* StoreDetailViewController.swift in Sources */,
+				0105692221AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift in Sources */,
+				015DCB7C21B1C3C5005AFF89 /* AppleStoreAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010568FD219DE8AF00D0B9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0105691D21AEF31C00D0B9EF /* AppleStoreDirectory.swift in Sources */,
+				0105692021AF3AAB00D0B9EF /* InitialMapRegionState.swift in Sources */,
+				01056906219DE8AF00D0B9EF /* MapViewController.swift in Sources */,
+				01056904219DE8AF00D0B9EF /* AppDelegate.swift in Sources */,
+				01056917219DFA4600D0B9EF /* AppleStore.swift in Sources */,
+				015DCB8321B1C5DD005AFF89 /* StoreDetailViewController.swift in Sources */,
+				0105692321AF475A00D0B9EF /* NSUserActivity+HandoffMapViewer.swift in Sources */,
+				015DCB7D21B1C3C5005AFF89 /* AppleStoreAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		010568F3219DE7DD00D0B9EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				010568F4219DE7DD00D0B9EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01056907219DE8AF00D0B9EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01056908219DE8AF00D0B9EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0105690C219DE8B000D0B9EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0105690D219DE8B000D0B9EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		010568F8219DE7DD00D0B9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		010568F9219DE7DD00D0B9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		010568FB219DE7DD00D0B9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandoffMapViewerMac/HandoffMapViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = HandoffMapViewerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HandoffMapViewer${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		010568FC219DE7DD00D0B9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandoffMapViewerMac/HandoffMapViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = HandoffMapViewerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HandoffMapViewer${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		01056911219DE8B000D0B9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandoffMapViewerIOS/HandoffMapViewerIOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = HandoffMapViewerIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HandoffMapViewer${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01056912219DE8B000D0B9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBF3385080BCE08A1BBF1CF /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandoffMapViewerIOS/HandoffMapViewerIOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = HandoffMapViewerIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HandoffMapViewer${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		010568E5219DE7DC00D0B9EF /* Build configuration list for PBXProject "HandoffMapViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010568F8219DE7DD00D0B9EF /* Debug */,
+				010568F9219DE7DD00D0B9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010568FA219DE7DD00D0B9EF /* Build configuration list for PBXNativeTarget "HandoffMapViewerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010568FB219DE7DD00D0B9EF /* Debug */,
+				010568FC219DE7DD00D0B9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01056910219DE8B000D0B9EF /* Build configuration list for PBXNativeTarget "HandoffMapViewerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01056911219DE8B000D0B9EF /* Debug */,
+				01056912219DE8B000D0B9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 010568E2219DE7DC00D0B9EF /* Project object */;
+}

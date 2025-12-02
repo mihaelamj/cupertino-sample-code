@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EFBF5202A1D275E004655B0 /* BackyardVisitorsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBF51B2A1D275E004655B0 /* BackyardVisitorsWidget.swift */; };
+		3EFBF5222A1D275E004655B0 /* Backyard+VisitorsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBF51D2A1D275E004655B0 /* Backyard+VisitorsWidget.swift */; };
+		3EFBF5232A1D275E004655B0 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBF51E2A1D275E004655B0 /* AppIntent.swift */; };
+		3EFBF5242A1D275E004655B0 /* AppIntent+RelevantIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBF51F2A1D275E004655B0 /* AppIntent+RelevantIntents.swift */; };
+		3EFBF5252A1D2763004655B0 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBF51E2A1D275E004655B0 /* AppIntent.swift */; };
+		3EFBF5262A1D2766004655B0 /* AppIntent+RelevantIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBF51F2A1D275E004655B0 /* AppIntent+RelevantIntents.swift */; };
+		3EFBF5272A1D276D004655B0 /* Backyard+VisitorsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBF51D2A1D275E004655B0 /* Backyard+VisitorsWidget.swift */; };
+		E018B6BF2A180E64007EC687 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E018B6BD2A180E63007EC687 /* Localizable.xcstrings */; };
+		E018B6C02A180E64007EC687 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E018B6BE2A180E64007EC687 /* InfoPlist.xcstrings */; };
+		E018B6C12A181039007EC687 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E018B6BA2A180E47007EC687 /* Localizable.xcstrings */; };
+		E018B6C22A18103D007EC687 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E018B6B92A180E47007EC687 /* InfoPlist.xcstrings */; };
+		E0766CC12A15BF2900DD69B6 /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E0A4674B2A154EAF0010173E /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E08133AD2A15752D00151E9A /* BackyardBirdsData in Frameworks */ = {isa = PBXBuildFile; productRef = E08133AC2A15752D00151E9A /* BackyardBirdsData */; };
+		E08133AF2A15752D00151E9A /* BackyardBirdsData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E08133AC2A15752D00151E9A /* BackyardBirdsData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E08133B12A15753300151E9A /* BackyardBirdsUI in Frameworks */ = {isa = PBXBuildFile; productRef = E08133B02A15753300151E9A /* BackyardBirdsUI */; };
+		E08133B22A15753300151E9A /* BackyardBirdsUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E08133B02A15753300151E9A /* BackyardBirdsUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E08133B42A15754400151E9A /* LayeredArtworkLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = E08133B32A15754400151E9A /* LayeredArtworkLibrary */; };
+		E08133B52A15754400151E9A /* LayeredArtworkLibrary in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E08133B32A15754400151E9A /* LayeredArtworkLibrary */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E0A4674E2A154EB00010173E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A4674D2A154EB00010173E /* WidgetKit.framework */; };
+		E0A467502A154EB00010173E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A4674F2A154EB00010173E /* SwiftUI.framework */; };
+		E0A467532A154EB00010173E /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A467522A154EB00010173E /* WidgetsBundle.swift */; };
+		E0A467572A154EB10010173E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A467562A154EB10010173E /* Assets.xcassets */; };
+		E0F770CC2A15AB670042CE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08133A82A15735C00151E9A /* Assets.xcassets */; };
+		E0F770CD2A15AB6A0042CE8B /* BackyardBirdsWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A466C62A153A0E0010173E /* BackyardBirdsWatchApp.swift */; };
+		E0F770CE2A15AB6D0042CE8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A466C82A153A0E0010173E /* ContentView.swift */; };
+		E0F770DC2A15B4C00042CE8B /* BackyardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F770DA2A15B4BE0042CE8B /* BackyardTabView.swift */; };
+		E0F770DF2A15B4DD0042CE8B /* BackyardVisitorsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F770DD2A15B4DB0042CE8B /* BackyardVisitorsTab.swift */; };
+		E0F770E42A15B50C0042CE8B /* BackyardContentTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F770E22A15B50A0042CE8B /* BackyardContentTab.swift */; };
+		E0F770E52A15B5100042CE8B /* BackyardSummaryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F770E02A15B4F00042CE8B /* BackyardSummaryTab.swift */; };
+		E0F770E72A15B58D0042CE8B /* BackyardBirdsData in Frameworks */ = {isa = PBXBuildFile; productRef = E0F770E62A15B58D0042CE8B /* BackyardBirdsData */; };
+		E0F770E82A15B58D0042CE8B /* BackyardBirdsData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E0F770E62A15B58D0042CE8B /* BackyardBirdsData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E0F770EB2A15B5910042CE8B /* BackyardBirdsUI in Frameworks */ = {isa = PBXBuildFile; productRef = E0F770EA2A15B5910042CE8B /* BackyardBirdsUI */; };
+		E0F770EC2A15B5910042CE8B /* BackyardBirdsUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E0F770EA2A15B5910042CE8B /* BackyardBirdsUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E0F770EE2A15B5940042CE8B /* LayeredArtworkLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = E0F770ED2A15B5940042CE8B /* LayeredArtworkLibrary */; };
+		E0F770EF2A15B5940042CE8B /* LayeredArtworkLibrary in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E0F770ED2A15B5940042CE8B /* LayeredArtworkLibrary */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0766CC22A15BF5100DD69B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0A466BB2A153A0E0010173E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0A4674A2A154EAF0010173E;
+			remoteInfo = Widgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0766CC02A15BF0B00DD69B6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0766CC12A15BF2900DD69B6 /* Widgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08133AE2A15752D00151E9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E08133B22A15753300151E9A /* BackyardBirdsUI in Embed Frameworks */,
+				E08133AF2A15752D00151E9A /* BackyardBirdsData in Embed Frameworks */,
+				E08133B52A15754400151E9A /* LayeredArtworkLibrary in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F770E92A15B58D0042CE8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0F770EC2A15B5910042CE8B /* BackyardBirdsUI in Embed Frameworks */,
+				E0F770E82A15B58D0042CE8B /* BackyardBirdsData in Embed Frameworks */,
+				E0F770EF2A15B5940042CE8B /* LayeredArtworkLibrary in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3EFBF51B2A1D275E004655B0 /* BackyardVisitorsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackyardVisitorsWidget.swift; sourceTree = "<group>"; };
+		3EFBF51D2A1D275E004655B0 /* Backyard+VisitorsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Backyard+VisitorsWidget.swift"; sourceTree = "<group>"; };
+		3EFBF51E2A1D275E004655B0 /* AppIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		3EFBF51F2A1D275E004655B0 /* AppIntent+RelevantIntents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppIntent+RelevantIntents.swift"; sourceTree = "<group>"; };
+		40DF79602A1D3F6A00BA2CBE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		92D5096013A7C944A726F872 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		E018B6B92A180E47007EC687 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		E018B6BA2A180E47007EC687 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E018B6BD2A180E63007EC687 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E018B6BE2A180E64007EC687 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		E08133992A15712700151E9A /* LayeredArtworkLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LayeredArtworkLibrary; sourceTree = "<group>"; };
+		E081339C2A15718B00151E9A /* Store.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Store.storekit; sourceTree = "<group>"; };
+		E08133A82A15735C00151E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E08133AA2A1574F300151E9A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		E0A466C62A153A0E0010173E /* BackyardBirdsWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardBirdsWatchApp.swift; sourceTree = "<group>"; };
+		E0A466C82A153A0E0010173E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E0A466CC2A153A0F0010173E /* Backyard_Birds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Backyard_Birds.entitlements; sourceTree = "<group>"; };
+		E0A4674B2A154EAF0010173E /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A4674D2A154EB00010173E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		E0A4674F2A154EB00010173E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
+		E0A467522A154EB00010173E /* WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsBundle.swift; sourceTree = "<group>"; };
+		E0A467562A154EB10010173E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0A467582A154EB10010173E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A467592A154EB10010173E /* Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widgets.entitlements; sourceTree = "<group>"; };
+		E0A467682A156D920010173E /* BackyardBirdsUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BackyardBirdsUI; sourceTree = "<group>"; };
+		E0A4676A2A156E240010173E /* BackyardBirdsData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BackyardBirdsData; sourceTree = "<group>"; };
+		E0F7709E2A15AA900042CE8B /* Backyard Birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Backyard Birds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F770DA2A15B4BE0042CE8B /* BackyardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardTabView.swift; sourceTree = "<group>"; };
+		E0F770DD2A15B4DB0042CE8B /* BackyardVisitorsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardVisitorsTab.swift; sourceTree = "<group>"; };
+		E0F770E02A15B4F00042CE8B /* BackyardSummaryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardSummaryTab.swift; sourceTree = "<group>"; };
+		E0F770E22A15B50A0042CE8B /* BackyardContentTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardContentTab.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0A467482A154EAF0010173E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08133AD2A15752D00151E9A /* BackyardBirdsData in Frameworks */,
+				E08133B42A15754400151E9A /* LayeredArtworkLibrary in Frameworks */,
+				E0A467502A154EB00010173E /* SwiftUI.framework in Frameworks */,
+				E08133B12A15753300151E9A /* BackyardBirdsUI in Frameworks */,
+				E0A4674E2A154EB00010173E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F7709B2A15AA900042CE8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F770EB2A15B5910042CE8B /* BackyardBirdsUI in Frameworks */,
+				E0F770E72A15B58D0042CE8B /* BackyardBirdsData in Frameworks */,
+				E0F770EE2A15B5940042CE8B /* LayeredArtworkLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EFBF51A2A1D2736004655B0 /* BackyardVisitor */ = {
+			isa = PBXGroup;
+			children = (
+				3EFBF51E2A1D275E004655B0 /* AppIntent.swift */,
+				3EFBF51F2A1D275E004655B0 /* AppIntent+RelevantIntents.swift */,
+				3EFBF51D2A1D275E004655B0 /* Backyard+VisitorsWidget.swift */,
+				3EFBF51B2A1D275E004655B0 /* BackyardVisitorsWidget.swift */,
+			);
+			path = BackyardVisitor;
+			sourceTree = "<group>";
+		};
+		ACCC3835AA4939F54BA1ACC1 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				92D5096013A7C944A726F872 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ../../LICENSE;
+			sourceTree = "<group>";
+		};
+		E081339B2A15714A00151E9A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				E081339C2A15718B00151E9A /* Store.storekit */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		E0A466BA2A153A0E0010173E = {
+			isa = PBXGroup;
+			children = (
+				40DF79602A1D3F6A00BA2CBE /* README.md */,
+				E0F7709F2A15AA900042CE8B /* Watch */,
+				E0A467512A154EB00010173E /* Widgets */,
+				E0A4676A2A156E240010173E /* BackyardBirdsData */,
+				E0A467682A156D920010173E /* BackyardBirdsUI */,
+				E08133992A15712700151E9A /* LayeredArtworkLibrary */,
+				E081339B2A15714A00151E9A /* Misc */,
+				E0A4674C2A154EB00010173E /* Frameworks */,
+				E0A466C42A153A0E0010173E /* Products */,
+				ED4C08B27E7DC165D4776BCE /* Configuration */,
+				ACCC3835AA4939F54BA1ACC1 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		E0A466C42A153A0E0010173E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4674B2A154EAF0010173E /* Widgets.appex */,
+				E0F7709E2A15AA900042CE8B /* Backyard Birds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0A4674C2A154EB00010173E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E08133AA2A1574F300151E9A /* StoreKit.framework */,
+				E0A4674D2A154EB00010173E /* WidgetKit.framework */,
+				E0A4674F2A154EB00010173E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0A467512A154EB00010173E /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				E018B6BE2A180E64007EC687 /* InfoPlist.xcstrings */,
+				E018B6BD2A180E63007EC687 /* Localizable.xcstrings */,
+				E0A467592A154EB10010173E /* Widgets.entitlements */,
+				E0A467522A154EB00010173E /* WidgetsBundle.swift */,
+				3EFBF51A2A1D2736004655B0 /* BackyardVisitor */,
+				E0A467562A154EB10010173E /* Assets.xcassets */,
+				E0A467582A154EB10010173E /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		E0F7709F2A15AA900042CE8B /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				E018B6B92A180E47007EC687 /* InfoPlist.xcstrings */,
+				E018B6BA2A180E47007EC687 /* Localizable.xcstrings */,
+				E0A466C62A153A0E0010173E /* BackyardBirdsWatchApp.swift */,
+				E0A466C82A153A0E0010173E /* ContentView.swift */,
+				E0F770D92A15B4970042CE8B /* Backyard Tabs */,
+				E08133A82A15735C00151E9A /* Assets.xcassets */,
+				E0A466CC2A153A0F0010173E /* Backyard_Birds.entitlements */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		E0F770D92A15B4970042CE8B /* Backyard Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				E0F770DA2A15B4BE0042CE8B /* BackyardTabView.swift */,
+				E0F770DD2A15B4DB0042CE8B /* BackyardVisitorsTab.swift */,
+				E0F770E02A15B4F00042CE8B /* BackyardSummaryTab.swift */,
+				E0F770E22A15B50A0042CE8B /* BackyardContentTab.swift */,
+			);
+			path = "Backyard Tabs";
+			sourceTree = "<group>";
+		};
+		ED4C08B27E7DC165D4776BCE /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0A4674A2A154EAF0010173E /* Widgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0A4675D2A154EB10010173E /* Build configuration list for PBXNativeTarget "Widgets" */;
+			buildPhases = (
+				E0A467472A154EAF0010173E /* Sources */,
+				E0A467482A154EAF0010173E /* Frameworks */,
+				E0A467492A154EAF0010173E /* Resources */,
+				E08133AE2A15752D00151E9A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widgets;
+			packageProductDependencies = (
+				E08133AC2A15752D00151E9A /* BackyardBirdsData */,
+				E08133B02A15753300151E9A /* BackyardBirdsUI */,
+				E08133B32A15754400151E9A /* LayeredArtworkLibrary */,
+			);
+			productName = WidgetsExtension;
+			productReference = E0A4674B2A154EAF0010173E /* Widgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E0F7709D2A15AA900042CE8B /* Backyard Birds (Watch) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0F770C22A15AA920042CE8B /* Build configuration list for PBXNativeTarget "Backyard Birds (Watch)" */;
+			buildPhases = (
+				E0F7709A2A15AA900042CE8B /* Sources */,
+				E0F7709B2A15AA900042CE8B /* Frameworks */,
+				E0F7709C2A15AA900042CE8B /* Resources */,
+				E0F770E92A15B58D0042CE8B /* Embed Frameworks */,
+				E0766CC02A15BF0B00DD69B6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0766CC32A15BF5100DD69B6 /* PBXTargetDependency */,
+			);
+			name = "Backyard Birds (Watch)";
+			packageProductDependencies = (
+				E0F770E62A15B58D0042CE8B /* BackyardBirdsData */,
+				E0F770EA2A15B5910042CE8B /* BackyardBirdsUI */,
+				E0F770ED2A15B5940042CE8B /* LayeredArtworkLibrary */,
+			);
+			productName = "Backyard Birds (Watch) Watch App";
+			productReference = E0F7709E2A15AA900042CE8B /* Backyard Birds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0A466BB2A153A0E0010173E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					E0A4674A2A154EAF0010173E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E0F7709D2A15AA900042CE8B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E0A466BE2A153A0E0010173E /* Build configuration list for PBXProject "Backyard Birds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+				"zh-Hans",
+				he,
+				ja,
+				"pt-BR",
+				ru,
+				sv,
+				uk,
+			);
+			mainGroup = E0A466BA2A153A0E0010173E;
+			productRefGroup = E0A466C42A153A0E0010173E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0F7709D2A15AA900042CE8B /* Backyard Birds (Watch) */,
+				E0A4674A2A154EAF0010173E /* Widgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0A467492A154EAF0010173E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E018B6C02A180E64007EC687 /* InfoPlist.xcstrings in Resources */,
+				E018B6BF2A180E64007EC687 /* Localizable.xcstrings in Resources */,
+				E0A467572A154EB10010173E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F7709C2A15AA900042CE8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E018B6C22A18103D007EC687 /* InfoPlist.xcstrings in Resources */,
+				E018B6C12A181039007EC687 /* Localizable.xcstrings in Resources */,
+				E0F770CC2A15AB670042CE8B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0A467472A154EAF0010173E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A467532A154EB00010173E /* WidgetsBundle.swift in Sources */,
+				3EFBF5202A1D275E004655B0 /* BackyardVisitorsWidget.swift in Sources */,
+				3EFBF5232A1D275E004655B0 /* AppIntent.swift in Sources */,
+				3EFBF5242A1D275E004655B0 /* AppIntent+RelevantIntents.swift in Sources */,
+				3EFBF5222A1D275E004655B0 /* Backyard+VisitorsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F7709A2A15AA900042CE8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F770DC2A15B4C00042CE8B /* BackyardTabView.swift in Sources */,
+				E0F770CE2A15AB6D0042CE8B /* ContentView.swift in Sources */,
+				3EFBF5272A1D276D004655B0 /* Backyard+VisitorsWidget.swift in Sources */,
+				E0F770CD2A15AB6A0042CE8B /* BackyardBirdsWatchApp.swift in Sources */,
+				E0F770E52A15B5100042CE8B /* BackyardSummaryTab.swift in Sources */,
+				3EFBF5252A1D2763004655B0 /* AppIntent.swift in Sources */,
+				E0F770DF2A15B4DD0042CE8B /* BackyardVisitorsTab.swift in Sources */,
+				3EFBF5262A1D2766004655B0 /* AppIntent+RelevantIntents.swift in Sources */,
+				E0F770E42A15B50C0042CE8B /* BackyardContentTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0766CC32A15BF5100DD69B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0A4674A2A154EAF0010173E /* Widgets */;
+			targetProxy = E0766CC22A15BF5100DD69B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E0A466E62A153A100010173E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0A466E72A153A100010173E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E0A4675E2A154EB10010173E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widgets/Widgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Backyard-Birds${SAMPLE_CODE_DISAMBIGUATOR}.Widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=watchos*]" = "com.example.apple-samplecode.Backyard-Birds$(SAMPLE_CODE_DISAMBIGUATOR).watch.Widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=watchsimulator*]" = "com.example.apple-samplecode.Backyard-Birds$(SAMPLE_CODE_DISAMBIGUATOR).watch.Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+			};
+			name = Debug;
+		};
+		E0A4675F2A154EB10010173E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widgets/Widgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A93A5CM278;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Backyard-Birds${SAMPLE_CODE_DISAMBIGUATOR}.Widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=watchos*]" = "com.example.apple-samplecode.Backyard-Birds$(SAMPLE_CODE_DISAMBIGUATOR).watch.Widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=watchsimulator*]" = "com.example.apple-samplecode.Backyard-Birds$(SAMPLE_CODE_DISAMBIGUATOR).watch.Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+			};
+			name = Release;
+		};
+		E0F770C32A15AA920042CE8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.Backyard-Birds$(SAMPLE_CODE_DISAMBIGUATOR)";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Backyard-Birds${SAMPLE_CODE_DISAMBIGUATOR}.watch";
+				PRODUCT_NAME = "Backyard Birds";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		E0F770C42A15AA920042CE8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF145E82B654006AC6F97C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.Backyard-Birds$(SAMPLE_CODE_DISAMBIGUATOR)";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Backyard-Birds${SAMPLE_CODE_DISAMBIGUATOR}.watch";
+				PRODUCT_NAME = "Backyard Birds";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0A466BE2A153A0E0010173E /* Build configuration list for PBXProject "Backyard Birds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A466E62A153A100010173E /* Debug */,
+				E0A466E72A153A100010173E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0A4675D2A154EB10010173E /* Build configuration list for PBXNativeTarget "Widgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A4675E2A154EB10010173E /* Debug */,
+				E0A4675F2A154EB10010173E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0F770C22A15AA920042CE8B /* Build configuration list for PBXNativeTarget "Backyard Birds (Watch)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F770C32A15AA920042CE8B /* Debug */,
+				E0F770C42A15AA920042CE8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E08133AC2A15752D00151E9A /* BackyardBirdsData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BackyardBirdsData;
+		};
+		E08133B02A15753300151E9A /* BackyardBirdsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BackyardBirdsUI;
+		};
+		E08133B32A15754400151E9A /* LayeredArtworkLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LayeredArtworkLibrary;
+		};
+		E0F770E62A15B58D0042CE8B /* BackyardBirdsData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BackyardBirdsData;
+		};
+		E0F770EA2A15B5910042CE8B /* BackyardBirdsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BackyardBirdsUI;
+		};
+		E0F770ED2A15B5940042CE8B /* LayeredArtworkLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LayeredArtworkLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E0A466BB2A153A0E0010173E /* Project object */;
+}

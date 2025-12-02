@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E3D9E202C0914BA00DF08D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E1F2C0914BA00DF08D2 /* ContentView.swift */; };
+		3E3D9E242C0914BA00DF08D2 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E232C0914BA00DF08D2 /* ViewControllerRepresentable.swift */; };
+		3E3D9E272C0914BA00DF08D2 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E262C0914BA00DF08D2 /* Synth.aif */; };
+		3E3D9E292C0914BA00DF08D2 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E282C0914BA00DF08D2 /* SimplePlayEngine.swift */; };
+		3E3D9E2C2C0914BB00DF08D2 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E2B2C0914BB00DF08D2 /* MIDIManager.swift */; };
+		3E3D9E2E2C0914BB00DF08D2 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E2D2C0914BB00DF08D2 /* TypeAliases.swift */; };
+		3E3D9E312C0914BB00DF08D2 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E302C0914BB00DF08D2 /* StringHelpers.swift */; };
+		3E3D9E342C0914BB00DF08D2 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E332C0914BB00DF08D2 /* AudioUnitHostModel.swift */; };
+		3E3D9E362C0914BB00DF08D2 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E352C0914BB00DF08D2 /* AudioUnitViewModel.swift */; };
+		3E3D9E382C0914BB00DF08D2 /* BNNSBitcrusherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E372C0914BB00DF08D2 /* BNNSBitcrusherApp.swift */; };
+		3E3D9E3B2C0914BB00DF08D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E3A2C0914BB00DF08D2 /* Preview Assets.xcassets */; };
+		3E3D9E3D2C0914BC00DF08D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E3C2C0914BC00DF08D2 /* Assets.xcassets */; };
+		3E3D9E442C0914BC00DF08D2 /* BNNSBitcrusherExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E3D9E432C0914BC00DF08D2 /* BNNSBitcrusherExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3E3D9E492C0914BC00DF08D2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E482C0914BC00DF08D2 /* README.md */; };
+		3E3D9E4E2C0914BC00DF08D2 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E4D2C0914BC00DF08D2 /* ParameterSpecBase.swift */; };
+		3E3D9E512C0914BC00DF08D2 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E502C0914BC00DF08D2 /* CrossPlatform.swift */; };
+		3E3D9E532C0914BC00DF08D2 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E522C0914BC00DF08D2 /* String+Utils.swift */; };
+		3E3D9E572C0914BC00DF08D2 /* BNNSBitcrusherExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E562C0914BC00DF08D2 /* BNNSBitcrusherExtensionAudioUnit.mm */; };
+		3E3D9E5A2C0914BC00DF08D2 /* BNNSBitcrusherExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E592C0914BC00DF08D2 /* BNNSBitcrusherExtensionAUProcessHelper.hpp */; };
+		3E3D9E5C2C0914BC00DF08D2 /* BNNSBitcrusherExtensionBufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E5B2C0914BC00DF08D2 /* BNNSBitcrusherExtensionBufferedAudioBus.hpp */; };
+		3E3D9E602C0914BC00DF08D2 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E5F2C0914BC00DF08D2 /* Parameters.swift */; };
+		3E3D9E632C0914BC00DF08D2 /* BNNSBitcrusherExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E622C0914BC00DF08D2 /* BNNSBitcrusherExtensionDSPKernel.hpp */; };
+		3E3D9E662C0914BC00DF08D2 /* BNNSBitcrusherExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E652C0914BC00DF08D2 /* BNNSBitcrusherExtensionMainView.swift */; };
+		3E3D9E682C0914BC00DF08D2 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E672C0914BC00DF08D2 /* ParameterSlider.swift */; };
+		3E3D9E6D2C0914BC00DF08D2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3E3D9E6C2C0914BC00DF08D2 /* Base */; };
+		3E3D9E6F2C0914BC00DF08D2 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E6E2C0914BC00DF08D2 /* ObservableAUParameter.swift */; };
+		3E3D9E712C0914BC00DF08D2 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D9E702C0914BC00DF08D2 /* AudioUnitViewController.swift */; };
+		3EBC54282C091C5C0051AEE9 /* bitcrusher.py in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC54272C091C5C0051AEE9 /* bitcrusher.py */; };
+		3EBC54292C091C5C0051AEE9 /* bitcrusher.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC54262C091C5C0051AEE9 /* bitcrusher.mlpackage */; };
+		3EBC542B2C091FA60051AEE9 /* WaveformDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC542A2C091FA60051AEE9 /* WaveformDisplay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E3D9E452C0914BC00DF08D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E3D9E142C0914BA00DF08D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E3D9E422C0914BC00DF08D2;
+			remoteInfo = BNNSBitcrusherExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E3D9E782C0914BC00DF08D2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E3D9E442C0914BC00DF08D2 /* BNNSBitcrusherExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3E3D9E1C2C0914BA00DF08D2 /* BNNSBitcrusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNNSBitcrusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3D9E1F2C0914BA00DF08D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E3D9E232C0914BA00DF08D2 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		3E3D9E262C0914BA00DF08D2 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		3E3D9E282C0914BA00DF08D2 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		3E3D9E2B2C0914BB00DF08D2 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		3E3D9E2D2C0914BB00DF08D2 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		3E3D9E302C0914BB00DF08D2 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		3E3D9E332C0914BB00DF08D2 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		3E3D9E352C0914BB00DF08D2 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		3E3D9E372C0914BB00DF08D2 /* BNNSBitcrusherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNNSBitcrusherApp.swift; sourceTree = "<group>"; };
+		3E3D9E3A2C0914BB00DF08D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E3D9E3C2C0914BC00DF08D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E3D9E3E2C0914BC00DF08D2 /* BNNSBitcrusher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BNNSBitcrusher.entitlements; sourceTree = "<group>"; };
+		3E3D9E432C0914BC00DF08D2 /* BNNSBitcrusherExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BNNSBitcrusherExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3D9E482C0914BC00DF08D2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3E3D9E4B2C0914BC00DF08D2 /* BNNSBitcrusherExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BNNSBitcrusherExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E3D9E4D2C0914BC00DF08D2 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		3E3D9E502C0914BC00DF08D2 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		3E3D9E522C0914BC00DF08D2 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		3E3D9E552C0914BC00DF08D2 /* BNNSBitcrusherExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNNSBitcrusherExtensionAudioUnit.h; sourceTree = "<group>"; };
+		3E3D9E562C0914BC00DF08D2 /* BNNSBitcrusherExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BNNSBitcrusherExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		3E3D9E592C0914BC00DF08D2 /* BNNSBitcrusherExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BNNSBitcrusherExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		3E3D9E5B2C0914BC00DF08D2 /* BNNSBitcrusherExtensionBufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BNNSBitcrusherExtensionBufferedAudioBus.hpp; sourceTree = "<group>"; };
+		3E3D9E5E2C0914BC00DF08D2 /* BNNSBitcrusherExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNNSBitcrusherExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		3E3D9E5F2C0914BC00DF08D2 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		3E3D9E622C0914BC00DF08D2 /* BNNSBitcrusherExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BNNSBitcrusherExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		3E3D9E652C0914BC00DF08D2 /* BNNSBitcrusherExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNNSBitcrusherExtensionMainView.swift; sourceTree = "<group>"; };
+		3E3D9E672C0914BC00DF08D2 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		3E3D9E6C2C0914BC00DF08D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		3E3D9E6E2C0914BC00DF08D2 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		3E3D9E702C0914BC00DF08D2 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		3E3D9E722C0914BC00DF08D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBC54262C091C5C0051AEE9 /* bitcrusher.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = bitcrusher.mlpackage; sourceTree = "<group>"; };
+		3EBC54272C091C5C0051AEE9 /* bitcrusher.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bitcrusher.py; sourceTree = "<group>"; };
+		3EBC542A2C091FA60051AEE9 /* WaveformDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformDisplay.swift; sourceTree = "<group>"; };
+		644BF79C16EADB23C7AB474C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		8101AAD7F8C08EED109EF2C9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E3D9E192C0914BA00DF08D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E3D9E402C0914BC00DF08D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320E22E5F43F8C0CC7A4635E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		3E3D9E132C0914BA00DF08D2 = {
+			isa = PBXGroup;
+			children = (
+				8101AAD7F8C08EED109EF2C9 /* README.md */,
+				3E3D9E1E2C0914BA00DF08D2 /* BNNSBitcrusher */,
+				3E3D9E472C0914BC00DF08D2 /* BNNSBitcrusherExtension */,
+				3E3D9E1D2C0914BA00DF08D2 /* Products */,
+				320E22E5F43F8C0CC7A4635E /* Configuration */,
+				916406D78BAE6CA8A14CCD02 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		3E3D9E1D2C0914BA00DF08D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E1C2C0914BA00DF08D2 /* BNNSBitcrusher.app */,
+				3E3D9E432C0914BC00DF08D2 /* BNNSBitcrusherExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E3D9E1E2C0914BA00DF08D2 /* BNNSBitcrusher */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E1F2C0914BA00DF08D2 /* ContentView.swift */,
+				3E3D9E372C0914BB00DF08D2 /* BNNSBitcrusherApp.swift */,
+				3E3D9E3C2C0914BC00DF08D2 /* Assets.xcassets */,
+				3E3D9E3E2C0914BC00DF08D2 /* BNNSBitcrusher.entitlements */,
+				3E3D9E212C0914BA00DF08D2 /* Common */,
+				3E3D9E322C0914BB00DF08D2 /* Model */,
+				3E3D9E392C0914BB00DF08D2 /* Preview Content */,
+			);
+			path = BNNSBitcrusher;
+			sourceTree = "<group>";
+		};
+		3E3D9E212C0914BA00DF08D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E2D2C0914BB00DF08D2 /* TypeAliases.swift */,
+				3E3D9E222C0914BA00DF08D2 /* UI */,
+				3E3D9E252C0914BA00DF08D2 /* Audio */,
+				3E3D9E2A2C0914BB00DF08D2 /* MIDI */,
+				3E3D9E2F2C0914BB00DF08D2 /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3E3D9E222C0914BA00DF08D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E232C0914BA00DF08D2 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3E3D9E252C0914BA00DF08D2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E262C0914BA00DF08D2 /* Synth.aif */,
+				3E3D9E282C0914BA00DF08D2 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		3E3D9E2A2C0914BB00DF08D2 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E2B2C0914BB00DF08D2 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		3E3D9E2F2C0914BB00DF08D2 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E302C0914BB00DF08D2 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		3E3D9E322C0914BB00DF08D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E332C0914BB00DF08D2 /* AudioUnitHostModel.swift */,
+				3E3D9E352C0914BB00DF08D2 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E3D9E392C0914BB00DF08D2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E3A2C0914BB00DF08D2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E3D9E472C0914BC00DF08D2 /* BNNSBitcrusherExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E482C0914BC00DF08D2 /* README.md */,
+				3E3D9E722C0914BC00DF08D2 /* Info.plist */,
+				3EBC54262C091C5C0051AEE9 /* bitcrusher.mlpackage */,
+				3EBC54272C091C5C0051AEE9 /* bitcrusher.py */,
+				3E3D9E4A2C0914BC00DF08D2 /* Common */,
+				3E3D9E5D2C0914BC00DF08D2 /* Parameters */,
+				3E3D9E612C0914BC00DF08D2 /* DSP */,
+				3E3D9E642C0914BC00DF08D2 /* UI */,
+			);
+			path = BNNSBitcrusherExtension;
+			sourceTree = "<group>";
+		};
+		3E3D9E4A2C0914BC00DF08D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E4B2C0914BC00DF08D2 /* BNNSBitcrusherExtension-Bridging-Header.h */,
+				3E3D9E4C2C0914BC00DF08D2 /* Parameters */,
+				3E3D9E4F2C0914BC00DF08D2 /* Utility */,
+				3E3D9E542C0914BC00DF08D2 /* Audio Unit */,
+				3E3D9E582C0914BC00DF08D2 /* DSP */,
+				3E3D9E692C0914BC00DF08D2 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3E3D9E4C2C0914BC00DF08D2 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E4D2C0914BC00DF08D2 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		3E3D9E4F2C0914BC00DF08D2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E502C0914BC00DF08D2 /* CrossPlatform.swift */,
+				3E3D9E522C0914BC00DF08D2 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3E3D9E542C0914BC00DF08D2 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E552C0914BC00DF08D2 /* BNNSBitcrusherExtensionAudioUnit.h */,
+				3E3D9E562C0914BC00DF08D2 /* BNNSBitcrusherExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		3E3D9E582C0914BC00DF08D2 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E592C0914BC00DF08D2 /* BNNSBitcrusherExtensionAUProcessHelper.hpp */,
+				3E3D9E5B2C0914BC00DF08D2 /* BNNSBitcrusherExtensionBufferedAudioBus.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		3E3D9E5D2C0914BC00DF08D2 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E5E2C0914BC00DF08D2 /* BNNSBitcrusherExtensionParameterAddresses.h */,
+				3E3D9E5F2C0914BC00DF08D2 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		3E3D9E612C0914BC00DF08D2 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E622C0914BC00DF08D2 /* BNNSBitcrusherExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		3E3D9E642C0914BC00DF08D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E652C0914BC00DF08D2 /* BNNSBitcrusherExtensionMainView.swift */,
+				3E3D9E672C0914BC00DF08D2 /* ParameterSlider.swift */,
+				3EBC542A2C091FA60051AEE9 /* WaveformDisplay.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3E3D9E692C0914BC00DF08D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E6E2C0914BC00DF08D2 /* ObservableAUParameter.swift */,
+				3E3D9E702C0914BC00DF08D2 /* AudioUnitViewController.swift */,
+				3E3D9E6A2C0914BC00DF08D2 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3E3D9E6A2C0914BC00DF08D2 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D9E6B2C0914BC00DF08D2 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		916406D78BAE6CA8A14CCD02 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				644BF79C16EADB23C7AB474C /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E3D9E1B2C0914BA00DF08D2 /* BNNSBitcrusher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E3D9E792C0914BC00DF08D2 /* Build configuration list for PBXNativeTarget "BNNSBitcrusher" */;
+			buildPhases = (
+				3E3D9E182C0914BA00DF08D2 /* Sources */,
+				3E3D9E192C0914BA00DF08D2 /* Frameworks */,
+				3E3D9E1A2C0914BA00DF08D2 /* Resources */,
+				3E3D9E782C0914BC00DF08D2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E3D9E462C0914BC00DF08D2 /* PBXTargetDependency */,
+			);
+			name = BNNSBitcrusher;
+			productName = BNNSBitcrusher;
+			productReference = 3E3D9E1C2C0914BA00DF08D2 /* BNNSBitcrusher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E3D9E422C0914BC00DF08D2 /* BNNSBitcrusherExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E3D9E752C0914BC00DF08D2 /* Build configuration list for PBXNativeTarget "BNNSBitcrusherExtension" */;
+			buildPhases = (
+				3E3D9E3F2C0914BC00DF08D2 /* Sources */,
+				3E3D9E402C0914BC00DF08D2 /* Frameworks */,
+				3E3D9E412C0914BC00DF08D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BNNSBitcrusherExtension;
+			productName = BNNSBitcrusherExtension;
+			productReference = 3E3D9E432C0914BC00DF08D2 /* BNNSBitcrusherExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E3D9E142C0914BA00DF08D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1700;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3E3D9E1B2C0914BA00DF08D2 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					3E3D9E422C0914BC00DF08D2 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 3E3D9E172C0914BA00DF08D2 /* Build configuration list for PBXProject "BNNSBitcrusher" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E3D9E132C0914BA00DF08D2;
+			productRefGroup = 3E3D9E1D2C0914BA00DF08D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E3D9E1B2C0914BA00DF08D2 /* BNNSBitcrusher */,
+				3E3D9E422C0914BC00DF08D2 /* BNNSBitcrusherExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E3D9E1A2C0914BA00DF08D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3D9E3B2C0914BB00DF08D2 /* Preview Assets.xcassets in Resources */,
+				3E3D9E3D2C0914BC00DF08D2 /* Assets.xcassets in Resources */,
+				3E3D9E272C0914BA00DF08D2 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E3D9E412C0914BC00DF08D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3D9E5A2C0914BC00DF08D2 /* BNNSBitcrusherExtensionAUProcessHelper.hpp in Resources */,
+				3E3D9E5C2C0914BC00DF08D2 /* BNNSBitcrusherExtensionBufferedAudioBus.hpp in Resources */,
+				3E3D9E492C0914BC00DF08D2 /* README.md in Resources */,
+				3E3D9E632C0914BC00DF08D2 /* BNNSBitcrusherExtensionDSPKernel.hpp in Resources */,
+				3E3D9E6D2C0914BC00DF08D2 /* Base in Resources */,
+				3EBC54282C091C5C0051AEE9 /* bitcrusher.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E3D9E182C0914BA00DF08D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3D9E342C0914BB00DF08D2 /* AudioUnitHostModel.swift in Sources */,
+				3E3D9E362C0914BB00DF08D2 /* AudioUnitViewModel.swift in Sources */,
+				3E3D9E202C0914BA00DF08D2 /* ContentView.swift in Sources */,
+				3E3D9E242C0914BA00DF08D2 /* ViewControllerRepresentable.swift in Sources */,
+				3E3D9E312C0914BB00DF08D2 /* StringHelpers.swift in Sources */,
+				3E3D9E2C2C0914BB00DF08D2 /* MIDIManager.swift in Sources */,
+				3E3D9E2E2C0914BB00DF08D2 /* TypeAliases.swift in Sources */,
+				3E3D9E382C0914BB00DF08D2 /* BNNSBitcrusherApp.swift in Sources */,
+				3E3D9E292C0914BA00DF08D2 /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E3D9E3F2C0914BC00DF08D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3D9E602C0914BC00DF08D2 /* Parameters.swift in Sources */,
+				3E3D9E662C0914BC00DF08D2 /* BNNSBitcrusherExtensionMainView.swift in Sources */,
+				3E3D9E6F2C0914BC00DF08D2 /* ObservableAUParameter.swift in Sources */,
+				3E3D9E4E2C0914BC00DF08D2 /* ParameterSpecBase.swift in Sources */,
+				3E3D9E512C0914BC00DF08D2 /* CrossPlatform.swift in Sources */,
+				3E3D9E712C0914BC00DF08D2 /* AudioUnitViewController.swift in Sources */,
+				3E3D9E682C0914BC00DF08D2 /* ParameterSlider.swift in Sources */,
+				3EBC542B2C091FA60051AEE9 /* WaveformDisplay.swift in Sources */,
+				3E3D9E572C0914BC00DF08D2 /* BNNSBitcrusherExtensionAudioUnit.mm in Sources */,
+				3EBC54292C091C5C0051AEE9 /* bitcrusher.mlpackage in Sources */,
+				3E3D9E532C0914BC00DF08D2 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E3D9E462C0914BC00DF08D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E3D9E422C0914BC00DF08D2 /* BNNSBitcrusherExtension */;
+			targetProxy = 3E3D9E452C0914BC00DF08D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E3D9E6B2C0914BC00DF08D2 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E3D9E6C2C0914BC00DF08D2 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E3D9E732C0914BC00DF08D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZBFYF9JG5V;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E3D9E742C0914BC00DF08D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZBFYF9JG5V;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3E3D9E762C0914BC00DF08D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BNNSBitcrusherExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BNNSBitcrusherExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BNNSBitcrusher${SAMPLE_CODE_DISAMBIGUATOR}.BNNSBitcrusherExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BNNSBitcrusherExtension/Common/BNNSBitcrusherExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3E3D9E772C0914BC00DF08D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BNNSBitcrusherExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BNNSBitcrusherExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BNNSBitcrusher${SAMPLE_CODE_DISAMBIGUATOR}.BNNSBitcrusherExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BNNSBitcrusherExtension/Common/BNNSBitcrusherExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3E3D9E7A2C0914BC00DF08D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BNNSBitcrusher/BNNSBitcrusher.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BNNSBitcrusher/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BNNSBitcrusher;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BNNSBitcrusher${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3E3D9E7B2C0914BC00DF08D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B0DB8E34857235E395FE90 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BNNSBitcrusher/BNNSBitcrusher.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BNNSBitcrusher/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BNNSBitcrusher;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BNNSBitcrusher${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E3D9E172C0914BA00DF08D2 /* Build configuration list for PBXProject "BNNSBitcrusher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3D9E732C0914BC00DF08D2 /* Debug */,
+				3E3D9E742C0914BC00DF08D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E3D9E752C0914BC00DF08D2 /* Build configuration list for PBXNativeTarget "BNNSBitcrusherExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3D9E762C0914BC00DF08D2 /* Debug */,
+				3E3D9E772C0914BC00DF08D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E3D9E792C0914BC00DF08D2 /* Build configuration list for PBXNativeTarget "BNNSBitcrusher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3D9E7A2C0914BC00DF08D2 /* Debug */,
+				3E3D9E7B2C0914BC00DF08D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E3D9E142C0914BA00DF08D2 /* Project object */;
+}

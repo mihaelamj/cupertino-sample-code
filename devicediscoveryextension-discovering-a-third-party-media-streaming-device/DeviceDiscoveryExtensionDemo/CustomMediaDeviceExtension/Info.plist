@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EXAppExtensionAttributes</key>
+	<dict>
+		<key>EXExtensionPointIdentifier</key>
+		<string>com.apple.discovery-extension</string>
+	</dict>
+	<key>NSBluetoothServices</key>
+	<array>
+		<string>f347d5f2-181b-4e19-b601-a9dbffaef332</string>
+	</array>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_deviceaccess._udp.</string>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data-access-demo-protocol</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Demo Protocol Bolt</string>
+			<key>UTTypeIcons</key>
+			<dict>
+				<key>UTTypeSymbolName</key>
+				<string>DataAccessDemoBolt</string>
+			</dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.example.apple-DataAccessDemo.Bolt</string>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data-access-demo-protocol</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Demo Protocol Ant</string>
+			<key>UTTypeIcons</key>
+			<dict>
+				<key>UTTypeSymbolName</key>
+				<string>DataAccessDemoBug2</string>
+			</dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.example.apple-DataAccessDemo.Ant</string>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data-access-demo-protocol</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Demo Protocol Ladybug</string>
+			<key>UTTypeIcons</key>
+			<dict>
+				<key>UTTypeSymbolName</key>
+				<string>DataAccessDemoBug1</string>
+			</dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.example.apple-DataAccessDemo.Ladybug</string>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data-access-demo-protocol</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Link with TV code</string>
+			<key>UTTypeIcons</key>
+			<dict>
+				<key>UTTypeSymbolName</key>
+				<string>network</string>
+			</dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.example.apple-DataAccessDemo.menu</string>
+		</dict>
+	</array>
+</dict>
+</plist>

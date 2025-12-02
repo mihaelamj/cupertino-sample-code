@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0208E80F2CAF3F9300393000 /* VenueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208E80E2CAF3F7D00393000 /* VenueDetailView.swift */; };
+		02126B8A2D4967AD00D4DD64 /* LoadEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02126B892D49679B00D4DD64 /* LoadEventsView.swift */; };
+		02126B8C2D4AFCDD00D4DD64 /* LoadEventListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02126B8B2D4AFCCB00D4DD64 /* LoadEventListItem.swift */; };
+		021717022CA74F5500DDB2F3 /* EnergyKitSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021717012CA74F5500DDB2F3 /* EnergyKitSampleApp.swift */; };
+		021717042CA74F5500DDB2F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021717032CA74F5500DDB2F3 /* ContentView.swift */; };
+		021717062CA74F5700DDB2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021717052CA74F5700DDB2F3 /* Assets.xcassets */; };
+		0217170A2CA74F5700DDB2F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021717092CA74F5700DDB2F3 /* Preview Assets.xcassets */; };
+		021717312CA74F8500DDB2F3 /* VenueListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021717302CA74F8000DDB2F3 /* VenueListItem.swift */; };
+		025DE9552D78FE7D001C499E /* ElectricVehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DE9542D78FE6A001C499E /* ElectricVehicleController.swift */; };
+		025DE9572D78FF37001C499E /* ElectricVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DE9562D78FF31001C499E /* ElectricVehicle.swift */; };
+		0268D5E62D529B11000F8206 /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268D5E52D529B0B000F8206 /* SendButton.swift */; };
+		0268D5E82D529B80000F8206 /* LoadEventsToolbarStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268D5E72D529B72000F8206 /* LoadEventsToolbarStatus.swift */; };
+		0282E2702D4C4A830058B961 /* LoadEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282E26F2D4C4A7A0058B961 /* LoadEventDetailView.swift */; };
+		02B5C8412D94756F00AEA370 /* EVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5C8402D94756000AEA370 /* EVView.swift */; };
+		02B5C8432D94763100AEA370 /* EVDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5C8422D94762A00AEA370 /* EVDetailsView.swift */; };
+		02B9B0062CACB682009BC5F4 /* GuidanceChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B9B0052CACB679009BC5F4 /* GuidanceChart.swift */; };
+		02D0D5842CB5A8310059A3AF /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0D5832CB5A8290059A3AF /* RefreshButton.swift */; };
+		02D0D5862CB5A9330059A3AF /* VenueToolbarStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0D5852CB5A9250059A3AF /* VenueToolbarStatus.swift */; };
+		02D0D58C2CB6ED860059A3AF /* AttributeValueTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0D58B2CB6ED6A0059A3AF /* AttributeValueTextView.swift */; };
+		02FAEBCF2D3721E2009F3E58 /* ChargingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAEBCE2D3721DF009F3E58 /* ChargingLocationView.swift */; };
+		02FAEBD52D372214009F3E58 /* ChargingLocationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAEBD42D372211009F3E58 /* ChargingLocationListItem.swift */; };
+		02FAEBD72D372229009F3E58 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAEBD62D372226009F3E58 /* AddButton.swift */; };
+		02FAEBD92D372231009F3E58 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAEBD82D37222D009F3E58 /* DeleteButton.swift */; };
+		02FAEBDB2D372247009F3E58 /* ChargingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAEBDA2D372241009F3E58 /* ChargingLocation.swift */; };
+		2B7614EE2E84C0A6007316E2 /* EnergyKitErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7614ED2E84C09E007316E2 /* EnergyKitErrorView.swift */; };
+		2B92B7E02D64243400BD347F /* UUIDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B92B7DF2D64242B00BD347F /* UUIDTextView.swift */; };
+		800503382D9E626B00215CEC /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800503372D9E626B00215CEC /* SwiftData.framework */; };
+		8028A15F2DBFE97B00337BDC /* EnergyVenueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028A15E2DBFE97300337BDC /* EnergyVenueManager.swift */; };
+		80BD68EE2CD337AF00713544 /* EnergyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BD68ED2CD337AF00713544 /* EnergyKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B92B7C62D62B24A00BD347F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0208E80E2CAF3F7D00393000 /* VenueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailView.swift; sourceTree = "<group>"; };
+		02126B892D49679B00D4DD64 /* LoadEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadEventsView.swift; sourceTree = "<group>"; };
+		02126B8B2D4AFCCB00D4DD64 /* LoadEventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadEventListItem.swift; sourceTree = "<group>"; };
+		021716FE2CA74F5500DDB2F3 /* EnergyKitSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyKitSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		021717012CA74F5500DDB2F3 /* EnergyKitSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyKitSampleApp.swift; sourceTree = "<group>"; };
+		021717032CA74F5500DDB2F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		021717052CA74F5700DDB2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		021717072CA74F5700DDB2F3 /* EnergyKitSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnergyKitSampleApp.entitlements; sourceTree = "<group>"; };
+		021717092CA74F5700DDB2F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		021717302CA74F8000DDB2F3 /* VenueListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListItem.swift; sourceTree = "<group>"; };
+		025DE9542D78FE6A001C499E /* ElectricVehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricVehicleController.swift; sourceTree = "<group>"; };
+		025DE9562D78FF31001C499E /* ElectricVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricVehicle.swift; sourceTree = "<group>"; };
+		0268D5E52D529B0B000F8206 /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		0268D5E72D529B72000F8206 /* LoadEventsToolbarStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadEventsToolbarStatus.swift; sourceTree = "<group>"; };
+		0282E26F2D4C4A7A0058B961 /* LoadEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadEventDetailView.swift; sourceTree = "<group>"; };
+		02B5C8402D94756000AEA370 /* EVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVView.swift; sourceTree = "<group>"; };
+		02B5C8422D94762A00AEA370 /* EVDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVDetailsView.swift; sourceTree = "<group>"; };
+		02B9B0052CACB679009BC5F4 /* GuidanceChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceChart.swift; sourceTree = "<group>"; };
+		02D0D5832CB5A8290059A3AF /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		02D0D5852CB5A9250059A3AF /* VenueToolbarStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueToolbarStatus.swift; sourceTree = "<group>"; };
+		02D0D58B2CB6ED6A0059A3AF /* AttributeValueTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeValueTextView.swift; sourceTree = "<group>"; };
+		02FAEBCE2D3721DF009F3E58 /* ChargingLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingLocationView.swift; sourceTree = "<group>"; };
+		02FAEBD42D372211009F3E58 /* ChargingLocationListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingLocationListItem.swift; sourceTree = "<group>"; };
+		02FAEBD62D372226009F3E58 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		02FAEBD82D37222D009F3E58 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		02FAEBDA2D372241009F3E58 /* ChargingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingLocation.swift; sourceTree = "<group>"; };
+		2B303F5F55DDB9979449C1C5 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		2B7614ED2E84C09E007316E2 /* EnergyKitErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyKitErrorView.swift; sourceTree = "<group>"; };
+		2B92B7B52D62B24700BD347F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2B92B7B72D62B24700BD347F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2B92B7DF2D64242B00BD347F /* UUIDTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDTextView.swift; sourceTree = "<group>"; };
+		800503372D9E626B00215CEC /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX16.0.Internal.sdk/System/Library/Frameworks/SwiftData.framework; sourceTree = DEVELOPER_DIR; };
+		8028A15E2DBFE97300337BDC /* EnergyVenueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyVenueManager.swift; sourceTree = "<group>"; };
+		80BD68ED2CD337AF00713544 /* EnergyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EnergyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB5650C5087003B63D06867 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FE49DA81393CBAA9DF295F88 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		021716FB2CA74F5500DDB2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BD68EE2CD337AF00713544 /* EnergyKit.framework in Frameworks */,
+				800503382D9E626B00215CEC /* SwiftData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021716F52CA74F5500DDB2F3 = {
+			isa = PBXGroup;
+			children = (
+				8FB5650C5087003B63D06867 /* README.md */,
+				021717002CA74F5500DDB2F3 /* EnergyKitSampleApp */,
+				80BD68EC2CD337AF00713544 /* Frameworks */,
+				021716FF2CA74F5500DDB2F3 /* Products */,
+				48BF6D2033306908E347E8F9 /* Configuration */,
+				7B160A6919BCC5F346A672F1 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		021716FF2CA74F5500DDB2F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				021716FE2CA74F5500DDB2F3 /* EnergyKitSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		021717002CA74F5500DDB2F3 /* EnergyKitSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				0217172D2CA74F6900DDB2F3 /* Models */,
+				802F05BB2D9E3BD0002AE1D3 /* Resources */,
+				0217172C2CA74F6100DDB2F3 /* Views */,
+				021717012CA74F5500DDB2F3 /* EnergyKitSampleApp.swift */,
+				021717032CA74F5500DDB2F3 /* ContentView.swift */,
+				021717052CA74F5700DDB2F3 /* Assets.xcassets */,
+				021717082CA74F5700DDB2F3 /* Preview Content */,
+			);
+			path = EnergyKitSampleApp;
+			sourceTree = "<group>";
+		};
+		021717082CA74F5700DDB2F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				021717092CA74F5700DDB2F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0217172C2CA74F6100DDB2F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02FAEBCD2D3721CF009F3E58 /* ChargingLocation */,
+				023B28342D39B578004E64D8 /* Venue */,
+				02B5C83F2D94755400AEA370 /* EV */,
+				2B92B7E12D64244800BD347F /* Common */,
+				02D0D5802CB5A7CD0059A3AF /* Toolbar Content */,
+				02B9B0052CACB679009BC5F4 /* GuidanceChart.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0217172D2CA74F6900DDB2F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				025DE9532D78FE54001C499E /* ElectricVehicle */,
+				8028A15E2DBFE97300337BDC /* EnergyVenueManager.swift */,
+				02FAEBDA2D372241009F3E58 /* ChargingLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		023B28342D39B578004E64D8 /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+				2B7614ED2E84C09E007316E2 /* EnergyKitErrorView.swift */,
+				0208E80E2CAF3F7D00393000 /* VenueDetailView.swift */,
+				021717302CA74F8000DDB2F3 /* VenueListItem.swift */,
+			);
+			path = Venue;
+			sourceTree = "<group>";
+		};
+		025DE9532D78FE54001C499E /* ElectricVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				025DE9562D78FF31001C499E /* ElectricVehicle.swift */,
+				025DE9542D78FE6A001C499E /* ElectricVehicleController.swift */,
+			);
+			path = ElectricVehicle;
+			sourceTree = "<group>";
+		};
+		0268D5E92D52DCEE000F8206 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0268D5E52D529B0B000F8206 /* SendButton.swift */,
+				02FAEBD82D37222D009F3E58 /* DeleteButton.swift */,
+				02FAEBD62D372226009F3E58 /* AddButton.swift */,
+				02D0D5832CB5A8290059A3AF /* RefreshButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		02B5C83F2D94755400AEA370 /* EV */ = {
+			isa = PBXGroup;
+			children = (
+				2BD341E52D52E5D100FEA700 /* Load Event */,
+				02B5C8422D94762A00AEA370 /* EVDetailsView.swift */,
+				02B5C8402D94756000AEA370 /* EVView.swift */,
+			);
+			path = EV;
+			sourceTree = "<group>";
+		};
+		02D0D5802CB5A7CD0059A3AF /* Toolbar Content */ = {
+			isa = PBXGroup;
+			children = (
+				0268D5E92D52DCEE000F8206 /* Buttons */,
+				0268D5E72D529B72000F8206 /* LoadEventsToolbarStatus.swift */,
+				02D0D5852CB5A9250059A3AF /* VenueToolbarStatus.swift */,
+			);
+			path = "Toolbar Content";
+			sourceTree = "<group>";
+		};
+		02FAEBCD2D3721CF009F3E58 /* ChargingLocation */ = {
+			isa = PBXGroup;
+			children = (
+				02FAEBD42D372211009F3E58 /* ChargingLocationListItem.swift */,
+				02FAEBCE2D3721DF009F3E58 /* ChargingLocationView.swift */,
+			);
+			path = ChargingLocation;
+			sourceTree = "<group>";
+		};
+		2B92B7E12D64244800BD347F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				02D0D58B2CB6ED6A0059A3AF /* AttributeValueTextView.swift */,
+				2B92B7DF2D64242B00BD347F /* UUIDTextView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2BD341E52D52E5D100FEA700 /* Load Event */ = {
+			isa = PBXGroup;
+			children = (
+				0282E26F2D4C4A7A0058B961 /* LoadEventDetailView.swift */,
+				02126B8B2D4AFCCB00D4DD64 /* LoadEventListItem.swift */,
+				02126B892D49679B00D4DD64 /* LoadEventsView.swift */,
+			);
+			path = "Load Event";
+			sourceTree = "<group>";
+		};
+		48BF6D2033306908E347E8F9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2B303F5F55DDB9979449C1C5 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		7B160A6919BCC5F346A672F1 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				FE49DA81393CBAA9DF295F88 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		802F05BB2D9E3BD0002AE1D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				802F05BC2D9E3BD8002AE1D3 /* iOS */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		802F05BC2D9E3BD8002AE1D3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				021717072CA74F5700DDB2F3 /* EnergyKitSampleApp.entitlements */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		80BD68EC2CD337AF00713544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800503372D9E626B00215CEC /* SwiftData.framework */,
+				80BD68ED2CD337AF00713544 /* EnergyKit.framework */,
+				2B92B7B52D62B24700BD347F /* WidgetKit.framework */,
+				2B92B7B72D62B24700BD347F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		021716FD2CA74F5500DDB2F3 /* EnergyKitSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021717232CA74F5700DDB2F3 /* Build configuration list for PBXNativeTarget "EnergyKitSampleApp" */;
+			buildPhases = (
+				021716FA2CA74F5500DDB2F3 /* Sources */,
+				021716FB2CA74F5500DDB2F3 /* Frameworks */,
+				021716FC2CA74F5500DDB2F3 /* Resources */,
+				2B92B7C62D62B24A00BD347F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnergyKitSampleApp;
+			productName = EnergyKitSampleApp;
+			productReference = 021716FE2CA74F5500DDB2F3 /* EnergyKitSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		021716F62CA74F5500DDB2F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1700;
+				LastUpgradeCheck = 2610;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					021716FD2CA74F5500DDB2F3 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 021716F92CA74F5500DDB2F3 /* Build configuration list for PBXProject "EnergyKitSampleApp" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 021716F52CA74F5500DDB2F3;
+			productRefGroup = 021716FF2CA74F5500DDB2F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				021716FD2CA74F5500DDB2F3 /* EnergyKitSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		021716FC2CA74F5500DDB2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0217170A2CA74F5700DDB2F3 /* Preview Assets.xcassets in Resources */,
+				021717062CA74F5700DDB2F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		021716FA2CA74F5500DDB2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B92B7E02D64243400BD347F /* UUIDTextView.swift in Sources */,
+				021717042CA74F5500DDB2F3 /* ContentView.swift in Sources */,
+				02D0D58C2CB6ED860059A3AF /* AttributeValueTextView.swift in Sources */,
+				02126B8A2D4967AD00D4DD64 /* LoadEventsView.swift in Sources */,
+				02FAEBCF2D3721E2009F3E58 /* ChargingLocationView.swift in Sources */,
+				0208E80F2CAF3F9300393000 /* VenueDetailView.swift in Sources */,
+				021717312CA74F8500DDB2F3 /* VenueListItem.swift in Sources */,
+				025DE9552D78FE7D001C499E /* ElectricVehicleController.swift in Sources */,
+				2B7614EE2E84C0A6007316E2 /* EnergyKitErrorView.swift in Sources */,
+				02D0D5842CB5A8310059A3AF /* RefreshButton.swift in Sources */,
+				02126B8C2D4AFCDD00D4DD64 /* LoadEventListItem.swift in Sources */,
+				021717022CA74F5500DDB2F3 /* EnergyKitSampleApp.swift in Sources */,
+				02B5C8432D94763100AEA370 /* EVDetailsView.swift in Sources */,
+				025DE9572D78FF37001C499E /* ElectricVehicle.swift in Sources */,
+				02B5C8412D94756F00AEA370 /* EVView.swift in Sources */,
+				02FAEBD52D372214009F3E58 /* ChargingLocationListItem.swift in Sources */,
+				0282E2702D4C4A830058B961 /* LoadEventDetailView.swift in Sources */,
+				02B9B0062CACB682009BC5F4 /* GuidanceChart.swift in Sources */,
+				0268D5E62D529B11000F8206 /* SendButton.swift in Sources */,
+				02FAEBD72D372229009F3E58 /* AddButton.swift in Sources */,
+				02FAEBD92D372231009F3E58 /* DeleteButton.swift in Sources */,
+				02FAEBDB2D372247009F3E58 /* ChargingLocation.swift in Sources */,
+				0268D5E82D529B80000F8206 /* LoadEventsToolbarStatus.swift in Sources */,
+				02D0D5862CB5A9330059A3AF /* VenueToolbarStatus.swift in Sources */,
+				8028A15F2DBFE97B00337BDC /* EnergyVenueManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		021717212CA74F5700DDB2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B303F5F55DDB9979449C1C5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"SDKROOT[arch=*]" = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		021717222CA74F5700DDB2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B303F5F55DDB9979449C1C5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		021717242CA74F5700DDB2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B303F5F55DDB9979449C1C5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EnergyKitSampleApp/Resources/iOS/EnergyKitSampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnergyKitSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Browse the accessories in your home to see what services they offer and to change their state.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.EnergyKitSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		021717252CA74F5700DDB2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B303F5F55DDB9979449C1C5 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EnergyKitSampleApp/Resources/iOS/EnergyKitSampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnergyKitSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Browse the accessories in your home to see what services they offer and to change their state.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.EnergyKitSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		021716F92CA74F5500DDB2F3 /* Build configuration list for PBXProject "EnergyKitSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021717212CA74F5700DDB2F3 /* Debug */,
+				021717222CA74F5700DDB2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021717232CA74F5700DDB2F3 /* Build configuration list for PBXNativeTarget "EnergyKitSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021717242CA74F5700DDB2F3 /* Debug */,
+				021717252CA74F5700DDB2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 021716F62CA74F5500DDB2F3 /* Project object */;
+}

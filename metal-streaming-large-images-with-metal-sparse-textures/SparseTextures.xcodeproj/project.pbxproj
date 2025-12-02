@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9162CC5C2522B307008338EA /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC5B2522B307008338EA /* AAPLAppDelegate.m */; };
+		9162CC622522B307008338EA /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC612522B307008338EA /* AAPLViewController.m */; };
+		9162CC652522B307008338EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9162CC632522B307008338EA /* Main.storyboard */; };
+		9162CC6A2522B308008338EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9162CC682522B308008338EA /* LaunchScreen.storyboard */; };
+		9162CC6D2522B308008338EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC6C2522B308008338EA /* main.m */; };
+		9162CC872522B937008338EA /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC852522B937008338EA /* AAPLShaders.metal */; };
+		9162CC8F2522B940008338EA /* AAPLSparseTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC8C2522B940008338EA /* AAPLSparseTexture.mm */; };
+		9162CC902522B940008338EA /* AAPLStreamedTextureDataBacking.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC8D2522B940008338EA /* AAPLStreamedTextureDataBacking.mm */; };
+		9162CC9B2522B950008338EA /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC912522B950008338EA /* AAPLRenderer.m */; };
+		9162CC9E2522B950008338EA /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC992522B950008338EA /* AAPLMathUtilities.m */; };
+		916DD9E825A7E63300F63667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916DD9E625A7E63300F63667 /* Main.storyboard */; };
+		919E0F5A25C09CB0005683B9 /* apple_park.ktx in Resources */ = {isa = PBXBuildFile; fileRef = 919E0F5925C09CB0005683B9 /* apple_park.ktx */; };
+		919E0F6125C09E48005683B9 /* apple_park.ktx in Resources */ = {isa = PBXBuildFile; fileRef = 919E0F5925C09CB0005683B9 /* apple_park.ktx */; };
+		91B7AED125A7F0C2006D0CF5 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC992522B950008338EA /* AAPLMathUtilities.m */; };
+		91B7AED225A7F0C2006D0CF5 /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC912522B950008338EA /* AAPLRenderer.m */; };
+		91B7AED325A7F0C2006D0CF5 /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC852522B937008338EA /* AAPLShaders.metal */; };
+		91B7AED425A7F0C2006D0CF5 /* AAPLStreamedTextureDataBacking.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC8D2522B940008338EA /* AAPLStreamedTextureDataBacking.mm */; };
+		91B7AED525A7F0C2006D0CF5 /* AAPLSparseTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC8C2522B940008338EA /* AAPLSparseTexture.mm */; };
+		91B7AED725A7F0C2006D0CF5 /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC5B2522B307008338EA /* AAPLAppDelegate.m */; };
+		91B7AED825A7F0C2006D0CF5 /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC612522B307008338EA /* AAPLViewController.m */; };
+		91B7AED925A7F0C2006D0CF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9162CC6C2522B308008338EA /* main.m */; };
+		B9EE81B728947A4E00888F42 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE81B628947A4E00888F42 /* MetalKit.framework */; };
+		B9EE81B928947A5900888F42 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE81B828947A5900888F42 /* MetalKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91504A89254A2216008434CE /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
+		9162CC572522B307008338EA /* SparseTextures-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SparseTextures-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9162CC5A2522B307008338EA /* AAPLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLAppDelegate.h; sourceTree = "<group>"; };
+		9162CC5B2522B307008338EA /* AAPLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLAppDelegate.m; sourceTree = "<group>"; };
+		9162CC602522B307008338EA /* AAPLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLViewController.h; sourceTree = "<group>"; };
+		9162CC612522B307008338EA /* AAPLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLViewController.m; sourceTree = "<group>"; };
+		9162CC642522B307008338EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9162CC662522B308008338EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9162CC692522B308008338EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9162CC6B2522B308008338EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9162CC6C2522B308008338EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9162CC852522B937008338EA /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
+		9162CC862522B937008338EA /* AAPLShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
+		9162CC8A2522B940008338EA /* AAPLStreamedTextureDataBacking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLStreamedTextureDataBacking.h; sourceTree = "<group>"; };
+		9162CC8B2522B940008338EA /* AAPLSparseTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLSparseTexture.h; sourceTree = "<group>"; };
+		9162CC8C2522B940008338EA /* AAPLSparseTexture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLSparseTexture.mm; sourceTree = "<group>"; };
+		9162CC8D2522B940008338EA /* AAPLStreamedTextureDataBacking.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLStreamedTextureDataBacking.mm; sourceTree = "<group>"; };
+		9162CC912522B950008338EA /* AAPLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLRenderer.m; sourceTree = "<group>"; };
+		9162CC962522B950008338EA /* AAPLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLRenderer.h; sourceTree = "<group>"; };
+		9162CC972522B950008338EA /* AAPLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLConfig.h; sourceTree = "<group>"; };
+		9162CC982522B950008338EA /* AAPLMathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLMathUtilities.h; sourceTree = "<group>"; };
+		9162CC992522B950008338EA /* AAPLMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; };
+		9162CCA22522BD7F008338EA /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		916DD9DC25A7E63100F63667 /* SparseTextures-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SparseTextures-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		916DD9E725A7E63300F63667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		916DD9E925A7E63300F63667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919E0F5925C09CB0005683B9 /* apple_park.ktx */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple_park.ktx; sourceTree = "<group>"; };
+		AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		B9D944F125C9DED90078B9AB /* AAPLPointerLRUCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLPointerLRUCache.h; sourceTree = "<group>"; };
+		B9EE81B628947A4E00888F42 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		B9EE81B828947A5900888F42 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9EE81BC28947E6900888F42 /* SparseTextures-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SparseTextures-iOS.entitlements"; sourceTree = "<group>"; };
+		F9365560DCCFD9D6E330045D /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9162CC542522B307008338EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EE81B928947A5900888F42 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916DD9D925A7E63100F63667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EE81B728947A4E00888F42 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23CDE93673575AF902E7D792 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		9162CC4E2522B307008338EA = {
+			isa = PBXGroup;
+			children = (
+				91504A89254A2216008434CE /* README.md */,
+				9162CC732522B38A008338EA /* Renderer */,
+				9162CC592522B307008338EA /* Application */,
+				9162CC582522B307008338EA /* Products */,
+				9162CCA12522BD7F008338EA /* Frameworks */,
+				23CDE93673575AF902E7D792 /* Configuration */,
+				ADC952D4DC743033ED1DB1EA /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		9162CC582522B307008338EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9162CC572522B307008338EA /* SparseTextures-iOS.app */,
+				916DD9DC25A7E63100F63667 /* SparseTextures-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9162CC592522B307008338EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				916DD9F925A7E89C00F63667 /* macOS */,
+				916DD9F825A7E89500F63667 /* iOS */,
+				9162CC762522B8BA008338EA /* Assets */,
+				9162CC5A2522B307008338EA /* AAPLAppDelegate.h */,
+				9162CC5B2522B307008338EA /* AAPLAppDelegate.m */,
+				9162CC602522B307008338EA /* AAPLViewController.h */,
+				9162CC612522B307008338EA /* AAPLViewController.m */,
+				9162CC6C2522B308008338EA /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9162CC732522B38A008338EA /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				9162CC972522B950008338EA /* AAPLConfig.h */,
+				9162CC982522B950008338EA /* AAPLMathUtilities.h */,
+				9162CC992522B950008338EA /* AAPLMathUtilities.m */,
+				9162CC962522B950008338EA /* AAPLRenderer.h */,
+				9162CC912522B950008338EA /* AAPLRenderer.m */,
+				9162CC752522B5CD008338EA /* Shaders */,
+				9162CC742522B5C2008338EA /* Sparse Texture */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		9162CC742522B5C2008338EA /* Sparse Texture */ = {
+			isa = PBXGroup;
+			children = (
+				9162CC8A2522B940008338EA /* AAPLStreamedTextureDataBacking.h */,
+				9162CC8D2522B940008338EA /* AAPLStreamedTextureDataBacking.mm */,
+				9162CC8B2522B940008338EA /* AAPLSparseTexture.h */,
+				9162CC8C2522B940008338EA /* AAPLSparseTexture.mm */,
+				B9D944F125C9DED90078B9AB /* AAPLPointerLRUCache.h */,
+			);
+			path = "Sparse Texture";
+			sourceTree = "<group>";
+		};
+		9162CC752522B5CD008338EA /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				9162CC852522B937008338EA /* AAPLShaders.metal */,
+				9162CC862522B937008338EA /* AAPLShaderTypes.h */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		9162CC762522B8BA008338EA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				919E0F5925C09CB0005683B9 /* apple_park.ktx */,
+				9162CC662522B308008338EA /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9162CCA12522BD7F008338EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9EE81B628947A4E00888F42 /* MetalKit.framework */,
+				B9EE81B828947A5900888F42 /* MetalKit.framework */,
+				9162CCA22522BD7F008338EA /* ModelIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		916DD9F825A7E89500F63667 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B9EE81BC28947E6900888F42 /* SparseTextures-iOS.entitlements */,
+				9162CC632522B307008338EA /* Main.storyboard */,
+				9162CC682522B308008338EA /* LaunchScreen.storyboard */,
+				9162CC6B2522B308008338EA /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		916DD9F925A7E89C00F63667 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				916DD9E625A7E63300F63667 /* Main.storyboard */,
+				916DD9E925A7E63300F63667 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		ADC952D4DC743033ED1DB1EA /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				F9365560DCCFD9D6E330045D /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9162CC562522B307008338EA /* SparseTextures-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9162CC702522B308008338EA /* Build configuration list for PBXNativeTarget "SparseTextures-iOS" */;
+			buildPhases = (
+				9162CC532522B307008338EA /* Sources */,
+				9162CC542522B307008338EA /* Frameworks */,
+				9162CC552522B307008338EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SparseTextures-iOS";
+			productName = SparseTexturing;
+			productReference = 9162CC572522B307008338EA /* SparseTextures-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		916DD9DB25A7E63100F63667 /* SparseTextures-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 916DD9ED25A7E63300F63667 /* Build configuration list for PBXNativeTarget "SparseTextures-macOS" */;
+			buildPhases = (
+				916DD9D825A7E63100F63667 /* Sources */,
+				916DD9D925A7E63100F63667 /* Frameworks */,
+				916DD9DA25A7E63100F63667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SparseTextures-macOS";
+			productName = "SparseTexturing-macOS";
+			productReference = 916DD9DC25A7E63100F63667 /* SparseTextures-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9162CC4F2522B307008338EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					9162CC562522B307008338EA = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					916DD9DB25A7E63100F63667 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 9162CC522522B307008338EA /* Build configuration list for PBXProject "SparseTextures" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9162CC4E2522B307008338EA;
+			productRefGroup = 9162CC582522B307008338EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				916DD9DB25A7E63100F63667 /* SparseTextures-macOS */,
+				9162CC562522B307008338EA /* SparseTextures-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9162CC552522B307008338EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919E0F6125C09E48005683B9 /* apple_park.ktx in Resources */,
+				9162CC6A2522B308008338EA /* LaunchScreen.storyboard in Resources */,
+				9162CC652522B307008338EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916DD9DA25A7E63100F63667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916DD9E825A7E63300F63667 /* Main.storyboard in Resources */,
+				919E0F5A25C09CB0005683B9 /* apple_park.ktx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9162CC532522B307008338EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9162CC622522B307008338EA /* AAPLViewController.m in Sources */,
+				9162CC902522B940008338EA /* AAPLStreamedTextureDataBacking.mm in Sources */,
+				9162CC9B2522B950008338EA /* AAPLRenderer.m in Sources */,
+				9162CC5C2522B307008338EA /* AAPLAppDelegate.m in Sources */,
+				9162CC6D2522B308008338EA /* main.m in Sources */,
+				9162CC8F2522B940008338EA /* AAPLSparseTexture.mm in Sources */,
+				9162CC872522B937008338EA /* AAPLShaders.metal in Sources */,
+				9162CC9E2522B950008338EA /* AAPLMathUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916DD9D825A7E63100F63667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B7AED125A7F0C2006D0CF5 /* AAPLMathUtilities.m in Sources */,
+				91B7AED225A7F0C2006D0CF5 /* AAPLRenderer.m in Sources */,
+				91B7AED325A7F0C2006D0CF5 /* AAPLShaders.metal in Sources */,
+				91B7AED425A7F0C2006D0CF5 /* AAPLStreamedTextureDataBacking.mm in Sources */,
+				91B7AED525A7F0C2006D0CF5 /* AAPLSparseTexture.mm in Sources */,
+				91B7AED725A7F0C2006D0CF5 /* AAPLAppDelegate.m in Sources */,
+				91B7AED825A7F0C2006D0CF5 /* AAPLViewController.m in Sources */,
+				91B7AED925A7F0C2006D0CF5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9162CC632522B307008338EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9162CC642522B307008338EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9162CC682522B308008338EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9162CC692522B308008338EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		916DD9E625A7E63300F63667 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				916DD9E725A7E63300F63667 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9162CC6E2522B308008338EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		9162CC6F2522B308008338EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9162CC712522B308008338EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Application/iOS/SparseTextures-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SparseTextures-iOS${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		9162CC722522B308008338EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Application/iOS/SparseTextures-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SparseTextures-iOS${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		916DD9EE25A7E63300F63667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = Application/macOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SparseTextures-macOS${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		916DD9EF25A7E63300F63667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3DCAEBA87ACB1DFA2D9CF9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = Application/macOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SparseTextures-macOS${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9162CC522522B307008338EA /* Build configuration list for PBXProject "SparseTextures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9162CC6E2522B308008338EA /* Debug */,
+				9162CC6F2522B308008338EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9162CC702522B308008338EA /* Build configuration list for PBXNativeTarget "SparseTextures-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9162CC712522B308008338EA /* Debug */,
+				9162CC722522B308008338EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		916DD9ED25A7E63300F63667 /* Build configuration list for PBXNativeTarget "SparseTextures-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916DD9EE25A7E63300F63667 /* Debug */,
+				916DD9EF25A7E63300F63667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9162CC4F2522B307008338EA /* Project object */;
+}

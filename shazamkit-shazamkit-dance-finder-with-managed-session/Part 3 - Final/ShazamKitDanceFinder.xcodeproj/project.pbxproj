@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C11A96B2A152EE600E0554B /* ShazamKitDanceFinderMediaItemProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C11A9692A152EE600E0554B /* ShazamKitDanceFinderMediaItemProperties.swift */; };
+		1C1582442A0B27ED00F1FB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1582432A0B27ED00F1FB03 /* LaunchScreen.storyboard */; };
+		1C351FFE29FC3C1F000ED1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C351FFD29FC3C1F000ED1A0 /* Assets.xcassets */; };
+		1C53098C29FC041A000EE47B /* ShazamKitSampleAppDanceVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1C53097A29FC041A000EE47B /* ShazamKitSampleAppDanceVideo.mov */; };
+		1C53098D29FC041A000EE47B /* ShazamKitDanceFinderCatalog.shazamcatalog in Resources */ = {isa = PBXBuildFile; fileRef = 1C53097B29FC041A000EE47B /* ShazamKitDanceFinderCatalog.shazamcatalog */; };
+		1C53098E29FC041A000EE47B /* CurvedTopSideRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53097D29FC041A000EE47B /* CurvedTopSideRectangle.swift */; };
+		1C53098F29FC041A000EE47B /* RecentDanceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53097E29FC041A000EE47B /* RecentDanceRowView.swift */; };
+		1C53099029FC041A000EE47B /* DanceCompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53097F29FC041A000EE47B /* DanceCompletionView.swift */; };
+		1C53099129FC041A000EE47B /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53098029FC041A000EE47B /* NowPlayingView.swift */; };
+		1C53099329FC041A000EE47B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53098329FC041A000EE47B /* Color.swift */; };
+		1C53099429FC041A000EE47B /* ResourcesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53098529FC041A000EE47B /* ResourcesProvider.swift */; };
+		1C53099529FC041A000EE47B /* ShazamKitDanceFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53098729FC041A000EE47B /* ShazamKitDanceFinderApp.swift */; };
+		1C53099629FC041A000EE47B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53098829FC041A000EE47B /* ContentView.swift */; };
+		1C53099729FC041A000EE47B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C53098A29FC041A000EE47B /* Preview Assets.xcassets */; };
+		1C53099A29FC0448000EE47B /* RecentDancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53099929FC0448000EE47B /* RecentDancesView.swift */; };
+		1C53099C29FC0469000EE47B /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53099B29FC0469000EE47B /* Matcher.swift */; };
+		1C9F3F2429FF63B9005686A3 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9F3F2329FF63B9005686A3 /* VideoPlayerView.swift */; };
+		1C9F3F2629FF63C7005686A3 /* NowPlayingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9F3F2529FF63C7005686A3 /* NowPlayingViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C07D70529FB668300BA716F /* ShazamKitDanceFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShazamKitDanceFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C11A9692A152EE600E0554B /* ShazamKitDanceFinderMediaItemProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShazamKitDanceFinderMediaItemProperties.swift; sourceTree = "<group>"; };
+		1C1582432A0B27ED00F1FB03 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C351FFD29FC3C1F000ED1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C53097829FC0403000EE47B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1C53097A29FC041A000EE47B /* ShazamKitSampleAppDanceVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = ShazamKitSampleAppDanceVideo.mov; sourceTree = "<group>"; };
+		1C53097B29FC041A000EE47B /* ShazamKitDanceFinderCatalog.shazamcatalog */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShazamKitDanceFinderCatalog.shazamcatalog; sourceTree = "<group>"; };
+		1C53097D29FC041A000EE47B /* CurvedTopSideRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedTopSideRectangle.swift; sourceTree = "<group>"; };
+		1C53097E29FC041A000EE47B /* RecentDanceRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentDanceRowView.swift; sourceTree = "<group>"; };
+		1C53097F29FC041A000EE47B /* DanceCompletionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DanceCompletionView.swift; sourceTree = "<group>"; };
+		1C53098029FC041A000EE47B /* NowPlayingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		1C53098329FC041A000EE47B /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1C53098529FC041A000EE47B /* ResourcesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesProvider.swift; sourceTree = "<group>"; };
+		1C53098729FC041A000EE47B /* ShazamKitDanceFinderApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShazamKitDanceFinderApp.swift; sourceTree = "<group>"; };
+		1C53098829FC041A000EE47B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C53098A29FC041A000EE47B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C53099929FC0448000EE47B /* RecentDancesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecentDancesView.swift; path = ShazamKitDanceFinder/RecentDancesView.swift; sourceTree = SOURCE_ROOT; };
+		1C53099B29FC0469000EE47B /* Matcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matcher.swift; path = ShazamKitDanceFinder/Matcher.swift; sourceTree = SOURCE_ROOT; };
+		1C9F3F2329FF63B9005686A3 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		1C9F3F2529FF63C7005686A3 /* NowPlayingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewModel.swift; sourceTree = "<group>"; };
+		3EF1C307B885C41DEEF840C0 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		BD4B11C3094C739028DEC7A9 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C07D70229FB668300BA716F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10C64C8315B8E26BB80624C5 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				BD4B11C3094C739028DEC7A9 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1C07D6FC29FB668300BA716F = {
+			isa = PBXGroup;
+			children = (
+				1C53097829FC0403000EE47B /* README.md */,
+				1C07D70729FB668300BA716F /* ShazamKitDanceFinder */,
+				1C07D70629FB668300BA716F /* Products */,
+				C4DC12343A0F5E6BBAA45427 /* Configuration */,
+				10C64C8315B8E26BB80624C5 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		1C07D70629FB668300BA716F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C07D70529FB668300BA716F /* ShazamKitDanceFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C07D70729FB668300BA716F /* ShazamKitDanceFinder */ = {
+			isa = PBXGroup;
+			children = (
+				1C351FFD29FC3C1F000ED1A0 /* Assets.xcassets */,
+				1C53098629FC041A000EE47B /* App */,
+				1C53098429FC041A000EE47B /* Data */,
+				1C53098129FC041A000EE47B /* Extensions */,
+				1C53098929FC041A000EE47B /* Preview Content */,
+				1C53097929FC041A000EE47B /* Resources */,
+				1C53097C29FC041A000EE47B /* Views */,
+			);
+			path = ShazamKitDanceFinder;
+			sourceTree = "<group>";
+		};
+		1C53097929FC041A000EE47B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C53097A29FC041A000EE47B /* ShazamKitSampleAppDanceVideo.mov */,
+				1C53097B29FC041A000EE47B /* ShazamKitDanceFinderCatalog.shazamcatalog */,
+			);
+			name = Resources;
+			path = "../../Shared Source/Resources";
+			sourceTree = "<group>";
+		};
+		1C53097C29FC041A000EE47B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C53099929FC0448000EE47B /* RecentDancesView.swift */,
+				1C53097D29FC041A000EE47B /* CurvedTopSideRectangle.swift */,
+				1C53097E29FC041A000EE47B /* RecentDanceRowView.swift */,
+				1C53097F29FC041A000EE47B /* DanceCompletionView.swift */,
+				1C53098029FC041A000EE47B /* NowPlayingView.swift */,
+				1C9F3F2329FF63B9005686A3 /* VideoPlayerView.swift */,
+			);
+			name = Views;
+			path = "../../Shared Source/Views";
+			sourceTree = "<group>";
+		};
+		1C53098129FC041A000EE47B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C11A9692A152EE600E0554B /* ShazamKitDanceFinderMediaItemProperties.swift */,
+				1C53098329FC041A000EE47B /* Color.swift */,
+			);
+			name = Extensions;
+			path = "../../Shared Source/Extensions";
+			sourceTree = "<group>";
+		};
+		1C53098429FC041A000EE47B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1C53099B29FC0469000EE47B /* Matcher.swift */,
+				1C53098529FC041A000EE47B /* ResourcesProvider.swift */,
+				1C9F3F2529FF63C7005686A3 /* NowPlayingViewModel.swift */,
+			);
+			name = Data;
+			path = "../../Shared Source/Data";
+			sourceTree = "<group>";
+		};
+		1C53098629FC041A000EE47B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1C1582432A0B27ED00F1FB03 /* LaunchScreen.storyboard */,
+				1C53098729FC041A000EE47B /* ShazamKitDanceFinderApp.swift */,
+				1C53098829FC041A000EE47B /* ContentView.swift */,
+			);
+			name = App;
+			path = "../../Shared Source/App";
+			sourceTree = "<group>";
+		};
+		1C53098929FC041A000EE47B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1C53098A29FC041A000EE47B /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "../../Shared Source/Preview Content";
+			sourceTree = "<group>";
+		};
+		C4DC12343A0F5E6BBAA45427 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1C307B885C41DEEF840C0 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C07D70429FB668300BA716F /* ShazamKitDanceFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C07D71329FB668400BA716F /* Build configuration list for PBXNativeTarget "ShazamKitDanceFinder" */;
+			buildPhases = (
+				1C07D70129FB668300BA716F /* Sources */,
+				1C07D70229FB668300BA716F /* Frameworks */,
+				1C07D70329FB668300BA716F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShazamKitDanceFinder;
+			productName = ShazamKitDanceFinder;
+			productReference = 1C07D70529FB668300BA716F /* ShazamKitDanceFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C07D6FD29FB668300BA716F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					1C07D70429FB668300BA716F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1C07D70029FB668300BA716F /* Build configuration list for PBXProject "ShazamKitDanceFinder" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C07D6FC29FB668300BA716F;
+			productRefGroup = 1C07D70629FB668300BA716F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C07D70429FB668300BA716F /* ShazamKitDanceFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C07D70329FB668300BA716F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C53098D29FC041A000EE47B /* ShazamKitDanceFinderCatalog.shazamcatalog in Resources */,
+				1C53099729FC041A000EE47B /* Preview Assets.xcassets in Resources */,
+				1C351FFE29FC3C1F000ED1A0 /* Assets.xcassets in Resources */,
+				1C1582442A0B27ED00F1FB03 /* LaunchScreen.storyboard in Resources */,
+				1C53098C29FC041A000EE47B /* ShazamKitSampleAppDanceVideo.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C07D70129FB668300BA716F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C53098E29FC041A000EE47B /* CurvedTopSideRectangle.swift in Sources */,
+				1C53099429FC041A000EE47B /* ResourcesProvider.swift in Sources */,
+				1C53099529FC041A000EE47B /* ShazamKitDanceFinderApp.swift in Sources */,
+				1C11A96B2A152EE600E0554B /* ShazamKitDanceFinderMediaItemProperties.swift in Sources */,
+				1C9F3F2629FF63C7005686A3 /* NowPlayingViewModel.swift in Sources */,
+				1C53099C29FC0469000EE47B /* Matcher.swift in Sources */,
+				1C53099629FC041A000EE47B /* ContentView.swift in Sources */,
+				1C53099329FC041A000EE47B /* Color.swift in Sources */,
+				1C53099129FC041A000EE47B /* NowPlayingView.swift in Sources */,
+				1C53098F29FC041A000EE47B /* RecentDanceRowView.swift in Sources */,
+				1C53099A29FC0448000EE47B /* RecentDancesView.swift in Sources */,
+				1C53099029FC041A000EE47B /* DanceCompletionView.swift in Sources */,
+				1C9F3F2429FF63B9005686A3 /* VideoPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C07D71129FB668400BA716F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF1C307B885C41DEEF840C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C07D71229FB668400BA716F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF1C307B885C41DEEF840C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C07D71429FB668400BA716F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF1C307B885C41DEEF840C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShazamKitDanceFinder/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ShazamKit DanceFinder requires permission to use the microphone to recognize audio for the appropriate dance moves.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ShazamKitDanceFinder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C07D71529FB668400BA716F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF1C307B885C41DEEF840C0 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShazamKitDanceFinder/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ShazamKit DanceFinder requires permission to use the microphone to recognize audio for the appropriate dance moves.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ShazamKitDanceFinder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C07D70029FB668300BA716F /* Build configuration list for PBXProject "ShazamKitDanceFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C07D71129FB668400BA716F /* Debug */,
+				1C07D71229FB668400BA716F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C07D71329FB668400BA716F /* Build configuration list for PBXNativeTarget "ShazamKitDanceFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C07D71429FB668400BA716F /* Debug */,
+				1C07D71529FB668400BA716F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C07D6FD29FB668300BA716F /* Project object */;
+}

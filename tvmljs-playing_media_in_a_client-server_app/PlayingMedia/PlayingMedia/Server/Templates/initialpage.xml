@@ -1,0 +1,26 @@
+<document>
+    <stackTemplate>
+        <background>
+            <audio>
+                <asset src="http://localhost:9001/Server/Media/Rhythm.aif" />
+            </audio>
+        </background>
+        <banner>
+            <title>Playing Media Items</title>
+        </banner>
+        <collectionList>
+            <shelf>
+                <section>
+                    <lockup onselect="playMedia('Server/Media/video1.mp4', 'video')">
+                        <img src="http://localhost:9001/Server/Images/Beach_Movie_250x375_A.png" width="182" height="274"/>
+                        <title>Video</title>
+                    </lockup>
+                    <lockup onselect="playMedia('Server/Media/Synth.aif', 'audio')">
+                        <img src="http://localhost:9001/Server/Images/Car_Movie_250x375_C.png" width="182" height="274" />
+                        <title>Audio</title>
+                    </lockup>
+                </section>
+            </shelf>
+        </collectionList>
+    </stackTemplate>
+</document>

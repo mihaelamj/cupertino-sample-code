@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		402FB4EB29FE2B9400ABE600 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4EA29FE2B9400ABE600 /* ChartView.swift */; };
+		402FB4ED29FE361100ABE600 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4EC29FE361100ABE600 /* SummaryView.swift */; };
+		402FB4F029FEDD4700ABE600 /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4EF29FEDD4700ABE600 /* MetricsTimelineSchedule.swift */; };
+		402FB4F129FEDD4700ABE600 /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4EF29FEDD4700ABE600 /* MetricsTimelineSchedule.swift */; };
+		402FB4F329FEE00400ABE600 /* HKWorkout+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4F229FEE00400ABE600 /* HKWorkout+Statistics.swift */; };
+		402FB4F429FEE00400ABE600 /* HKWorkout+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4F229FEE00400ABE600 /* HKWorkout+Statistics.swift */; };
+		40351F9129F8E5A20073D06A /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40351F9029F8E5A20073D06A /* StartView.swift */; };
+		40351F9629FAF7E30073D06A /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40351F9529FAF7E30073D06A /* WorkoutListView.swift */; };
+		40A2304129F5ACC100B0F05A /* WorkoutManager+watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A2304029F5ACC100B0F05A /* WorkoutManager+watchOS.swift */; };
+		40A8DB5E29F5956D00D00421 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDCE29EFAD8A005E7EFB /* WorkoutManager.swift */; };
+		40A8DB6329F5A62300D00421 /* WorkoutManager+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A8DB6229F5A62300D00421 /* WorkoutManager+iOS.swift */; };
+		40C2EDAA29EFAA98005E7EFB /* MirroringWorkoutsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDA929EFAA98005E7EFB /* MirroringWorkoutsSampleApp.swift */; };
+		40C2EDAC29EFAA98005E7EFB /* MirroringWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDAB29EFAA98005E7EFB /* MirroringWorkoutView.swift */; };
+		40C2EDAE29EFAA9A005E7EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C2EDAD29EFAA9A005E7EFB /* Assets.xcassets */; };
+		40C2EDB129EFAA9A005E7EFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C2EDB029EFAA9A005E7EFB /* Preview Assets.xcassets */; };
+		40C2EDB729EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40C2EDB629EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40C2EDBC29EFAA9A005E7EFB /* MirroringWorkoutsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDBB29EFAA9A005E7EFB /* MirroringWorkoutsSampleApp.swift */; };
+		40C2EDC029EFAA9A005E7EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C2EDBF29EFAA9A005E7EFB /* Assets.xcassets */; };
+		40C2EDC329EFAA9A005E7EFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C2EDC229EFAA9A005E7EFB /* Preview Assets.xcassets */; };
+		40C2EDD029EFAD8A005E7EFB /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDCE29EFAD8A005E7EFB /* WorkoutManager.swift */; };
+		40C2EDD229EFADEC005E7EFB /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDD129EFADEC005E7EFB /* PagingView.swift */; };
+		40C2EDD429EFAE07005E7EFB /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDD329EFAE07005E7EFB /* MetricsView.swift */; };
+		40C2EDD629EFAE0E005E7EFB /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDD529EFAE0E005E7EFB /* ControlsView.swift */; };
+		40C2EDD829EFAE1A005E7EFB /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDD729EFAE1A005E7EFB /* ElapsedTimeView.swift */; };
+		40C2EDDA29EFAE32005E7EFB /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDD929EFAE32005E7EFB /* SummaryView.swift */; };
+		40C2EDDE29EFB18F005E7EFB /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDDD29EFB18F005E7EFB /* ButtonLabel.swift */; };
+		40C2EDE029EFB313005E7EFB /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDDF29EFB313005E7EFB /* ActivityRingsView.swift */; };
+		40C2EDE329EFBCE9005E7EFB /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDDD29EFB18F005E7EFB /* ButtonLabel.swift */; };
+		40CA44902A0E1FBF0047F807 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA448F2A0E1FBF0047F807 /* Logger.swift */; };
+		40CA44912A0E1FBF0047F807 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA448F2A0E1FBF0047F807 /* Logger.swift */; };
+		4786DF672A057B7600DC6020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DF662A057B7600DC6020 /* AppDelegate.swift */; };
+		47BB330D2A03090300883F18 /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2EDD729EFAE1A005E7EFB /* ElapsedTimeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40C2EDB829EFAA9A005E7EFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C2ED9E29EFAA98005E7EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C2EDB529EFAA9A005E7EFB;
+			remoteInfo = "MirroringWorkoutsSample Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40C2EDC929EFAA9A005E7EFB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				40C2EDB729EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		402FB4EA29FE2B9400ABE600 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		402FB4EC29FE361100ABE600 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		402FB4EF29FEDD4700ABE600 /* MetricsTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTimelineSchedule.swift; sourceTree = "<group>"; };
+		402FB4F229FEE00400ABE600 /* HKWorkout+Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKWorkout+Statistics.swift"; sourceTree = "<group>"; };
+		40351F9029F8E5A20073D06A /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		40351F9429FAF6720073D06A /* MirroringWorkoutsSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MirroringWorkoutsSample.entitlements; sourceTree = "<group>"; };
+		40351F9529FAF7E30073D06A /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		40A2304029F5ACC100B0F05A /* WorkoutManager+watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutManager+watchOS.swift"; sourceTree = "<group>"; };
+		40A8DB6229F5A62300D00421 /* WorkoutManager+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutManager+iOS.swift"; sourceTree = "<group>"; };
+		40C2EDA629EFAA98005E7EFB /* MirroringWorkoutsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirroringWorkoutsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C2EDA929EFAA98005E7EFB /* MirroringWorkoutsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutsSampleApp.swift; sourceTree = "<group>"; };
+		40C2EDAB29EFAA98005E7EFB /* MirroringWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutView.swift; sourceTree = "<group>"; };
+		40C2EDAD29EFAA9A005E7EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40C2EDB029EFAA9A005E7EFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40C2EDB629EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MirroringWorkoutsSample Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C2EDBB29EFAA9A005E7EFB /* MirroringWorkoutsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutsSampleApp.swift; sourceTree = "<group>"; };
+		40C2EDBF29EFAA9A005E7EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40C2EDC229EFAA9A005E7EFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40C2EDCE29EFAD8A005E7EFB /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		40C2EDD129EFADEC005E7EFB /* PagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		40C2EDD329EFAE07005E7EFB /* MetricsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		40C2EDD529EFAE0E005E7EFB /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		40C2EDD729EFAE1A005E7EFB /* ElapsedTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		40C2EDD929EFAE32005E7EFB /* SummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		40C2EDDD29EFB18F005E7EFB /* ButtonLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		40C2EDDF29EFB313005E7EFB /* ActivityRingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
+		40C2EDE129EFB837005E7EFB /* MirroringWorkoutsSample Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MirroringWorkoutsSample Watch App.entitlements"; sourceTree = "<group>"; };
+		40C2EDE229EFB847005E7EFB /* MirroringWorkoutsSample-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MirroringWorkoutsSample-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		40CA448F2A0E1FBF0047F807 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4786DF662A057B7600DC6020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		DB8AE0A22255FFAE94B5CE06 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		EC1B792D6AFFAA6B647F564D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40C2EDA329EFAA98005E7EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C2EDB329EFAA9A005E7EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40C2ED9D29EFAA98005E7EFB = {
+			isa = PBXGroup;
+			children = (
+				EC1B792D6AFFAA6B647F564D /* README.md */,
+				40C2EDCD29EFAD78005E7EFB /* Shared */,
+				40C2EDA829EFAA98005E7EFB /* MirroringWorkoutsSample */,
+				40C2EDBA29EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App */,
+				40C2EDA729EFAA98005E7EFB /* Products */,
+				A5F3717BEAC32462C86E8018 /* Configuration */,
+				6AF3C902F95586B84C1BFB07 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		40C2EDA729EFAA98005E7EFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C2EDA629EFAA98005E7EFB /* MirroringWorkoutsSample.app */,
+				40C2EDB629EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C2EDA829EFAA98005E7EFB /* MirroringWorkoutsSample */ = {
+			isa = PBXGroup;
+			children = (
+				40351F9429FAF6720073D06A /* MirroringWorkoutsSample.entitlements */,
+				40C2EDA929EFAA98005E7EFB /* MirroringWorkoutsSampleApp.swift */,
+				40351F9029F8E5A20073D06A /* StartView.swift */,
+				40C2EDAB29EFAA98005E7EFB /* MirroringWorkoutView.swift */,
+				40351F9529FAF7E30073D06A /* WorkoutListView.swift */,
+				402FB4EA29FE2B9400ABE600 /* ChartView.swift */,
+				402FB4EC29FE361100ABE600 /* SummaryView.swift */,
+				40C2EDAD29EFAA9A005E7EFB /* Assets.xcassets */,
+				40C2EDAF29EFAA9A005E7EFB /* Preview Content */,
+			);
+			path = MirroringWorkoutsSample;
+			sourceTree = "<group>";
+		};
+		40C2EDAF29EFAA9A005E7EFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				40C2EDB029EFAA9A005E7EFB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40C2EDBA29EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				40C2EDE229EFB847005E7EFB /* MirroringWorkoutsSample-Watch-App-Info.plist */,
+				40C2EDE129EFB837005E7EFB /* MirroringWorkoutsSample Watch App.entitlements */,
+				40C2EDBB29EFAA9A005E7EFB /* MirroringWorkoutsSampleApp.swift */,
+				4786DF662A057B7600DC6020 /* AppDelegate.swift */,
+				40C2EDD129EFADEC005E7EFB /* PagingView.swift */,
+				40C2EDD529EFAE0E005E7EFB /* ControlsView.swift */,
+				40C2EDD329EFAE07005E7EFB /* MetricsView.swift */,
+				40C2EDD929EFAE32005E7EFB /* SummaryView.swift */,
+				40C2EDDF29EFB313005E7EFB /* ActivityRingsView.swift */,
+				40C2EDBF29EFAA9A005E7EFB /* Assets.xcassets */,
+				40C2EDC129EFAA9A005E7EFB /* Preview Content */,
+			);
+			path = "MirroringWorkoutsSample Watch App";
+			sourceTree = "<group>";
+		};
+		40C2EDC129EFAA9A005E7EFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				40C2EDC229EFAA9A005E7EFB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40C2EDCD29EFAD78005E7EFB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				40CA448F2A0E1FBF0047F807 /* Logger.swift */,
+				402FB4F229FEE00400ABE600 /* HKWorkout+Statistics.swift */,
+				40C2EDCE29EFAD8A005E7EFB /* WorkoutManager.swift */,
+				40A2304029F5ACC100B0F05A /* WorkoutManager+watchOS.swift */,
+				40A8DB6229F5A62300D00421 /* WorkoutManager+iOS.swift */,
+				40C2EDDD29EFB18F005E7EFB /* ButtonLabel.swift */,
+				40C2EDD729EFAE1A005E7EFB /* ElapsedTimeView.swift */,
+				402FB4EF29FEDD4700ABE600 /* MetricsTimelineSchedule.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6AF3C902F95586B84C1BFB07 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				DB8AE0A22255FFAE94B5CE06 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		A5F3717BEAC32462C86E8018 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40C2EDA529EFAA98005E7EFB /* MirroringWorkoutsSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C2EDCA29EFAA9A005E7EFB /* Build configuration list for PBXNativeTarget "MirroringWorkoutsSample" */;
+			buildPhases = (
+				40C2EDA229EFAA98005E7EFB /* Sources */,
+				40C2EDA329EFAA98005E7EFB /* Frameworks */,
+				40C2EDA429EFAA98005E7EFB /* Resources */,
+				40C2EDC929EFAA9A005E7EFB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C2EDB929EFAA9A005E7EFB /* PBXTargetDependency */,
+			);
+			name = MirroringWorkoutsSample;
+			productName = MirroringWorkoutsSample;
+			productReference = 40C2EDA629EFAA98005E7EFB /* MirroringWorkoutsSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40C2EDB529EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C2EDC629EFAA9A005E7EFB /* Build configuration list for PBXNativeTarget "MirroringWorkoutsSample Watch App" */;
+			buildPhases = (
+				40C2EDB229EFAA9A005E7EFB /* Sources */,
+				40C2EDB329EFAA9A005E7EFB /* Frameworks */,
+				40C2EDB429EFAA9A005E7EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MirroringWorkoutsSample Watch App";
+			productName = "MirroringWorkoutsSample Watch App";
+			productReference = 40C2EDB629EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40C2ED9E29EFAA98005E7EFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					40C2EDA529EFAA98005E7EFB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					40C2EDB529EFAA9A005E7EFB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 40C2EDA129EFAA98005E7EFB /* Build configuration list for PBXProject "MirroringWorkoutsSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40C2ED9D29EFAA98005E7EFB;
+			productRefGroup = 40C2EDA729EFAA98005E7EFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40C2EDA529EFAA98005E7EFB /* MirroringWorkoutsSample */,
+				40C2EDB529EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40C2EDA429EFAA98005E7EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C2EDB129EFAA9A005E7EFB /* Preview Assets.xcassets in Resources */,
+				40C2EDAE29EFAA9A005E7EFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C2EDB429EFAA9A005E7EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C2EDC329EFAA9A005E7EFB /* Preview Assets.xcassets in Resources */,
+				40C2EDC029EFAA9A005E7EFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40C2EDA229EFAA98005E7EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BB330D2A03090300883F18 /* ElapsedTimeView.swift in Sources */,
+				40C2EDAC29EFAA98005E7EFB /* MirroringWorkoutView.swift in Sources */,
+				40351F9629FAF7E30073D06A /* WorkoutListView.swift in Sources */,
+				402FB4F329FEE00400ABE600 /* HKWorkout+Statistics.swift in Sources */,
+				402FB4F029FEDD4700ABE600 /* MetricsTimelineSchedule.swift in Sources */,
+				40A8DB5E29F5956D00D00421 /* WorkoutManager.swift in Sources */,
+				40A8DB6329F5A62300D00421 /* WorkoutManager+iOS.swift in Sources */,
+				402FB4EB29FE2B9400ABE600 /* ChartView.swift in Sources */,
+				40351F9129F8E5A20073D06A /* StartView.swift in Sources */,
+				40CA44902A0E1FBF0047F807 /* Logger.swift in Sources */,
+				40C2EDAA29EFAA98005E7EFB /* MirroringWorkoutsSampleApp.swift in Sources */,
+				40C2EDE329EFBCE9005E7EFB /* ButtonLabel.swift in Sources */,
+				402FB4ED29FE361100ABE600 /* SummaryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C2EDB229EFAA9A005E7EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C2EDD829EFAE1A005E7EFB /* ElapsedTimeView.swift in Sources */,
+				40C2EDDE29EFB18F005E7EFB /* ButtonLabel.swift in Sources */,
+				402FB4F429FEE00400ABE600 /* HKWorkout+Statistics.swift in Sources */,
+				402FB4F129FEDD4700ABE600 /* MetricsTimelineSchedule.swift in Sources */,
+				40C2EDE029EFB313005E7EFB /* ActivityRingsView.swift in Sources */,
+				40C2EDD429EFAE07005E7EFB /* MetricsView.swift in Sources */,
+				40C2EDBC29EFAA9A005E7EFB /* MirroringWorkoutsSampleApp.swift in Sources */,
+				4786DF672A057B7600DC6020 /* AppDelegate.swift in Sources */,
+				40C2EDD029EFAD8A005E7EFB /* WorkoutManager.swift in Sources */,
+				40A2304129F5ACC100B0F05A /* WorkoutManager+watchOS.swift in Sources */,
+				40C2EDDA29EFAE32005E7EFB /* SummaryView.swift in Sources */,
+				40CA44912A0E1FBF0047F807 /* Logger.swift in Sources */,
+				40C2EDD629EFAE0E005E7EFB /* ControlsView.swift in Sources */,
+				40C2EDD229EFADEC005E7EFB /* PagingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40C2EDB929EFAA9A005E7EFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C2EDB529EFAA9A005E7EFB /* MirroringWorkoutsSample Watch App */;
+			targetProxy = 40C2EDB829EFAA9A005E7EFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40C2EDC429EFAA9A005E7EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40C2EDC529EFAA9A005E7EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		40C2EDC729EFAA9A005E7EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MirroringWorkoutsSample Watch App/MirroringWorkoutsSample Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MirroringWorkoutsSample Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MirroringWorkoutsSample-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MirroringWorkoutsSample;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your workout related data will be used to display your saved workouts in MyWorkouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.MirroringWorkoutsSample";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MirroringWorkoutsSample${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		40C2EDC829EFAA9A005E7EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MirroringWorkoutsSample Watch App/MirroringWorkoutsSample Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MirroringWorkoutsSample Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MirroringWorkoutsSample-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MirroringWorkoutsSample;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your workout related data will be used to display your saved workouts in MyWorkouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.MirroringWorkoutsSample";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MirroringWorkoutsSample${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		40C2EDCB29EFAA9A005E7EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MirroringWorkoutsSample/MirroringWorkoutsSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MirroringWorkoutsSample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MirroringWorkoutsSample;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your workout related data will be used to display your saved workouts in MyWorkouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MirroringWorkoutsSample${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40C2EDCC29EFAA9A005E7EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3D5ECAA7F90749D5F0667 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MirroringWorkoutsSample/MirroringWorkoutsSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MirroringWorkoutsSample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MirroringWorkoutsSample;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your workout related data will be used to display your saved workouts in MyWorkouts.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MirroringWorkoutsSample${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C2EDA129EFAA98005E7EFB /* Build configuration list for PBXProject "MirroringWorkoutsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C2EDC429EFAA9A005E7EFB /* Debug */,
+				40C2EDC529EFAA9A005E7EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C2EDC629EFAA9A005E7EFB /* Build configuration list for PBXNativeTarget "MirroringWorkoutsSample Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C2EDC729EFAA9A005E7EFB /* Debug */,
+				40C2EDC829EFAA9A005E7EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C2EDCA29EFAA9A005E7EFB /* Build configuration list for PBXNativeTarget "MirroringWorkoutsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C2EDCB29EFAA9A005E7EFB /* Debug */,
+				40C2EDCC29EFAA9A005E7EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40C2ED9E29EFAA98005E7EFB /* Project object */;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Scheme LastUpgradeVersion="1100" version="1.3">
+	<AnalyzeAction buildConfiguration="Debug" />
+	<ArchiveAction buildConfiguration="Release" revealArchiveInOrganizer="YES" />
+	<TestAction buildConfiguration="Debug" shouldUseLaunchSchemeArgsEnv="YES" codeCoverageEnabled="NO" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB">
+		<Testables />
+		<MacroExpansion>
+			<BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="7E05AACD2233176100988A61" BuildableName="OptimizingMapViews.app" BlueprintName="OptimizingMapViews" ReferencedContainer="container:OptimizingMapViews.xcodeproj" />
+		</MacroExpansion>
+	</TestAction>
+	<ProfileAction savedToolIdentifier="" buildConfiguration="Release" shouldUseLaunchSchemeArgsEnv="YES" useCustomWorkingDirectory="NO" debugDocumentVersioning="YES">
+		<BuildableProductRunnable runnableDebuggingMode="0">
+			<BuildableReference BlueprintIdentifier="7E05AACD2233176100988A61" BuildableIdentifier="primary" ReferencedContainer="container:OptimizingMapViews.xcodeproj" BuildableName="OptimizingMapViews.app" BlueprintName="OptimizingMapViews" />
+		</BuildableProductRunnable>
+	</ProfileAction>
+	<BuildAction buildImplicitDependencies="NO" parallelizeBuildables="NO">
+		<BuildActionEntries>
+			<BuildActionEntry buildForProfiling="YES" buildForArchiving="YES" buildForRunning="YES" buildForAnalyzing="YES" buildForTesting="YES">
+				<BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="77536A6519956A36002450EE" BuildableName="GeoServices+geod" ReferencedContainer="container:../MapsStack/Tigris/GeoServices/GeoServices.xcodeproj" BlueprintName="GeoServices+geod" />
+			</BuildActionEntry>
+			<BuildActionEntry buildForProfiling="YES" buildForTesting="YES" buildForAnalyzing="YES" buildForRunning="YES" buildForArchiving="YES">
+				<BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="8DC2EF4F0486A6940098B216" BlueprintName="VectorKit" BuildableName="VectorKit.framework" ReferencedContainer="container:../MapsStack/Tigris/VectorKit/VectorKit.xcodeproj" />
+			</BuildActionEntry>
+			<BuildActionEntry buildForRunning="YES" buildForTesting="YES" buildForProfiling="YES" buildForArchiving="YES" buildForAnalyzing="YES">
+				<BuildableReference ReferencedContainer="container:../MapsStack/Tigris/Navigation/Navigation.xcodeproj" BuildableName="Navigation.framework" BuildableIdentifier="primary" BlueprintName="Navigation" BlueprintIdentifier="BE1C6F4D1B87E2D400BC7009" />
+			</BuildActionEntry>
+			<BuildActionEntry buildForProfiling="YES" buildForArchiving="YES" buildForAnalyzing="YES" buildForTesting="YES" buildForRunning="YES">
+				<BuildableReference BuildableIdentifier="primary" BuildableName="MapKit.framework" ReferencedContainer="container:../MapsStack/Tigris/MapKit/MapKit.xcodeproj" BlueprintName="MapKit" BlueprintIdentifier="47D0C96208BBD59500BEFA1D" />
+			</BuildActionEntry>
+			<BuildActionEntry buildForRunning="YES" buildForTesting="YES" buildForProfiling="YES" buildForAnalyzing="YES" buildForArchiving="YES">
+				<BuildableReference ReferencedContainer="container:OptimizingMapViews.xcodeproj" BuildableName="OptimizingMapViews.app" BlueprintIdentifier="7E05AACD2233176100988A61" BuildableIdentifier="primary" BlueprintName="OptimizingMapViews" />
+			</BuildActionEntry>
+		</BuildActionEntries>
+	</BuildAction>
+	<LaunchAction useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" debugServiceExtension="internal" launchStyle="0" buildConfiguration="Debug" debugDocumentVersioning="YES" allowLocationSimulation="YES" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB">
+		<BuildableProductRunnable runnableDebuggingMode="0">
+			<BuildableReference BlueprintIdentifier="7E05AACD2233176100988A61" BuildableName="OptimizingMapViews.app" BlueprintName="OptimizingMapViews" ReferencedContainer="container:OptimizingMapViews.xcodeproj" BuildableIdentifier="primary" />
+		</BuildableProductRunnable>
+	</LaunchAction>
+</Scheme>

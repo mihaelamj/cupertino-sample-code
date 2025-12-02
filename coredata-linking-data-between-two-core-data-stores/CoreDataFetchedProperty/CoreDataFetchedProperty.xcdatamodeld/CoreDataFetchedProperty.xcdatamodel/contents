@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="title" attributeType="String"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <fetchedProperty name="feedbackList" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Feedback" predicateString="bookUUID == $FETCH_SOURCE.uuid"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Feedback" representedClassName="Feedback" syncable="YES" codeGenerationType="class">
+        <attribute name="bookUUID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <configuration name="Book">
+        <memberEntity name="Book"/>
+    </configuration>
+    <configuration name="Feedback">
+        <memberEntity name="Feedback"/>
+    </configuration>
+    <elements>
+        <element name="Book" positionX="-63" positionY="-18" width="128" height="101"/>
+        <element name="Feedback" positionX="-54" positionY="18" width="128" height="88"/>
+    </elements>
+</model>

@@ -1,0 +1,35 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: system-ui;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#empty {
+    color: -apple-system-secondary-label;
+    margin-top: 33vh;
+}
+
+#empty > img {
+    display: block;
+    opacity: 0.6;
+    width: 110px;
+}
+
+h1, p, img {
+    max-width: 95vw;
+    margin: 0.5rem auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    #empty > img {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+}

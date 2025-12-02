@@ -1,0 +1,60 @@
+<document>
+    <head>
+        <style>
+
+            .grid_4 {
+                padding: 0 80;
+                tv-interitem-spacing: 40;
+            }
+            .hidden_text {
+                tv-text-highlight-style: show-on-highlight;
+            }
+        </style>
+    </head>
+    <stackTemplate>
+        <banner>
+            <title>Browser</title>
+        </banner>
+        <collectionList>
+            <shelf id="super_shelf">
+                <header>
+                    <title>Shelf 1</title>
+                </header>
+                <section binding="items:{movies};">
+                    <prototypes>
+                        <lockup useBrowser="true">
+                            <img binding="@src:{artworkURL};" contentsMode="aspectFill" width="410" height="231"/>
+                            <title binding="textContent:{title};" class="hidden_text"/>
+                        </lockup>
+                    </prototypes>                   
+                </section>
+            </shelf>
+            <shelf class="grid_4">
+                <header>
+                    <title>Shelf 2</title>
+                </header>
+                <section binding="items:{movies};">
+                    <prototypes>
+                        <lockup useBrowser="true">
+                            <img binding="@src:{artworkURL};" contentsMode="aspectFill" width="410" height="231"/>
+                            <title binding="textContent:{title};" class="hidden_text"/>
+                        </lockup>
+                    </prototypes>                   
+                </section>
+            </shelf>
+            <shelf class="grid_4">
+                <header>
+                    <title>Shelf 3</title>
+                </header>
+                <section binding="items:{movies};">
+                    <prototypes>
+                        <lockup useBrowser="true">
+                            <img binding="@src:{artworkURL};" contentsMode="aspectFill" width="410" height="231"/>
+                            <title binding="textContent:{title};" class="hidden_text"/>
+                        </lockup>
+                    </prototypes>                   
+                </section>
+            </shelf>
+        </collectionList>
+    </stackTemplate>
+</document>

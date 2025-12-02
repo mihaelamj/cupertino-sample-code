@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wTT-t0-9Sq">
+    <device id="retina4_7" orientation="portrait"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saliency View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SaliencyViewController" customModule="ImageSaliency" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems>
+                        <barButtonItem width="8" style="plain" systemItem="fixedSpace" id="ySP-Jl-xPX"/>
+                        <barButtonItem style="plain" id="ChN-st-xLe">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="qWK-dC-rG7">
+                                <rect key="frame" x="0.0" y="0.0" width="137" height="28"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Rects"/>
+                                    <segment title="Mask"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setViewMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="PuB-zy-Fa9"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="1WC-Kl-YNb"/>
+                        <barButtonItem style="plain" id="nzu-MM-DQk">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Lua-vI-pSu">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="28"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <segments>
+                                    <segment title="Attention"/>
+                                    <segment title="Objectness"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setSaliencyType:" destination="BYZ-38-t0r" eventType="valueChanged" id="v8y-xS-9fg"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                        <barButtonItem width="8" style="plain" systemItem="fixedSpace" id="LLw-Kn-9Oq"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="TgZ-Ug-rwk"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="saliencyTypeToggle" destination="Lua-vI-pSu" id="AQz-SY-IWG"/>
+                        <outlet property="viewModeToggle" destination="qWK-dC-rG7" id="3Xo-fn-7f7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WKd-GQ-Xbd">
+            <objects>
+                <navigationController navigationBarHidden="YES" toolbarHidden="NO" id="wTT-t0-9Sq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="blT-q1-wod">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kjV-0Z-DEI">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b6c-UA-Q4s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIF-qu-5h4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="VVn-2Y-mv5">
+                    <rect key="frame" x="-56" y="-14" width="113" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                </segmentedControl>
+            </objects>
+            <point key="canvasLocation" x="-118" y="129"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE5C64DB2AAF4EDA001A2BEA /* vimage_sky_compositorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C64DA2AAF4EDA001A2BEA /* vimage_sky_compositorApp.swift */; };
+		BE5C64DD2AAF4EDA001A2BEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C64DC2AAF4EDA001A2BEA /* ContentView.swift */; };
+		BE5C64DF2AAF4EDB001A2BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5C64DE2AAF4EDB001A2BEA /* Assets.xcassets */; };
+		BE5C64E22AAF4EDB001A2BEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5C64E12AAF4EDB001A2BEA /* Preview Assets.xcassets */; };
+		BE8FA4A72AAF5079000B9F7D /* City_11.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8FA4A62AAF5079000B9F7D /* City_11.png */; };
+		BE8FA4A92AAF5118000B9F7D /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FA4A82AAF5118000B9F7D /* ImageProvider.swift */; };
+		BE8FA4AB2AAF54F8000B9F7D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BE8FA4AA2AAF54F8000B9F7D /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		130E23FFEC523A3CB60DCB0C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		2989008C615988C8BB1D9222 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		BE5C64D72AAF4EDA001A2BEA /* vimage-sky-compositor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vimage-sky-compositor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5C64DA2AAF4EDA001A2BEA /* vimage_sky_compositorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vimage_sky_compositorApp.swift; sourceTree = "<group>"; };
+		BE5C64DC2AAF4EDA001A2BEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE5C64DE2AAF4EDB001A2BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE5C64E12AAF4EDB001A2BEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE5C64E32AAF4EDB001A2BEA /* vimage_sky_compositor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vimage_sky_compositor.entitlements; sourceTree = "<group>"; };
+		BE8FA4A62AAF5079000B9F7D /* City_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = City_11.png; sourceTree = "<group>"; };
+		BE8FA4A82AAF5118000B9F7D /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		BE8FA4AA2AAF54F8000B9F7D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE5C64D42AAF4EDA001A2BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DA77B187327037F1B1FAC92 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2989008C615988C8BB1D9222 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		4E5AAA2B1D268F0FFA7D481B /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				130E23FFEC523A3CB60DCB0C /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		BE5C64CE2AAF4EDA001A2BEA = {
+			isa = PBXGroup;
+			children = (
+				BE8FA4AA2AAF54F8000B9F7D /* README.md */,
+				BE5C64D92AAF4EDA001A2BEA /* vimage-sky-compositor */,
+				BE5C64D82AAF4EDA001A2BEA /* Products */,
+				4DA77B187327037F1B1FAC92 /* Configuration */,
+				4E5AAA2B1D268F0FFA7D481B /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		BE5C64D82AAF4EDA001A2BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C64D72AAF4EDA001A2BEA /* vimage-sky-compositor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE5C64D92AAF4EDA001A2BEA /* vimage-sky-compositor */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C64DA2AAF4EDA001A2BEA /* vimage_sky_compositorApp.swift */,
+				BE8FA4A82AAF5118000B9F7D /* ImageProvider.swift */,
+				BE5C64DC2AAF4EDA001A2BEA /* ContentView.swift */,
+				BE5C64DE2AAF4EDB001A2BEA /* Assets.xcassets */,
+				BE5C64E32AAF4EDB001A2BEA /* vimage_sky_compositor.entitlements */,
+				BE8FA4A62AAF5079000B9F7D /* City_11.png */,
+				BE5C64E02AAF4EDB001A2BEA /* Preview Content */,
+			);
+			path = "vimage-sky-compositor";
+			sourceTree = "<group>";
+		};
+		BE5C64E02AAF4EDB001A2BEA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C64E12AAF4EDB001A2BEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE5C64D62AAF4EDA001A2BEA /* vimage-sky-compositor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5C64E62AAF4EDB001A2BEA /* Build configuration list for PBXNativeTarget "vimage-sky-compositor" */;
+			buildPhases = (
+				BE5C64D32AAF4EDA001A2BEA /* Sources */,
+				BE5C64D42AAF4EDA001A2BEA /* Frameworks */,
+				BE5C64D52AAF4EDA001A2BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vimage-sky-compositor";
+			productName = "vimage-sky-compositor";
+			productReference = BE5C64D72AAF4EDA001A2BEA /* vimage-sky-compositor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE5C64CF2AAF4EDA001A2BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					BE5C64D62AAF4EDA001A2BEA = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BE5C64D22AAF4EDA001A2BEA /* Build configuration list for PBXProject "vimage-sky-compositor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE5C64CE2AAF4EDA001A2BEA;
+			productRefGroup = BE5C64D82AAF4EDA001A2BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE5C64D62AAF4EDA001A2BEA /* vimage-sky-compositor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE5C64D52AAF4EDA001A2BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C64E22AAF4EDB001A2BEA /* Preview Assets.xcassets in Resources */,
+				BE8FA4A72AAF5079000B9F7D /* City_11.png in Resources */,
+				BE8FA4AB2AAF54F8000B9F7D /* README.md in Resources */,
+				BE5C64DF2AAF4EDB001A2BEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE5C64D32AAF4EDA001A2BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C64DD2AAF4EDA001A2BEA /* ContentView.swift in Sources */,
+				BE5C64DB2AAF4EDA001A2BEA /* vimage_sky_compositorApp.swift in Sources */,
+				BE8FA4A92AAF5118000B9F7D /* ImageProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE5C64E42AAF4EDB001A2BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2989008C615988C8BB1D9222 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE5C64E52AAF4EDB001A2BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2989008C615988C8BB1D9222 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BE5C64E72AAF4EDB001A2BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2989008C615988C8BB1D9222 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vimage-sky-compositor/vimage_sky_compositor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vimage-sky-compositor/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vimage-sky-compositor${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE5C64E82AAF4EDB001A2BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2989008C615988C8BB1D9222 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vimage-sky-compositor/vimage_sky_compositor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vimage-sky-compositor/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vimage-sky-compositor${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE5C64D22AAF4EDA001A2BEA /* Build configuration list for PBXProject "vimage-sky-compositor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C64E42AAF4EDB001A2BEA /* Debug */,
+				BE5C64E52AAF4EDB001A2BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5C64E62AAF4EDB001A2BEA /* Build configuration list for PBXNativeTarget "vimage-sky-compositor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C64E72AAF4EDB001A2BEA /* Debug */,
+				BE5C64E82AAF4EDB001A2BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE5C64CF2AAF4EDA001A2BEA /* Project object */;
+}

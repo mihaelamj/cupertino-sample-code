@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="95H-7J-M2r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Sl9-BB-T6W">
+            <objects>
+                <navigationController id="95H-7J-M2r" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4CZ-Ux-jc4">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C3R-A1-y0E" kind="relationship" relationship="rootViewController" id="yf3-Ac-ISK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Itj-iR-Oi4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-323" y="175"/>
+        </scene>
+        <!--Layout Text with TextKit 2-->
+        <scene sceneID="TmO-Ua-Zj3">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C3R-A1-y0E" customClass="TextDocumentViewController" customModule="LayoutTextWithTextKit2" customModuleProvider="target" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="btK-FK-fNV" customClass="TextDocumentView" customModule="LayoutTextWithTextKit2" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Oj8-nZ-Rkt"/>
+                        <viewLayoutGuide key="contentLayoutGuide" id="Ymg-TR-bBX"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="Uub-IP-g1Q"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="Layout Text with TextKit 2" id="Vpr-FH-P2r">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="58U-tM-npa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" id="5g5-Lp-cCp">
+                                <rect key="frame" x="341.5" y="2" width="52.5" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="text.bubble" catalog="system"/>
+                                </buttonConfiguration>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="toggleComments" destination="5g5-Lp-cCp" id="NdH-iO-iID"/>
+                        <outlet property="view" destination="btK-FK-fNV" id="zjt-4g-yiz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wvk-pU-TxE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="175"/>
+        </scene>
+        <!--Comment Popover View Controller-->
+        <scene sceneID="Yb9-H6-C8W">
+            <objects>
+                <viewController storyboardIdentifier="CommentPopoverViewController" id="BuI-Ai-s5U" customClass="CommentPopoverViewController" customModule="LayoutTextWithTextKit2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uXs-Ok-jeq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-1f-9CL">
+                                <rect key="frame" x="20" y="60" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IHh-lh-Kq4">
+                                <rect key="frame" x="20" y="102" width="374" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQl-aw-geg">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                            <imageReference key="image" image="hand.thumbsup.fill" catalog="system"/>
+                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reactionChanged:" destination="BuI-Ai-s5U" eventType="touchUpInside" id="dag-CX-iSX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPi-cr-bJb">
+                                        <rect key="frame" x="96" y="0.0" width="86" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                            <imageReference key="image" image="face.smiling.inverse" catalog="system"/>
+                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reactionChanged:" destination="BuI-Ai-s5U" eventType="touchUpInside" id="wKb-bG-3dl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0B-HK-8w1">
+                                        <rect key="frame" x="192" y="0.0" width="86" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                            <imageReference key="image" image="questionmark.circle.fill" catalog="system"/>
+                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reactionChanged:" destination="BuI-Ai-s5U" eventType="touchUpInside" id="iXo-kM-m6R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-92-iwS">
+                                        <rect key="frame" x="288" y="0.0" width="86" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                            <imageReference key="image" image="hand.thumbsdown.fill" catalog="system"/>
+                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reactionChanged:" destination="BuI-Ai-s5U" eventType="touchUpInside" id="f8S-sP-Dyy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="C1A-AQ-Zp0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tyx-yv-WUV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ha0-1f-9CL" firstAttribute="leading" secondItem="uXs-Ok-jeq" secondAttribute="leadingMargin" id="4Y9-oi-xyb"/>
+                            <constraint firstItem="ha0-1f-9CL" firstAttribute="trailing" secondItem="uXs-Ok-jeq" secondAttribute="trailingMargin" id="4dR-1t-Kbi"/>
+                            <constraint firstItem="Tyx-yv-WUV" firstAttribute="trailing" secondItem="IHh-lh-Kq4" secondAttribute="trailing" constant="20" id="Efd-Pi-3bx"/>
+                            <constraint firstItem="IHh-lh-Kq4" firstAttribute="leading" secondItem="Tyx-yv-WUV" secondAttribute="leading" constant="20" id="bDJ-KO-IFJ"/>
+                            <constraint firstItem="IHh-lh-Kq4" firstAttribute="top" secondItem="Tyx-yv-WUV" secondAttribute="top" constant="54" id="iGH-Zn-mr4"/>
+                            <constraint firstItem="ha0-1f-9CL" firstAttribute="top" secondItem="Tyx-yv-WUV" secondAttribute="top" constant="12" id="j5P-eU-7gJ"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="420" height="100"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="commentField" destination="ha0-1f-9CL" id="tvg-sr-Mis"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFJ-NH-Tx9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242.0289855072465" y="174.77678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="face.smiling.inverse" catalog="system" width="128" height="123"/>
+        <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

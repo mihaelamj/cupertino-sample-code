@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dxj-NT-LBO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ATJ-y6-tgo">
+            <objects>
+                <navigationController id="Dxj-NT-LBO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gz7-zJ-0hP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmK-UN-dM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1341" y="89"/>
+        </scene>
+        <!--SetupQR Code View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="QRCode" id="BYZ-38-t0r" customClass="SetupQRCodeViewController" customModule="BrandXAccessorySetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan BrandXAccessory QR code with your camera." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ma-4Z-7SH">
+                                <rect key="frame" x="20" y="66" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="2U9-JC-vSD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-VU-cXE">
+                                <rect key="frame" x="20" y="299" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4Yl-DS-PBY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Capture BrandXAccessory Network Info"/>
+                                <connections>
+                                    <action selector="scanQRCode" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aeb-rK-gpb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ahI-VU-cXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8yA-fZ-qJy"/>
+                            <constraint firstItem="2Ma-4Z-7SH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Eo-I9-wHV"/>
+                            <constraint firstItem="2Ma-4Z-7SH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="9mQ-eg-MSW"/>
+                            <constraint firstItem="ahI-VU-cXE" firstAttribute="top" secondItem="2Ma-4Z-7SH" secondAttribute="bottom" constant="15" id="Feb-Ma-LgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ma-4Z-7SH" secondAttribute="trailing" constant="20" id="IrX-5Y-yfH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahI-VU-cXE" secondAttribute="trailing" constant="20" id="q0s-s6-mh4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="instruction" destination="2Ma-4Z-7SH" id="HZ3-y9-8Y8"/>
+                        <outlet property="nextAction" destination="ahI-VU-cXE" id="CWP-rB-Qgx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-462" y="88"/>
+        </scene>
+        <!--Setup Network Info View Controller-->
+        <scene sceneID="PrW-sk-LYG">
+            <objects>
+                <viewController storyboardIdentifier="NetworkInfo" id="AeQ-gy-8kH" customClass="SetupNetworkInfoViewController" customModule="BrandXAccessorySetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w5b-1P-KN0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture the SSID of your current network." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-Q7-VWM">
+                                <rect key="frame" x="20" y="66" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="LnM-wz-DZe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THl-Gm-WkF">
+                                <rect key="frame" x="20" y="299" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qMg-VL-gJa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Get Network Info"/>
+                                <connections>
+                                    <action selector="getNetworkInfo" destination="AeQ-gy-8kH" eventType="touchUpInside" id="Jk5-bk-xgr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D5u-wU-NKM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D5u-wU-NKM" firstAttribute="trailing" secondItem="ysg-Q7-VWM" secondAttribute="trailing" constant="20" id="be6-P0-jdc"/>
+                            <constraint firstItem="ysg-Q7-VWM" firstAttribute="leading" secondItem="D5u-wU-NKM" secondAttribute="leading" constant="20" id="ehC-r8-JDl"/>
+                            <constraint firstItem="ysg-Q7-VWM" firstAttribute="top" secondItem="D5u-wU-NKM" secondAttribute="top" constant="22" id="fVt-ug-xVa"/>
+                            <constraint firstItem="D5u-wU-NKM" firstAttribute="trailing" secondItem="THl-Gm-WkF" secondAttribute="trailing" constant="20" id="qXI-fU-KLC"/>
+                            <constraint firstItem="THl-Gm-WkF" firstAttribute="leading" secondItem="D5u-wU-NKM" secondAttribute="leading" constant="20" id="rYc-K9-Ket"/>
+                            <constraint firstItem="THl-Gm-WkF" firstAttribute="top" secondItem="ysg-Q7-VWM" secondAttribute="bottom" constant="15" id="zve-xt-L5k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BVM-Mx-nwl"/>
+                    <connections>
+                        <outlet property="instruction" destination="ysg-Q7-VWM" id="gbW-79-WXA"/>
+                        <outlet property="nextAction" destination="THl-Gm-WkF" id="fLg-DB-hXj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fu5-zP-C15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403" y="88"/>
+        </scene>
+        <!--Setup Hotspot Connect View Controller-->
+        <scene sceneID="cZZ-0E-9Ld">
+            <objects>
+                <viewController storyboardIdentifier="HotspotConnection" id="05F-xu-HO0" customClass="SetupHotspotConnectViewController" customModule="BrandXAccessorySetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3iu-FQ-O6A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Associate with BrandXAccessory network to establish communication." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxw-V5-JfK">
+                                <rect key="frame" x="20" y="66" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="ftE-hs-ugk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlg-zu-gkO">
+                                <rect key="frame" x="20" y="299" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dca-Pk-gHt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Associate to Accessory Network"/>
+                                <connections>
+                                    <action selector="connectToHotspot" destination="05F-xu-HO0" eventType="touchUpInside" id="PD8-yy-KRW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dhn-Xm-woh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mlg-zu-gkO" firstAttribute="top" secondItem="Gxw-V5-JfK" secondAttribute="bottom" constant="15" id="0un-30-tqH"/>
+                            <constraint firstItem="Gxw-V5-JfK" firstAttribute="leading" secondItem="dhn-Xm-woh" secondAttribute="leading" constant="20" id="7w4-ho-yGc"/>
+                            <constraint firstItem="dhn-Xm-woh" firstAttribute="trailing" secondItem="Gxw-V5-JfK" secondAttribute="trailing" constant="20" id="dZn-Ty-ZH4"/>
+                            <constraint firstItem="Mlg-zu-gkO" firstAttribute="leading" secondItem="dhn-Xm-woh" secondAttribute="leading" constant="20" id="gEK-d6-PWT"/>
+                            <constraint firstItem="dhn-Xm-woh" firstAttribute="trailing" secondItem="Mlg-zu-gkO" secondAttribute="trailing" constant="20" id="syD-wI-0bB"/>
+                            <constraint firstItem="Gxw-V5-JfK" firstAttribute="top" secondItem="dhn-Xm-woh" secondAttribute="top" constant="22" id="uaz-Eo-3aO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="instruction" destination="Gxw-V5-JfK" id="P4I-gr-MXq"/>
+                        <outlet property="nextAction" destination="Mlg-zu-gkO" id="zQC-Sz-tB9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyd-3u-SoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="88"/>
+        </scene>
+        <!--Setup Confirm Hotspot View Controller-->
+        <scene sceneID="Ljh-HT-xxh">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmHotspotNetwork" id="5GV-Iu-vkN" customClass="SetupConfirmHotspotViewController" customModule="BrandXAccessorySetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DHL-yN-xcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture the SSID to confirm the new network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMB-Ak-BJA">
+                                <rect key="frame" x="20" y="66" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="EZZ-Ud-vXe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGn-T4-teQ">
+                                <rect key="frame" x="20" y="299" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iRF-Pj-z7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Confirm Network"/>
+                                <connections>
+                                    <action selector="confirmHotspotNetworkInfo" destination="5GV-Iu-vkN" eventType="touchUpInside" id="Mq3-V3-Xye"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QQO-2u-ft2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HMB-Ak-BJA" firstAttribute="leading" secondItem="QQO-2u-ft2" secondAttribute="leading" constant="20" id="9b7-pA-aRd"/>
+                            <constraint firstItem="cGn-T4-teQ" firstAttribute="top" secondItem="HMB-Ak-BJA" secondAttribute="bottom" constant="15" id="Apc-P6-E2i"/>
+                            <constraint firstItem="cGn-T4-teQ" firstAttribute="leading" secondItem="QQO-2u-ft2" secondAttribute="leading" constant="20" id="NVS-Zt-Ngk"/>
+                            <constraint firstItem="QQO-2u-ft2" firstAttribute="trailing" secondItem="HMB-Ak-BJA" secondAttribute="trailing" constant="20" id="Pja-Wp-Wa2"/>
+                            <constraint firstItem="HMB-Ak-BJA" firstAttribute="top" secondItem="QQO-2u-ft2" secondAttribute="top" constant="22" id="jvY-ek-cuZ"/>
+                            <constraint firstItem="QQO-2u-ft2" firstAttribute="trailing" secondItem="cGn-T4-teQ" secondAttribute="trailing" constant="20" id="pfQ-Ah-799"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="instruction" destination="HMB-Ak-BJA" id="9BC-BG-LY7"/>
+                        <outlet property="nextAction" destination="cGn-T4-teQ" id="yd1-kM-PwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjc-2E-BNz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="88"/>
+        </scene>
+        <!--Setup Send Data View Controller-->
+        <scene sceneID="VdP-tq-lrt">
+            <objects>
+                <viewController storyboardIdentifier="SendNetworkData" id="hEq-7K-zY9" customClass="SetupSendDataViewController" customModule="BrandXAccessorySetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dDX-Qr-giI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcJ-zw-L0G">
+                                <rect key="frame" x="20" y="66" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="cdI-6X-ATT"/>
+                                </constraints>
+                                <string key="text">Start the listener on BrandXAccessory.  Next, enter the network passphrase. Finally, send data to BrandXAccessory by opening a new connection.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vj-wd-aQu">
+                                <rect key="frame" x="20" y="374" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="30H-de-ywb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Send Network Data"/>
+                                <connections>
+                                    <action selector="sendNetworkDataAction" destination="hEq-7K-zY9" eventType="touchUpInside" id="m3h-hB-D7m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFW-Bz-DmO">
+                                <rect key="frame" x="20" y="299" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qjm-7t-yZ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Enter Network Passphrase"/>
+                                <connections>
+                                    <action selector="enterNetworkPassphraseAction" destination="hEq-7K-zY9" eventType="touchUpInside" id="6rR-Xu-JcA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MEO-j0-18S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BFW-Bz-DmO" firstAttribute="top" secondItem="rcJ-zw-L0G" secondAttribute="bottom" constant="15" id="4UN-HF-cPb"/>
+                            <constraint firstItem="MEO-j0-18S" firstAttribute="trailing" secondItem="BFW-Bz-DmO" secondAttribute="trailing" constant="20" id="6EY-dU-0FI"/>
+                            <constraint firstItem="6vj-wd-aQu" firstAttribute="leading" secondItem="MEO-j0-18S" secondAttribute="leading" constant="20" id="IBM-gu-j6H"/>
+                            <constraint firstItem="BFW-Bz-DmO" firstAttribute="leading" secondItem="MEO-j0-18S" secondAttribute="leading" constant="20" id="Qse-mH-Vju"/>
+                            <constraint firstItem="MEO-j0-18S" firstAttribute="trailing" secondItem="6vj-wd-aQu" secondAttribute="trailing" constant="20" id="Z8C-fA-kkJ"/>
+                            <constraint firstItem="6vj-wd-aQu" firstAttribute="top" secondItem="BFW-Bz-DmO" secondAttribute="bottom" constant="15" id="b7I-Wj-ae8"/>
+                            <constraint firstItem="MEO-j0-18S" firstAttribute="trailing" secondItem="rcJ-zw-L0G" secondAttribute="trailing" constant="20" id="fkO-rQ-wdD"/>
+                            <constraint firstItem="rcJ-zw-L0G" firstAttribute="leading" secondItem="MEO-j0-18S" secondAttribute="leading" constant="20" id="yDH-Ci-gsm"/>
+                            <constraint firstItem="rcJ-zw-L0G" firstAttribute="top" secondItem="MEO-j0-18S" secondAttribute="top" constant="22" id="zgp-oJ-bHs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterNetworkPassphraseButton" destination="BFW-Bz-DmO" id="vOF-nJ-PG2"/>
+                        <outlet property="instructionLabel" destination="rcJ-zw-L0G" id="H9o-sN-Djt"/>
+                        <outlet property="sendNetworkDataButton" destination="6vj-wd-aQu" id="XYb-ZT-78K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQs-O1-EZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2931.8840579710145" y="87.723214285714278"/>
+        </scene>
+        <!--Setup Remove Hotspot View Controller-->
+        <scene sceneID="Ka2-T2-3LM">
+            <objects>
+                <viewController storyboardIdentifier="RemoveHotspot" id="i6V-rJ-Diu" customClass="SetupRemoveHotspotViewController" customModule="BrandXAccessorySetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="95a-jR-48d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Network Configuration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvR-cL-gBQ">
+                                <rect key="frame" x="20" y="66" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="p17-qW-Qyn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leM-eg-P7u">
+                                <rect key="frame" x="20" y="299" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1mb-sI-Fwv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Remove Network Configuration"/>
+                                <connections>
+                                    <action selector="removeConfiguration" destination="i6V-rJ-Diu" eventType="touchUpInside" id="RZ1-cd-5qx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gaT-w5-HOW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IvR-cL-gBQ" firstAttribute="leading" secondItem="gaT-w5-HOW" secondAttribute="leading" constant="20" id="WK2-AH-3Id"/>
+                            <constraint firstItem="gaT-w5-HOW" firstAttribute="trailing" secondItem="leM-eg-P7u" secondAttribute="trailing" constant="20" id="ZEw-hw-Ve3"/>
+                            <constraint firstItem="leM-eg-P7u" firstAttribute="top" secondItem="IvR-cL-gBQ" secondAttribute="bottom" constant="15" id="ifF-hm-zWL"/>
+                            <constraint firstItem="IvR-cL-gBQ" firstAttribute="top" secondItem="gaT-w5-HOW" secondAttribute="top" constant="22" id="kAe-oc-nSW"/>
+                            <constraint firstItem="gaT-w5-HOW" firstAttribute="trailing" secondItem="IvR-cL-gBQ" secondAttribute="trailing" constant="20" id="kcN-EF-yUU"/>
+                            <constraint firstItem="leM-eg-P7u" firstAttribute="leading" secondItem="gaT-w5-HOW" secondAttribute="leading" constant="20" id="kdH-X4-T6O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="instruction" destination="IvR-cL-gBQ" id="ydH-zm-OMZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQ1-Hl-Jf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3765" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

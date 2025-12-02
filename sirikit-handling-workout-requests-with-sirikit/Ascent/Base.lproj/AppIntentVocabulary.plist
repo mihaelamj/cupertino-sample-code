@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ParameterVocabularies</key>
+	<array>
+		<dict>
+			<key>ParameterNames</key>
+			<array>
+				<string>INStartWorkoutIntent.workoutName</string>
+			</array>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>climb</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>Climb</string>
+							<key>VocabularyItemPronunciation</key>
+							<string>klime</string>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Start a climb with Ascent</string>
+								<string>Pause the climb with Ascent</string>
+								<string>Resume the climb with Ascent</string>
+								<string>End the climb with Ascent</string>
+								<string>Cancel the climb with Ascent</string>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ParameterNames</key>
+			<array>
+				<string>INStartWorkoutIntent.workoutName</string>
+			</array>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>boulder</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>Boulder Climb</string>
+							<key>VocabularyItemPronunciation</key>
+							<string>bowlder klime</string>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Start a boulder climb with Ascent</string>
+							</array>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>Boulder Workout</string>
+							<key>VocabularyItemPronunciation</key>
+							<string>bowlder workout</string>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Start a boulder workout with Ascent</string>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>INStartWorkoutIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Start a climb with Ascent</string>
+				<string>Start a boulder climb with Ascent</string>
+				<string>Start a boulder workout with Ascent</string>
+			</array>
+		</dict>
+		<dict>
+			<key>IntentName</key>
+			<string>INEndWorkoutIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Stop my workout in Ascent</string>
+				<string>Stop my climb with Ascent</string>
+				<string>Stop my boulder workout in Ascent</string>
+			</array>
+		</dict>
+		<dict>
+			<key>IntentName</key>
+			<string>INCancelWorkoutIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Cancel my workout in Ascent</string>
+				<string>Cancel my climb with Ascent</string>
+				<string>Cancel my boulder workout in Ascent</string>
+			</array>
+		</dict>
+		<dict>
+			<key>IntentName</key>
+			<string>INPauseWorkoutIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Pause my workout in Ascent</string>
+				<string>Pause my climb with Ascent</string>
+				<string>Pause my boulder workout in Ascent</string>
+			</array>
+		</dict>
+		<dict>
+			<key>IntentName</key>
+			<string>INResumeWorkoutIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Resume my workout in Ascent</string>
+				<string>Resume my climb with Ascent</string>
+				<string>Resume my boulder workout in Ascent</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

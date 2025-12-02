@@ -1,0 +1,221 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "22F08B97",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "02866A3B",
+      "localizations" : [
+        {
+          "description" : "Adds a single consumable item.",
+          "displayName" : "Consumable Item",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "consumable",
+      "referenceName" : "Consumable (1)",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "8.99",
+      "familyShareable" : false,
+      "internalID" : "1A9A09CC",
+      "localizations" : [
+        {
+          "description" : "Adds a pack of 10 consumable items.",
+          "displayName" : "Pack of Consumable Items",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "consumable_pack",
+      "referenceName" : "Consumable (10)",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "D73BEFDA",
+      "localizations" : [
+        {
+          "description" : "Adds a single non-consumable item.",
+          "displayName" : "Non-Consumable Item",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "nonconsumable",
+      "referenceName" : "Non-Consumable",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "B4CCA994",
+      "localizations" : [
+
+      ],
+      "name" : "Subscription",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "8DC4C852",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "Monthly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "subscription_monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Subscription (Monthly)",
+          "subscriptionGroupID" : "B4CCA994",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "10.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "064BBD58",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "A086F372",
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1M"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "Yearly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "subscription_yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Subscription (Yearly)",
+          "subscriptionGroupID" : "B4CCA994",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "15.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "1609FE9E",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "D694A057",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1M"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "Premium Yearly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "premium_subscription_yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Subscription (Premium Yearly)",
+          "subscriptionGroupID" : "B4CCA994",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

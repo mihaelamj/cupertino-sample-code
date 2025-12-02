@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlayerViewController" customModule="AVCompositionDebugViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-GD-VN3" userLabel="PlayerView">
+                                <rect key="frame" x="0.0" y="20" width="810" height="527"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U78-Hi-zSK" userLabel="Composition Debug View" customClass="CompositionDebugView" customModule="AVCompositionDebugViewer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="555" width="810" height="525"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="6zo-GD-VN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MKn-d6-VaX"/>
+                            <constraint firstAttribute="bottom" secondItem="6zo-GD-VN3" secondAttribute="bottom" constant="533" id="OMf-HL-xkU"/>
+                            <constraint firstItem="6zo-GD-VN3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QzL-CI-KxK"/>
+                            <constraint firstItem="U78-Hi-zSK" firstAttribute="top" secondItem="6zo-GD-VN3" secondAttribute="bottom" constant="8" id="W35-BW-6MF"/>
+                            <constraint firstItem="6zo-GD-VN3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W5D-mc-99Z"/>
+                            <constraint firstItem="6zo-GD-VN3" firstAttribute="trailing" secondItem="U78-Hi-zSK" secondAttribute="trailing" id="X7D-l3-9Pt"/>
+                            <constraint firstItem="6zo-GD-VN3" firstAttribute="leading" secondItem="U78-Hi-zSK" secondAttribute="leading" id="dbV-lm-Nbr"/>
+                            <constraint firstItem="U78-Hi-zSK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y4F-7V-1Bw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="compositionDebugView" destination="U78-Hi-zSK" id="SHd-I4-rae"/>
+                        <outlet property="playerView" destination="6zo-GD-VN3" id="Mm4-WP-PZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.7407407407407407" y="93.888888888888886"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

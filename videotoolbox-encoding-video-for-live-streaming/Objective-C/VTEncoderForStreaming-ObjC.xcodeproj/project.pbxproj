@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4DB78729E5DF1E00D9EFE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB78629E5DF1E00D9EFE5 /* main.m */; };
+		0B4DB79429E5DF7000D9EFE5 /* VTEncoderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB79029E5DF7000D9EFE5 /* VTEncoderUtil.m */; };
+		0B4DB79529E5DF7000D9EFE5 /* VideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB79229E5DF7000D9EFE5 /* VideoSource.m */; };
+		0B4DB79629E5DF7000D9EFE5 /* VideoSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB79329E5DF7000D9EFE5 /* VideoSink.m */; };
+		0B4DB79929E5E02F00D9EFE5 /* VTEncoderForStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB79729E5E02F00D9EFE5 /* VTEncoderForStreaming.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B4DB78129E5DF1E00D9EFE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B4DB78329E5DF1E00D9EFE5 /* VTEncoderForStreaming-ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "VTEncoderForStreaming-ObjC"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4DB78629E5DF1E00D9EFE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B4DB78E29E5DF7000D9EFE5 /* VideoSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSink.h; sourceTree = "<group>"; };
+		0B4DB78F29E5DF7000D9EFE5 /* VTEncoderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTEncoderUtil.h; sourceTree = "<group>"; };
+		0B4DB79029E5DF7000D9EFE5 /* VTEncoderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTEncoderUtil.m; sourceTree = "<group>"; };
+		0B4DB79129E5DF7000D9EFE5 /* VideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSource.h; sourceTree = "<group>"; };
+		0B4DB79229E5DF7000D9EFE5 /* VideoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSource.m; sourceTree = "<group>"; };
+		0B4DB79329E5DF7000D9EFE5 /* VideoSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSink.m; sourceTree = "<group>"; };
+		0B4DB79729E5E02F00D9EFE5 /* VTEncoderForStreaming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTEncoderForStreaming.m; sourceTree = "<group>"; };
+		0B4DB79829E5E02F00D9EFE5 /* VTEncoderForStreaming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTEncoderForStreaming.h; sourceTree = "<group>"; };
+		36ED76585A689E40ED42FF9D /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		9055D546D1AE3D9332A45574 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		C9635D71F771A609C71E6520 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B4DB78029E5DF1E00D9EFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B4DB77A29E5DF1E00D9EFE5 = {
+			isa = PBXGroup;
+			children = (
+				C9635D71F771A609C71E6520 /* README.md */,
+				0B4DB78529E5DF1E00D9EFE5 /* VTEncoderForStreaming */,
+				0B4DB78D29E5DF2500D9EFE5 /* VTEncoderUtils */,
+				0B4DB78429E5DF1E00D9EFE5 /* Products */,
+				6DFE31A5A657072EBD0B3421 /* Configuration */,
+				99FD57B61D0C57A7E10E4C3C /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		0B4DB78429E5DF1E00D9EFE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB78329E5DF1E00D9EFE5 /* VTEncoderForStreaming-ObjC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B4DB78529E5DF1E00D9EFE5 /* VTEncoderForStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB78629E5DF1E00D9EFE5 /* main.m */,
+				0B4DB79829E5E02F00D9EFE5 /* VTEncoderForStreaming.h */,
+				0B4DB79729E5E02F00D9EFE5 /* VTEncoderForStreaming.m */,
+			);
+			path = VTEncoderForStreaming;
+			sourceTree = "<group>";
+		};
+		0B4DB78D29E5DF2500D9EFE5 /* VTEncoderUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB78E29E5DF7000D9EFE5 /* VideoSink.h */,
+				0B4DB79329E5DF7000D9EFE5 /* VideoSink.m */,
+				0B4DB79129E5DF7000D9EFE5 /* VideoSource.h */,
+				0B4DB79229E5DF7000D9EFE5 /* VideoSource.m */,
+				0B4DB78F29E5DF7000D9EFE5 /* VTEncoderUtil.h */,
+				0B4DB79029E5DF7000D9EFE5 /* VTEncoderUtil.m */,
+			);
+			path = VTEncoderUtils;
+			sourceTree = "<group>";
+		};
+		6DFE31A5A657072EBD0B3421 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				36ED76585A689E40ED42FF9D /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		99FD57B61D0C57A7E10E4C3C /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				9055D546D1AE3D9332A45574 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B4DB78229E5DF1E00D9EFE5 /* VTEncoderForStreaming-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4DB78A29E5DF1E00D9EFE5 /* Build configuration list for PBXNativeTarget "VTEncoderForStreaming-ObjC" */;
+			buildPhases = (
+				0B4DB77F29E5DF1E00D9EFE5 /* Sources */,
+				0B4DB78029E5DF1E00D9EFE5 /* Frameworks */,
+				0B4DB78129E5DF1E00D9EFE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VTEncoderForStreaming-ObjC";
+			productName = VTEncoderForStreaming;
+			productReference = 0B4DB78329E5DF1E00D9EFE5 /* VTEncoderForStreaming-ObjC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B4DB77B29E5DF1E00D9EFE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1700;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					0B4DB78229E5DF1E00D9EFE5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 0B4DB77E29E5DF1E00D9EFE5 /* Build configuration list for PBXProject "VTEncoderForStreaming-ObjC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B4DB77A29E5DF1E00D9EFE5;
+			productRefGroup = 0B4DB78429E5DF1E00D9EFE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B4DB78229E5DF1E00D9EFE5 /* VTEncoderForStreaming-ObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B4DB77F29E5DF1E00D9EFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4DB79429E5DF7000D9EFE5 /* VTEncoderUtil.m in Sources */,
+				0B4DB79529E5DF7000D9EFE5 /* VideoSource.m in Sources */,
+				0B4DB79929E5E02F00D9EFE5 /* VTEncoderForStreaming.m in Sources */,
+				0B4DB79629E5DF7000D9EFE5 /* VideoSink.m in Sources */,
+				0B4DB78729E5DF1E00D9EFE5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B4DB78829E5DF1E00D9EFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36ED76585A689E40ED42FF9D /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = CTR79HYSB7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Debug;
+		};
+		0B4DB78929E5DF1E00D9EFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36ED76585A689E40ED42FF9D /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CTR79HYSB7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Release;
+		};
+		0B4DB78B29E5DF1E00D9EFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36ED76585A689E40ED42FF9D /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		0B4DB78C29E5DF1E00D9EFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36ED76585A689E40ED42FF9D /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B4DB77E29E5DF1E00D9EFE5 /* Build configuration list for PBXProject "VTEncoderForStreaming-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4DB78829E5DF1E00D9EFE5 /* Debug */,
+				0B4DB78929E5DF1E00D9EFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4DB78A29E5DF1E00D9EFE5 /* Build configuration list for PBXNativeTarget "VTEncoderForStreaming-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4DB78B29E5DF1E00D9EFE5 /* Debug */,
+				0B4DB78C29E5DF1E00D9EFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B4DB77B29E5DF1E00D9EFE5 /* Project object */;
+}

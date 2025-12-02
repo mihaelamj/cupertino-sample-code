@@ -1,0 +1,37 @@
+//
+//  xbsDefaultBuildSettingOverrides.xcconfig
+//
+
+#include? "<DEVELOPER_DIR>/Toolchains/OSX12.0.xctoolchain/macos_chrootshims.xcconfig"
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+ONLY_ACTIVE_ARCH = NO
+RETAIN_RAW_BINARIES = YES
+RUN_CLANG_STATIC_ANALYZER = $(XBS_RUN_STATIC_ANALYZER)
+SEPARATE_STRIP = YES
+
+OTHER_CFLAGS = $(inherited) -Wno-error=deprecated-declarations -Wno-error=#warnings -Wno-error=nonnull -Wno-error=objc-designated-initializers -Wno-error=deprecated-implementations -Wno-error=documentation -Wno-error=unused-command-line-argument
+OTHER_CPLUSPLUSFLAGS = $(inherited) -Wno-error=deprecated-declarations -Wno-error=#warnings -Wno-error=nonnull -Wno-error=objc-designated-initializers -Wno-error=deprecated-implementations -Wno-error=documentation -Wno-error=unused-command-line-argument
+
+VALID_ARCHS = $(inherited) $(RC_VALID_ARCHS_OVERRIDE)
+
+GCC_PRECOMPILE_PREFIX_HEADER=NO
+
+CLANG_MODULES_VALIDATE_SYSTEM_HEADERS=YES
+
+TOOLCHAINS = com.apple.dt.toolchain.OSX12_0
+
+// Use custom per-project module cache directory.
+CLANG_MODULE_CACHE_PATH = $(CCHROOT)/ModuleCache
+
+CLANG_WARN_UNGUARDED_AVAILABILITY=NO
+
+IBC_FLATTEN_NIBS = NO
+STRINGS_FILE_OUTPUT_ENCODING = UTF-16
+
+IBSC_FLATTEN_NIBS = NO
+
+DONT_RUN_SWIFT_STDLIB_TOOL = YES
+
+
+CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO

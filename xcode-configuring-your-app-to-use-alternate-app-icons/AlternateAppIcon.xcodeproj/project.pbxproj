@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB9342032E3D750300D9C2ED /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9342022E3D750300D9C2ED /* Icon.swift */; };
+		EBA45CC42E4A6D6E006F52DD /* AppIcon-Pink.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CC02E4A6D6E006F52DD /* AppIcon-Pink.icon */; };
+		EBA45CC52E4A6D6E006F52DD /* AppIcon-Yellow.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CC32E4A6D6E006F52DD /* AppIcon-Yellow.icon */; };
+		EBA45CC62E4A6D6E006F52DD /* AppIcon-Blue.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CBC2E4A6D6E006F52DD /* AppIcon-Blue.icon */; };
+		EBA45CC72E4A6D6E006F52DD /* AppIcon-Purple.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CC12E4A6D6E006F52DD /* AppIcon-Purple.icon */; };
+		EBA45CC82E4A6D6E006F52DD /* AppIcon-Orange.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CBF2E4A6D6E006F52DD /* AppIcon-Orange.icon */; };
+		EBA45CC92E4A6D6E006F52DD /* AppIcon-Teal.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CC22E4A6D6E006F52DD /* AppIcon-Teal.icon */; };
+		EBA45CCA2E4A6D6E006F52DD /* AppIcon-Green.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CBD2E4A6D6E006F52DD /* AppIcon-Green.icon */; };
+		EBA45CCB2E4A6D6E006F52DD /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = EBA45CBE2E4A6D6E006F52DD /* AppIcon.icon */; };
+		EBF188C12E3D6F6A007E1E94 /* AlternateAppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF188BA2E3D6F4D007E1E94 /* AlternateAppIcon.swift */; };
+		EBF188C22E3D6F72007E1E94 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF188BF2E3D6F4D007E1E94 /* Model.swift */; };
+		EBF188C32E3D6F72007E1E94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF188BC2E3D6F4D007E1E94 /* ContentView.swift */; };
+		EBF188C52E3D6F72007E1E94 /* IconChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF188BD2E3D6F4D007E1E94 /* IconChooser.swift */; };
+		EBF188C62E3D6F7D007E1E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF188BB2E3D6F4D007E1E94 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		963B06642742FDDE0000F86A /* AlternateAppIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlternateAppIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BF2E2A2746E7650013A646 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B5C5B424DF75E73F62B8834A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		E4C39372D46E4866B35DD30B /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		EB9342022E3D750300D9C2ED /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		EBA45CBC2E4A6D6E006F52DD /* AppIcon-Blue.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "AppIcon-Blue.icon"; sourceTree = "<group>"; };
+		EBA45CBD2E4A6D6E006F52DD /* AppIcon-Green.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "AppIcon-Green.icon"; sourceTree = "<group>"; };
+		EBA45CBE2E4A6D6E006F52DD /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		EBA45CBF2E4A6D6E006F52DD /* AppIcon-Orange.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "AppIcon-Orange.icon"; sourceTree = "<group>"; };
+		EBA45CC02E4A6D6E006F52DD /* AppIcon-Pink.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "AppIcon-Pink.icon"; sourceTree = "<group>"; };
+		EBA45CC12E4A6D6E006F52DD /* AppIcon-Purple.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "AppIcon-Purple.icon"; sourceTree = "<group>"; };
+		EBA45CC22E4A6D6E006F52DD /* AppIcon-Teal.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "AppIcon-Teal.icon"; sourceTree = "<group>"; };
+		EBA45CC32E4A6D6E006F52DD /* AppIcon-Yellow.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "AppIcon-Yellow.icon"; sourceTree = "<group>"; };
+		EBF188BA2E3D6F4D007E1E94 /* AlternateAppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternateAppIcon.swift; sourceTree = "<group>"; };
+		EBF188BB2E3D6F4D007E1E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBF188BC2E3D6F4D007E1E94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBF188BD2E3D6F4D007E1E94 /* IconChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconChooser.swift; sourceTree = "<group>"; };
+		EBF188BF2E3D6F4D007E1E94 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		963B06612742FDDE0000F86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52074F921D0ED1F57EEE6FFE /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				B5C5B424DF75E73F62B8834A /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+		963B06572742FDDA0000F86A = {
+			isa = PBXGroup;
+			children = (
+				96BF2E2A2746E7650013A646 /* README.md */,
+				EBF188C02E3D6F4D007E1E94 /* AlternateAppIcon */,
+				963B06652742FDDE0000F86A /* Products */,
+				A9B0F3594B8A5ADCB462FA6E /* Configuration */,
+				52074F921D0ED1F57EEE6FFE /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		963B06652742FDDE0000F86A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963B06642742FDDE0000F86A /* AlternateAppIcon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B0F3594B8A5ADCB462FA6E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E4C39372D46E4866B35DD30B /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		EBF188C02E3D6F4D007E1E94 /* AlternateAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				EBF188BA2E3D6F4D007E1E94 /* AlternateAppIcon.swift */,
+				EBF188BC2E3D6F4D007E1E94 /* ContentView.swift */,
+				EB9342022E3D750300D9C2ED /* Icon.swift */,
+				EBF188BD2E3D6F4D007E1E94 /* IconChooser.swift */,
+				EBF188BF2E3D6F4D007E1E94 /* Model.swift */,
+				EBF188BB2E3D6F4D007E1E94 /* Assets.xcassets */,
+				EBA45CBE2E4A6D6E006F52DD /* AppIcon.icon */,
+				EBA45CBC2E4A6D6E006F52DD /* AppIcon-Blue.icon */,
+				EBA45CBD2E4A6D6E006F52DD /* AppIcon-Green.icon */,
+				EBA45CBF2E4A6D6E006F52DD /* AppIcon-Orange.icon */,
+				EBA45CC02E4A6D6E006F52DD /* AppIcon-Pink.icon */,
+				EBA45CC12E4A6D6E006F52DD /* AppIcon-Purple.icon */,
+				EBA45CC22E4A6D6E006F52DD /* AppIcon-Teal.icon */,
+				EBA45CC32E4A6D6E006F52DD /* AppIcon-Yellow.icon */,
+			);
+			path = AlternateAppIcon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		963B06632742FDDE0000F86A /* AlternateAppIcon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963B06752742FDDE0000F86A /* Build configuration list for PBXNativeTarget "AlternateAppIcon" */;
+			buildPhases = (
+				963B06602742FDDE0000F86A /* Sources */,
+				963B06612742FDDE0000F86A /* Frameworks */,
+				963B06622742FDDE0000F86A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlternateAppIcon;
+			productName = "AlternatingAppIcons (iOS)";
+			productReference = 963B06642742FDDE0000F86A /* AlternateAppIcon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		963B06582742FDDA0000F86A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 2600;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					963B06632742FDDE0000F86A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 963B065B2742FDDA0000F86A /* Build configuration list for PBXProject "AlternateAppIcon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 963B06572742FDDA0000F86A;
+			productRefGroup = 963B06652742FDDE0000F86A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				963B06632742FDDE0000F86A /* AlternateAppIcon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		963B06622742FDDE0000F86A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA45CC42E4A6D6E006F52DD /* AppIcon-Pink.icon in Resources */,
+				EBA45CC52E4A6D6E006F52DD /* AppIcon-Yellow.icon in Resources */,
+				EBA45CC62E4A6D6E006F52DD /* AppIcon-Blue.icon in Resources */,
+				EBA45CC72E4A6D6E006F52DD /* AppIcon-Purple.icon in Resources */,
+				EBA45CC82E4A6D6E006F52DD /* AppIcon-Orange.icon in Resources */,
+				EBA45CC92E4A6D6E006F52DD /* AppIcon-Teal.icon in Resources */,
+				EBA45CCA2E4A6D6E006F52DD /* AppIcon-Green.icon in Resources */,
+				EBA45CCB2E4A6D6E006F52DD /* AppIcon.icon in Resources */,
+				EBF188C62E3D6F7D007E1E94 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		963B06602742FDDE0000F86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9342032E3D750300D9C2ED /* Icon.swift in Sources */,
+				EBF188C12E3D6F6A007E1E94 /* AlternateAppIcon.swift in Sources */,
+				EBF188C22E3D6F72007E1E94 /* Model.swift in Sources */,
+				EBF188C32E3D6F72007E1E94 /* ContentView.swift in Sources */,
+				EBF188C52E3D6F72007E1E94 /* IconChooser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		963B06732742FDDE0000F86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C39372D46E4866B35DD30B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Debug;
+		};
+		963B06742742FDDE0000F86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C39372D46E4866B35DD30B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Release;
+		};
+		963B06762742FDDE0000F86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C39372D46E4866B35DD30B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Green AppIcon-Blue AppIcon-Orange AppIcon-Pink AppIcon-Purple AppIcon-Teal AppIcon-Yellow";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alt Icon";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.updating-an-apps-icon${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = AlternateAppIcon;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		963B06772742FDDE0000F86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C39372D46E4866B35DD30B /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Green AppIcon-Blue AppIcon-Orange AppIcon-Pink AppIcon-Purple AppIcon-Teal AppIcon-Yellow";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alt Icon";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.updating-an-apps-icon${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = AlternateAppIcon;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		963B065B2742FDDA0000F86A /* Build configuration list for PBXProject "AlternateAppIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963B06732742FDDE0000F86A /* Debug */,
+				963B06742742FDDE0000F86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963B06752742FDDE0000F86A /* Build configuration list for PBXNativeTarget "AlternateAppIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963B06762742FDDE0000F86A /* Debug */,
+				963B06772742FDDE0000F86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 963B06582742FDDA0000F86A /* Project object */;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Authenticator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GA7-gW-7Tt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awP-Dj-0I6">
+                                        <rect key="frame" x="30" y="60" width="314" height="546"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="277-ov-ubo">
+                                                <rect key="frame" x="127" y="253" width="59" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <state key="normal" title="Log In"/>
+                                                <state key="highlighted" title="Log Out"/>
+                                                <connections>
+                                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r8D-zO-g35"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Authenticate with Face ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPU-1B-JYk">
+                                                <rect key="frame" x="34" y="312" width="247" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MPU-1B-JYk" firstAttribute="centerX" secondItem="awP-Dj-0I6" secondAttribute="centerX" id="0qO-8d-epL"/>
+                                            <constraint firstItem="277-ov-ubo" firstAttribute="centerX" secondItem="awP-Dj-0I6" secondAttribute="centerX" id="gqQ-Dw-EaF"/>
+                                            <constraint firstItem="MPU-1B-JYk" firstAttribute="top" secondItem="277-ov-ubo" secondAttribute="bottom" constant="20" id="kKN-UO-Kai"/>
+                                            <constraint firstItem="277-ov-ubo" firstAttribute="centerY" secondItem="awP-Dj-0I6" secondAttribute="centerY" id="qxQ-nA-nUU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="awP-Dj-0I6" firstAttribute="top" secondItem="GA7-gW-7Tt" secondAttribute="top" constant="60" id="5ve-7w-jhv"/>
+                                    <constraint firstItem="awP-Dj-0I6" firstAttribute="leading" secondItem="GA7-gW-7Tt" secondAttribute="leading" constant="30" id="JTb-gM-d0U"/>
+                                    <constraint firstItem="awP-Dj-0I6" firstAttribute="centerY" secondItem="GA7-gW-7Tt" secondAttribute="centerY" id="avy-A3-j1a"/>
+                                    <constraint firstItem="awP-Dj-0I6" firstAttribute="centerX" secondItem="GA7-gW-7Tt" secondAttribute="centerX" id="kzS-rn-DCY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GA7-gW-7Tt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B5f-R8-wEk"/>
+                            <constraint firstAttribute="bottom" secondItem="GA7-gW-7Tt" secondAttribute="bottom" id="Chc-IV-N7f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GA7-gW-7Tt" secondAttribute="trailing" id="IHH-b8-xac"/>
+                            <constraint firstItem="GA7-gW-7Tt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pyy-ZO-afF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="faceIDLabel" destination="MPU-1B-JYk" id="CK1-LG-Pu1"/>
+                        <outlet property="loginButton" destination="277-ov-ubo" id="vi8-uX-K9e"/>
+                        <outlet property="stateView" destination="GA7-gW-7Tt" id="OGc-wx-pOd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

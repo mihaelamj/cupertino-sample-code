@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEB897DB29D1CDF200323333 /* SignalExtractionFromNoiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB897DA29D1CDF200323333 /* SignalExtractionFromNoiseApp.swift */; };
+		BEB897DD29D1CDF200323333 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB897DC29D1CDF200323333 /* ContentView.swift */; };
+		BEB897DF29D1CDF400323333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB897DE29D1CDF400323333 /* Assets.xcassets */; };
+		BEB897E229D1CDF400323333 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB897E129D1CDF400323333 /* Preview Assets.xcassets */; };
+		BEB897E829D1CE9D00323333 /* SignalExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB897E729D1CE9D00323333 /* SignalExtractor.swift */; };
+		BEB897E929D2EEAB00323333 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3E41208020B9DC4300A5E612 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		349B7B5E3EDE565EE079911F /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		3E41208020B9DC4300A5E612 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3EC20A2B212EB1D60030BA15 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		BEB897D829D1CDF200323333 /* SignalExtractionFromNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalExtractionFromNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB897DA29D1CDF200323333 /* SignalExtractionFromNoiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalExtractionFromNoiseApp.swift; sourceTree = "<group>"; };
+		BEB897DC29D1CDF200323333 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEB897DE29D1CDF400323333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEB897E129D1CDF400323333 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEB897E329D1CDF400323333 /* SignalExtractionFromNoise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignalExtractionFromNoise.entitlements; sourceTree = "<group>"; };
+		BEB897E729D1CE9D00323333 /* SignalExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalExtractor.swift; sourceTree = "<group>"; };
+		F79F809B01D36AB2145920D6 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEB897D529D1CDF200323333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E4DE7E02099D65B006B6CE2 = {
+			isa = PBXGroup;
+			children = (
+				3E41208020B9DC4300A5E612 /* README.md */,
+				BEB897D929D1CDF200323333 /* SignalExtractionFromNoise */,
+				3E4DE7EA2099D65B006B6CE2 /* Products */,
+				3EC20A2A212EB1D60030BA15 /* Frameworks */,
+				75B0AAD2F0013B971E1AE5FA /* Configuration */,
+				ED9679F4556C3C2E8B63DC6C /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		3E4DE7EA2099D65B006B6CE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEB897D829D1CDF200323333 /* SignalExtractionFromNoise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EC20A2A212EB1D60030BA15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EC20A2B212EB1D60030BA15 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75B0AAD2F0013B971E1AE5FA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				349B7B5E3EDE565EE079911F /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BEB897D929D1CDF200323333 /* SignalExtractionFromNoise */ = {
+			isa = PBXGroup;
+			children = (
+				BEB897DA29D1CDF200323333 /* SignalExtractionFromNoiseApp.swift */,
+				BEB897E729D1CE9D00323333 /* SignalExtractor.swift */,
+				BEB897DC29D1CDF200323333 /* ContentView.swift */,
+				BEB897DE29D1CDF400323333 /* Assets.xcassets */,
+				BEB897E329D1CDF400323333 /* SignalExtractionFromNoise.entitlements */,
+				BEB897E029D1CDF400323333 /* Preview Content */,
+			);
+			path = SignalExtractionFromNoise;
+			sourceTree = "<group>";
+		};
+		BEB897E029D1CDF400323333 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BEB897E129D1CDF400323333 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED9679F4556C3C2E8B63DC6C /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				F79F809B01D36AB2145920D6 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEB897D729D1CDF200323333 /* SignalExtractionFromNoise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB897E429D1CDF400323333 /* Build configuration list for PBXNativeTarget "SignalExtractionFromNoise" */;
+			buildPhases = (
+				BEB897D429D1CDF200323333 /* Sources */,
+				BEB897D529D1CDF200323333 /* Frameworks */,
+				BEB897D629D1CDF200323333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignalExtractionFromNoise;
+			productName = SignalExtractionFromNoise;
+			productReference = BEB897D829D1CDF200323333 /* SignalExtractionFromNoise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E4DE7E12099D65B006B6CE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					BEB897D729D1CDF200323333 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 3E4DE7E42099D65B006B6CE2 /* Build configuration list for PBXProject "Signal-Extraction-from-Noise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E4DE7E02099D65B006B6CE2;
+			productRefGroup = 3E4DE7EA2099D65B006B6CE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEB897D729D1CDF200323333 /* SignalExtractionFromNoise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEB897D629D1CDF200323333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB897E929D2EEAB00323333 /* README.md in Resources */,
+				BEB897E229D1CDF400323333 /* Preview Assets.xcassets in Resources */,
+				BEB897DF29D1CDF400323333 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEB897D429D1CDF200323333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB897DD29D1CDF200323333 /* ContentView.swift in Sources */,
+				BEB897E829D1CE9D00323333 /* SignalExtractor.swift in Sources */,
+				BEB897DB29D1CDF200323333 /* SignalExtractionFromNoiseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3E4DE7F92099D65B006B6CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349B7B5E3EDE565EE079911F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E4DE7FA2099D65B006B6CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349B7B5E3EDE565EE079911F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEB897E529D1CDF400323333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349B7B5E3EDE565EE079911F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = SignalExtractionFromNoise/SignalExtractionFromNoise.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignalExtractionFromNoise/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Apple Inc. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SignalExtractionFromNoise${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BEB897E629D1CDF400323333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349B7B5E3EDE565EE079911F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = SignalExtractionFromNoise/SignalExtractionFromNoise.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignalExtractionFromNoise/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Apple Inc. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SignalExtractionFromNoise${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E4DE7E42099D65B006B6CE2 /* Build configuration list for PBXProject "Signal-Extraction-from-Noise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4DE7F92099D65B006B6CE2 /* Debug */,
+				3E4DE7FA2099D65B006B6CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB897E429D1CDF400323333 /* Build configuration list for PBXNativeTarget "SignalExtractionFromNoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB897E529D1CDF400323333 /* Debug */,
+				BEB897E629D1CDF400323333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E4DE7E12099D65B006B6CE2 /* Project object */;
+}

@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C277DDCF22CFFC140036D004 /* KeyStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277DDCE22CFFC140036D004 /* KeyStoreError.swift */; };
+		C277DDD022CFFC140036D004 /* KeyStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277DDCE22CFFC140036D004 /* KeyStoreError.swift */; };
+		C277DDD522D000530036D004 /* KeyTest+SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277DDD422D000530036D004 /* KeyTest+SecureEnclave.swift */; };
+		C277DDD622D000530036D004 /* KeyTest+SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277DDD422D000530036D004 /* KeyTest+SecureEnclave.swift */; };
+		C27E5C3122AEF3F400BCEC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5C3022AEF3F400BCEC18 /* AppDelegate.swift */; };
+		C27E5C3322AEF3F400BCEC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5C3222AEF3F400BCEC18 /* SceneDelegate.swift */; };
+		C27E5C3522AEF3F400BCEC18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5C3422AEF3F400BCEC18 /* ContentView.swift */; };
+		C27E5C3722AEF3F600BCEC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27E5C3622AEF3F600BCEC18 /* Assets.xcassets */; };
+		C27E5C3A22AEF3F600BCEC18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27E5C3922AEF3F600BCEC18 /* Preview Assets.xcassets */; };
+		C27E5C3D22AEF3F600BCEC18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E5C3B22AEF3F600BCEC18 /* LaunchScreen.storyboard */; };
+		C27E5C4522AEF8DB00BCEC18 /* SecKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5C4422AEF8DB00BCEC18 /* SecKeyStore.swift */; };
+		C2B1204322B7FBC40061F305 /* GenericPasswordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1204222B7FBC40061F305 /* GenericPasswordStore.swift */; };
+		C2B1204422B7FBC40061F305 /* GenericPasswordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1204222B7FBC40061F305 /* GenericPasswordStore.swift */; };
+		C2B1204622B805220061F305 /* SecKeyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1204522B805220061F305 /* SecKeyConvertible.swift */; };
+		C2B1204722B805220061F305 /* SecKeyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1204522B805220061F305 /* SecKeyConvertible.swift */; };
+		C2B1204922B805720061F305 /* GenericPasswordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1204822B805720061F305 /* GenericPasswordConvertible.swift */; };
+		C2B1204A22B805720061F305 /* GenericPasswordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1204822B805720061F305 /* GenericPasswordConvertible.swift */; };
+		C2E1A5ED22CD7BCE009354AE /* ExecutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E1A5EC22CD7BCE009354AE /* ExecutionView.swift */; };
+		C2E1A5EE22CD7BCE009354AE /* ExecutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E1A5EC22CD7BCE009354AE /* ExecutionView.swift */; };
+		C2F5472722B2FFB4000472DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F5472622B2FFB4000472DE /* AppDelegate.swift */; };
+		C2F5472B22B2FFB8000472DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F5472A22B2FFB8000472DE /* Assets.xcassets */; };
+		C2F5472E22B2FFB8000472DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F5472D22B2FFB8000472DE /* Preview Assets.xcassets */; };
+		C2F5473122B2FFB9000472DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F5472F22B2FFB9000472DE /* Main.storyboard */; };
+		C2F5473722B300A4000472DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5C3422AEF3F400BCEC18 /* ContentView.swift */; };
+		C2F5473822B300A4000472DE /* SecKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5C4422AEF8DB00BCEC18 /* SecKeyStore.swift */; };
+		C2F5473F22B413A1000472DE /* KeyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F5473E22B413A1000472DE /* KeyTest.swift */; };
+		C2F5474022B413A1000472DE /* KeyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F5473E22B413A1000472DE /* KeyTest.swift */; };
+		EE4E47FB2D839A69000C56F7 /* KeyTest+MLKEM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E47FA2D839A69000C56F7 /* KeyTest+MLKEM.swift */; };
+		EE4E47FC2D839A69000C56F7 /* KeyTest+MLKEM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E47FA2D839A69000C56F7 /* KeyTest+MLKEM.swift */; };
+		EE4E47FE2D839F03000C56F7 /* MLKEMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E47FD2D839F03000C56F7 /* MLKEMView.swift */; };
+		EE4E47FF2D839F03000C56F7 /* MLKEMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E47FD2D839F03000C56F7 /* MLKEMView.swift */; };
+		EE4E48012D83E9DE000C56F7 /* KeyTest+MLDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48002D83E9DE000C56F7 /* KeyTest+MLDSA.swift */; };
+		EE4E48022D83E9DE000C56F7 /* KeyTest+MLDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48002D83E9DE000C56F7 /* KeyTest+MLDSA.swift */; };
+		EE4E48042D83EA67000C56F7 /* MLDSAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48032D83EA67000C56F7 /* MLDSAView.swift */; };
+		EE4E48052D83EA67000C56F7 /* MLDSAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48032D83EA67000C56F7 /* MLDSAView.swift */; };
+		EE4E48072D83EF1C000C56F7 /* KeyTest+PQHPKE.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48062D83EF1C000C56F7 /* KeyTest+PQHPKE.swift */; };
+		EE4E48082D83EF1C000C56F7 /* KeyTest+PQHPKE.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48062D83EF1C000C56F7 /* KeyTest+PQHPKE.swift */; };
+		EE4E480A2D84C273000C56F7 /* PQHPKEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48092D84C273000C56F7 /* PQHPKEView.swift */; };
+		EE4E480B2D84C273000C56F7 /* PQHPKEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E48092D84C273000C56F7 /* PQHPKEView.swift */; };
+		EE8C49E32D89148A0095E34D /* KeyTest+HybridSig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C49E22D89148A0095E34D /* KeyTest+HybridSig.swift */; };
+		EE8C49E42D89148A0095E34D /* KeyTest+HybridSig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C49E22D89148A0095E34D /* KeyTest+HybridSig.swift */; };
+		EE8C49E62D8914AB0095E34D /* HybridSigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C49E52D8914AB0095E34D /* HybridSigView.swift */; };
+		EE8C49E72D8914AB0095E34D /* HybridSigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C49E52D8914AB0095E34D /* HybridSigView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AAABC7740ED4F6FC7334EC2 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		C277DDCE22CFFC140036D004 /* KeyStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStoreError.swift; sourceTree = "<group>"; };
+		C277DDD422D000530036D004 /* KeyTest+SecureEnclave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyTest+SecureEnclave.swift"; sourceTree = "<group>"; };
+		C27E5C2D22AEF3F400BCEC18 /* QuantumSecurityWithCryptoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantumSecurityWithCryptoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27E5C3022AEF3F400BCEC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C27E5C3222AEF3F400BCEC18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C27E5C3422AEF3F400BCEC18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C27E5C3622AEF3F600BCEC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C27E5C3922AEF3F600BCEC18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C27E5C3C22AEF3F600BCEC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C27E5C3E22AEF3F600BCEC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27E5C4422AEF8DB00BCEC18 /* SecKeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecKeyStore.swift; sourceTree = "<group>"; };
+		C2B1203B22B58F420061F305 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2B1204222B7FBC40061F305 /* GenericPasswordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswordStore.swift; sourceTree = "<group>"; };
+		C2B1204522B805220061F305 /* SecKeyConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecKeyConvertible.swift; sourceTree = "<group>"; };
+		C2B1204822B805720061F305 /* GenericPasswordConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswordConvertible.swift; sourceTree = "<group>"; };
+		C2E1A5EC22CD7BCE009354AE /* ExecutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionView.swift; sourceTree = "<group>"; };
+		C2F5472422B2FFB4000472DE /* QuantumSecurityWithCryptoKitMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantumSecurityWithCryptoKitMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F5472622B2FFB4000472DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2F5472A22B2FFB8000472DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2F5472D22B2FFB8000472DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2F5473022B2FFB9000472DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2F5473222B2FFB9000472DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F5473E22B413A1000472DE /* KeyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTest.swift; sourceTree = "<group>"; };
+		DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		EE4E47FA2D839A69000C56F7 /* KeyTest+MLKEM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyTest+MLKEM.swift"; sourceTree = "<group>"; };
+		EE4E47FD2D839F03000C56F7 /* MLKEMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKEMView.swift; sourceTree = "<group>"; };
+		EE4E48002D83E9DE000C56F7 /* KeyTest+MLDSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyTest+MLDSA.swift"; sourceTree = "<group>"; };
+		EE4E48032D83EA67000C56F7 /* MLDSAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLDSAView.swift; sourceTree = "<group>"; };
+		EE4E48062D83EF1C000C56F7 /* KeyTest+PQHPKE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyTest+PQHPKE.swift"; sourceTree = "<group>"; };
+		EE4E48092D84C273000C56F7 /* PQHPKEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PQHPKEView.swift; sourceTree = "<group>"; };
+		EE8C49E22D89148A0095E34D /* KeyTest+HybridSig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyTest+HybridSig.swift"; sourceTree = "<group>"; };
+		EE8C49E52D8914AB0095E34D /* HybridSigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridSigView.swift; sourceTree = "<group>"; };
+		EEC043982DF15E8E00682069 /* QuantumSecurityWithCryptoKitMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuantumSecurityWithCryptoKitMac.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27E5C2A22AEF3F400BCEC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F5472122B2FFB4000472DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A767CDEF68A29BE4A64AAB3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		5B2F82C5147B1EDD99F8D997 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				4AAABC7740ED4F6FC7334EC2 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+		C27E5C2422AEF3F400BCEC18 = {
+			isa = PBXGroup;
+			children = (
+				C2B1203B22B58F420061F305 /* README.md */,
+				C2F5473D22B3F8A0000472DE /* Storage */,
+				C2B1204B22B80B540061F305 /* Testing */,
+				C2F5473C22B3F894000472DE /* Views */,
+				C27E5C2F22AEF3F400BCEC18 /* QuantumSecurityWithCryptoKit */,
+				C2F5472522B2FFB4000472DE /* QuantumSecurityWithCryptoKitMac */,
+				C27E5C2E22AEF3F400BCEC18 /* Products */,
+				3A767CDEF68A29BE4A64AAB3 /* Configuration */,
+				5B2F82C5147B1EDD99F8D997 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		C27E5C2E22AEF3F400BCEC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27E5C2D22AEF3F400BCEC18 /* QuantumSecurityWithCryptoKit.app */,
+				C2F5472422B2FFB4000472DE /* QuantumSecurityWithCryptoKitMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27E5C2F22AEF3F400BCEC18 /* QuantumSecurityWithCryptoKit */ = {
+			isa = PBXGroup;
+			children = (
+				C27E5C3022AEF3F400BCEC18 /* AppDelegate.swift */,
+				C27E5C3222AEF3F400BCEC18 /* SceneDelegate.swift */,
+				C27E5C3622AEF3F600BCEC18 /* Assets.xcassets */,
+				C27E5C3B22AEF3F600BCEC18 /* LaunchScreen.storyboard */,
+				C27E5C3E22AEF3F600BCEC18 /* Info.plist */,
+				C27E5C3822AEF3F600BCEC18 /* Preview Content */,
+			);
+			path = QuantumSecurityWithCryptoKit;
+			sourceTree = "<group>";
+		};
+		C27E5C3822AEF3F600BCEC18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C27E5C3922AEF3F600BCEC18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2B1204B22B80B540061F305 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				C2F5473E22B413A1000472DE /* KeyTest.swift */,
+				C277DDD422D000530036D004 /* KeyTest+SecureEnclave.swift */,
+				EE4E47FA2D839A69000C56F7 /* KeyTest+MLKEM.swift */,
+				EE4E48002D83E9DE000C56F7 /* KeyTest+MLDSA.swift */,
+				EE4E48062D83EF1C000C56F7 /* KeyTest+PQHPKE.swift */,
+				EE8C49E22D89148A0095E34D /* KeyTest+HybridSig.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		C2F5472522B2FFB4000472DE /* QuantumSecurityWithCryptoKitMac */ = {
+			isa = PBXGroup;
+			children = (
+				C2F5472622B2FFB4000472DE /* AppDelegate.swift */,
+				C2F5472A22B2FFB8000472DE /* Assets.xcassets */,
+				C2F5472F22B2FFB9000472DE /* Main.storyboard */,
+				C2F5473222B2FFB9000472DE /* Info.plist */,
+				EEC043982DF15E8E00682069 /* QuantumSecurityWithCryptoKitMac.entitlements */,
+				C2F5472C22B2FFB8000472DE /* Preview Content */,
+			);
+			path = QuantumSecurityWithCryptoKitMac;
+			sourceTree = "<group>";
+		};
+		C2F5472C22B2FFB8000472DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C2F5472D22B2FFB8000472DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2F5473C22B3F894000472DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C27E5C3422AEF3F400BCEC18 /* ContentView.swift */,
+				EE4E47FD2D839F03000C56F7 /* MLKEMView.swift */,
+				EE4E48032D83EA67000C56F7 /* MLDSAView.swift */,
+				EE4E48092D84C273000C56F7 /* PQHPKEView.swift */,
+				EE8C49E52D8914AB0095E34D /* HybridSigView.swift */,
+				C2E1A5EC22CD7BCE009354AE /* ExecutionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2F5473D22B3F8A0000472DE /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C2B1204522B805220061F305 /* SecKeyConvertible.swift */,
+				C27E5C4422AEF8DB00BCEC18 /* SecKeyStore.swift */,
+				C2B1204822B805720061F305 /* GenericPasswordConvertible.swift */,
+				C2B1204222B7FBC40061F305 /* GenericPasswordStore.swift */,
+				C277DDCE22CFFC140036D004 /* KeyStoreError.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C27E5C2C22AEF3F400BCEC18 /* QuantumSecurityWithCryptoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27E5C4122AEF3F600BCEC18 /* Build configuration list for PBXNativeTarget "QuantumSecurityWithCryptoKit" */;
+			buildPhases = (
+				C27E5C2922AEF3F400BCEC18 /* Sources */,
+				C27E5C2A22AEF3F400BCEC18 /* Frameworks */,
+				C27E5C2B22AEF3F400BCEC18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantumSecurityWithCryptoKit;
+			productName = CryptoKitKeychain;
+			productReference = C27E5C2D22AEF3F400BCEC18 /* QuantumSecurityWithCryptoKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2F5472322B2FFB4000472DE /* QuantumSecurityWithCryptoKitMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2F5473622B2FFB9000472DE /* Build configuration list for PBXNativeTarget "QuantumSecurityWithCryptoKitMac" */;
+			buildPhases = (
+				C2F5472022B2FFB4000472DE /* Sources */,
+				C2F5472122B2FFB4000472DE /* Frameworks */,
+				C2F5472222B2FFB4000472DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantumSecurityWithCryptoKitMac;
+			productName = CryptoKitKeychainMac;
+			productReference = C2F5472422B2FFB4000472DE /* QuantumSecurityWithCryptoKitMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27E5C2522AEF3F400BCEC18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					C27E5C2C22AEF3F400BCEC18 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					C2F5472322B2FFB4000472DE = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = C27E5C2822AEF3F400BCEC18 /* Build configuration list for PBXProject "QuantumSecurityWithCryptoKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C27E5C2422AEF3F400BCEC18;
+			productRefGroup = C27E5C2E22AEF3F400BCEC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27E5C2C22AEF3F400BCEC18 /* QuantumSecurityWithCryptoKit */,
+				C2F5472322B2FFB4000472DE /* QuantumSecurityWithCryptoKitMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C27E5C2B22AEF3F400BCEC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27E5C3D22AEF3F600BCEC18 /* LaunchScreen.storyboard in Resources */,
+				C27E5C3A22AEF3F600BCEC18 /* Preview Assets.xcassets in Resources */,
+				C27E5C3722AEF3F600BCEC18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F5472222B2FFB4000472DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F5473122B2FFB9000472DE /* Main.storyboard in Resources */,
+				C2F5472E22B2FFB8000472DE /* Preview Assets.xcassets in Resources */,
+				C2F5472B22B2FFB8000472DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27E5C2922AEF3F400BCEC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4E47FC2D839A69000C56F7 /* KeyTest+MLKEM.swift in Sources */,
+				C27E5C3122AEF3F400BCEC18 /* AppDelegate.swift in Sources */,
+				EE8C49E72D8914AB0095E34D /* HybridSigView.swift in Sources */,
+				EE4E48022D83E9DE000C56F7 /* KeyTest+MLDSA.swift in Sources */,
+				C2E1A5ED22CD7BCE009354AE /* ExecutionView.swift in Sources */,
+				C2B1204322B7FBC40061F305 /* GenericPasswordStore.swift in Sources */,
+				EE4E47FE2D839F03000C56F7 /* MLKEMView.swift in Sources */,
+				C2B1204622B805220061F305 /* SecKeyConvertible.swift in Sources */,
+				C2B1204922B805720061F305 /* GenericPasswordConvertible.swift in Sources */,
+				C27E5C4522AEF8DB00BCEC18 /* SecKeyStore.swift in Sources */,
+				C27E5C3322AEF3F400BCEC18 /* SceneDelegate.swift in Sources */,
+				EE4E48052D83EA67000C56F7 /* MLDSAView.swift in Sources */,
+				C27E5C3522AEF3F400BCEC18 /* ContentView.swift in Sources */,
+				EE4E48072D83EF1C000C56F7 /* KeyTest+PQHPKE.swift in Sources */,
+				EE4E480B2D84C273000C56F7 /* PQHPKEView.swift in Sources */,
+				EE8C49E42D89148A0095E34D /* KeyTest+HybridSig.swift in Sources */,
+				C277DDCF22CFFC140036D004 /* KeyStoreError.swift in Sources */,
+				C2F5473F22B413A1000472DE /* KeyTest.swift in Sources */,
+				C277DDD522D000530036D004 /* KeyTest+SecureEnclave.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F5472022B2FFB4000472DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B1204422B7FBC40061F305 /* GenericPasswordStore.swift in Sources */,
+				EE4E47FF2D839F03000C56F7 /* MLKEMView.swift in Sources */,
+				C2B1204A22B805720061F305 /* GenericPasswordConvertible.swift in Sources */,
+				C2F5473822B300A4000472DE /* SecKeyStore.swift in Sources */,
+				C2F5472722B2FFB4000472DE /* AppDelegate.swift in Sources */,
+				C2F5473722B300A4000472DE /* ContentView.swift in Sources */,
+				EE4E480A2D84C273000C56F7 /* PQHPKEView.swift in Sources */,
+				C277DDD622D000530036D004 /* KeyTest+SecureEnclave.swift in Sources */,
+				EE4E47FB2D839A69000C56F7 /* KeyTest+MLKEM.swift in Sources */,
+				C277DDD022CFFC140036D004 /* KeyStoreError.swift in Sources */,
+				EE4E48082D83EF1C000C56F7 /* KeyTest+PQHPKE.swift in Sources */,
+				C2F5474022B413A1000472DE /* KeyTest.swift in Sources */,
+				EE4E48042D83EA67000C56F7 /* MLDSAView.swift in Sources */,
+				EE4E48012D83E9DE000C56F7 /* KeyTest+MLDSA.swift in Sources */,
+				C2E1A5EE22CD7BCE009354AE /* ExecutionView.swift in Sources */,
+				EE8C49E32D89148A0095E34D /* KeyTest+HybridSig.swift in Sources */,
+				EE8C49E62D8914AB0095E34D /* HybridSigView.swift in Sources */,
+				C2B1204722B805220061F305 /* SecKeyConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C27E5C3B22AEF3F600BCEC18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27E5C3C22AEF3F600BCEC18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C2F5472F22B2FFB9000472DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2F5473022B2FFB9000472DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C27E5C3F22AEF3F600BCEC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Engineer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C27E5C4022AEF3F600BCEC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Engineer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C27E5C4222AEF3F600BCEC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuantumSecurityWithCryptoKit/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = QuantumSecurityWithCryptoKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.QuantumSecurityWithCryptoKit${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C27E5C4322AEF3F600BCEC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuantumSecurityWithCryptoKit/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = QuantumSecurityWithCryptoKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.QuantumSecurityWithCryptoKit${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2F5473422B2FFB9000472DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuantumSecurityWithCryptoKitMac/QuantumSecurityWithCryptoKitMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "QuantumSecurityWithCryptoKitMac/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = QuantumSecurityWithCryptoKitMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.QuantumSecurityWithCryptoKitMac${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C2F5473522B2FFB9000472DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE14E8022D3764AF3FB5DC9C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuantumSecurityWithCryptoKitMac/QuantumSecurityWithCryptoKitMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "QuantumSecurityWithCryptoKitMac/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = QuantumSecurityWithCryptoKitMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.QuantumSecurityWithCryptoKitMac${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27E5C2822AEF3F400BCEC18 /* Build configuration list for PBXProject "QuantumSecurityWithCryptoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27E5C3F22AEF3F600BCEC18 /* Debug */,
+				C27E5C4022AEF3F600BCEC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27E5C4122AEF3F600BCEC18 /* Build configuration list for PBXNativeTarget "QuantumSecurityWithCryptoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27E5C4222AEF3F600BCEC18 /* Debug */,
+				C27E5C4322AEF3F600BCEC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2F5473622B2FFB9000472DE /* Build configuration list for PBXNativeTarget "QuantumSecurityWithCryptoKitMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2F5473422B2FFB9000472DE /* Debug */,
+				C2F5473522B2FFB9000472DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C27E5C2522AEF3F400BCEC18 /* Project object */;
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Document Browser View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DocumentBrowserViewController" customModule="Document_Browser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="787"/>
+        </scene>
+        <!--Text Document View Controller-->
+        <scene sceneID="dkP-xk-x6W">
+            <objects>
+                <viewController storyboardIdentifier="TextDocumentViewController" id="M2k-L8-Olo" customClass="TextDocumentViewController" customModule="Document_Browser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D52-mk-miw"/>
+                        <viewControllerLayoutGuide type="bottom" id="YLO-LQ-f6M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SIE-Uh-Zny">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ePk-bQ-fV8">
+                                <rect key="frame" x="20" y="332.5" width="335" height="2"/>
+                            </progressView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vot-GN-Okb">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="M2k-L8-Olo" id="DI2-Nk-foR"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ePk-bQ-fV8" firstAttribute="centerY" secondItem="SIE-Uh-Zny" secondAttribute="centerY" id="Lsn-Is-SL7"/>
+                            <constraint firstItem="YLO-LQ-f6M" firstAttribute="top" secondItem="vot-GN-Okb" secondAttribute="bottom" id="RKg-Wk-aeu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ePk-bQ-fV8" secondAttribute="trailing" constant="4" id="ce7-QQ-IaX"/>
+                            <constraint firstItem="vot-GN-Okb" firstAttribute="leading" secondItem="SIE-Uh-Zny" secondAttribute="leading" id="emG-nN-WUZ"/>
+                            <constraint firstItem="ePk-bQ-fV8" firstAttribute="leading" secondItem="SIE-Uh-Zny" secondAttribute="leadingMargin" constant="4" id="fgT-yN-VCT"/>
+                            <constraint firstItem="vot-GN-Okb" firstAttribute="top" secondItem="D52-mk-miw" secondAttribute="bottom" id="qop-36-swa"/>
+                            <constraint firstAttribute="trailing" secondItem="vot-GN-Okb" secondAttribute="trailing" id="ri0-p8-ei3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2mK-k5-9yb">
+                        <barButtonItem key="leftBarButtonItem" title="Documents" id="yhO-7V-lbn">
+                            <connections>
+                                <action selector="returnToDocuments:" destination="M2k-L8-Olo" id="ILH-TV-slT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Qs0-Vx-65C">
+                            <connections>
+                                <action selector="editingDone:" destination="M2k-L8-Olo" id="beT-2q-Y61"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="Qs0-Vx-65C" id="aUw-my-Iuw"/>
+                        <outlet property="progressBar" destination="ePk-bQ-fV8" id="nz6-qw-ouf"/>
+                        <outlet property="textView" destination="vot-GN-Okb" id="S1y-o4-Rcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rl9-ES-qQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="787"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YwQ-xM-fJl">
+            <objects>
+                <navigationController storyboardIdentifier="DocNavController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6QU-8B-ZH1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dq3-ba-6Zj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="M2k-L8-Olo" kind="relationship" relationship="rootViewController" id="7LT-ge-Wko"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Er7-A8-0bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="787"/>
+        </scene>
+    </scenes>
+</document>

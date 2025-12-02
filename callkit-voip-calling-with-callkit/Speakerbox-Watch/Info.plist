@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>voip</string>
+	</array>
+	<key>WKApplication</key>
+	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>SpeakerBox uses the microphone to test CallKit and verify audio is being recorded and played back</string>
+	<key>WKCompanionAppBundleIdentifier</key>
+	<string>com.example.apple-samplecode.callkit-speakerbox-sample</string>
+</dict>
+</plist>

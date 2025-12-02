@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0C79E92565AD5C00450522 /* MainViewControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C79E82565AD5C00450522 /* MainViewControllerData.swift */; };
+		1F0CC2BE2576D2F500CAC6A1 /* ENActivityHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF61761256865DE005600FA /* ENActivityHandling.swift */; };
+		1F0CC2C52576EAA300CAC6A1 /* ENActivityHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF61761256865DE005600FA /* ENActivityHandling.swift */; };
+		1F0CC2CA2576EABD00CAC6A1 /* ExposureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5D01424502C59000347EB /* ExposureManager.swift */; };
+		1F0CC2D2257834F700CAC6A1 /* PositiveDiagnosesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CC2D1257834F700CAC6A1 /* PositiveDiagnosesTableViewController.swift */; };
+		1F3AB45025659DD300AA9D13 /* ExposureNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3AB44E25659DA200AA9D13 /* ExposureNotification.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1F3D625F25803C950084E8FD /* BackgroundTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D625E25803C950084E8FD /* BackgroundTasks.swift */; };
+		1F3D626025803C950084E8FD /* BackgroundTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D625E25803C950084E8FD /* BackgroundTasks.swift */; };
+		1F42966625795E200059F1A2 /* RecentExposuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F42966525795E200059F1A2 /* RecentExposuresViewController.swift */; };
+		1F4296772579A0D90059F1A2 /* ShowDiagnosisKeysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4296762579A0D90059F1A2 /* ShowDiagnosisKeysViewController.swift */; };
+		1F4E8A0E2564822B0023EEE9 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D167BB2446AC4C00120FCB /* Server.swift */; };
+		1F4E8A22256482820023EEE9 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D167BD2446B0ED00120FCB /* LocalStore.swift */; };
+		1F4E8A33256485240023EEE9 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688CCAE24627FFF0015A9E2 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift */; };
+		1F4E8A4625648A030023EEE9 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4E8A4525648A030023EEE9 /* SwiftProtobuf */; };
+		1F4E8A4825648A030023EEE9 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4E8A4725648A030023EEE9 /* SwiftProtobufPluginLibrary */; };
+		1F4E8A732564A3300023EEE9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D168092449114700120FCB /* Utilities.swift */; };
+		1FF61757256707ED005600FA /* SimpleTextDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF61756256707ED005600FA /* SimpleTextDisplayViewController.swift */; };
+		4629339D2456979900C7BF17 /* DeveloperDiagnosisKeysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629339C2456979900C7BF17 /* DeveloperDiagnosisKeysViewController.swift */; };
+		462933A32456CA4F00C7BF17 /* ExposureNotificationsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462933A22456CA4F00C7BF17 /* ExposureNotificationsInfoViewController.swift */; };
+		46337EA6245AB4260066414A /* TestResultDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46337EA5245AB4260066414A /* TestResultDetailsViewController.swift */; };
+		464851EE245B80D6008BF52F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 464851EC245B80D6008BF52F /* Localizable.strings */; };
+		465310BB2444F94400B6185D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465310BA2444F94400B6185D /* AppDelegate.swift */; };
+		465310BD2444F94400B6185D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465310BC2444F94400B6185D /* SceneDelegate.swift */; };
+		465310BF2444F94400B6185D /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465310BE2444F94400B6185D /* DeveloperViewController.swift */; };
+		465310C42444F94500B6185D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465310C32444F94500B6185D /* Assets.xcassets */; };
+		465310C72444F94500B6185D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465310C52444F94500B6185D /* LaunchScreen.storyboard */; };
+		4664FAC2250B58E600A81BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664FAC1250B58E600A81BE3 /* AppDelegate.swift */; };
+		4664FAC4250B58E600A81BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664FAC3250B58E600A81BE3 /* SceneDelegate.swift */; };
+		4664FAC6250B58E600A81BE3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664FAC5250B58E600A81BE3 /* MainViewController.swift */; };
+		4664FAC9250B58E600A81BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664FAC7250B58E600A81BE3 /* Main.storyboard */; };
+		4664FACD250B58E800A81BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4664FACC250B58E800A81BE3 /* Assets.xcassets */; };
+		4664FAD0250B58E800A81BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664FACE250B58E800A81BE3 /* LaunchScreen.storyboard */; };
+		46824FA5245CDC3D00E780DB /* RequirementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46824FA4245CDC3D00E780DB /* RequirementView.swift */; };
+		4688CCAF24627FFF0015A9E2 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688CCAE24627FFF0015A9E2 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift */; };
+		469E404F246257F1006166EB /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 469E404E246257F1006166EB /* SwiftProtobuf */; };
+		46B0A02C24558B3A001CB4E5 /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0A02B24558B3A001CB4E5 /* StepViewController.swift */; };
+		46B0A02E24558D5C001CB4E5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0A02D24558D5C001CB4E5 /* OnboardingViewController.swift */; };
+		46B0C672245EA51800D15BE1 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0C671245EA51800D15BE1 /* TableHeaderView.swift */; };
+		46B39A13246BD5EA003D39D9 /* ExposureDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B39A12246BD5EA003D39D9 /* ExposureDetailsCell.xib */; };
+		46B39A15246BD6BF003D39D9 /* ExposureNextStepsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B39A14246BD6BF003D39D9 /* ExposureNextStepsCell.xib */; };
+		46B39A17246BDEB6003D39D9 /* ExposureFootnoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B39A16246BDEB6003D39D9 /* ExposureFootnoteCell.xib */; };
+		46B39A19246BE1A7003D39D9 /* TestAdministrationDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B39A18246BE1A7003D39D9 /* TestAdministrationDateCell.xib */; };
+		46B39A1B246BE5FE003D39D9 /* TestAdministrationDatePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B39A1A246BE5FE003D39D9 /* TestAdministrationDatePickerCell.xib */; };
+		46B39A1D246C08AE003D39D9 /* TestReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B39A1C246C08AE003D39D9 /* TestReviewCell.xib */; };
+		46C7415C245A636500E5C53A /* ExposureDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C7415B245A636500E5C53A /* ExposureDetailsViewController.swift */; };
+		46C74164245A6BEB00E5C53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C74163245A6BEB00E5C53A /* Main.storyboard */; };
+		46C74166245A8DAC00E5C53A /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74165245A8DAC00E5C53A /* EntryView.swift */; };
+		46D167BA2446AA3400120FCB /* TestVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D167B92446AA3400120FCB /* TestVerificationViewController.swift */; };
+		46D167BC2446AC4C00120FCB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D167BB2446AC4C00120FCB /* Server.swift */; };
+		46D167BE2446B0ED00120FCB /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D167BD2446B0ED00120FCB /* LocalStore.swift */; };
+		46D1680A2449114700120FCB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D168092449114700120FCB /* Utilities.swift */; };
+		46E515B42455000400A8B68E /* TintLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E515B32455000400A8B68E /* TintLabel.swift */; };
+		46E515B62455047600A8B68E /* ExposuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E515B52455047500A8B68E /* ExposuresViewController.swift */; };
+		46E515B82455048900A8B68E /* NotifyOthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E515B72455048900A8B68E /* NotifyOthersViewController.swift */; };
+		46E5D00C24500AC7000347EB /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5D00B24500AC6000347EB /* Button.swift */; };
+		46E5D0102450113A000347EB /* VerticalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5D00F2450113A000347EB /* VerticalScrollView.swift */; };
+		46E5D01524502C59000347EB /* ExposureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5D01424502C59000347EB /* ExposureManager.swift */; };
+		5F91F0A82457E82500F8F0BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5F91F0A72457E82500F8F0BA /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F0C79E82565AD5C00450522 /* MainViewControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerData.swift; sourceTree = "<group>"; };
+		1F0CC2D1257834F700CAC6A1 /* PositiveDiagnosesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveDiagnosesTableViewController.swift; sourceTree = "<group>"; };
+		1F3AB44E25659DA200AA9D13 /* ExposureNotification.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExposureNotification.framework; path = System/Library/Frameworks/ExposureNotification.framework; sourceTree = SDKROOT; };
+		1F3D625E25803C950084E8FD /* BackgroundTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTasks.swift; sourceTree = "<group>"; };
+		1F42966525795E200059F1A2 /* RecentExposuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentExposuresViewController.swift; sourceTree = "<group>"; };
+		1F4296762579A0D90059F1A2 /* ShowDiagnosisKeysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDiagnosisKeysViewController.swift; sourceTree = "<group>"; };
+		1FF61756256707ED005600FA /* SimpleTextDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextDisplayViewController.swift; sourceTree = "<group>"; };
+		1FF61761256865DE005600FA /* ENActivityHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENActivityHandling.swift; sourceTree = "<group>"; };
+		4629339C2456979900C7BF17 /* DeveloperDiagnosisKeysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDiagnosisKeysViewController.swift; sourceTree = "<group>"; };
+		462933A22456CA4F00C7BF17 /* ExposureNotificationsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureNotificationsInfoViewController.swift; sourceTree = "<group>"; };
+		46337EA5245AB4260066414A /* TestResultDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultDetailsViewController.swift; sourceTree = "<group>"; };
+		464851ED245B80D6008BF52F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		465310B72444F94400B6185D /* ExposureNotificationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExposureNotificationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		465310BA2444F94400B6185D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		465310BC2444F94400B6185D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		465310BE2444F94400B6185D /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		465310C32444F94500B6185D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		465310C62444F94500B6185D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		465310C82444F94500B6185D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4664FABF250B58E600A81BE3 /* ExposureNotificationApp-iOS12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExposureNotificationApp-iOS12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4664FAC1250B58E600A81BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4664FAC3250B58E600A81BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4664FAC5250B58E600A81BE3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4664FAC8250B58E600A81BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4664FACC250B58E800A81BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4664FACF250B58E800A81BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4664FAD1250B58E800A81BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4664FAD5250B5C6C00A81BE3 /* ExposureNotificationApp-iOS12.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ExposureNotificationApp-iOS12.entitlements"; sourceTree = "<group>"; };
+		46824FA4245CDC3D00E780DB /* RequirementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementView.swift; sourceTree = "<group>"; };
+		4688CCAE24627FFF0015A9E2 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperDiagnosisKeyFileProtobuf.pb.swift; sourceTree = "<group>"; };
+		46B0A02B24558B3A001CB4E5 /* StepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
+		46B0A02D24558D5C001CB4E5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		46B0C671245EA51800D15BE1 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		46B39A12246BD5EA003D39D9 /* ExposureDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExposureDetailsCell.xib; sourceTree = "<group>"; };
+		46B39A14246BD6BF003D39D9 /* ExposureNextStepsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExposureNextStepsCell.xib; sourceTree = "<group>"; };
+		46B39A16246BDEB6003D39D9 /* ExposureFootnoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExposureFootnoteCell.xib; sourceTree = "<group>"; };
+		46B39A18246BE1A7003D39D9 /* TestAdministrationDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAdministrationDateCell.xib; sourceTree = "<group>"; };
+		46B39A1A246BE5FE003D39D9 /* TestAdministrationDatePickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAdministrationDatePickerCell.xib; sourceTree = "<group>"; };
+		46B39A1C246C08AE003D39D9 /* TestReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestReviewCell.xib; sourceTree = "<group>"; };
+		46B451C42462A79B009733F4 /* DeveloperDiagnosisKeyFileProtobuf.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = DeveloperDiagnosisKeyFileProtobuf.proto; sourceTree = "<group>"; };
+		46C7415B245A636500E5C53A /* ExposureDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExposureDetailsViewController.swift; sourceTree = "<group>"; };
+		46C74163245A6BEB00E5C53A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		46C74165245A8DAC00E5C53A /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		46D02A552446401A002EBAF0 /* ExposureNotificationApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExposureNotificationApp.entitlements; sourceTree = "<group>"; };
+		46D167B92446AA3400120FCB /* TestVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVerificationViewController.swift; sourceTree = "<group>"; };
+		46D167BB2446AC4C00120FCB /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		46D167BD2446B0ED00120FCB /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		46D168092449114700120FCB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		46E515B32455000400A8B68E /* TintLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintLabel.swift; sourceTree = "<group>"; };
+		46E515B52455047500A8B68E /* ExposuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposuresViewController.swift; sourceTree = "<group>"; };
+		46E515B72455048900A8B68E /* NotifyOthersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyOthersViewController.swift; sourceTree = "<group>"; };
+		46E5D00B24500AC6000347EB /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		46E5D00F2450113A000347EB /* VerticalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollView.swift; sourceTree = "<group>"; };
+		46E5D01424502C59000347EB /* ExposureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureManager.swift; sourceTree = "<group>"; };
+		590C2B5EB9CD76E6652F3382 /* ACKNOWLEDGEMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = ACKNOWLEDGEMENTS.txt; sourceTree = "<group>"; };
+		5F91F0A72457E82500F8F0BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		709910278AB0B2315C855636 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		465310B42444F94400B6185D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469E404F246257F1006166EB /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4664FABC250B58E600A81BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4E8A4825648A030023EEE9 /* SwiftProtobufPluginLibrary in Frameworks */,
+				1F3AB45025659DD300AA9D13 /* ExposureNotification.framework in Frameworks */,
+				1F4E8A4625648A030023EEE9 /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19564B90E96B60306FE4D447 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		1F0CC2D5257834FD00CAC6A1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F0C79E82565AD5C00450522 /* MainViewControllerData.swift */,
+				4664FAC5250B58E600A81BE3 /* MainViewController.swift */,
+				1FF61756256707ED005600FA /* SimpleTextDisplayViewController.swift */,
+				1F0CC2D1257834F700CAC6A1 /* PositiveDiagnosesTableViewController.swift */,
+				1F42966525795E200059F1A2 /* RecentExposuresViewController.swift */,
+				1F4296762579A0D90059F1A2 /* ShowDiagnosisKeysViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1F4E8A0C256482110023EEE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				46D168092449114700120FCB /* Utilities.swift */,
+				1FF61761256865DE005600FA /* ENActivityHandling.swift */,
+				1F3D625E25803C950084E8FD /* BackgroundTasks.swift */,
+				1F4E8A0D2564821D0023EEE9 /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F4E8A0D2564821D0023EEE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46D167BD2446B0ED00120FCB /* LocalStore.swift */,
+				46D167BB2446AC4C00120FCB /* Server.swift */,
+				46E5D01424502C59000347EB /* ExposureManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F4E8A58256494FB0023EEE9 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				46B451C42462A79B009733F4 /* DeveloperDiagnosisKeyFileProtobuf.proto */,
+				4688CCAE24627FFF0015A9E2 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift */,
+			);
+			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		465310AE2444F94400B6185D = {
+			isa = PBXGroup;
+			children = (
+				5F91F0A72457E82500F8F0BA /* README.md */,
+				1F4E8A0C256482110023EEE9 /* Common */,
+				1F4E8A58256494FB0023EEE9 /* Protobuf */,
+				465310B92444F94400B6185D /* ExposureNotificationApp */,
+				4664FAC0250B58E600A81BE3 /* ExposureNotificationApp-iOS12 */,
+				465310B82444F94400B6185D /* Products */,
+				469E404D246257F1006166EB /* Frameworks */,
+				19564B90E96B60306FE4D447 /* Configuration */,
+				CC2CE86C3A5C34704E509518 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		465310B82444F94400B6185D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				465310B72444F94400B6185D /* ExposureNotificationApp.app */,
+				4664FABF250B58E600A81BE3 /* ExposureNotificationApp-iOS12.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		465310B92444F94400B6185D /* ExposureNotificationApp */ = {
+			isa = PBXGroup;
+			children = (
+				465310BA2444F94400B6185D /* AppDelegate.swift */,
+				465310BC2444F94400B6185D /* SceneDelegate.swift */,
+				5F91F0A62457E43100F8F0BA /* Custom View Controllers */,
+				46E5D01124502594000347EB /* Custom Views */,
+				46C7415D245A645D00E5C53A /* Developer */,
+				46C74163245A6BEB00E5C53A /* Main.storyboard */,
+				46B39A12246BD5EA003D39D9 /* ExposureDetailsCell.xib */,
+				46B39A14246BD6BF003D39D9 /* ExposureNextStepsCell.xib */,
+				46B39A16246BDEB6003D39D9 /* ExposureFootnoteCell.xib */,
+				46B39A18246BE1A7003D39D9 /* TestAdministrationDateCell.xib */,
+				46B39A1A246BE5FE003D39D9 /* TestAdministrationDatePickerCell.xib */,
+				46B39A1C246C08AE003D39D9 /* TestReviewCell.xib */,
+				465310C32444F94500B6185D /* Assets.xcassets */,
+				464851EC245B80D6008BF52F /* Localizable.strings */,
+				465310C52444F94500B6185D /* LaunchScreen.storyboard */,
+				465310C82444F94500B6185D /* Info.plist */,
+				46D02A552446401A002EBAF0 /* ExposureNotificationApp.entitlements */,
+			);
+			path = ExposureNotificationApp;
+			sourceTree = "<group>";
+		};
+		4664FAC0250B58E600A81BE3 /* ExposureNotificationApp-iOS12 */ = {
+			isa = PBXGroup;
+			children = (
+				4664FAC1250B58E600A81BE3 /* AppDelegate.swift */,
+				4664FAC3250B58E600A81BE3 /* SceneDelegate.swift */,
+				1F0CC2D5257834FD00CAC6A1 /* View Controllers */,
+				4664FAC7250B58E600A81BE3 /* Main.storyboard */,
+				4664FACC250B58E800A81BE3 /* Assets.xcassets */,
+				4664FACE250B58E800A81BE3 /* LaunchScreen.storyboard */,
+				4664FAD1250B58E800A81BE3 /* Info.plist */,
+				4664FAD5250B5C6C00A81BE3 /* ExposureNotificationApp-iOS12.entitlements */,
+			);
+			path = "ExposureNotificationApp-iOS12";
+			sourceTree = "<group>";
+		};
+		469E404D246257F1006166EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F3AB44E25659DA200AA9D13 /* ExposureNotification.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46C7415D245A645D00E5C53A /* Developer */ = {
+			isa = PBXGroup;
+			children = (
+				4629339C2456979900C7BF17 /* DeveloperDiagnosisKeysViewController.swift */,
+				465310BE2444F94400B6185D /* DeveloperViewController.swift */,
+			);
+			path = Developer;
+			sourceTree = "<group>";
+		};
+		46E5D01124502594000347EB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				46B0C671245EA51800D15BE1 /* TableHeaderView.swift */,
+				46E5D00F2450113A000347EB /* VerticalScrollView.swift */,
+				46E5D00B24500AC6000347EB /* Button.swift */,
+				46E515B32455000400A8B68E /* TintLabel.swift */,
+				46C74165245A8DAC00E5C53A /* EntryView.swift */,
+				46824FA4245CDC3D00E780DB /* RequirementView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5F91F0A62457E43100F8F0BA /* Custom View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46B0A02B24558B3A001CB4E5 /* StepViewController.swift */,
+				46B0A02D24558D5C001CB4E5 /* OnboardingViewController.swift */,
+				46E515B52455047500A8B68E /* ExposuresViewController.swift */,
+				462933A22456CA4F00C7BF17 /* ExposureNotificationsInfoViewController.swift */,
+				46C7415B245A636500E5C53A /* ExposureDetailsViewController.swift */,
+				46E515B72455048900A8B68E /* NotifyOthersViewController.swift */,
+				46D167B92446AA3400120FCB /* TestVerificationViewController.swift */,
+				46337EA5245AB4260066414A /* TestResultDetailsViewController.swift */,
+			);
+			path = "Custom View Controllers";
+			sourceTree = "<group>";
+		};
+		CC2CE86C3A5C34704E509518 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				709910278AB0B2315C855636 /* LICENSE.txt */,
+				590C2B5EB9CD76E6652F3382 /* ACKNOWLEDGEMENTS.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		465310B62444F94400B6185D /* ExposureNotificationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 465310CB2444F94500B6185D /* Build configuration list for PBXNativeTarget "ExposureNotificationApp" */;
+			buildPhases = (
+				465310B32444F94400B6185D /* Sources */,
+				465310B42444F94400B6185D /* Frameworks */,
+				465310B52444F94400B6185D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExposureNotificationApp;
+			packageProductDependencies = (
+				469E404E246257F1006166EB /* SwiftProtobuf */,
+			);
+			productName = BubbleSampleApp;
+			productReference = 465310B72444F94400B6185D /* ExposureNotificationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4664FABE250B58E600A81BE3 /* ExposureNotificationApp-iOS12 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4664FAD4250B58E800A81BE3 /* Build configuration list for PBXNativeTarget "ExposureNotificationApp-iOS12" */;
+			buildPhases = (
+				4664FABB250B58E600A81BE3 /* Sources */,
+				4664FABC250B58E600A81BE3 /* Frameworks */,
+				4664FABD250B58E600A81BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ExposureNotificationApp-iOS12";
+			packageProductDependencies = (
+				1F4E8A4525648A030023EEE9 /* SwiftProtobuf */,
+				1F4E8A4725648A030023EEE9 /* SwiftProtobufPluginLibrary */,
+			);
+			productName = "ExposureNotificationApp-iOS12";
+			productReference = 4664FABF250B58E600A81BE3 /* ExposureNotificationApp-iOS12.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		465310AF2444F94400B6185D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					465310B62444F94400B6185D = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+					4664FABE250B58E600A81BE3 = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = 465310B22444F94400B6185D /* Build configuration list for PBXProject "ExposureNotificationApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 465310AE2444F94400B6185D;
+			packageReferences = (
+				4679D0E42462289B00A8F019 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			productRefGroup = 465310B82444F94400B6185D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				465310B62444F94400B6185D /* ExposureNotificationApp */,
+				4664FABE250B58E600A81BE3 /* ExposureNotificationApp-iOS12 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		465310B52444F94400B6185D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B39A1D246C08AE003D39D9 /* TestReviewCell.xib in Resources */,
+				46B39A13246BD5EA003D39D9 /* ExposureDetailsCell.xib in Resources */,
+				465310C72444F94500B6185D /* LaunchScreen.storyboard in Resources */,
+				46B39A19246BE1A7003D39D9 /* TestAdministrationDateCell.xib in Resources */,
+				46B39A1B246BE5FE003D39D9 /* TestAdministrationDatePickerCell.xib in Resources */,
+				464851EE245B80D6008BF52F /* Localizable.strings in Resources */,
+				46B39A15246BD6BF003D39D9 /* ExposureNextStepsCell.xib in Resources */,
+				46C74164245A6BEB00E5C53A /* Main.storyboard in Resources */,
+				46B39A17246BDEB6003D39D9 /* ExposureFootnoteCell.xib in Resources */,
+				465310C42444F94500B6185D /* Assets.xcassets in Resources */,
+				5F91F0A82457E82500F8F0BA /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4664FABD250B58E600A81BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4664FAD0250B58E800A81BE3 /* LaunchScreen.storyboard in Resources */,
+				4664FACD250B58E800A81BE3 /* Assets.xcassets in Resources */,
+				4664FAC9250B58E600A81BE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		465310B32444F94400B6185D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B0A02E24558D5C001CB4E5 /* OnboardingViewController.swift in Sources */,
+				46E5D01524502C59000347EB /* ExposureManager.swift in Sources */,
+				46E515B62455047600A8B68E /* ExposuresViewController.swift in Sources */,
+				46E5D00C24500AC7000347EB /* Button.swift in Sources */,
+				46337EA6245AB4260066414A /* TestResultDetailsViewController.swift in Sources */,
+				46D167BC2446AC4C00120FCB /* Server.swift in Sources */,
+				465310BF2444F94400B6185D /* DeveloperViewController.swift in Sources */,
+				46E5D0102450113A000347EB /* VerticalScrollView.swift in Sources */,
+				46D167BA2446AA3400120FCB /* TestVerificationViewController.swift in Sources */,
+				462933A32456CA4F00C7BF17 /* ExposureNotificationsInfoViewController.swift in Sources */,
+				46C7415C245A636500E5C53A /* ExposureDetailsViewController.swift in Sources */,
+				46C74166245A8DAC00E5C53A /* EntryView.swift in Sources */,
+				465310BB2444F94400B6185D /* AppDelegate.swift in Sources */,
+				46824FA5245CDC3D00E780DB /* RequirementView.swift in Sources */,
+				4629339D2456979900C7BF17 /* DeveloperDiagnosisKeysViewController.swift in Sources */,
+				465310BD2444F94400B6185D /* SceneDelegate.swift in Sources */,
+				4688CCAF24627FFF0015A9E2 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift in Sources */,
+				1F0CC2BE2576D2F500CAC6A1 /* ENActivityHandling.swift in Sources */,
+				46B0C672245EA51800D15BE1 /* TableHeaderView.swift in Sources */,
+				46D1680A2449114700120FCB /* Utilities.swift in Sources */,
+				46E515B82455048900A8B68E /* NotifyOthersViewController.swift in Sources */,
+				46D167BE2446B0ED00120FCB /* LocalStore.swift in Sources */,
+				46E515B42455000400A8B68E /* TintLabel.swift in Sources */,
+				46B0A02C24558B3A001CB4E5 /* StepViewController.swift in Sources */,
+				1F3D625F25803C950084E8FD /* BackgroundTasks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4664FABB250B58E600A81BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4664FAC6250B58E600A81BE3 /* MainViewController.swift in Sources */,
+				4664FAC2250B58E600A81BE3 /* AppDelegate.swift in Sources */,
+				1F4E8A0E2564822B0023EEE9 /* Server.swift in Sources */,
+				1F4296772579A0D90059F1A2 /* ShowDiagnosisKeysViewController.swift in Sources */,
+				4664FAC4250B58E600A81BE3 /* SceneDelegate.swift in Sources */,
+				1F4E8A22256482820023EEE9 /* LocalStore.swift in Sources */,
+				1F0CC2CA2576EABD00CAC6A1 /* ExposureManager.swift in Sources */,
+				1F42966625795E200059F1A2 /* RecentExposuresViewController.swift in Sources */,
+				1F0C79E92565AD5C00450522 /* MainViewControllerData.swift in Sources */,
+				1F3D626025803C950084E8FD /* BackgroundTasks.swift in Sources */,
+				1F4E8A33256485240023EEE9 /* DeveloperDiagnosisKeyFileProtobuf.pb.swift in Sources */,
+				1F0CC2D2257834F700CAC6A1 /* PositiveDiagnosesTableViewController.swift in Sources */,
+				1FF61757256707ED005600FA /* SimpleTextDisplayViewController.swift in Sources */,
+				1F4E8A732564A3300023EEE9 /* Utilities.swift in Sources */,
+				1F0CC2C52576EAA300CAC6A1 /* ENActivityHandling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		464851EC245B80D6008BF52F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				464851ED245B80D6008BF52F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		465310C52444F94500B6185D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				465310C62444F94500B6185D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4664FAC7250B58E600A81BE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4664FAC8250B58E600A81BE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4664FACE250B58E800A81BE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4664FACF250B58E800A81BE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		465310C92444F94500B6185D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		465310CA2444F94500B6185D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		465310CC2444F94500B6185D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ExposureNotificationApp/ExposureNotificationApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ExposureNotificationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ExposureNotificationSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		465310CD2444F94500B6185D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ExposureNotificationApp/ExposureNotificationApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ExposureNotificationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ExposureNotificationSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4664FAD2250B58E800A81BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "ExposureNotificationApp-iOS12/ExposureNotificationApp-iOS12.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "ExposureNotificationApp-iOS12/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "-D iOS12Support";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ExposureNotificationSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4664FAD3250B58E800A81BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23DB6207F0A967251FAC396 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "ExposureNotificationApp-iOS12/ExposureNotificationApp-iOS12.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "ExposureNotificationApp-iOS12/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "-D iOS12Support";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ExposureNotificationSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		465310B22444F94400B6185D /* Build configuration list for PBXProject "ExposureNotificationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				465310C92444F94500B6185D /* Debug */,
+				465310CA2444F94500B6185D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		465310CB2444F94500B6185D /* Build configuration list for PBXNativeTarget "ExposureNotificationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				465310CC2444F94500B6185D /* Debug */,
+				465310CD2444F94500B6185D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4664FAD4250B58E800A81BE3 /* Build configuration list for PBXNativeTarget "ExposureNotificationApp-iOS12" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4664FAD2250B58E800A81BE3 /* Debug */,
+				4664FAD3250B58E800A81BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4679D0E42462289B00A8F019 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F4E8A4525648A030023EEE9 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4679D0E42462289B00A8F019 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		1F4E8A4725648A030023EEE9 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4679D0E42462289B00A8F019 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		469E404E246257F1006166EB /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4679D0E42462289B00A8F019 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 465310AF2444F94400B6185D /* Project object */;
+}

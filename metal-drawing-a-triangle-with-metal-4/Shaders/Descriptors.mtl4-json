@@ -1,0 +1,40 @@
+{
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "sub_minor": 0
+  },
+  "libraries": [
+    {
+      "label": "shaders",
+      "path": "default.metallib"
+    }
+  ],
+  "function_descriptors": {
+    "library_function_descriptors": [
+      {
+        "label": "vertexShader",
+        "name": "vertexShader",
+        "library": "shaders"
+      },
+      {
+        "label": "fragmentShader",
+        "name": "fragmentShader",
+        "library": "shaders"
+      }
+    ]
+  },
+  "pipeline_descriptors": {
+    "render_pipeline_descriptors": [
+      {
+        "vertex_function_descriptor": "fnd:vertexShader",
+        "fragment_function_descriptor": "fnd:fragmentShader",
+        "color_attachments": [
+          {
+            "pixel_format": "BGRA8Unorm"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C449273D25E6F5A400D24755 /* NetworkingDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C449273C25E6F5A400D24755 /* NetworkingDriverKit.framework */; };
+		C449273F25E6F5BB00D24755 /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C449273E25E6F5BB00D24755 /* DriverKit.framework */; };
+		C449274125E6F7B800D24755 /* NetworkingDriverKitDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = C449274025E6F7B800D24755 /* NetworkingDriverKitDebug.h */; };
+		C449274325E6F80900D24755 /* NetworkingDriverKitSample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C449274225E6F80900D24755 /* NetworkingDriverKitSample.cpp */; };
+		C449274525E6F82C00D24755 /* NetworkingDriverKitSample.iig in Sources */ = {isa = PBXBuildFile; fileRef = C449274425E6F82C00D24755 /* NetworkingDriverKitSample.iig */; };
+		C449276125E7278900D24755 /* NetworkingDriverKitSample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C449276025E7278900D24755 /* NetworkingDriverKitSample.plist */; };
+		C4ABE0A6262E966400651D43 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C4ABE0A5262E966400651D43 /* LICENSE.txt */; };
+		C4C566EC262A809000C9E16B /* DriverLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C566E4262A809000C9E16B /* DriverLoadingView.swift */; };
+		C4C566ED262A809000C9E16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C566E6262A809000C9E16B /* Assets.xcassets */; };
+		C4C566EE262A809000C9E16B /* DriverLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C566E7262A809000C9E16B /* DriverLoadingViewModel.swift */; };
+		C4C566EF262A809000C9E16B /* NetworkingDriverKitSampleApp.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4C566E8262A809000C9E16B /* NetworkingDriverKitSampleApp.plist */; };
+		C4C566F0262A809000C9E16B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C566EA262A809000C9E16B /* Preview Assets.xcassets */; };
+		C4C566F1262A809000C9E16B /* NetworkingDriverKitSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C566EB262A809000C9E16B /* NetworkingDriverKitSampleApp.swift */; };
+		C4C5670C262A8FFC00C9E16B /* com.example.apple-samplecode.NetworkingDriverKitSample.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = C449272525E6F3A400D24755 /* com.example.apple-samplecode.NetworkingDriverKitSample.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4C56709262A8D5000C9E16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C449271C25E6F3A400D24755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C449272425E6F3A400D24755;
+			remoteInfo = NetworkingDriverKitSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4C56708262A865D00C9E16B /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				C4C5670C262A8FFC00C9E16B /* com.example.apple-samplecode.NetworkingDriverKitSample.dext in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		848DA25D7580F562C1C64E12 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		C449272525E6F3A400D24755 /* com.example.apple-samplecode.NetworkingDriverKitSample.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = "com.example.apple-samplecode.NetworkingDriverKitSample.dext"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C449273C25E6F5A400D24755 /* NetworkingDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkingDriverKit.framework; path = System/DriverKit/System/Library/Frameworks/NetworkingDriverKit.framework; sourceTree = SDKROOT; };
+		C449273E25E6F5BB00D24755 /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = System/DriverKit/System/Library/Frameworks/DriverKit.framework; sourceTree = SDKROOT; };
+		C449274025E6F7B800D24755 /* NetworkingDriverKitDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingDriverKitDebug.h; sourceTree = "<group>"; };
+		C449274225E6F80900D24755 /* NetworkingDriverKitSample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkingDriverKitSample.cpp; sourceTree = "<group>"; };
+		C449274425E6F82C00D24755 /* NetworkingDriverKitSample.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = NetworkingDriverKitSample.iig; sourceTree = "<group>"; };
+		C449276025E7278900D24755 /* NetworkingDriverKitSample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkingDriverKitSample.plist; sourceTree = "<group>"; };
+		C449276225E728AB00D24755 /* NetworkingDriverKitSample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NetworkingDriverKitSample.entitlements; sourceTree = "<group>"; };
+		C4ABE0A5262E966400651D43 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C4C566A9262A7D8200C9E16B /* NetworkingDriverKitSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingDriverKitSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C566E4262A809000C9E16B /* DriverLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriverLoadingView.swift; path = NetworkingDriverKitSampleApp/DriverLoadingView.swift; sourceTree = "<group>"; };
+		C4C566E5262A809000C9E16B /* NetworkingDriverKitSampleApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = NetworkingDriverKitSampleApp.entitlements; path = NetworkingDriverKitSampleApp/NetworkingDriverKitSampleApp.entitlements; sourceTree = "<group>"; };
+		C4C566E6262A809000C9E16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = NetworkingDriverKitSampleApp/Assets.xcassets; sourceTree = "<group>"; };
+		C4C566E7262A809000C9E16B /* DriverLoadingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriverLoadingViewModel.swift; path = NetworkingDriverKitSampleApp/DriverLoadingViewModel.swift; sourceTree = "<group>"; };
+		C4C566E8262A809000C9E16B /* NetworkingDriverKitSampleApp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = NetworkingDriverKitSampleApp.plist; path = NetworkingDriverKitSampleApp/NetworkingDriverKitSampleApp.plist; sourceTree = "<group>"; };
+		C4C566EA262A809000C9E16B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4C566EB262A809000C9E16B /* NetworkingDriverKitSampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkingDriverKitSampleApp.swift; path = NetworkingDriverKitSampleApp/NetworkingDriverKitSampleApp.swift; sourceTree = "<group>"; };
+		CA69F5B62FF8EDC0416B65E2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C449272225E6F3A400D24755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C449273F25E6F5BB00D24755 /* DriverKit.framework in Frameworks */,
+				C449273D25E6F5A400D24755 /* NetworkingDriverKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C566A6262A7D8200C9E16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16417382DAF0AFA9674ADE4C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		626BFDFC01FADE1051DB71FE /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				848DA25D7580F562C1C64E12 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		C449271B25E6F3A400D24755 = {
+			isa = PBXGroup;
+			children = (
+				CA69F5B62FF8EDC0416B65E2 /* README.md */,
+				C4ABE0A3262E960800651D43 /* LICENSE */,
+				C4C566D5262A7FE900C9E16B /* NetworkingDriverKitSampleApp */,
+				C449272A25E6F3A400D24755 /* NetworkingDriverKitSample */,
+				C449272725E6F3A400D24755 /* Frameworks */,
+				C449272625E6F3A400D24755 /* Products */,
+				16417382DAF0AFA9674ADE4C /* Configuration */,
+				626BFDFC01FADE1051DB71FE /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		C449272625E6F3A400D24755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C449272525E6F3A400D24755 /* com.example.apple-samplecode.NetworkingDriverKitSample.dext */,
+				C4C566A9262A7D8200C9E16B /* NetworkingDriverKitSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C449272725E6F3A400D24755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C449273E25E6F5BB00D24755 /* DriverKit.framework */,
+				C449273C25E6F5A400D24755 /* NetworkingDriverKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C449272A25E6F3A400D24755 /* NetworkingDriverKitSample */ = {
+			isa = PBXGroup;
+			children = (
+				C449274025E6F7B800D24755 /* NetworkingDriverKitDebug.h */,
+				C449274425E6F82C00D24755 /* NetworkingDriverKitSample.iig */,
+				C449274225E6F80900D24755 /* NetworkingDriverKitSample.cpp */,
+				C449276025E7278900D24755 /* NetworkingDriverKitSample.plist */,
+				C449276225E728AB00D24755 /* NetworkingDriverKitSample.entitlements */,
+			);
+			path = NetworkingDriverKitSample;
+			sourceTree = "<group>";
+		};
+		C4ABE0A3262E960800651D43 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				C4ABE0A5262E966400651D43 /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = SOURCE_ROOT;
+		};
+		C4C566D5262A7FE900C9E16B /* NetworkingDriverKitSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				C4C566E4262A809000C9E16B /* DriverLoadingView.swift */,
+				C4C566E7262A809000C9E16B /* DriverLoadingViewModel.swift */,
+				C4C566E8262A809000C9E16B /* NetworkingDriverKitSampleApp.plist */,
+				C4C566E5262A809000C9E16B /* NetworkingDriverKitSampleApp.entitlements */,
+				C4C566EB262A809000C9E16B /* NetworkingDriverKitSampleApp.swift */,
+				C4C566E6262A809000C9E16B /* Assets.xcassets */,
+				C4C566E9262A809000C9E16B /* Preview Content */,
+			);
+			name = NetworkingDriverKitSampleApp;
+			sourceTree = "<group>";
+		};
+		C4C566E9262A809000C9E16B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4C566EA262A809000C9E16B /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "NetworkingDriverKitSampleApp/Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C449272025E6F3A400D24755 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C449274125E6F7B800D24755 /* NetworkingDriverKitDebug.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C449272425E6F3A400D24755 /* NetworkingDriverKitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C449273225E6F3A400D24755 /* Build configuration list for PBXNativeTarget "NetworkingDriverKitSample" */;
+			buildPhases = (
+				C449272025E6F3A400D24755 /* Headers */,
+				C449272125E6F3A400D24755 /* Sources */,
+				C449272225E6F3A400D24755 /* Frameworks */,
+				C449272325E6F3A400D24755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkingDriverKitSample;
+			productName = NetworkingDriverKitTestEthernet;
+			productReference = C449272525E6F3A400D24755 /* com.example.apple-samplecode.NetworkingDriverKitSample.dext */;
+			productType = "com.apple.product-type.driver-extension";
+		};
+		C4C566A8262A7D8200C9E16B /* NetworkingDriverKitSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C566C7262A7D8200C9E16B /* Build configuration list for PBXNativeTarget "NetworkingDriverKitSampleApp" */;
+			buildPhases = (
+				C4C566A5262A7D8200C9E16B /* Sources */,
+				C4C566A6262A7D8200C9E16B /* Frameworks */,
+				C4C566A7262A7D8200C9E16B /* Resources */,
+				C4C56708262A865D00C9E16B /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C5670A262A8D5000C9E16B /* PBXTargetDependency */,
+			);
+			name = NetworkingDriverKitSampleApp;
+			productName = "NetworkingDriverKitSampleApp (macOS)";
+			productReference = C4C566A9262A7D8200C9E16B /* NetworkingDriverKitSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C449271C25E6F3A400D24755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					C449272425E6F3A400D24755 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C4C566A8262A7D8200C9E16B = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = C449271F25E6F3A400D24755 /* Build configuration list for PBXProject "NetworkingDriverKitSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C449271B25E6F3A400D24755;
+			productRefGroup = C449272625E6F3A400D24755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4C566A8262A7D8200C9E16B /* NetworkingDriverKitSampleApp */,
+				C449272425E6F3A400D24755 /* NetworkingDriverKitSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C449272325E6F3A400D24755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C449276125E7278900D24755 /* NetworkingDriverKitSample.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C566A7262A7D8200C9E16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ABE0A6262E966400651D43 /* LICENSE.txt in Resources */,
+				C4C566EF262A809000C9E16B /* NetworkingDriverKitSampleApp.plist in Resources */,
+				C4C566F0262A809000C9E16B /* Preview Assets.xcassets in Resources */,
+				C4C566ED262A809000C9E16B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C449272125E6F3A400D24755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C449274525E6F82C00D24755 /* NetworkingDriverKitSample.iig in Sources */,
+				C449274325E6F80900D24755 /* NetworkingDriverKitSample.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C566A5262A7D8200C9E16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C566EC262A809000C9E16B /* DriverLoadingView.swift in Sources */,
+				C4C566F1262A809000C9E16B /* NetworkingDriverKitSampleApp.swift in Sources */,
+				C4C566EE262A809000C9E16B /* DriverLoadingViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4C5670A262A8D5000C9E16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C449272425E6F3A400D24755 /* NetworkingDriverKitSample */;
+			targetProxy = C4C56709262A8D5000C9E16B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C449273025E6F3A400D24755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Apple Inc. All rights reserved.";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEVELOPMENT=1";
+				SDKROOT = driverkit;
+				SYMROOT = "/tmp/${PROJECT_NAME}";
+			};
+			name = Debug;
+		};
+		C449273125E6F3A400D24755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Apple Inc. All rights reserved.";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				SDKROOT = driverkit;
+				SYMROOT = "/tmp/${PROJECT_NAME}";
+			};
+			name = Release;
+		};
+		C449273325E6F3A400D24755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetworkingDriverKitSample/NetworkingDriverKitSample.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingDriverKitSample/NetworkingDriverKitSample.plist;
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS_development = "-DDEVELOPMENT=1 -DMACH_ASSERT=1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.NetworkingDriverKitSample${SAMPLE_CODE_DISAMBIGUATOR}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+			};
+			name = Debug;
+		};
+		C449273425E6F3A400D24755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetworkingDriverKitSample/NetworkingDriverKitSample.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingDriverKitSample/NetworkingDriverKitSample.plist;
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS_development = "-DDEVELOPMENT=1 -DMACH_ASSERT=1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.NetworkingDriverKitSample${SAMPLE_CODE_DISAMBIGUATOR}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = driverkit;
+			};
+			name = Release;
+		};
+		C4C566C8262A7D8200C9E16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NetworkingDriverKitSampleApp/NetworkingDriverKitSampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "NetworkingDriverKitSampleApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingDriverKitSampleApp/NetworkingDriverKitSampleApp.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.NetworkingDriverKitSample${SAMPLE_CODE_DISAMBIGUATOR}.app";
+				PRODUCT_NAME = NetworkingDriverKitSampleApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C4C566C9262A7D8200C9E16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDF7EFCA1483A09E8BFE7BE /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NetworkingDriverKitSampleApp/NetworkingDriverKitSampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "NetworkingDriverKitSampleApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingDriverKitSampleApp/NetworkingDriverKitSampleApp.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.NetworkingDriverKitSample${SAMPLE_CODE_DISAMBIGUATOR}.app";
+				PRODUCT_NAME = NetworkingDriverKitSampleApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C449271F25E6F3A400D24755 /* Build configuration list for PBXProject "NetworkingDriverKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C449273025E6F3A400D24755 /* Debug */,
+				C449273125E6F3A400D24755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C449273225E6F3A400D24755 /* Build configuration list for PBXNativeTarget "NetworkingDriverKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C449273325E6F3A400D24755 /* Debug */,
+				C449273425E6F3A400D24755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4C566C7262A7D8200C9E16B /* Build configuration list for PBXNativeTarget "NetworkingDriverKitSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C566C8262A7D8200C9E16B /* Debug */,
+				C4C566C9262A7D8200C9E16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C449271C25E6F3A400D24755 /* Project object */;
+}

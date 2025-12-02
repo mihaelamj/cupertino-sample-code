@@ -1,0 +1,1114 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		660EB1842A0C3CC3007772E2 /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6629FC8FFA0089E32B /* AlertError.swift */; };
+		EB118FDF29FC888300AD25D7 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB118FDE29FC888300AD25D7 /* DatePickerView.swift */; };
+		EB31AAAC29FC8A3600B987DF /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAAB29FC8A3600B987DF /* EventEditViewController.swift */; };
+		EB31AAB029FC8ACA00B987DF /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAAF29FC8ACA00B987DF /* MessageView.swift */; };
+		EB31AAB229FC8AD000B987DF /* Lessons.json in Resources */ = {isa = PBXBuildFile; fileRef = EB31AAB129FC8AD000B987DF /* Lessons.json */; };
+		EB31AAB429FC8ADA00B987DF /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB329FC8ADA00B987DF /* Lesson.swift */; };
+		EB31AAB629FC8AE100B987DF /* Lesson+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB529FC8AE100B987DF /* Lesson+Date.swift */; };
+		EB31AAB829FC8AE700B987DF /* Lesson+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB729FC8AE700B987DF /* Lesson+Type.swift */; };
+		EB31AABA29FC8AEE00B987DF /* LessonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB929FC8AEE00B987DF /* LessonModel.swift */; };
+		EB31AABD29FC8B0400B987DF /* BookingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AABB29FC8B0400B987DF /* BookingButton.swift */; };
+		EB31AABE29FC8B0400B987DF /* BookingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AABC29FC8B0400B987DF /* BookingButtonStyle.swift */; };
+		EB31AAC029FC8B2700B987DF /* Lesson+Recurrence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AABF29FC8B2700B987DF /* Lesson+Recurrence.swift */; };
+		EB31AAC229FC8B3F00B987DF /* EKEvent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAC129FC8B3F00B987DF /* EKEvent+Extension.swift */; };
+		EB31AAC429FC8B4D00B987DF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAC329FC8B4D00B987DF /* Date+Extension.swift */; };
+		EB31AAC629FC8B8000B987DF /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAC529FC8B8000B987DF /* TimeInterval+Extension.swift */; };
+		EB31AACE29FC8CC600B987DF /* RepeatingLessonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AACD29FC8CC600B987DF /* RepeatingLessonsApp.swift */; };
+		EB31AAD029FC8CC600B987DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AACF29FC8CC600B987DF /* ContentView.swift */; };
+		EB31AAD229FC8CC700B987DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB31AAD129FC8CC700B987DF /* Assets.xcassets */; };
+		EB31AAD529FC8CC700B987DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB31AAD429FC8CC700B987DF /* Preview Assets.xcassets */; };
+		EB3F2B4B29FC8DFD0089E32B /* RepeatingLessonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B4829FC8DFD0089E32B /* RepeatingLessonDetail.swift */; };
+		EB3F2B4C29FC8DFD0089E32B /* RepeatingLessonList+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B4929FC8DFD0089E32B /* RepeatingLessonList+Toolbar.swift */; };
+		EB3F2B4D29FC8DFD0089E32B /* RepeatingLessonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B4A29FC8DFD0089E32B /* RepeatingLessonList.swift */; };
+		EB3F2B4E29FC8E490089E32B /* LessonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB929FC8AEE00B987DF /* LessonModel.swift */; };
+		EB3F2B4F29FC8E650089E32B /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB329FC8ADA00B987DF /* Lesson.swift */; };
+		EB3F2B5029FC8E6F0089E32B /* Lessons.json in Resources */ = {isa = PBXBuildFile; fileRef = EB31AAB129FC8AD000B987DF /* Lessons.json */; };
+		EB3F2B5129FC8EB00089E32B /* BookingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AABB29FC8B0400B987DF /* BookingButton.swift */; };
+		EB3F2B5229FC8ECC0089E32B /* BookingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AABC29FC8B0400B987DF /* BookingButtonStyle.swift */; };
+		EB3F2B5329FC8ED00089E32B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAC329FC8B4D00B987DF /* Date+Extension.swift */; };
+		EB3F2B5429FC8EE00089E32B /* EKEvent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAC129FC8B3F00B987DF /* EKEvent+Extension.swift */; };
+		EB3F2B5529FC8EF70089E32B /* Lesson+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB529FC8AE100B987DF /* Lesson+Date.swift */; };
+		EB3F2B5629FC8EFE0089E32B /* Lesson+Recurrence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AABF29FC8B2700B987DF /* Lesson+Recurrence.swift */; };
+		EB3F2B5729FC8F040089E32B /* Lesson+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAB729FC8AE700B987DF /* Lesson+Type.swift */; };
+		EB3F2B5829FC8F0B0089E32B /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAAF29FC8ACA00B987DF /* MessageView.swift */; };
+		EB3F2B5929FC8F140089E32B /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAC529FC8B8000B987DF /* TimeInterval+Extension.swift */; };
+		EB3F2B5B29FC8F2E0089E32B /* EventDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B5A29FC8F2E0089E32B /* EventDataStore.swift */; };
+		EB3F2B5D29FC8F350089E32B /* EventDataStore+WriteOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B5C29FC8F350089E32B /* EventDataStore+WriteOnly.swift */; };
+		EB3F2B5F29FC8F3D0089E32B /* EventStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B5E29FC8F3D0089E32B /* EventStoreManager.swift */; };
+		EB3F2B6129FC8F440089E32B /* EventStoreManager+WriteOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6029FC8F440089E32B /* EventStoreManager+WriteOnly.swift */; };
+		EB3F2B6329FC8F590089E32B /* EventStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6229FC8F590089E32B /* EventStoreError.swift */; };
+		EB3F2B6529FC8F810089E32B /* CalendarChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6429FC8F810089E32B /* CalendarChooser.swift */; };
+		EB3F2B6729FC8FFA0089E32B /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6629FC8FFA0089E32B /* AlertError.swift */; };
+		EB3F2B6929FC901F0089E32B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6829FC901F0089E32B /* Array+Extension.swift */; };
+		EB3F2B7229FC93500089E32B /* MonthlyEventsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B7129FC93500089E32B /* MonthlyEventsApp.swift */; };
+		EB3F2B7429FC93500089E32B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B7329FC93500089E32B /* ContentView.swift */; };
+		EB3F2B7629FC93510089E32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3F2B7529FC93510089E32B /* Assets.xcassets */; };
+		EB3F2B7929FC93510089E32B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3F2B7829FC93510089E32B /* Preview Assets.xcassets */; };
+		EB3F2B8029FC94910089E32B /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B7F29FC94910089E32B /* EventList.swift */; };
+		EB3F2B8229FC94E50089E32B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B8129FC94E50089E32B /* WelcomeView.swift */; };
+		EB3F2B8429FC95650089E32B /* EventDataStore+FullAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B8329FC95650089E32B /* EventDataStore+FullAccess.swift */; };
+		EB3F2B8629FC956A0089E32B /* EventStoreManager+FullAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B8529FC956A0089E32B /* EventStoreManager+FullAccess.swift */; };
+		EB3F2B8729FC95910089E32B /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6629FC8FFA0089E32B /* AlertError.swift */; };
+		EB3F2B8829FC95990089E32B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6829FC901F0089E32B /* Array+Extension.swift */; };
+		EB3F2B8929FC95AE0089E32B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAC329FC8B4D00B987DF /* Date+Extension.swift */; };
+		EB3F2B8A29FC95D50089E32B /* EventDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B5A29FC8F2E0089E32B /* EventDataStore.swift */; };
+		EB3F2B8B29FC95E60089E32B /* EventStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B6229FC8F590089E32B /* EventStoreError.swift */; };
+		EB3F2B8C29FC95EC0089E32B /* EventStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B5E29FC8F3D0089E32B /* EventStoreManager.swift */; };
+		EB3F2B8D29FC96440089E32B /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31AAAF29FC8ACA00B987DF /* MessageView.swift */; };
+		EB3F2B8F29FC965E0089E32B /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B8E29FC965E0089E32B /* EditButton.swift */; };
+		EB3F2B9129FC97DE0089E32B /* EventList+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F2B9029FC97DE0089E32B /* EventList+Toolbar.swift */; };
+		EB79B19C29FC88E80062C410 /* DropInLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79B19B29FC88E80062C410 /* DropInLesson.swift */; };
+		EBA18AEA29FC8962006B4ED8 /* DropInLessonPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA18AE929FC8962006B4ED8 /* DropInLessonPicker.swift */; };
+		EBC88DCB29FC868F00302532 /* DropInLessonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC88DCA29FC868F00302532 /* DropInLessonsApp.swift */; };
+		EBC88DCD29FC868F00302532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC88DCC29FC868F00302532 /* ContentView.swift */; };
+		EBC88DCF29FC869000302532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC88DCE29FC869000302532 /* Assets.xcassets */; };
+		EBC88DD229FC869000302532 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC88DD129FC869000302532 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81A54031805BB342741C155A /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		95E00661A90F52FB9D574C9F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EB118FDE29FC888300AD25D7 /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		EB31AAAB29FC8A3600B987DF /* EventEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
+		EB31AAAF29FC8ACA00B987DF /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		EB31AAB129FC8AD000B987DF /* Lessons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lessons.json; sourceTree = "<group>"; };
+		EB31AAB329FC8ADA00B987DF /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		EB31AAB529FC8AE100B987DF /* Lesson+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+Date.swift"; sourceTree = "<group>"; };
+		EB31AAB729FC8AE700B987DF /* Lesson+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+Type.swift"; sourceTree = "<group>"; };
+		EB31AAB929FC8AEE00B987DF /* LessonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonModel.swift; sourceTree = "<group>"; };
+		EB31AABB29FC8B0400B987DF /* BookingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingButton.swift; sourceTree = "<group>"; };
+		EB31AABC29FC8B0400B987DF /* BookingButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingButtonStyle.swift; sourceTree = "<group>"; };
+		EB31AABF29FC8B2700B987DF /* Lesson+Recurrence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+Recurrence.swift"; sourceTree = "<group>"; };
+		EB31AAC129FC8B3F00B987DF /* EKEvent+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EKEvent+Extension.swift"; sourceTree = "<group>"; };
+		EB31AAC329FC8B4D00B987DF /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		EB31AAC529FC8B8000B987DF /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		EB31AACB29FC8CC600B987DF /* RepeatingLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepeatingLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB31AACD29FC8CC600B987DF /* RepeatingLessonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLessonsApp.swift; sourceTree = "<group>"; };
+		EB31AACF29FC8CC600B987DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB31AAD129FC8CC700B987DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB31AAD429FC8CC700B987DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB3F2B4829FC8DFD0089E32B /* RepeatingLessonDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatingLessonDetail.swift; sourceTree = "<group>"; };
+		EB3F2B4929FC8DFD0089E32B /* RepeatingLessonList+Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepeatingLessonList+Toolbar.swift"; sourceTree = "<group>"; };
+		EB3F2B4A29FC8DFD0089E32B /* RepeatingLessonList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatingLessonList.swift; sourceTree = "<group>"; };
+		EB3F2B5A29FC8F2E0089E32B /* EventDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataStore.swift; sourceTree = "<group>"; };
+		EB3F2B5C29FC8F350089E32B /* EventDataStore+WriteOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventDataStore+WriteOnly.swift"; sourceTree = "<group>"; };
+		EB3F2B5E29FC8F3D0089E32B /* EventStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStoreManager.swift; sourceTree = "<group>"; };
+		EB3F2B6029FC8F440089E32B /* EventStoreManager+WriteOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventStoreManager+WriteOnly.swift"; sourceTree = "<group>"; };
+		EB3F2B6229FC8F590089E32B /* EventStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStoreError.swift; sourceTree = "<group>"; };
+		EB3F2B6429FC8F810089E32B /* CalendarChooser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarChooser.swift; sourceTree = "<group>"; };
+		EB3F2B6629FC8FFA0089E32B /* AlertError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertError.swift; sourceTree = "<group>"; };
+		EB3F2B6829FC901F0089E32B /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		EB3F2B6A29FC91790089E32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB3F2B6F29FC93500089E32B /* MonthlyEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonthlyEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3F2B7129FC93500089E32B /* MonthlyEventsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyEventsApp.swift; sourceTree = "<group>"; };
+		EB3F2B7329FC93500089E32B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB3F2B7529FC93510089E32B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB3F2B7829FC93510089E32B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB3F2B7D29FC93B60089E32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB3F2B7F29FC94910089E32B /* EventList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		EB3F2B8129FC94E50089E32B /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		EB3F2B8329FC95650089E32B /* EventDataStore+FullAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventDataStore+FullAccess.swift"; sourceTree = "<group>"; };
+		EB3F2B8529FC956A0089E32B /* EventStoreManager+FullAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventStoreManager+FullAccess.swift"; sourceTree = "<group>"; };
+		EB3F2B8E29FC965E0089E32B /* EditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		EB3F2B9029FC97DE0089E32B /* EventList+Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventList+Toolbar.swift"; sourceTree = "<group>"; };
+		EB5E237B6123858078149F3D /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		EB79B19B29FC88E80062C410 /* DropInLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropInLesson.swift; sourceTree = "<group>"; };
+		EBA18AE929FC8962006B4ED8 /* DropInLessonPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropInLessonPicker.swift; sourceTree = "<group>"; };
+		EBC88DC729FC868F00302532 /* DropInLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropInLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC88DCA29FC868F00302532 /* DropInLessonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInLessonsApp.swift; sourceTree = "<group>"; };
+		EBC88DCC29FC868F00302532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBC88DCE29FC869000302532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBC88DD129FC869000302532 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB31AAC829FC8CC600B987DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3F2B6C29FC93500089E32B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC88DC429FC868F00302532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A1721DD48244303BD993F54 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				EB5E237B6123858078149F3D /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		5AEC51FE0014E3DC0000749A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				81A54031805BB342741C155A /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		EB31AACC29FC8CC600B987DF /* RepeatingLessons */ = {
+			isa = PBXGroup;
+			children = (
+				EB3F2B6A29FC91790089E32B /* Info.plist */,
+				EB3F2B6429FC8F810089E32B /* CalendarChooser.swift */,
+				EB31AACD29FC8CC600B987DF /* RepeatingLessonsApp.swift */,
+				EB31AAD929FC8D1200B987DF /* Views */,
+				EB31AAD129FC8CC700B987DF /* Assets.xcassets */,
+				EB31AAD329FC8CC700B987DF /* Preview Content */,
+			);
+			path = RepeatingLessons;
+			sourceTree = "<group>";
+		};
+		EB31AAD329FC8CC700B987DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB31AAD429FC8CC700B987DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB31AAD929FC8D1200B987DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB31AACF29FC8CC600B987DF /* ContentView.swift */,
+				EB3F2B4829FC8DFD0089E32B /* RepeatingLessonDetail.swift */,
+				EB3F2B4A29FC8DFD0089E32B /* RepeatingLessonList.swift */,
+				EB3F2B4929FC8DFD0089E32B /* RepeatingLessonList+Toolbar.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EB3F2B7029FC93500089E32B /* MonthlyEvents */ = {
+			isa = PBXGroup;
+			children = (
+				EB3F2B7D29FC93B60089E32B /* Info.plist */,
+				EB3F2B7129FC93500089E32B /* MonthlyEventsApp.swift */,
+				EB3F2B7E29FC944F0089E32B /* Views */,
+				EB3F2B7529FC93510089E32B /* Assets.xcassets */,
+				EB3F2B7729FC93510089E32B /* Preview Content */,
+			);
+			path = MonthlyEvents;
+			sourceTree = "<group>";
+		};
+		EB3F2B7729FC93510089E32B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB3F2B7829FC93510089E32B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB3F2B7E29FC944F0089E32B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB3F2B7329FC93500089E32B /* ContentView.swift */,
+				EB3F2B7F29FC94910089E32B /* EventList.swift */,
+				EB3F2B9029FC97DE0089E32B /* EventList+Toolbar.swift */,
+				EB3F2B8129FC94E50089E32B /* WelcomeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EB6B9BAE29FC860700EA1B38 = {
+			isa = PBXGroup;
+			children = (
+				95E00661A90F52FB9D574C9F /* README.md */,
+				EBC88DD629FC869800302532 /* Shared */,
+				EBC88DC929FC868F00302532 /* DropInLessons */,
+				EB31AACC29FC8CC600B987DF /* RepeatingLessons */,
+				EB3F2B7029FC93500089E32B /* MonthlyEvents */,
+				EBC88DC829FC868F00302532 /* Products */,
+				5AEC51FE0014E3DC0000749A /* Configuration */,
+				4A1721DD48244303BD993F54 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		EBC88DC829FC868F00302532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBC88DC729FC868F00302532 /* DropInLessons.app */,
+				EB31AACB29FC8CC600B987DF /* RepeatingLessons.app */,
+				EB3F2B6F29FC93500089E32B /* MonthlyEvents.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBC88DC929FC868F00302532 /* DropInLessons */ = {
+			isa = PBXGroup;
+			children = (
+				EBC88DCA29FC868F00302532 /* DropInLessonsApp.swift */,
+				EB31AAAB29FC8A3600B987DF /* EventEditViewController.swift */,
+				EBC88DD729FC87CF00302532 /* Views */,
+				EBC88DCE29FC869000302532 /* Assets.xcassets */,
+				EBC88DD029FC869000302532 /* Preview Content */,
+			);
+			path = DropInLessons;
+			sourceTree = "<group>";
+		};
+		EBC88DD029FC869000302532 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EBC88DD129FC869000302532 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBC88DD629FC869800302532 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EB3F2B6629FC8FFA0089E32B /* AlertError.swift */,
+				EB3F2B6829FC901F0089E32B /* Array+Extension.swift */,
+				EB31AABB29FC8B0400B987DF /* BookingButton.swift */,
+				EB31AABC29FC8B0400B987DF /* BookingButtonStyle.swift */,
+				EB31AAC329FC8B4D00B987DF /* Date+Extension.swift */,
+				EB3F2B8E29FC965E0089E32B /* EditButton.swift */,
+				EB31AAC129FC8B3F00B987DF /* EKEvent+Extension.swift */,
+				EB31AAB329FC8ADA00B987DF /* Lesson.swift */,
+				EB31AAB129FC8AD000B987DF /* Lessons.json */,
+				EB3F2B5A29FC8F2E0089E32B /* EventDataStore.swift */,
+				EB3F2B8329FC95650089E32B /* EventDataStore+FullAccess.swift */,
+				EB3F2B5C29FC8F350089E32B /* EventDataStore+WriteOnly.swift */,
+				EB3F2B6229FC8F590089E32B /* EventStoreError.swift */,
+				EB3F2B5E29FC8F3D0089E32B /* EventStoreManager.swift */,
+				EB3F2B6029FC8F440089E32B /* EventStoreManager+WriteOnly.swift */,
+				EB3F2B8529FC956A0089E32B /* EventStoreManager+FullAccess.swift */,
+				EB31AAB529FC8AE100B987DF /* Lesson+Date.swift */,
+				EB31AABF29FC8B2700B987DF /* Lesson+Recurrence.swift */,
+				EB31AAB729FC8AE700B987DF /* Lesson+Type.swift */,
+				EB31AAB929FC8AEE00B987DF /* LessonModel.swift */,
+				EB31AAAF29FC8ACA00B987DF /* MessageView.swift */,
+				EB31AAC529FC8B8000B987DF /* TimeInterval+Extension.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EBC88DD729FC87CF00302532 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBC88DCC29FC868F00302532 /* ContentView.swift */,
+				EB118FDE29FC888300AD25D7 /* DatePickerView.swift */,
+				EB79B19B29FC88E80062C410 /* DropInLesson.swift */,
+				EBA18AE929FC8962006B4ED8 /* DropInLessonPicker.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB31AACA29FC8CC600B987DF /* RepeatingLessons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB31AAD629FC8CC700B987DF /* Build configuration list for PBXNativeTarget "RepeatingLessons" */;
+			buildPhases = (
+				EB31AAC729FC8CC600B987DF /* Sources */,
+				EB31AAC829FC8CC600B987DF /* Frameworks */,
+				EB31AAC929FC8CC600B987DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepeatingLessons;
+			productName = RepeatingLessons;
+			productReference = EB31AACB29FC8CC600B987DF /* RepeatingLessons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB3F2B6E29FC93500089E32B /* MonthlyEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3F2B7A29FC93510089E32B /* Build configuration list for PBXNativeTarget "MonthlyEvents" */;
+			buildPhases = (
+				EB3F2B6B29FC93500089E32B /* Sources */,
+				EB3F2B6C29FC93500089E32B /* Frameworks */,
+				EB3F2B6D29FC93500089E32B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonthlyEvents;
+			productName = MonthlyEvents;
+			productReference = EB3F2B6F29FC93500089E32B /* MonthlyEvents.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBC88DC629FC868F00302532 /* DropInLessons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC88DD529FC869000302532 /* Build configuration list for PBXNativeTarget "DropInLessons" */;
+			buildPhases = (
+				EBC88DC329FC868F00302532 /* Sources */,
+				EBC88DC429FC868F00302532 /* Frameworks */,
+				EBC88DC529FC868F00302532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropInLessons;
+			productName = DropInLessons;
+			productReference = EBC88DC729FC868F00302532 /* DropInLessons.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB6B9BAF29FC860700EA1B38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					EB31AACA29FC8CC600B987DF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EB3F2B6E29FC93500089E32B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EBC88DC629FC868F00302532 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = EB6B9BB229FC860700EA1B38 /* Build configuration list for PBXProject "CalendarAccess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB6B9BAE29FC860700EA1B38;
+			productRefGroup = EBC88DC829FC868F00302532 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBC88DC629FC868F00302532 /* DropInLessons */,
+				EB31AACA29FC8CC600B987DF /* RepeatingLessons */,
+				EB3F2B6E29FC93500089E32B /* MonthlyEvents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB31AAC929FC8CC600B987DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB31AAD529FC8CC700B987DF /* Preview Assets.xcassets in Resources */,
+				EB3F2B5029FC8E6F0089E32B /* Lessons.json in Resources */,
+				EB31AAD229FC8CC700B987DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3F2B6D29FC93500089E32B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3F2B7929FC93510089E32B /* Preview Assets.xcassets in Resources */,
+				EB3F2B7629FC93510089E32B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC88DC529FC868F00302532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC88DD229FC869000302532 /* Preview Assets.xcassets in Resources */,
+				EB31AAB229FC8AD000B987DF /* Lessons.json in Resources */,
+				EBC88DCF29FC869000302532 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB31AAC729FC8CC600B987DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB31AAD029FC8CC600B987DF /* ContentView.swift in Sources */,
+				EB3F2B4D29FC8DFD0089E32B /* RepeatingLessonList.swift in Sources */,
+				EB3F2B4B29FC8DFD0089E32B /* RepeatingLessonDetail.swift in Sources */,
+				EB3F2B5929FC8F140089E32B /* TimeInterval+Extension.swift in Sources */,
+				EB3F2B5D29FC8F350089E32B /* EventDataStore+WriteOnly.swift in Sources */,
+				EB3F2B5129FC8EB00089E32B /* BookingButton.swift in Sources */,
+				EB3F2B6129FC8F440089E32B /* EventStoreManager+WriteOnly.swift in Sources */,
+				EB31AACE29FC8CC600B987DF /* RepeatingLessonsApp.swift in Sources */,
+				EB3F2B5F29FC8F3D0089E32B /* EventStoreManager.swift in Sources */,
+				EB3F2B5429FC8EE00089E32B /* EKEvent+Extension.swift in Sources */,
+				EB3F2B5329FC8ED00089E32B /* Date+Extension.swift in Sources */,
+				EB3F2B5729FC8F040089E32B /* Lesson+Type.swift in Sources */,
+				EB3F2B4C29FC8DFD0089E32B /* RepeatingLessonList+Toolbar.swift in Sources */,
+				EB3F2B5829FC8F0B0089E32B /* MessageView.swift in Sources */,
+				EB3F2B6729FC8FFA0089E32B /* AlertError.swift in Sources */,
+				EB3F2B6929FC901F0089E32B /* Array+Extension.swift in Sources */,
+				EB3F2B5629FC8EFE0089E32B /* Lesson+Recurrence.swift in Sources */,
+				EB3F2B5B29FC8F2E0089E32B /* EventDataStore.swift in Sources */,
+				EB3F2B5229FC8ECC0089E32B /* BookingButtonStyle.swift in Sources */,
+				EB3F2B6529FC8F810089E32B /* CalendarChooser.swift in Sources */,
+				EB3F2B5529FC8EF70089E32B /* Lesson+Date.swift in Sources */,
+				EB3F2B4F29FC8E650089E32B /* Lesson.swift in Sources */,
+				EB3F2B6329FC8F590089E32B /* EventStoreError.swift in Sources */,
+				EB3F2B4E29FC8E490089E32B /* LessonModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3F2B6B29FC93500089E32B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3F2B8729FC95910089E32B /* AlertError.swift in Sources */,
+				EB3F2B8829FC95990089E32B /* Array+Extension.swift in Sources */,
+				EB3F2B9129FC97DE0089E32B /* EventList+Toolbar.swift in Sources */,
+				EB3F2B7429FC93500089E32B /* ContentView.swift in Sources */,
+				EB3F2B8929FC95AE0089E32B /* Date+Extension.swift in Sources */,
+				EB3F2B8F29FC965E0089E32B /* EditButton.swift in Sources */,
+				EB3F2B8A29FC95D50089E32B /* EventDataStore.swift in Sources */,
+				EB3F2B8429FC95650089E32B /* EventDataStore+FullAccess.swift in Sources */,
+				EB3F2B8B29FC95E60089E32B /* EventStoreError.swift in Sources */,
+				EB3F2B8C29FC95EC0089E32B /* EventStoreManager.swift in Sources */,
+				EB3F2B8629FC956A0089E32B /* EventStoreManager+FullAccess.swift in Sources */,
+				EB3F2B8029FC94910089E32B /* EventList.swift in Sources */,
+				EB3F2B8D29FC96440089E32B /* MessageView.swift in Sources */,
+				EB3F2B7229FC93500089E32B /* MonthlyEventsApp.swift in Sources */,
+				EB3F2B8229FC94E50089E32B /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC88DC329FC868F00302532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB31AAB629FC8AE100B987DF /* Lesson+Date.swift in Sources */,
+				EB118FDF29FC888300AD25D7 /* DatePickerView.swift in Sources */,
+				EB31AAAC29FC8A3600B987DF /* EventEditViewController.swift in Sources */,
+				EB79B19C29FC88E80062C410 /* DropInLesson.swift in Sources */,
+				EB31AAC629FC8B8000B987DF /* TimeInterval+Extension.swift in Sources */,
+				EB31AAB429FC8ADA00B987DF /* Lesson.swift in Sources */,
+				EB31AAC429FC8B4D00B987DF /* Date+Extension.swift in Sources */,
+				EB31AABA29FC8AEE00B987DF /* LessonModel.swift in Sources */,
+				EB31AAB829FC8AE700B987DF /* Lesson+Type.swift in Sources */,
+				EB31AABD29FC8B0400B987DF /* BookingButton.swift in Sources */,
+				EBC88DCD29FC868F00302532 /* ContentView.swift in Sources */,
+				660EB1842A0C3CC3007772E2 /* AlertError.swift in Sources */,
+				EB31AAC029FC8B2700B987DF /* Lesson+Recurrence.swift in Sources */,
+				EB31AABE29FC8B0400B987DF /* BookingButtonStyle.swift in Sources */,
+				EBA18AEA29FC8962006B4ED8 /* DropInLessonPicker.swift in Sources */,
+				EB31AAB029FC8ACA00B987DF /* MessageView.swift in Sources */,
+				EB31AAC229FC8B3F00B987DF /* EKEvent+Extension.swift in Sources */,
+				EBC88DCB29FC868F00302532 /* DropInLessonsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB31AAD729FC8CC700B987DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"RepeatingLessons/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RepeatingLessons/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Save repeating lessons to a calendar that you choose.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Show contact information in the calendar list.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.RepeatingLessons${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB31AAD829FC8CC700B987DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"RepeatingLessons/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RepeatingLessons/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Save repeating lessons to a calendar that you choose.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Show contact information in the calendar list.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.RepeatingLessons${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB3F2B7B29FC93510089E32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"MonthlyEvents/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonthlyEvents/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Fetch events in all your calendars and delete the ones you select in the app.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MonthlyEvents${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB3F2B7C29FC93510089E32B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"MonthlyEvents/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonthlyEvents/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Fetch events in all your calendars and delete the ones you select in the app.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MonthlyEvents${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB6B9BB329FC860700EA1B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Debug;
+		};
+		EB6B9BB429FC860700EA1B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Release;
+		};
+		EBC88DD329FC869000302532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"DropInLessons/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Save drop-in lessons using the editor UI.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Show contact information in the event editor.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DropInLessons${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBC88DD429FC869000302532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A54031805BB342741C155A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"DropInLessons/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Save drop-in lessons using the editor UI.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Show contact information in the event editor.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DropInLessons${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB31AAD629FC8CC700B987DF /* Build configuration list for PBXNativeTarget "RepeatingLessons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB31AAD729FC8CC700B987DF /* Debug */,
+				EB31AAD829FC8CC700B987DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3F2B7A29FC93510089E32B /* Build configuration list for PBXNativeTarget "MonthlyEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3F2B7B29FC93510089E32B /* Debug */,
+				EB3F2B7C29FC93510089E32B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6B9BB229FC860700EA1B38 /* Build configuration list for PBXProject "CalendarAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6B9BB329FC860700EA1B38 /* Debug */,
+				EB6B9BB429FC860700EA1B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC88DD529FC869000302532 /* Build configuration list for PBXNativeTarget "DropInLessons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC88DD329FC869000302532 /* Debug */,
+				EBC88DD429FC869000302532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB6B9BAF29FC860700EA1B38 /* Project object */;
+}

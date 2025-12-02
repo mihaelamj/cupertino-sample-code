@@ -1,0 +1,35 @@
+<document>
+	<head>
+		<style>
+			.badgeColor {
+				tv-tint-color:rgb(0,0,0);
+				tv-highlight-color:rgb(0,0,0);
+			}
+			@media -tv-template and (-tv-theme:dark) {
+				.badgeColor {
+					tv-tint-color:rgb(255,255,255);
+				}
+			}
+		</style>
+	</head>
+	<listTemplate>
+		<list>
+			<prototypes>
+				<listItemLockup>
+					<title binding="textContent:{title};"/>
+					<decorationImage class="badgeColor" src="resource://chevron" />
+				</listItemLockup>
+			</prototypes>					
+
+			<header>
+				<title>Product Uber Template</title>
+			</header>
+
+			<section binding="items:{examples};">
+				<header>
+					<title>Examples</title>
+				</header>
+			</section>
+		</list>
+	</listTemplate>
+</document>

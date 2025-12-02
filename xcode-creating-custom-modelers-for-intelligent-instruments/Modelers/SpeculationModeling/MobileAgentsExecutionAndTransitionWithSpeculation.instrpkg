@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ This instrpkg file defines the schemas, modelers, and instruments for modeling the sample app
+ with support for speculation.
+ 
+ -->
+<package>
+    <id>com.apple.mobileagents.execution.transition.with.speculation</id>
+    <title>Mobile Agents Execution And Transition Modeling With Speculation</title>
+    <owner>
+        <name>Apple Inc.</name>
+    </owner>
+    
+    <import-schema>os-signpost</import-schema>
+    
+    <interval-schema>
+        <id>mobile-agent-activity</id>
+        <title>Mobile Agent Activity With Speculation</title>
+        
+        <start-column>
+            <mnemonic>start</mnemonic>
+            <title>Start</title>
+            <type>start-time</type>
+        </start-column>
+        
+        <duration-column>
+            <mnemonic>duration</mnemonic>
+            <title>Duration</title>
+            <type>duration</type>
+        </duration-column>
+
+        <primary-column>
+            <mnemonic>agent-kind</mnemonic>
+            <title>Agent Kind</title>
+            <type>string</type>
+        </primary-column>
+        
+        <column>
+            <mnemonic>agent-kind-code</mnemonic>
+            <title>Agent Kind Code</title>
+            <type>uint64</type>
+        </column>
+        
+        <column>
+            <mnemonic>state</mnemonic>
+            <title>State</title>
+            <type>state</type>
+        </column>
+        
+        <column>
+            <mnemonic>instance</mnemonic>
+            <title>Instance</title>
+            <type>uint64</type>
+        </column>
+        
+        <column>
+            <mnemonic>stop-kind</mnemonic>
+            <title>Stop Kind</title>
+            <type>string</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity</mnemonic>
+            <title>Activity</title>
+            <type>formatted-label</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity-type</mnemonic>
+            <title>Activity Type</title>
+            <type>event-concept</type>
+        </column>
+        
+    </interval-schema>
+
+    <modeler>
+        <id>com.apple.mobileagents.execution.transition.speculation.modeler</id>
+        <title>Mobile Agent Execution and Transition Modeler</title>
+        <purpose>Transforms mobile agent signposts into meaningful activity data</purpose>
+        
+        <production-system>
+            <rule-path>mobile-agent-kind-knowledge.clp</rule-path>
+            <rule-path>mobile-agent-transition-concepts.clp</rule-path>
+            <rule-path>mobile-agent-execution-concepts.clp</rule-path>
+            <rule-path>mobile-agent-parking-concepts.clp</rule-path>
+            <rule-path>mobile-agent-kind-code-resolution.clp</rule-path>
+            <rule-path>mobile-agent-modeling.clp</rule-path>
+            <rule-path>mobile-agent-recording.clp</rule-path>
+        </production-system>
+        
+        <output>
+            <schema-ref>mobile-agent-activity</schema-ref>
+            <required-input>
+                <schema-ref>os-signpost</schema-ref>
+                <attribute>
+                    <name>category</name>
+                    <string>Mobile Agent</string>
+                </attribute>
+                <attribute>
+                    <name>subsystem</name>
+                    <string>com.apple.dt.utilities</string>
+                </attribute>
+            </required-input>
+        </output>
+        
+        
+    </modeler>
+
+    <instrument>
+        <id>com.apple.dt.mobile-agents.execution.with.speculation</id>
+        <title>Mobile Agent Activity With Speculation</title>
+        <category>Behavior</category>
+        <purpose>Tracks the activity of mobile agents.</purpose>
+        <icon>Generic</icon>
+        
+        <create-table>
+            <id>activity-table</id>
+            <schema-ref>mobile-agent-activity</schema-ref>
+        </create-table>
+        
+        <graph>
+            <title>Activity</title>
+            <lane>
+                <title>Agents</title>
+                <table-ref>activity-table</table-ref>
+                <plot-template>
+                    <instance-by>agent-kind-code</instance-by>
+                    <label-format>%s</label-format>
+                    <value-from>state</value-from>
+                    <color-from>activity-type</color-from>
+                    <label-from>activity</label-from>
+                </plot-template>
+            </lane>
+        </graph>
+        
+        <list>
+            <title>Activity</title>
+            <table-ref>activity-table</table-ref>
+            <column>start</column>
+            <column>duration</column>
+            <column>agent-kind</column>
+            <column>stop-kind</column>
+            <column>state</column>
+            <column>activity</column>
+        </list>
+    </instrument>
+    
+</package>

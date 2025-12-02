@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i31-V7-EfK">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exposure Notifications-->
+        <scene sceneID="zvF-JE-JCO">
+            <objects>
+                <tableViewController storyboardIdentifier="ExposureNotifications" title="Exposure Notifications" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ph-Kg-3XR" customClass="MainViewController" customModule="ExposureNotificationApp_iOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="150" sectionFooterHeight="28" id="Fbb-zO-r4Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Xo6-QL-ikA">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the Sample Public Health Authority App with Support for iOS 12.5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKt-hU-gCt">
+                                    <rect key="frame" x="8" y="8" width="359" height="45.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="6Ph-Kg-3XR" id="Rmh-4v-xCV"/>
+                            <outlet property="delegate" destination="6Ph-Kg-3XR" id="wGo-sz-efU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="zNy-DZ-2n8"/>
+                    <connections>
+                        <segue destination="7bA-9l-AZj" kind="show" identifier="ShowSimpleTextDisplay" id="HXQ-Xv-CwM"/>
+                        <segue destination="WD4-lE-19a" kind="show" identifier="ShowPositiveDiagnoses" id="JD3-lU-dt3"/>
+                        <segue destination="XFt-BX-mSX" kind="show" identifier="ShowRecentExposures" id="dMR-df-cPP"/>
+                        <segue destination="DHX-EI-oSz" kind="show" identifier="ShowDiagnosisKeys" id="LU1-ea-eWP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOT-2k-Ogj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650.4000000000001" y="85.714285714285722"/>
+        </scene>
+        <!--Positive Diagnoses Table View Controller-->
+        <scene sceneID="R1l-5W-9Pk">
+            <objects>
+                <tableViewController id="WD4-lE-19a" customClass="PositiveDiagnosesTableViewController" customModule="ExposureNotificationApp_iOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tdz-nA-6CD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="WD4-lE-19a" id="GOZ-Hs-L1W"/>
+                            <outlet property="delegate" destination="WD4-lE-19a" id="kQL-EN-qwz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="PsJ-xd-dGd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gsm-jH-qtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2662" y="350"/>
+        </scene>
+        <!--Recent Exposures View Controller-->
+        <scene sceneID="bra-b9-duj">
+            <objects>
+                <tableViewController id="XFt-BX-mSX" customClass="RecentExposuresViewController" customModule="ExposureNotificationApp_iOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KPq-FC-dgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="XFt-BX-mSX" id="4NV-Id-kb8"/>
+                            <outlet property="delegate" destination="XFt-BX-mSX" id="wbg-d9-fMj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tqD-v5-zs5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muv-XM-C1j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2662" y="1057"/>
+        </scene>
+        <!--Show Diagnosis Keys View Controller-->
+        <scene sceneID="6mu-6S-IoE">
+            <objects>
+                <tableViewController id="DHX-EI-oSz" customClass="ShowDiagnosisKeysViewController" customModule="ExposureNotificationApp_iOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YAD-XB-URA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="DHX-EI-oSz" id="yCh-5E-Hmc"/>
+                            <outlet property="delegate" destination="DHX-EI-oSz" id="QmV-Ul-7V4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mmn-ne-o2w"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrD-rp-VFK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3446" y="750"/>
+        </scene>
+        <!--Simple Text Display View Controller-->
+        <scene sceneID="vNy-dw-9LM">
+            <objects>
+                <viewController storyboardIdentifier="SimpleTextDisplayViewController" id="7bA-9l-AZj" customClass="SimpleTextDisplayViewController" customModule="ExposureNotificationApp_iOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Od-mS-ABt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fe2-xe-sik">
+                                <rect key="frame" x="16" y="0.0" width="343" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Oq-e7-d8o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fe2-xe-sik" firstAttribute="bottom" secondItem="6Oq-e7-d8o" secondAttribute="bottom" id="1qw-Hp-YBA"/>
+                            <constraint firstItem="fe2-xe-sik" firstAttribute="top" secondItem="6Oq-e7-d8o" secondAttribute="top" id="HAY-BV-bgT"/>
+                            <constraint firstItem="fe2-xe-sik" firstAttribute="leading" secondItem="7Od-mS-ABt" secondAttribute="leadingMargin" id="L1x-q4-9uY"/>
+                            <constraint firstItem="fe2-xe-sik" firstAttribute="trailing" secondItem="7Od-mS-ABt" secondAttribute="trailingMargin" id="hkp-8t-JDC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S2t-1a-9tU"/>
+                    <connections>
+                        <outlet property="textView" destination="fe2-xe-sik" id="IWt-Yb-2Rg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ElK-Bl-U9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661.5999999999999" y="-352.46305418719214"/>
+        </scene>
+        <!--Exposure Notifications-->
+        <scene sceneID="4T9-6h-8bu">
+            <objects>
+                <navigationController title="Exposure Notifications" automaticallyAdjustsScrollViewInsets="NO" id="i31-V7-EfK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" largeTitles="YES" id="cOx-d0-2gU">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3XY-7o-o1e">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="6Ph-Kg-3XR" kind="relationship" relationship="rootViewController" id="hO2-s8-m5v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0O7-tK-hAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="85.714285714285722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE22BB472812B0DF00575450 /* VideoEffectsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22BB462812B0DF00575450 /* VideoEffectsEngine.swift */; };
+		BE8C71D52812ABB800BD8909 /* vImagePixelBuffer_VideoEffectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8C71D42812ABB800BD8909 /* vImagePixelBuffer_VideoEffectsApp.swift */; };
+		BE8C71D72812ABB800BD8909 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8C71D62812ABB800BD8909 /* ContentView.swift */; };
+		BE8C71D92812ABB900BD8909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8C71D82812ABB900BD8909 /* Assets.xcassets */; };
+		BE8C71DC2812ABB900BD8909 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8C71DB2812ABB900BD8909 /* Preview Assets.xcassets */; };
+		BEB4E9AC28170AC600B446B6 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB4E9AB28170AC600B446B6 /* ImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17118E5D0A565AB8FDD32B8C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		749B3B52656349609929AE41 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		AE063C6131BC7AACC84651E4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		BE22BB462812B0DF00575450 /* VideoEffectsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEffectsEngine.swift; sourceTree = "<group>"; };
+		BE8C71D12812ABB800BD8909 /* vImagePixelBuffer-VideoEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vImagePixelBuffer-VideoEffects.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8C71D42812ABB800BD8909 /* vImagePixelBuffer_VideoEffectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vImagePixelBuffer_VideoEffectsApp.swift; sourceTree = "<group>"; };
+		BE8C71D62812ABB800BD8909 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE8C71D82812ABB900BD8909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE8C71DB2812ABB900BD8909 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE8C71DD2812ABB900BD8909 /* vImagePixelBuffer_VideoEffects.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vImagePixelBuffer_VideoEffects.entitlements; sourceTree = "<group>"; };
+		BEB4E9AB28170AC600B446B6 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE8C71CE2812ABB800BD8909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D5A485234B6223B7DC82894 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				AE063C6131BC7AACC84651E4 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		7BBC7B261F9FA8BB693B1F6C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				749B3B52656349609929AE41 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BE8C71C82812ABB800BD8909 = {
+			isa = PBXGroup;
+			children = (
+				17118E5D0A565AB8FDD32B8C /* README.md */,
+				BE8C71D32812ABB800BD8909 /* vImagePixelBuffer-VideoEffects */,
+				BE8C71D22812ABB800BD8909 /* Products */,
+				7BBC7B261F9FA8BB693B1F6C /* Configuration */,
+				0D5A485234B6223B7DC82894 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		BE8C71D22812ABB800BD8909 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE8C71D12812ABB800BD8909 /* vImagePixelBuffer-VideoEffects.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE8C71D32812ABB800BD8909 /* vImagePixelBuffer-VideoEffects */ = {
+			isa = PBXGroup;
+			children = (
+				BE8C71D42812ABB800BD8909 /* vImagePixelBuffer_VideoEffectsApp.swift */,
+				BE22BB462812B0DF00575450 /* VideoEffectsEngine.swift */,
+				BE8C71D62812ABB800BD8909 /* ContentView.swift */,
+				BEB4E9AB28170AC600B446B6 /* ImageView.swift */,
+				BE8C71D82812ABB900BD8909 /* Assets.xcassets */,
+				BE8C71DD2812ABB900BD8909 /* vImagePixelBuffer_VideoEffects.entitlements */,
+				BE8C71DA2812ABB900BD8909 /* Preview Content */,
+			);
+			path = "vImagePixelBuffer-VideoEffects";
+			sourceTree = "<group>";
+		};
+		BE8C71DA2812ABB900BD8909 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE8C71DB2812ABB900BD8909 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE8C71D02812ABB800BD8909 /* vImagePixelBuffer-VideoEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8C71E02812ABB900BD8909 /* Build configuration list for PBXNativeTarget "vImagePixelBuffer-VideoEffects" */;
+			buildPhases = (
+				BE8C71CD2812ABB800BD8909 /* Sources */,
+				BE8C71CE2812ABB800BD8909 /* Frameworks */,
+				BE8C71CF2812ABB800BD8909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vImagePixelBuffer-VideoEffects";
+			productName = "vImagePixelBuffer-VideoEffects";
+			productReference = BE8C71D12812ABB800BD8909 /* vImagePixelBuffer-VideoEffects.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE8C71C92812ABB800BD8909 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					BE8C71D02812ABB800BD8909 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = BE8C71CC2812ABB800BD8909 /* Build configuration list for PBXProject "vImagePixelBuffer-VideoEffects" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE8C71C82812ABB800BD8909;
+			productRefGroup = BE8C71D22812ABB800BD8909 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE8C71D02812ABB800BD8909 /* vImagePixelBuffer-VideoEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE8C71CF2812ABB800BD8909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8C71DC2812ABB900BD8909 /* Preview Assets.xcassets in Resources */,
+				BE8C71D92812ABB900BD8909 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE8C71CD2812ABB800BD8909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB4E9AC28170AC600B446B6 /* ImageView.swift in Sources */,
+				BE22BB472812B0DF00575450 /* VideoEffectsEngine.swift in Sources */,
+				BE8C71D72812ABB800BD8909 /* ContentView.swift in Sources */,
+				BE8C71D52812ABB800BD8909 /* vImagePixelBuffer_VideoEffectsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE8C71DE2812ABB900BD8909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749B3B52656349609929AE41 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE8C71DF2812ABB900BD8909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749B3B52656349609929AE41 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BE8C71E12812ABB900BD8909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749B3B52656349609929AE41 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vImagePixelBuffer-VideoEffects/vImagePixelBuffer_VideoEffects.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vImagePixelBuffer-VideoEffects/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Video Effects Demo";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vImagePixelBuffer-VideoEffects${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE8C71E22812ABB900BD8909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749B3B52656349609929AE41 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vImagePixelBuffer-VideoEffects/vImagePixelBuffer_VideoEffects.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vImagePixelBuffer-VideoEffects/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Video Effects Demo";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.vImagePixelBuffer-VideoEffects${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE8C71CC2812ABB800BD8909 /* Build configuration list for PBXProject "vImagePixelBuffer-VideoEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8C71DE2812ABB900BD8909 /* Debug */,
+				BE8C71DF2812ABB900BD8909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8C71E02812ABB900BD8909 /* Build configuration list for PBXNativeTarget "vImagePixelBuffer-VideoEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8C71E12812ABB900BD8909 /* Debug */,
+				BE8C71E22812ABB900BD8909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE8C71C92812ABB800BD8909 /* Project object */;
+}

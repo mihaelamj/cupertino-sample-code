@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1F1B391F033765001622B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A35329C1E99974500C194AD /* ViewController.m */; };
+		3A1F1B3D1F033827001622B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A35329C1E99974500C194AD /* ViewController.m */; };
+		3A1F1B3E1F033846001622B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532931E99974500C194AD /* main.m */; };
+		3A1F1B3F1F033846001622B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532931E99974500C194AD /* main.m */; };
+		3A1F1B441F033EF3001622B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD21341EAE60D2000D1DED /* AppDelegate.m */; };
+		3A3532941E99974500C194AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532931E99974500C194AD /* main.m */; };
+		3A35329D1E99974500C194AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A35329C1E99974500C194AD /* ViewController.m */; };
+		3A3532A01E99974500C194AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A35329E1E99974500C194AD /* Main.storyboard */; };
+		3A3532A31E99974500C194AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3532A11E99974500C194AD /* LaunchScreen.storyboard */; };
+		3A3532B91E99974500C194AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3532B71E99974500C194AD /* Main.storyboard */; };
+		3A3532CC1E99974500C194AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3532CA1E99974500C194AD /* Main.storyboard */; };
+		3A3532CE1E99974500C194AD /* Metal4Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532851E99974500C194AD /* Metal4Renderer.m */; };
+		3A3532CF1E99974500C194AD /* Metal4Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532851E99974500C194AD /* Metal4Renderer.m */; };
+		3A3532D01E99974500C194AD /* Metal4Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532851E99974500C194AD /* Metal4Renderer.m */; };
+		3ACD21351EAE60D2000D1DED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD21341EAE60D2000D1DED /* AppDelegate.m */; };
+		63E77A181ED2059A00E1E542 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532871E99974500C194AD /* Shaders.metal */; };
+		63E77A191ED2059E00E1E542 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532871E99974500C194AD /* Shaders.metal */; };
+		63E77A1A1ED205A200E1E542 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532871E99974500C194AD /* Shaders.metal */; };
+		EB46C69E2E580CE100651A23 /* Metal4Renderer+Compilation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C69D2E580CE100651A23 /* Metal4Renderer+Compilation.m */; };
+		EB46C69F2E580CE100651A23 /* Metal4Renderer+Compilation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C69D2E580CE100651A23 /* Metal4Renderer+Compilation.m */; };
+		EB46C6A02E580CE100651A23 /* Metal4Renderer+Compilation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C69D2E580CE100651A23 /* Metal4Renderer+Compilation.m */; };
+		EB46C6A32E587CB600651A23 /* Metal4Renderer+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6A22E587CB600651A23 /* Metal4Renderer+Setup.m */; };
+		EB46C6A42E587CB600651A23 /* Metal4Renderer+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6A22E587CB600651A23 /* Metal4Renderer+Setup.m */; };
+		EB46C6A52E587CB600651A23 /* Metal4Renderer+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6A22E587CB600651A23 /* Metal4Renderer+Setup.m */; };
+		EB46C6A72E587CDC00651A23 /* Metal4Renderer+Setup.h in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6A62E587CDC00651A23 /* Metal4Renderer+Setup.h */; };
+		EB46C6A82E587CDC00651A23 /* Metal4Renderer+Setup.h in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6A62E587CDC00651A23 /* Metal4Renderer+Setup.h */; };
+		EB46C6A92E587CDC00651A23 /* Metal4Renderer+Setup.h in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6A62E587CDC00651A23 /* Metal4Renderer+Setup.h */; };
+		EB46C6AC2E59C1DD00651A23 /* Metal4Renderer+Encoding.h in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6AB2E59C1DD00651A23 /* Metal4Renderer+Encoding.h */; };
+		EB46C6AD2E59C1DD00651A23 /* Metal4Renderer+Encoding.h in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6AB2E59C1DD00651A23 /* Metal4Renderer+Encoding.h */; };
+		EB46C6AE2E59C1DD00651A23 /* Metal4Renderer+Encoding.h in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6AB2E59C1DD00651A23 /* Metal4Renderer+Encoding.h */; };
+		EB46C6AF2E59C22C00651A23 /* Metal4Renderer+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6AA2E59C1C000651A23 /* Metal4Renderer+Encoding.m */; };
+		EB46C6B02E59C22C00651A23 /* Metal4Renderer+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6AA2E59C1C000651A23 /* Metal4Renderer+Encoding.m */; };
+		EB46C6B12E59C22C00651A23 /* Metal4Renderer+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46C6AA2E59C1C000651A23 /* Metal4Renderer+Encoding.m */; };
+		EB50D72F2DE80B23003EE295 /* TriangleData.c in Sources */ = {isa = PBXBuildFile; fileRef = EB50D72E2DE80B23003EE295 /* TriangleData.c */; };
+		EB50D7302DE80B23003EE295 /* TriangleData.c in Sources */ = {isa = PBXBuildFile; fileRef = EB50D72E2DE80B23003EE295 /* TriangleData.c */; };
+		EB50D7312DE80B23003EE295 /* TriangleData.c in Sources */ = {isa = PBXBuildFile; fileRef = EB50D72E2DE80B23003EE295 /* TriangleData.c */; };
+		EB50D73A2DE8FF58003EE295 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB50D7392DE8FF58003EE295 /* MetalKit.framework */; };
+		EB50D73C2DE8FF60003EE295 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB50D73B2DE8FF60003EE295 /* MetalKit.framework */; };
+		EB50D73E2DE8FF65003EE295 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB50D73D2DE8FF65003EE295 /* MetalKit.framework */; };
+		EB63B2E92DC72DF80016CE17 /* MetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB63B2E82DC72DF80016CE17 /* MetalRenderer.m */; };
+		EB63B2EA2DC72DF80016CE17 /* MetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB63B2E82DC72DF80016CE17 /* MetalRenderer.m */; };
+		EB63B2EB2DC72DF80016CE17 /* MetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB63B2E82DC72DF80016CE17 /* MetalRenderer.m */; };
+		EBA044522E6FC081007623DE /* MetalRenderer+Compilation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA044512E6FC081007623DE /* MetalRenderer+Compilation.m */; };
+		EBA044532E6FC081007623DE /* MetalRenderer+Compilation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA044512E6FC081007623DE /* MetalRenderer+Compilation.m */; };
+		EBA044542E6FC081007623DE /* MetalRenderer+Compilation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA044512E6FC081007623DE /* MetalRenderer+Compilation.m */; };
+		EBA044572E6FC7E2007623DE /* MetalRenderer+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA044562E6FC7E2007623DE /* MetalRenderer+Setup.m */; };
+		EBA044582E6FC7E2007623DE /* MetalRenderer+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA044562E6FC7E2007623DE /* MetalRenderer+Setup.m */; };
+		EBA044592E6FC7E2007623DE /* MetalRenderer+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA044562E6FC7E2007623DE /* MetalRenderer+Setup.m */; };
+		EBE69BF52DE56ACB0093E837 /* MetalKitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE69BF42DE56ACB0093E837 /* MetalKitViewDelegate.m */; };
+		EBE69BF62DE56ACB0093E837 /* MetalKitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE69BF42DE56ACB0093E837 /* MetalKitViewDelegate.m */; };
+		EBE69BF72DE56ACB0093E837 /* MetalKitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE69BF42DE56ACB0093E837 /* MetalKitViewDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B926607EB60BFFC281E994A /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		3A3532841E99974500C194AD /* Metal4Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Metal4Renderer.h; sourceTree = "<group>"; };
+		3A3532851E99974500C194AD /* Metal4Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Metal4Renderer.m; sourceTree = "<group>"; };
+		3A3532861E99974500C194AD /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		3A3532871E99974500C194AD /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		3A35328F1E99974500C194AD /* Hello Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Triangle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3532931E99974500C194AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A35329B1E99974500C194AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A35329C1E99974500C194AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A35329F1E99974500C194AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A3532A21E99974500C194AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A3532A41E99974500C194AD /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		3A3532A91E99974500C194AD /* Hello Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Triangle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3532B81E99974500C194AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A3532BA1E99974500C194AD /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
+		3A3532BF1E99974500C194AD /* Hello Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Triangle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3532CB1E99974500C194AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A3532CD1E99974500C194AD /* macOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macOS-Info.plist"; sourceTree = "<group>"; };
+		3ACD21331EAE60D2000D1DED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3ACD21341EAE60D2000D1DED /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3ED283CC1EC2C6D200A23F58 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6FF4B9C3A4B9A73955263FF5 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		C1A794F12DDFA4D600EA2C44 /* Descriptors.mtl4-json */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Descriptors.mtl4-json"; sourceTree = "<group>"; };
+		EB46C69D2E580CE100651A23 /* Metal4Renderer+Compilation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Metal4Renderer+Compilation.m"; sourceTree = "<group>"; };
+		EB46C6A12E580E2200651A23 /* Metal4Renderer+Compilation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metal4Renderer+Compilation.h"; sourceTree = "<group>"; };
+		EB46C6A22E587CB600651A23 /* Metal4Renderer+Setup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Metal4Renderer+Setup.m"; sourceTree = "<group>"; };
+		EB46C6A62E587CDC00651A23 /* Metal4Renderer+Setup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metal4Renderer+Setup.h"; sourceTree = "<group>"; };
+		EB46C6AA2E59C1C000651A23 /* Metal4Renderer+Encoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Metal4Renderer+Encoding.m"; sourceTree = "<group>"; };
+		EB46C6AB2E59C1DD00651A23 /* Metal4Renderer+Encoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metal4Renderer+Encoding.h"; sourceTree = "<group>"; };
+		EB50D72D2DE80B23003EE295 /* TriangleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleData.h; sourceTree = "<group>"; };
+		EB50D72E2DE80B23003EE295 /* TriangleData.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TriangleData.c; sourceTree = "<group>"; };
+		EB50D7392DE8FF58003EE295 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS19.0.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		EB50D73B2DE8FF60003EE295 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS19.0.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		EB50D73D2DE8FF65003EE295 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		EB63B2E82DC72DF80016CE17 /* MetalRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalRenderer.m; sourceTree = "<group>"; };
+		EBA044502E6FC06F007623DE /* MetalRenderer+Compilation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetalRenderer+Compilation.h"; sourceTree = "<group>"; };
+		EBA044512E6FC081007623DE /* MetalRenderer+Compilation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MetalRenderer+Compilation.m"; sourceTree = "<group>"; };
+		EBA044552E6FC7E2007623DE /* MetalRenderer+Setup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetalRenderer+Setup.h"; sourceTree = "<group>"; };
+		EBA044562E6FC7E2007623DE /* MetalRenderer+Setup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MetalRenderer+Setup.m"; sourceTree = "<group>"; };
+		EBD577782DC8B6EE00D93F84 /* MetalRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRenderer.h; sourceTree = "<group>"; };
+		EBE69BF32DE56ACB0093E837 /* MetalKitViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalKitViewDelegate.h; sourceTree = "<group>"; };
+		EBE69BF42DE56ACB0093E837 /* MetalKitViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalKitViewDelegate.m; sourceTree = "<group>"; };
+		EBE69BF82DE56C4A0093E837 /* RendererProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A35328C1E99974500C194AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB50D73A2DE8FF58003EE295 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3532A61E99974500C194AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB50D73C2DE8FF60003EE295 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3532BC1E99974500C194AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB50D73E2DE8FF65003EE295 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1F1B351F0336A8001622B3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A35329E1E99974500C194AD /* Main.storyboard */,
+				3A3532A11E99974500C194AD /* LaunchScreen.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3A1F1B361F0336DB001622B3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A3532CA1E99974500C194AD /* Main.storyboard */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		3A1F1B371F0336F4001622B3 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A3532B71E99974500C194AD /* Main.storyboard */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		3A35327E1E99974500C194AD = {
+			isa = PBXGroup;
+			children = (
+				3ED283CC1EC2C6D200A23F58 /* README.md */,
+				3A3532831E99974500C194AD /* Renderer common */,
+				EBBAF3662E6D406500372A72 /* Metal renderer */,
+				EBBAF3682E6D40FF00372A72 /* Metal 4 renderer */,
+				EBBAF3652E6D3E9100372A72 /* Shaders */,
+				EBBAF3642E6D3E0000372A72 /* View controller */,
+				EBBAF3632E6D3DA400372A72 /* UI */,
+				3A3532911E99974500C194AD /* Application */,
+				EB50D7382DE8FF58003EE295 /* Linking to MetalKit (1 per target) */,
+				3A3532901E99974500C194AD /* Products */,
+				563392EE871A3FB4D656AE10 /* Configuration */,
+				65E5696E505E52D187F6D5E5 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		3A3532831E99974500C194AD /* Renderer common */ = {
+			isa = PBXGroup;
+			children = (
+				EBE69BF82DE56C4A0093E837 /* RendererProtocol.h */,
+				EB50D72D2DE80B23003EE295 /* TriangleData.h */,
+				EB50D72E2DE80B23003EE295 /* TriangleData.c */,
+			);
+			path = "Renderer common";
+			sourceTree = "<group>";
+		};
+		3A3532901E99974500C194AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A35328F1E99974500C194AD /* Hello Triangle.app */,
+				3A3532A91E99974500C194AD /* Hello Triangle.app */,
+				3A3532BF1E99974500C194AD /* Hello Triangle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A3532911E99974500C194AD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3A3532A41E99974500C194AD /* iOS-Info.plist */,
+				3A3532BA1E99974500C194AD /* tvOS-Info.plist */,
+				3A3532CD1E99974500C194AD /* macOS-Info.plist */,
+				3A3532931E99974500C194AD /* main.m */,
+				3ACD21331EAE60D2000D1DED /* AppDelegate.h */,
+				3ACD21341EAE60D2000D1DED /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		563392EE871A3FB4D656AE10 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2B926607EB60BFFC281E994A /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		65E5696E505E52D187F6D5E5 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				6FF4B9C3A4B9A73955263FF5 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+		EB50D7382DE8FF58003EE295 /* Linking to MetalKit (1 per target) */ = {
+			isa = PBXGroup;
+			children = (
+				EB50D73D2DE8FF65003EE295 /* MetalKit.framework */,
+				EB50D73B2DE8FF60003EE295 /* MetalKit.framework */,
+				EB50D7392DE8FF58003EE295 /* MetalKit.framework */,
+			);
+			name = "Linking to MetalKit (1 per target)";
+			sourceTree = "<group>";
+		};
+		EBBAF3632E6D3DA400372A72 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3A1F1B361F0336DB001622B3 /* macOS */,
+				3A1F1B371F0336F4001622B3 /* tvOS */,
+				3A1F1B351F0336A8001622B3 /* iOS */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EBBAF3642E6D3E0000372A72 /* View controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A35329B1E99974500C194AD /* ViewController.h */,
+				3A35329C1E99974500C194AD /* ViewController.m */,
+				EBE69BF32DE56ACB0093E837 /* MetalKitViewDelegate.h */,
+				EBE69BF42DE56ACB0093E837 /* MetalKitViewDelegate.m */,
+			);
+			path = "View controller";
+			sourceTree = "<group>";
+		};
+		EBBAF3652E6D3E9100372A72 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3A3532861E99974500C194AD /* ShaderTypes.h */,
+				3A3532871E99974500C194AD /* Shaders.metal */,
+				C1A794F12DDFA4D600EA2C44 /* Descriptors.mtl4-json */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		EBBAF3662E6D406500372A72 /* Metal renderer */ = {
+			isa = PBXGroup;
+			children = (
+				EBD577782DC8B6EE00D93F84 /* MetalRenderer.h */,
+				EB63B2E82DC72DF80016CE17 /* MetalRenderer.m */,
+				EBA044552E6FC7E2007623DE /* MetalRenderer+Setup.h */,
+				EBA044562E6FC7E2007623DE /* MetalRenderer+Setup.m */,
+				EBA044502E6FC06F007623DE /* MetalRenderer+Compilation.h */,
+				EBA044512E6FC081007623DE /* MetalRenderer+Compilation.m */,
+			);
+			path = "Metal renderer";
+			sourceTree = "<group>";
+		};
+		EBBAF3682E6D40FF00372A72 /* Metal 4 renderer */ = {
+			isa = PBXGroup;
+			children = (
+				3A3532841E99974500C194AD /* Metal4Renderer.h */,
+				3A3532851E99974500C194AD /* Metal4Renderer.m */,
+				EB46C6A62E587CDC00651A23 /* Metal4Renderer+Setup.h */,
+				EB46C6A22E587CB600651A23 /* Metal4Renderer+Setup.m */,
+				EB46C6AB2E59C1DD00651A23 /* Metal4Renderer+Encoding.h */,
+				EB46C6AA2E59C1C000651A23 /* Metal4Renderer+Encoding.m */,
+				EB46C6A12E580E2200651A23 /* Metal4Renderer+Compilation.h */,
+				EB46C69D2E580CE100651A23 /* Metal4Renderer+Compilation.m */,
+			);
+			path = "Metal 4 renderer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A35328E1E99974500C194AD /* iOS - Hello Triangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3532E21E99974500C194AD /* Build configuration list for PBXNativeTarget "iOS - Hello Triangle" */;
+			buildPhases = (
+				3A35328B1E99974500C194AD /* Sources */,
+				3A35328C1E99974500C194AD /* Frameworks */,
+				3A35328D1E99974500C194AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS - Hello Triangle";
+			productName = iOS;
+			productReference = 3A35328F1E99974500C194AD /* Hello Triangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A3532A81E99974500C194AD /* tvOS - Hello Triangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3532E51E99974500C194AD /* Build configuration list for PBXNativeTarget "tvOS - Hello Triangle" */;
+			buildPhases = (
+				3A3532A51E99974500C194AD /* Sources */,
+				3A3532A61E99974500C194AD /* Frameworks */,
+				3A3532A71E99974500C194AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS - Hello Triangle";
+			productName = tvOS;
+			productReference = 3A3532A91E99974500C194AD /* Hello Triangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A3532BE1E99974500C194AD /* macOS - Hello Triangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3532E81E99974500C194AD /* Build configuration list for PBXNativeTarget "macOS - Hello Triangle" */;
+			buildPhases = (
+				3A3532BB1E99974500C194AD /* Sources */,
+				3A3532BC1E99974500C194AD /* Frameworks */,
+				3A3532BD1E99974500C194AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macOS - Hello Triangle";
+			productName = macOS;
+			productReference = 3A3532BF1E99974500C194AD /* Hello Triangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A35327F1E99974500C194AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3A35328E1E99974500C194AD = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					3A3532A81E99974500C194AD = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					3A3532BE1E99974500C194AD = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3A3532821E99974500C194AD /* Build configuration list for PBXProject "Hello Triangle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A35327E1E99974500C194AD;
+			productRefGroup = 3A3532901E99974500C194AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A35328E1E99974500C194AD /* iOS - Hello Triangle */,
+				3A3532A81E99974500C194AD /* tvOS - Hello Triangle */,
+				3A3532BE1E99974500C194AD /* macOS - Hello Triangle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A35328D1E99974500C194AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3532A01E99974500C194AD /* Main.storyboard in Resources */,
+				3A3532A31E99974500C194AD /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3532A71E99974500C194AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3532B91E99974500C194AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3532BD1E99974500C194AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3532CC1E99974500C194AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A35328B1E99974500C194AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E77A181ED2059A00E1E542 /* Shaders.metal in Sources */,
+				EBE69BF72DE56ACB0093E837 /* MetalKitViewDelegate.m in Sources */,
+				3A35329D1E99974500C194AD /* ViewController.m in Sources */,
+				3A3532941E99974500C194AD /* main.m in Sources */,
+				EB63B2E92DC72DF80016CE17 /* MetalRenderer.m in Sources */,
+				EB46C6A32E587CB600651A23 /* Metal4Renderer+Setup.m in Sources */,
+				EBA044592E6FC7E2007623DE /* MetalRenderer+Setup.m in Sources */,
+				EB46C6AC2E59C1DD00651A23 /* Metal4Renderer+Encoding.h in Sources */,
+				3A3532CE1E99974500C194AD /* Metal4Renderer.m in Sources */,
+				EB46C6AF2E59C22C00651A23 /* Metal4Renderer+Encoding.m in Sources */,
+				EBA044532E6FC081007623DE /* MetalRenderer+Compilation.m in Sources */,
+				EB50D7302DE80B23003EE295 /* TriangleData.c in Sources */,
+				3ACD21351EAE60D2000D1DED /* AppDelegate.m in Sources */,
+				EB46C6A72E587CDC00651A23 /* Metal4Renderer+Setup.h in Sources */,
+				EB46C69F2E580CE100651A23 /* Metal4Renderer+Compilation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3532A51E99974500C194AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E77A191ED2059E00E1E542 /* Shaders.metal in Sources */,
+				EBE69BF52DE56ACB0093E837 /* MetalKitViewDelegate.m in Sources */,
+				3A3532CF1E99974500C194AD /* Metal4Renderer.m in Sources */,
+				3A1F1B391F033765001622B3 /* ViewController.m in Sources */,
+				EB63B2EA2DC72DF80016CE17 /* MetalRenderer.m in Sources */,
+				EB46C6A52E587CB600651A23 /* Metal4Renderer+Setup.m in Sources */,
+				EBA044582E6FC7E2007623DE /* MetalRenderer+Setup.m in Sources */,
+				EB46C6AD2E59C1DD00651A23 /* Metal4Renderer+Encoding.h in Sources */,
+				3A1F1B3F1F033846001622B3 /* main.m in Sources */,
+				EB46C6B02E59C22C00651A23 /* Metal4Renderer+Encoding.m in Sources */,
+				EBA044542E6FC081007623DE /* MetalRenderer+Compilation.m in Sources */,
+				EB50D72F2DE80B23003EE295 /* TriangleData.c in Sources */,
+				3A1F1B441F033EF3001622B3 /* AppDelegate.m in Sources */,
+				EB46C6A92E587CDC00651A23 /* Metal4Renderer+Setup.h in Sources */,
+				EB46C69E2E580CE100651A23 /* Metal4Renderer+Compilation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3532BB1E99974500C194AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE69BF62DE56ACB0093E837 /* MetalKitViewDelegate.m in Sources */,
+				EBA044522E6FC081007623DE /* MetalRenderer+Compilation.m in Sources */,
+				EB46C6A02E580CE100651A23 /* Metal4Renderer+Compilation.m in Sources */,
+				3A1F1B3D1F033827001622B3 /* ViewController.m in Sources */,
+				EB46C6AE2E59C1DD00651A23 /* Metal4Renderer+Encoding.h in Sources */,
+				EBA044572E6FC7E2007623DE /* MetalRenderer+Setup.m in Sources */,
+				EB46C6B12E59C22C00651A23 /* Metal4Renderer+Encoding.m in Sources */,
+				63E77A1A1ED205A200E1E542 /* Shaders.metal in Sources */,
+				3A1F1B3E1F033846001622B3 /* main.m in Sources */,
+				EB46C6A82E587CDC00651A23 /* Metal4Renderer+Setup.h in Sources */,
+				EB63B2EB2DC72DF80016CE17 /* MetalRenderer.m in Sources */,
+				EB50D7312DE80B23003EE295 /* TriangleData.c in Sources */,
+				3A3532D01E99974500C194AD /* Metal4Renderer.m in Sources */,
+				EB46C6A42E587CB600651A23 /* Metal4Renderer+Setup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A35329E1E99974500C194AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A35329F1E99974500C194AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A3532A11E99974500C194AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3532A21E99974500C194AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A3532B71E99974500C194AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3532B81E99974500C194AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A3532CA1E99974500C194AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3532CB1E99974500C194AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A3532E01E99974500C194AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = HelloTriangle;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Debug;
+		};
+		3A3532E11E99974500C194AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = HelloTriangle;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Release;
+		};
+		3A3532E31E99974500C194AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					TARGET_IOS,
+				);
+				INFOPLIST_FILE = "Application/iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HelloTriangle${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Hello Triangle";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A3532E41E99974500C194AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_IOS;
+				INFOPLIST_FILE = "Application/iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HelloTriangle${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Hello Triangle";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3532E61E99974500C194AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_TVOS,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Application/tvOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HelloTriangle${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Hello Triangle";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		3A3532E71E99974500C194AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_TVOS;
+				INFOPLIST_FILE = "Application/tvOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HelloTriangle${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Hello Triangle";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3532E91E99974500C194AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					TARGET_MACOS,
+				);
+				INFOPLIST_FILE = "Application/macOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HelloTriangle${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Hello Triangle";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3A3532EA1E99974500C194AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B926607EB60BFFC281E994A /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_MACOS;
+				INFOPLIST_FILE = "Application/macOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.HelloTriangle${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "Hello Triangle";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A3532821E99974500C194AD /* Build configuration list for PBXProject "Hello Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3532E01E99974500C194AD /* Debug */,
+				3A3532E11E99974500C194AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3532E21E99974500C194AD /* Build configuration list for PBXNativeTarget "iOS - Hello Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3532E31E99974500C194AD /* Debug */,
+				3A3532E41E99974500C194AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3532E51E99974500C194AD /* Build configuration list for PBXNativeTarget "tvOS - Hello Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3532E61E99974500C194AD /* Debug */,
+				3A3532E71E99974500C194AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3532E81E99974500C194AD /* Build configuration list for PBXNativeTarget "macOS - Hello Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3532E91E99974500C194AD /* Debug */,
+				3A3532EA1E99974500C194AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A35327F1E99974500C194AD /* Project object */;
+}

@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8BF7634272CAF4400237EDE /* NSUserActivity+StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354123ECE15E005A1866 /* NSUserActivity+StartCallConvertible.swift */; };
+		A8BF7635272CAF5400237EDE /* StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354023ECE15E005A1866 /* StartCallConvertible.swift */; };
+		B24F6670247478F800454C22 /* Ringtone.aif in Resources */ = {isa = PBXBuildFile; fileRef = B2E49222247478BF00F9A8BA /* Ringtone.aif */; };
+		B2F2B94524747A0100E02CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F2B942247479EA00E02CB4 /* LaunchScreen.storyboard */; };
+		B2F2B94824747DCE00E02CB4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2F2B94624747DCE00E02CB4 /* Localizable.strings */; };
+		BB1813A82702382D0091D1DE /* Speakerbox_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1813A72702382D0091D1DE /* Speakerbox_WatchApp.swift */; };
+		BB1813AA2702382D0091D1DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1813A92702382D0091D1DE /* ContentView.swift */; };
+		BB1813AC270238350091D1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1813AB270238350091D1DE /* Assets.xcassets */; };
+		BB1813AF270238350091D1DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1813AE270238350091D1DE /* Preview Assets.xcassets */; };
+		BB53A6042835960F006FE3D1 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB53A6032835960F006FE3D1 /* CallKit.framework */; };
+		BB896E5828355F2900CB4EA9 /* CallAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354623ECE38C005A1866 /* CallAudio.swift */; };
+		BB9AD3F22704DB8B00E9442E /* PushRegistryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AD3F12704DB8B00E9442E /* PushRegistryDelegate.swift */; };
+		BBA601DE27028E3D00353239 /* SpeakerboxCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1353423ECDE08005A1866 /* SpeakerboxCallManager.swift */; };
+		BBA601DF27028E4300353239 /* SpeakerboxCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1353523ECDE08005A1866 /* SpeakerboxCall.swift */; };
+		BBA601E027028E4700353239 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1353C23ECE0CF005A1866 /* ProviderDelegate.swift */; };
+		BBA601E32702955700353239 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354A23ECE3CF005A1866 /* CADebugMacros.cpp */; };
+		BBA601E42702955A00353239 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354C23ECE3CF005A1866 /* CAStreamBasicDescription.cpp */; };
+		BBA601E52702955D00353239 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354F23ECE3CF005A1866 /* CAXException.cpp */; };
+		C26A8449286BDBDE00EE96FF /* AudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354E23ECE3CF005A1866 /* AudioController.mm */; };
+		E72AF985240DAD1900697B6C /* NewCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72AF984240DAD1900697B6C /* NewCallView.swift */; };
+		E77F02C6240DBEF6008EAABA /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77F02C5240DBEF6008EAABA /* CallView.swift */; };
+		E7A1353623ECDE08005A1866 /* SpeakerboxCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1353423ECDE08005A1866 /* SpeakerboxCallManager.swift */; };
+		E7A1353723ECDE08005A1866 /* SpeakerboxCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1353523ECDE08005A1866 /* SpeakerboxCall.swift */; };
+		E7A1353D23ECE0CF005A1866 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1353C23ECE0CF005A1866 /* ProviderDelegate.swift */; };
+		E7A1354223ECE15E005A1866 /* URL+StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1353F23ECE15E005A1866 /* URL+StartCallConvertible.swift */; };
+		E7A1354323ECE15E005A1866 /* StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354023ECE15E005A1866 /* StartCallConvertible.swift */; };
+		E7A1354423ECE15E005A1866 /* NSUserActivity+StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354123ECE15E005A1866 /* NSUserActivity+StartCallConvertible.swift */; };
+		E7A1354723ECE38C005A1866 /* CallAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354623ECE38C005A1866 /* CallAudio.swift */; };
+		E7A1355223ECE3CF005A1866 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354A23ECE3CF005A1866 /* CADebugMacros.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7A1355323ECE3CF005A1866 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354C23ECE3CF005A1866 /* CAStreamBasicDescription.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7A1355423ECE3CF005A1866 /* AudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354E23ECE3CF005A1866 /* AudioController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7A1355523ECE3CF005A1866 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7A1354F23ECE3CF005A1866 /* CAXException.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E7A14AFF23EE2C3D009F1128 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A14AFE23EE2C3D009F1128 /* MainView.swift */; };
+		E7A14B0123EE2D67009F1128 /* EmptyCallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A14B0023EE2D67009F1128 /* EmptyCallsView.swift */; };
+		E7F4097B2471B23B00287641 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4097A2471B23B00287641 /* IntentHandler.swift */; };
+		E7F4097F2471B23B00287641 /* IntentsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E7F409782471B23B00287641 /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7FF8F2523E8E27A0073AF6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF8F2423E8E27A0073AF6B /* AppDelegate.swift */; };
+		E7FF8F2723E8E27A0073AF6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF8F2623E8E27A0073AF6B /* SceneDelegate.swift */; };
+		E7FF8F2923E8E27A0073AF6B /* CallsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF8F2823E8E27A0073AF6B /* CallsListView.swift */; };
+		E7FF8F2B23E8E27C0073AF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FF8F2A23E8E27C0073AF6B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7F409802471B23B00287641 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7F4097F2471B23B00287641 /* IntentsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		29EDCC7B7BFD13F53CDF6C8A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		318A0E6B3D8529C628B5D391 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		97D88419D1E452742511156C /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		B2E49222247478BF00F9A8BA /* Ringtone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ringtone.aif; sourceTree = "<group>"; };
+		B2F2B943247479EA00E02CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2F2B94724747DCE00E02CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB1813A52702382D0091D1DE /* Speakerbox-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speakerbox-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1813A72702382D0091D1DE /* Speakerbox_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speakerbox_WatchApp.swift; sourceTree = "<group>"; };
+		BB1813A92702382D0091D1DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB1813AB270238350091D1DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB1813AE270238350091D1DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB1813B327023EE00091D1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB53A6032835960F006FE3D1 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator9.0.sdk/System/Library/Frameworks/CallKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB9AD3F12704DB8B00E9442E /* PushRegistryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRegistryDelegate.swift; sourceTree = "<group>"; };
+		BBBCD1B72704FDF00034290D /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.1.Internal.sdk/System/Library/PrivateFrameworks/CallKit.framework; sourceTree = DEVELOPER_DIR; };
+		BBBCD1B92704FDF50034290D /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.1.Internal.sdk/System/Library/Frameworks/PushKit.framework; sourceTree = DEVELOPER_DIR; };
+		C878AEAD287F6C6800795915 /* Speakerbox-Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Speakerbox-Watch.entitlements"; sourceTree = "<group>"; };
+		C8A361C75F0E40A7FFAFB0E8 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		E72AF984240DAD1900697B6C /* NewCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallView.swift; sourceTree = "<group>"; };
+		E77F02C5240DBEF6008EAABA /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		E7A1353423ECDE08005A1866 /* SpeakerboxCallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerboxCallManager.swift; sourceTree = "<group>"; };
+		E7A1353523ECDE08005A1866 /* SpeakerboxCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerboxCall.swift; sourceTree = "<group>"; };
+		E7A1353C23ECE0CF005A1866 /* ProviderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		E7A1353F23ECE15E005A1866 /* URL+StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+StartCallConvertible.swift"; sourceTree = "<group>"; };
+		E7A1354023ECE15E005A1866 /* StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCallConvertible.swift; sourceTree = "<group>"; };
+		E7A1354123ECE15E005A1866 /* NSUserActivity+StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+StartCallConvertible.swift"; sourceTree = "<group>"; };
+		E7A1354623ECE38C005A1866 /* CallAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallAudio.swift; sourceTree = "<group>"; };
+		E7A1354823ECE3CF005A1866 /* Speakerbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speakerbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7A1354923ECE3CF005A1866 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		E7A1354A23ECE3CF005A1866 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		E7A1354B23ECE3CF005A1866 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		E7A1354C23ECE3CF005A1866 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		E7A1354D23ECE3CF005A1866 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		E7A1354E23ECE3CF005A1866 /* AudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioController.mm; sourceTree = "<group>"; };
+		E7A1354F23ECE3CF005A1866 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		E7A1355023ECE3CF005A1866 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		E7A1355123ECE3CF005A1866 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		E7A14AFE23EE2C3D009F1128 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E7A14B0023EE2D67009F1128 /* EmptyCallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCallsView.swift; sourceTree = "<group>"; };
+		E7F409782471B23B00287641 /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F4097A2471B23B00287641 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E7F4097C2471B23B00287641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FF8F2123E8E27A0073AF6B /* Speakerbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speakerbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FF8F2423E8E27A0073AF6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7FF8F2623E8E27A0073AF6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E7FF8F2823E8E27A0073AF6B /* CallsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsListView.swift; sourceTree = "<group>"; };
+		E7FF8F2A23E8E27C0073AF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7FF8F3223E8E27C0073AF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB1813A22702382D0091D1DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB53A6042835960F006FE3D1 /* CallKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F409752471B23B00287641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FF8F1E23E8E27A0073AF6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B770122696FC6D44E57DDB9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				97D88419D1E452742511156C /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		8FEE0AA0E0D36078397CFE69 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				C8A361C75F0E40A7FFAFB0E8 /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		B2936A86247477E50051925C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7FF8F2A23E8E27C0073AF6B /* Assets.xcassets */,
+				B2F2B942247479EA00E02CB4 /* LaunchScreen.storyboard */,
+				B2F2B94624747DCE00E02CB4 /* Localizable.strings */,
+				B2E49222247478BF00F9A8BA /* Ringtone.aif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB1813A62702382D0091D1DE /* Speakerbox-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				C878AEAD287F6C6800795915 /* Speakerbox-Watch.entitlements */,
+				BB1813B327023EE00091D1DE /* Info.plist */,
+				BB1813A72702382D0091D1DE /* Speakerbox_WatchApp.swift */,
+				BB1813A92702382D0091D1DE /* ContentView.swift */,
+				BB9AD3F12704DB8B00E9442E /* PushRegistryDelegate.swift */,
+				BB1813AB270238350091D1DE /* Assets.xcassets */,
+				BB1813AD270238350091D1DE /* Preview Content */,
+			);
+			path = "Speakerbox-Watch";
+			sourceTree = "<group>";
+		};
+		BB1813AD270238350091D1DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB1813AE270238350091D1DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBBCD1B62704FDF00034290D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB53A6032835960F006FE3D1 /* CallKit.framework */,
+				BBBCD1B92704FDF50034290D /* PushKit.framework */,
+				BBBCD1B72704FDF00034290D /* CallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBC9701F4CD20EB72E16A67E /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				29EDCC7B7BFD13F53CDF6C8A /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = .;
+			sourceTree = "<group>";
+		};
+		E7A1353923ECDE1B005A1866 /* Call Management */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1353523ECDE08005A1866 /* SpeakerboxCall.swift */,
+				E7A1353423ECDE08005A1866 /* SpeakerboxCallManager.swift */,
+			);
+			name = "Call Management";
+			sourceTree = "<group>";
+		};
+		E7A1353A23ECDFD6005A1866 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7FF8F2823E8E27A0073AF6B /* CallsListView.swift */,
+				E77F02C5240DBEF6008EAABA /* CallView.swift */,
+				E7A14B0023EE2D67009F1128 /* EmptyCallsView.swift */,
+				E7A14AFE23EE2C3D009F1128 /* MainView.swift */,
+				E72AF984240DAD1900697B6C /* NewCallView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E7A1353B23ECE0A9005A1866 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E7FF8F2423E8E27A0073AF6B /* AppDelegate.swift */,
+				E7FF8F2623E8E27A0073AF6B /* SceneDelegate.swift */,
+				E7A1353C23ECE0CF005A1866 /* ProviderDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E7A1353E23ECE133005A1866 /* Start Call Handling */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1354123ECE15E005A1866 /* NSUserActivity+StartCallConvertible.swift */,
+				E7A1354023ECE15E005A1866 /* StartCallConvertible.swift */,
+				E7A1353F23ECE15E005A1866 /* URL+StartCallConvertible.swift */,
+			);
+			name = "Start Call Handling";
+			sourceTree = "<group>";
+		};
+		E7A1354523ECE21A005A1866 /* Audio Management */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1354623ECE38C005A1866 /* CallAudio.swift */,
+				E7A1354B23ECE3CF005A1866 /* AudioController.h */,
+				E7A1354E23ECE3CF005A1866 /* AudioController.mm */,
+				E7A1354A23ECE3CF005A1866 /* CADebugMacros.cpp */,
+				E7A1354923ECE3CF005A1866 /* CADebugMacros.h */,
+				E7A1355023ECE3CF005A1866 /* CAMath.h */,
+				E7A1354C23ECE3CF005A1866 /* CAStreamBasicDescription.cpp */,
+				E7A1355123ECE3CF005A1866 /* CAStreamBasicDescription.h */,
+				E7A1354F23ECE3CF005A1866 /* CAXException.cpp */,
+				E7A1354D23ECE3CF005A1866 /* CAXException.h */,
+			);
+			name = "Audio Management";
+			sourceTree = "<group>";
+		};
+		E7F409792471B23B00287641 /* IntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E7F4097C2471B23B00287641 /* Info.plist */,
+				E7F4097A2471B23B00287641 /* IntentHandler.swift */,
+			);
+			path = IntentsExtension;
+			sourceTree = "<group>";
+		};
+		E7FF8F1823E8E27A0073AF6B = {
+			isa = PBXGroup;
+			children = (
+				318A0E6B3D8529C628B5D391 /* README.md */,
+				E7FF8F2323E8E27A0073AF6B /* Speakerbox */,
+				E7F409792471B23B00287641 /* IntentsExtension */,
+				BB1813A62702382D0091D1DE /* Speakerbox-Watch */,
+				E7FF8F2223E8E27A0073AF6B /* Products */,
+				8FEE0AA0E0D36078397CFE69 /* LICENSE */,
+				BBBCD1B62704FDF00034290D /* Frameworks */,
+				3B770122696FC6D44E57DDB9 /* Configuration */,
+				CBC9701F4CD20EB72E16A67E /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		E7FF8F2223E8E27A0073AF6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7FF8F2123E8E27A0073AF6B /* Speakerbox.app */,
+				E7F409782471B23B00287641 /* IntentsExtension.appex */,
+				BB1813A52702382D0091D1DE /* Speakerbox-Watch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7FF8F2323E8E27A0073AF6B /* Speakerbox */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1353B23ECE0A9005A1866 /* App */,
+				E7A1353A23ECDFD6005A1866 /* Views */,
+				E7A1353923ECDE1B005A1866 /* Call Management */,
+				E7A1353E23ECE133005A1866 /* Start Call Handling */,
+				E7A1354523ECE21A005A1866 /* Audio Management */,
+				B2936A86247477E50051925C /* Resources */,
+				E7FF8F3223E8E27C0073AF6B /* Info.plist */,
+				E7A1354823ECE3CF005A1866 /* Speakerbox-Bridging-Header.h */,
+			);
+			path = Speakerbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB1813A42702382D0091D1DE /* Speakerbox-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1813B2270238350091D1DE /* Build configuration list for PBXNativeTarget "Speakerbox-Watch" */;
+			buildPhases = (
+				BB1813A12702382D0091D1DE /* Sources */,
+				BB1813A22702382D0091D1DE /* Frameworks */,
+				BB1813A32702382D0091D1DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Speakerbox-Watch";
+			productName = "Speakerbox-Watch";
+			productReference = BB1813A52702382D0091D1DE /* Speakerbox-Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7F409772471B23B00287641 /* IntentsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7F409832471B23B00287641 /* Build configuration list for PBXNativeTarget "IntentsExtension" */;
+			buildPhases = (
+				E7F409742471B23B00287641 /* Sources */,
+				E7F409752471B23B00287641 /* Frameworks */,
+				E7F409762471B23B00287641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentsExtension;
+			productName = IntentsExtension;
+			productReference = E7F409782471B23B00287641 /* IntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E7FF8F2023E8E27A0073AF6B /* Speakerbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FF8F3523E8E27C0073AF6B /* Build configuration list for PBXNativeTarget "Speakerbox" */;
+			buildPhases = (
+				E7FF8F1D23E8E27A0073AF6B /* Sources */,
+				E7FF8F1E23E8E27A0073AF6B /* Frameworks */,
+				E7FF8F1F23E8E27A0073AF6B /* Resources */,
+				E7F409802471B23B00287641 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Speakerbox;
+			productName = Speakerbox;
+			productReference = E7FF8F2123E8E27A0073AF6B /* Speakerbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7FF8F1923E8E27A0073AF6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					BB1813A42702382D0091D1DE = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E7FF8F2023E8E27A0073AF6B = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = E7FF8F1C23E8E27A0073AF6B /* Build configuration list for PBXProject "Speakerbox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7FF8F1823E8E27A0073AF6B;
+			productRefGroup = E7FF8F2223E8E27A0073AF6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7FF8F2023E8E27A0073AF6B /* Speakerbox */,
+				E7F409772471B23B00287641 /* IntentsExtension */,
+				BB1813A42702382D0091D1DE /* Speakerbox-Watch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB1813A32702382D0091D1DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1813AF270238350091D1DE /* Preview Assets.xcassets in Resources */,
+				BB1813AC270238350091D1DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F409762471B23B00287641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FF8F1F23E8E27A0073AF6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FF8F2B23E8E27C0073AF6B /* Assets.xcassets in Resources */,
+				B2F2B94524747A0100E02CB4 /* LaunchScreen.storyboard in Resources */,
+				B2F2B94824747DCE00E02CB4 /* Localizable.strings in Resources */,
+				B24F6670247478F800454C22 /* Ringtone.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB1813A12702382D0091D1DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA601E52702955D00353239 /* CAXException.cpp in Sources */,
+				BB9AD3F22704DB8B00E9442E /* PushRegistryDelegate.swift in Sources */,
+				BB1813AA2702382D0091D1DE /* ContentView.swift in Sources */,
+				BBA601DE27028E3D00353239 /* SpeakerboxCallManager.swift in Sources */,
+				BBA601E42702955A00353239 /* CAStreamBasicDescription.cpp in Sources */,
+				BBA601E32702955700353239 /* CADebugMacros.cpp in Sources */,
+				A8BF7635272CAF5400237EDE /* StartCallConvertible.swift in Sources */,
+				BB1813A82702382D0091D1DE /* Speakerbox_WatchApp.swift in Sources */,
+				BB896E5828355F2900CB4EA9 /* CallAudio.swift in Sources */,
+				C26A8449286BDBDE00EE96FF /* AudioController.mm in Sources */,
+				BBA601DF27028E4300353239 /* SpeakerboxCall.swift in Sources */,
+				BBA601E027028E4700353239 /* ProviderDelegate.swift in Sources */,
+				A8BF7634272CAF4400237EDE /* NSUserActivity+StartCallConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F409742471B23B00287641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F4097B2471B23B00287641 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FF8F1D23E8E27A0073AF6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A1354223ECE15E005A1866 /* URL+StartCallConvertible.swift in Sources */,
+				E7FF8F2523E8E27A0073AF6B /* AppDelegate.swift in Sources */,
+				E7A1354723ECE38C005A1866 /* CallAudio.swift in Sources */,
+				E7A1353623ECDE08005A1866 /* SpeakerboxCallManager.swift in Sources */,
+				E72AF985240DAD1900697B6C /* NewCallView.swift in Sources */,
+				E7FF8F2723E8E27A0073AF6B /* SceneDelegate.swift in Sources */,
+				E7A1354323ECE15E005A1866 /* StartCallConvertible.swift in Sources */,
+				E7A1354423ECE15E005A1866 /* NSUserActivity+StartCallConvertible.swift in Sources */,
+				E7A1353D23ECE0CF005A1866 /* ProviderDelegate.swift in Sources */,
+				E7A14B0123EE2D67009F1128 /* EmptyCallsView.swift in Sources */,
+				E7FF8F2923E8E27A0073AF6B /* CallsListView.swift in Sources */,
+				E7A1355423ECE3CF005A1866 /* AudioController.mm in Sources */,
+				E77F02C6240DBEF6008EAABA /* CallView.swift in Sources */,
+				E7A1353723ECDE08005A1866 /* SpeakerboxCall.swift in Sources */,
+				E7A1355223ECE3CF005A1866 /* CADebugMacros.cpp in Sources */,
+				E7A1355523ECE3CF005A1866 /* CAXException.cpp in Sources */,
+				E7A14AFF23EE2C3D009F1128 /* MainView.swift in Sources */,
+				E7A1355323ECE3CF005A1866 /* CAStreamBasicDescription.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2F2B942247479EA00E02CB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F2B943247479EA00E02CB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B2F2B94624747DCE00E02CB4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F2B94724747DCE00E02CB4 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB1813B0270238350091D1DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "Speakerbox-Watch/Speakerbox-Watch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakerbox-Watch/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Speakerbox-Watch/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SpeakerBox uses the microphone to test CallKit and verify audio is being recorded and played back";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.Speakerbox";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKWatchOnly = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Speakerbox${SAMPLE_CODE_DISAMBIGUATOR}.watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Speakerbox/Speakerbox-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		BB1813B1270238350091D1DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "Speakerbox-Watch/Speakerbox-Watch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakerbox-Watch/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Speakerbox-Watch/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SpeakerBox uses the microphone to test CallKit and verify audio is being recorded and played back";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.Speakerbox";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKWatchOnly = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Speakerbox${SAMPLE_CODE_DISAMBIGUATOR}.watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Speakerbox/Speakerbox-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		E7F409812471B23B00287641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IntentsExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.callkit-speakerbox-sample${SAMPLE_CODE_DISAMBIGUATOR}.IntentsExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7F409822471B23B00287641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IntentsExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.callkit-speakerbox-sample${SAMPLE_CODE_DISAMBIGUATOR}.IntentsExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E7FF8F3323E8E27C0073AF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = J7YC8MX52C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		E7FF8F3423E8E27C0073AF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = J7YC8MX52C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		E7FF8F3623E8E27C0073AF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Speakerbox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.callkit-speakerbox-sample${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Speakerbox/Speakerbox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7FF8F3723E8E27C0073AF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D88419D1E452742511156C /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Speakerbox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.callkit-speakerbox-sample${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Speakerbox/Speakerbox-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB1813B2270238350091D1DE /* Build configuration list for PBXNativeTarget "Speakerbox-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1813B0270238350091D1DE /* Debug */,
+				BB1813B1270238350091D1DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7F409832471B23B00287641 /* Build configuration list for PBXNativeTarget "IntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F409812471B23B00287641 /* Debug */,
+				E7F409822471B23B00287641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FF8F1C23E8E27A0073AF6B /* Build configuration list for PBXProject "Speakerbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FF8F3323E8E27C0073AF6B /* Debug */,
+				E7FF8F3423E8E27C0073AF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FF8F3523E8E27C0073AF6B /* Build configuration list for PBXNativeTarget "Speakerbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FF8F3623E8E27C0073AF6B /* Debug */,
+				E7FF8F3723E8E27C0073AF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7FF8F1923E8E27A0073AF6B /* Project object */;
+}

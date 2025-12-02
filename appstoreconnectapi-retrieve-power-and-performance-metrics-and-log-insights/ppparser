@@ -1,0 +1,169 @@
+#!/usr/bin/env python
+"""
+PowerPerformanceParser (PPParser)
+Parse metrics & diagnostics JSON responses.
+
+Usage:
+    ppparser metrics --input=INPUT_FILE [--metric=METRIC_NAME] [--auto_insights]
+    ppparser diagnostics --input=INPUT_FILE [--limit=LIMIT] [--callstack]
+    ppparser -v
+    ppparser -h
+
+    metrics                               Parse metrics report JSON
+                                            from /v1/apps/{id}/perfPowerMetrics
+    diagnostics                           Parse diagnostics report JSON
+                                            from /v1/diagnosticSignatures/{id}/logs
+    -i INPUT_FILE, --input INPUT_FILE     Input JSON file
+    -m METRIC_NAME, --metric METRIC_NAME  Filter by metric
+    -d DEVICE_TYPE, --device DEVICE_TYPE  Filter by device
+    -p PLATFORM, --platform PLATFORM      Filter by platform
+    -l LIMIT, --limit LIMIT               Limit the number of diagnostics logs to print
+    -a, --auto_insights                   Pretty-print auto-generated insights
+    -c, --callstack                       Pretty-print callstack
+    -v, --version                         Show version
+    -h, --help                            Show this help screen
+"""
+
+import json
+from docopt import docopt
+
+def load_json_file(json_file):
+    with open(json_file) as f:
+        return json.load(f)
+
+def pretty_print_json(parsed):
+    print (json.dumps(parsed, indent=2, sort_keys=True))
+
+def pretty_print_metric(parsed):
+    if parsed is None:
+        return
+
+    print("\n")
+    print("Metric identifier: %s"%(parsed["identifier"]))
+    print("unit: %s (%s)"%(parsed["unit"]["identifier"], parsed["unit"]["displayName"]))
+    print("=============================================================================")
+
+    for dataset in parsed["datasets"]:
+        filter = dataset["filterCriteria"]
+        points = dataset["points"]
+
+        print("\n %s, %s"%(filter["deviceMarketingName"], filter["percentile"]))
+        version_row = "version      | "
+        value_row =   "value        | "
+        margin_row =  "error margin | "
+        for point in points:
+            version_pad = " " * max(len(str(point["value"])) - len(point["version"]), 0)
+            value_pad = " " * max(len(point["version"]) - len(str(point["value"])), 0)
+            margin_pad = " " * max(len(str(point["value"])), len(point["version"]))
+
+            version_row += point["version"] + version_pad + " | "
+            value_row += str(point["value"]) + value_pad + " | "
+            if "errorMargin" in point:
+                margin_row += str(point["errorMargin"]) + margin_pad[:-len(str(point["errorMargin"]))] + " | "
+            else:
+                margin_row +=  margin_pad + " | "
+        print(version_row + "\n" + value_row + "\n" + margin_row)
+
+def pretty_print_insights(parsed):
+    if parsed is None:
+        return
+
+    trending_up = parsed["trendingUp"]
+    print("\n")
+    print("Insights type: trendingUp")
+    print("=============================================================================")
+    for trend in trending_up:
+        print("Summary: %s"%trend["summaryString"])
+        print("Populations (datasets): ")
+        for sample in trend["populations"]:
+            print("- metric: %s, device: %s, latestVersionValue: %s, deltaPercentage: %s"
+                %(trend["metric"],
+                sample["device"],
+                sample["latestVersionValue"],
+                sample["deltaPercentage"]))
+        print("\n")
+
+    regressions = parsed["regressions"]
+    print("\n")
+    print("Insights type: regressions")
+    print("=============================================================================")
+    for trend in regressions:
+        print("Summary: %s"%trend["summaryString"])
+        print("Populations (datasets): ")
+        for sample in trend["populations"]:
+            print("- metric: %s, device: %s, latestVersionValue: %s, deltaPercentage: %s"
+                %(trend["metric"],
+                sample["device"],
+                sample["latestVersionValue"],
+                sample["deltaPercentage"]))
+        print("\n")
+
+def pretty_print_callstack(parsed):
+    if parsed is None:
+        return
+
+    print("callStackPerThread %s"%parsed["callStackPerThread"])
+    for callstack in parsed["callStacks"]:
+        for root_frame in callstack["callStackRootFrames"]:
+            preorder_traversal(root_frame, 0)
+
+def preorder_traversal(frame, indent_level):
+    print(" " * 2 * indent_level + frame["rawFrame"])
+    for subframe in frame["subFrames"]:
+        preorder_traversal(subframe, indent_level + 1)
+
+
+def parse_metric(parsed, metric_type):
+    for product_data in parsed["productData"]:
+        for category in product_data["metricCategories"]:
+            for metric in category["metrics"]:
+                if metric["identifier"].lower() == metric_type.lower():
+                    return metric
+    return None
+
+def parse_insights(parsed):
+    insights = parsed["insights"]
+    return insights
+
+def run_metrics_parser(parsed, arguments):
+    if arguments["--metric"]:
+        metric_type = arguments["--metric"]
+        metric = parse_metric(parsed, metric_type)
+        pretty_print_metric(metric)
+
+    if arguments["--auto_insights"]:
+        insights = parse_insights(parsed)
+        pretty_print_insights(insights)
+
+def run_diagnostics_parser(parsed, arguments):
+    for product_data in parsed["productData"]:
+        print("Diagnostic signatureId: %s"%product_data["signatureId"])
+        print("=============================================================================")
+        limit = 50
+        if arguments["--limit"]:
+            limit = int(arguments["--limit"])
+        for cnt, log in enumerate(product_data["diagnosticLogs"]):
+            if cnt >= limit:
+                return
+
+            metadata = log["diagnosticMetaData"]
+            print("\n- bundle: %s, version: %s, event: %s, writesCaused: %s"
+                    %(metadata["bundleId"],
+                    metadata["appVersion"],
+                    metadata["event"],
+                    metadata["writesCaused"]))
+            if arguments["--callstack"]:
+                stack_tree = log["callStackTree"]
+                for callstack in stack_tree:
+                    pretty_print_callstack(callstack)
+
+def main():
+    arguments = docopt(__doc__, version = 'Metrics Parser 1.0')
+    parsed = load_json_file(arguments["--input"])
+    if arguments["metrics"]:
+        run_metrics_parser(parsed, arguments)
+    elif arguments["diagnostics"]:
+        run_diagnostics_parser(parsed, arguments)
+
+if __name__ == '__main__':
+    main()

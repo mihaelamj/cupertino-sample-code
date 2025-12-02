@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ This instrpkg file defines the schemas, modelers, and instruments for modeling the sample app
+ with plot-templates to resolve overlapping intervals.
+ 
+ -->
+<package>
+    <id>com.apple.mobileagents.execution.transition.with.plot.template</id>
+    <title>Mobile Agents Execution And Transition Modeling With Plot Template</title>
+    <owner>
+        <name>Apple Inc.</name>
+    </owner>
+    <!-- A problem was encountered when running the MobileAgentsExecutionModeling target.
+         Specifically, all of the MobileAgent execution intervals were being displayed
+         on a single track. This makes it more difficult to visually distinguish between
+         the different agents on the Intruments UI.
+     
+         Having all of the execution intervals on a single track may also to UI stutters.
+         This occurs when your modeler commits overlapping intervals onto the same
+         lane. By having these overlapping intervals, it becomes ambiguous as to which interval
+         should be displayed on the lane.
+     
+         Sometimes, however, it is necessary to have overlapping segments. This can be the case if
+         Mobile Agents are executing concurrently on different threads, for example. To remedy this problem,
+         you need to somehow distinguish between the sets of data, such that they can be displayed on separate
+         lanes or tracks. In the case of multiple agents running in parallel, something that may distinguish
+         them is the thread that they are running on.
+     
+         One way to accomplish this is through the use of a plot-template. A plot-template serves as a
+         cookie-cutter to stamp out plots for each unique instance of a distinguishing feature. In the
+         multithreaded MobileAgent example from the previous paragraph, a plot-template can be created that will
+         create a plot per thread. Since the plots for each thread are distinct, you can have the overlapping
+         intervals since they will not try to contend for the same lane.
+     
+         This instrument accomplishes this by specifying a plot-template within its <instrument> defintion.
+         A property of MobileAgents is that there can only be distinct agent types in flight at the same time.
+         The plot-template defined below thus uses the agent-kind-code property as its distinguishing value.
+
+     -->
+    
+    <import-schema>os-signpost</import-schema>
+    
+    <interval-schema>
+        <id>mobile-agent-activity</id>
+        <title>Mobile Agent Activity With Plot Template</title>
+        
+        <start-column>
+            <mnemonic>start</mnemonic>
+            <title>Start</title>
+            <type>start-time</type>
+        </start-column>
+        
+        <duration-column>
+            <mnemonic>duration</mnemonic>
+            <title>Duration</title>
+            <type>duration</type>
+        </duration-column>
+        
+        <primary-column>
+            <mnemonic>agent-kind</mnemonic>
+            <title>Agent Kind</title>
+            <type>string</type>
+        </primary-column>
+        
+        <column>
+            <mnemonic>agent-kind-code</mnemonic>
+            <title>Agent Kind Code</title>
+            <type>uint64</type>
+        </column>
+        
+        <column>
+            <mnemonic>state</mnemonic>
+            <title>State</title>
+            <type>state</type>
+        </column>
+        
+        <column>
+            <mnemonic>instance</mnemonic>
+            <title>Instance</title>
+            <type>uint64</type>
+        </column>
+        
+        <column>
+            <mnemonic>stop-kind</mnemonic>
+            <title>Stop Kind</title>
+            <type>string</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity</mnemonic>
+            <title>Activity</title>
+            <type>formatted-label</type>
+        </column>
+        
+        <column>
+            <mnemonic>activity-type</mnemonic>
+            <title>Activity Type</title>
+            <type>event-concept</type>
+        </column>
+        
+    </interval-schema>
+
+    <modeler>
+        <id>com.apple.mobileagents.execution.transition.plot.template.modeler</id>
+        <title>Mobile Agent Execution and Transition Modeler</title>
+        <purpose>Transforms mobile agent signposts into meaningful execution data</purpose>
+        
+        <production-system>
+            <rule-path>mobile-agent-kind-knowledge.clp</rule-path>
+            <rule-path>mobile-agent-transition-concepts.clp</rule-path>
+            <rule-path>mobile-agent-execution-concepts.clp</rule-path>
+            <rule-path>mobile-agent-parking-concepts.clp</rule-path>
+            <rule-path>mobile-agent-kind-code-resolution.clp</rule-path>
+            <rule-path>mobile-agent-modeling.clp</rule-path>
+            <rule-path>mobile-agent-recording.clp</rule-path>
+        </production-system>
+        
+        <output>
+            <schema-ref>mobile-agent-activity</schema-ref>
+            <required-input>
+                <schema-ref>os-signpost</schema-ref>
+                <attribute>
+                    <name>category</name>
+                    <string>Mobile Agent</string>
+                </attribute>
+                <attribute>
+                    <name>subsystem</name>
+                    <string>com.apple.dt.utilities</string>
+                </attribute>
+            </required-input>
+        </output>
+        
+        
+    </modeler>
+    
+    <instrument>
+        <id>com.apple.dt.mobile-agents.execution.with.plot.template</id>
+        <title>Mobile Agent Activity With Plot Template</title>
+        <category>Behavior</category>
+        <purpose>Tracks the execution of mobile agents.</purpose>
+        <icon>Generic</icon>
+        
+        <create-table>
+            <id>activity-table</id>
+            <schema-ref>mobile-agent-activity</schema-ref>
+        </create-table>
+        
+        <graph>
+            <title>Activity</title>
+            <lane>
+                <title>Agents</title>
+                <table-ref>activity-table</table-ref>
+                <plot-template>
+                    <instance-by>agent-kind-code</instance-by>
+                    <label-format>%s</label-format>
+                    <value-from>state</value-from>
+                    <color-from>activity-type</color-from>
+                    <label-from>activity</label-from>
+                </plot-template>
+            </lane>
+        </graph>
+        
+        <list>
+            <title>Activity</title>
+            <table-ref>activity-table</table-ref>
+            <column>start</column>
+            <column>duration</column>
+            <column>agent-kind</column>
+            <column>stop-kind</column>
+            <column>state</column>
+            <column>activity</column>
+        </list>
+    </instrument>
+
+</package>

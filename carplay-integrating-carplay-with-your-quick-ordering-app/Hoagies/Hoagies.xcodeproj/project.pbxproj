@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2FFCE62B60792400FA4731 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2FFCE52B60792400FA4731 /* ActivityAttributes.swift */; };
+		0F2FFCE72B60792400FA4731 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2FFCE52B60792400FA4731 /* ActivityAttributes.swift */; };
+		0F2FFCF12B60807600FA4731 /* HoagiePushServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2FFCF02B60807600FA4731 /* HoagiePushServerApp.swift */; };
+		0F2FFCF32B60807600FA4731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2FFCF22B60807600FA4731 /* ContentView.swift */; };
+		0F2FFCF52B60807700FA4731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F2FFCF42B60807700FA4731 /* Assets.xcassets */; };
+		0F2FFCF82B60807700FA4731 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F2FFCF72B60807700FA4731 /* Preview Assets.xcassets */; };
+		0F2FFCFE2B60807F00FA4731 /* FalseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2A32B51FA14009A768D /* FalseData.swift */; };
+		0F7C2ABD2B61C4400084DEFD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C2ABC2B61C4400084DEFD /* Theme.swift */; };
+		0F7C2ABE2B61C4420084DEFD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C2ABC2B61C4400084DEFD /* Theme.swift */; };
+		0F7C2ABF2B61C4430084DEFD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C2ABC2B61C4400084DEFD /* Theme.swift */; };
+		0F7C2AC12B61CB400084DEFD /* OrderStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C2AC02B61CB400084DEFD /* OrderStatusView.swift */; };
+		0F7C2AC22B61CB400084DEFD /* OrderStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C2AC02B61CB400084DEFD /* OrderStatusView.swift */; };
+		0F7C2AC42B61CBE80084DEFD /* OrderStatusIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C2AC32B61CBE80084DEFD /* OrderStatusIcon.swift */; };
+		0F7C2AC52B61CBE80084DEFD /* OrderStatusIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C2AC32B61CBE80084DEFD /* OrderStatusIcon.swift */; };
+		0F8626352B6B57C2002F0021 /* APNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8626342B6B57C2002F0021 /* APNS.swift */; };
+		0F8626362B6BB94B002F0021 /* OrderingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE4A9162B5A0BF000DB8120 /* OrderingService.swift */; };
+		0F8626372B6BBA03002F0021 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2AE2B51FA9D009A768D /* Logger.swift */; };
+		0F9EF52A2B5F286B0079707C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9EF5292B5F286B0079707C /* WidgetKit.framework */; };
+		0F9EF52C2B5F286B0079707C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9EF52B2B5F286B0079707C /* SwiftUI.framework */; };
+		0F9EF52F2B5F286B0079707C /* OrderStatusBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9EF52E2B5F286B0079707C /* OrderStatusBundle.swift */; };
+		0F9EF5312B5F286B0079707C /* OrderStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9EF5302B5F286B0079707C /* OrderStatusLiveActivity.swift */; };
+		0F9EF5332B5F286B0079707C /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9EF5322B5F286B0079707C /* OrderStatus.swift */; };
+		0F9EF5352B5F286D0079707C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F9EF5342B5F286D0079707C /* Assets.xcassets */; };
+		0F9EF5392B5F286D0079707C /* OrderStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0F9EF5272B5F286B0079707C /* OrderStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0F9EF5652B60729C0079707C /* FalseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2A32B51FA14009A768D /* FalseData.swift */; };
+		0FB9D2942B51F9EB009A768D /* HoagiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2932B51F9EB009A768D /* HoagiesApp.swift */; };
+		0FB9D2962B51F9EB009A768D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2952B51F9EB009A768D /* ContentView.swift */; };
+		0FB9D2982B51F9ED009A768D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB9D2972B51F9ED009A768D /* Assets.xcassets */; };
+		0FB9D29B2B51F9ED009A768D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB9D29A2B51F9ED009A768D /* Preview Assets.xcassets */; };
+		0FB9D2A62B51FA15009A768D /* TemplateManager+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2A22B51FA14009A768D /* TemplateManager+Location.swift */; };
+		0FB9D2A72B51FA15009A768D /* FalseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2A32B51FA14009A768D /* FalseData.swift */; };
+		0FB9D2A82B51FA15009A768D /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2A42B51FA14009A768D /* TemplateManager.swift */; };
+		0FB9D2A92B51FA15009A768D /* MKPlacemark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2A52B51FA15009A768D /* MKPlacemark+Extension.swift */; };
+		0FB9D2AC2B51FA1E009A768D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2AA2B51FA1E009A768D /* AppDelegate.swift */; };
+		0FB9D2AD2B51FA1E009A768D /* CarPlayTemplateApplicationSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2AB2B51FA1E009A768D /* CarPlayTemplateApplicationSceneDelegate.swift */; };
+		0FB9D2AF2B51FA9D009A768D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2AE2B51FA9D009A768D /* Logger.swift */; };
+		0FB9D2B32B51FC0B009A768D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9D2B22B51FC0B009A768D /* SceneDelegate.swift */; };
+		0FE4A9172B5A0BF000DB8120 /* OrderingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE4A9162B5A0BF000DB8120 /* OrderingService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F9EF5372B5F286D0079707C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FB9D2882B51F9EB009A768D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F9EF5262B5F286B0079707C;
+			remoteInfo = OrderStatusExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F9EF53D2B5F286D0079707C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0F9EF5392B5F286D0079707C /* OrderStatusExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F2FFCE52B60792400FA4731 /* ActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAttributes.swift; sourceTree = "<group>"; };
+		0F2FFCE92B60802000FA4731 /* OrderStatusExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderStatusExtension.entitlements; sourceTree = "<group>"; };
+		0F2FFCEE2B60807600FA4731 /* HoagiePushServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoagiePushServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2FFCF02B60807600FA4731 /* HoagiePushServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoagiePushServerApp.swift; sourceTree = "<group>"; };
+		0F2FFCF22B60807600FA4731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0F2FFCF42B60807700FA4731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F2FFCF72B60807700FA4731 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0F2FFCF92B60807700FA4731 /* HoagiePushServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HoagiePushServer.entitlements; sourceTree = "<group>"; };
+		0F7C2ABC2B61C4400084DEFD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0F7C2AC02B61CB400084DEFD /* OrderStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusView.swift; sourceTree = "<group>"; };
+		0F7C2AC32B61CBE80084DEFD /* OrderStatusIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusIcon.swift; sourceTree = "<group>"; };
+		0F8626342B6B57C2002F0021 /* APNS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNS.swift; sourceTree = "<group>"; };
+		0F90B2712BACA7EF00402021 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0F9EF5272B5F286B0079707C /* OrderStatusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OrderStatusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9EF5292B5F286B0079707C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0F9EF52B2B5F286B0079707C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0F9EF52E2B5F286B0079707C /* OrderStatusBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusBundle.swift; sourceTree = "<group>"; };
+		0F9EF5302B5F286B0079707C /* OrderStatusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusLiveActivity.swift; sourceTree = "<group>"; };
+		0F9EF5322B5F286B0079707C /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		0F9EF5342B5F286D0079707C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F9EF5362B5F286D0079707C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB9D2902B51F9EB009A768D /* Hoagies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoagies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB9D2932B51F9EB009A768D /* HoagiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoagiesApp.swift; sourceTree = "<group>"; };
+		0FB9D2952B51F9EB009A768D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0FB9D2972B51F9ED009A768D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FB9D29A2B51F9ED009A768D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FB9D2A22B51FA14009A768D /* TemplateManager+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TemplateManager+Location.swift"; sourceTree = "<group>"; };
+		0FB9D2A32B51FA14009A768D /* FalseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FalseData.swift; sourceTree = "<group>"; };
+		0FB9D2A42B51FA14009A768D /* TemplateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateManager.swift; sourceTree = "<group>"; };
+		0FB9D2A52B51FA15009A768D /* MKPlacemark+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPlacemark+Extension.swift"; sourceTree = "<group>"; };
+		0FB9D2AA2B51FA1E009A768D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FB9D2AB2B51FA1E009A768D /* CarPlayTemplateApplicationSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarPlayTemplateApplicationSceneDelegate.swift; sourceTree = "<group>"; };
+		0FB9D2AE2B51FA9D009A768D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		0FB9D2B02B51FBA1009A768D /* Hoagies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hoagies.entitlements; sourceTree = "<group>"; };
+		0FB9D2B12B51FBED009A768D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0FB9D2B22B51FC0B009A768D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0FE4A9162B5A0BF000DB8120 /* OrderingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderingService.swift; path = Hoagies/OrderingService.swift; sourceTree = SOURCE_ROOT; };
+		37785E970A85AE69BC2DAB31 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F2FFCEB2B60807600FA4731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F9EF5242B5F286B0079707C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9EF52C2B5F286B0079707C /* SwiftUI.framework in Frameworks */,
+				0F9EF52A2B5F286B0079707C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB9D28D2B51F9EB009A768D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2FFCEF2B60807600FA4731 /* HoagiePushServer */ = {
+			isa = PBXGroup;
+			children = (
+				0F8626342B6B57C2002F0021 /* APNS.swift */,
+				0F2FFCF02B60807600FA4731 /* HoagiePushServerApp.swift */,
+				0F2FFCF22B60807600FA4731 /* ContentView.swift */,
+				0F2FFCF42B60807700FA4731 /* Assets.xcassets */,
+				0F2FFCF92B60807700FA4731 /* HoagiePushServer.entitlements */,
+				0F2FFCF62B60807700FA4731 /* Preview Content */,
+			);
+			path = HoagiePushServer;
+			sourceTree = "<group>";
+		};
+		0F2FFCF62B60807700FA4731 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0F2FFCF72B60807700FA4731 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0F9EF5282B5F286B0079707C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F9EF5292B5F286B0079707C /* WidgetKit.framework */,
+				0F9EF52B2B5F286B0079707C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F9EF52D2B5F286B0079707C /* OrderStatus */ = {
+			isa = PBXGroup;
+			children = (
+				0F9EF52E2B5F286B0079707C /* OrderStatusBundle.swift */,
+				0F9EF5302B5F286B0079707C /* OrderStatusLiveActivity.swift */,
+				0F9EF5322B5F286B0079707C /* OrderStatus.swift */,
+				0F9EF5342B5F286D0079707C /* Assets.xcassets */,
+				0F9EF5362B5F286D0079707C /* Info.plist */,
+			);
+			path = OrderStatus;
+			sourceTree = "<group>";
+		};
+		0F9EF55E2B60720A0079707C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9D2A32B51FA14009A768D /* FalseData.swift */,
+				0F2FFCE52B60792400FA4731 /* ActivityAttributes.swift */,
+				0F7C2ABC2B61C4400084DEFD /* Theme.swift */,
+				0F7C2AC02B61CB400084DEFD /* OrderStatusView.swift */,
+				0F7C2AC32B61CBE80084DEFD /* OrderStatusIcon.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0FB9D2872B51F9EB009A768D = {
+			isa = PBXGroup;
+			children = (
+				0F90B2712BACA7EF00402021 /* README.md */,
+				0F2FFCE92B60802000FA4731 /* OrderStatusExtension.entitlements */,
+				0F9EF55E2B60720A0079707C /* Shared */,
+				0FB9D2922B51F9EB009A768D /* Hoagies */,
+				0F9EF52D2B5F286B0079707C /* OrderStatus */,
+				0F2FFCEF2B60807600FA4731 /* HoagiePushServer */,
+				0F9EF5282B5F286B0079707C /* Frameworks */,
+				0FB9D2912B51F9EB009A768D /* Products */,
+				216AB188C872C88DAB2B2823 /* Configuration */,
+				AB689DBA601D4B679B81BAAA /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		0FB9D2912B51F9EB009A768D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9D2902B51F9EB009A768D /* Hoagies.app */,
+				0F9EF5272B5F286B0079707C /* OrderStatusExtension.appex */,
+				0F2FFCEE2B60807600FA4731 /* HoagiePushServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FB9D2922B51F9EB009A768D /* Hoagies */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9D2B12B51FBED009A768D /* Info.plist */,
+				0FB9D2B02B51FBA1009A768D /* Hoagies.entitlements */,
+				0FB9D2A12B51FA0B009A768D /* CarPlay */,
+				0FB9D2932B51F9EB009A768D /* HoagiesApp.swift */,
+				0FB9D2952B51F9EB009A768D /* ContentView.swift */,
+				0FE4A9162B5A0BF000DB8120 /* OrderingService.swift */,
+				0FB9D2972B51F9ED009A768D /* Assets.xcassets */,
+				0FB9D2992B51F9ED009A768D /* Preview Content */,
+			);
+			path = Hoagies;
+			sourceTree = "<group>";
+		};
+		0FB9D2992B51F9ED009A768D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9D29A2B51F9ED009A768D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FB9D2A12B51FA0B009A768D /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9D2AA2B51FA1E009A768D /* AppDelegate.swift */,
+				0FB9D2B22B51FC0B009A768D /* SceneDelegate.swift */,
+				0FB9D2AB2B51FA1E009A768D /* CarPlayTemplateApplicationSceneDelegate.swift */,
+				0FB9D2AE2B51FA9D009A768D /* Logger.swift */,
+				0FB9D2A52B51FA15009A768D /* MKPlacemark+Extension.swift */,
+				0FB9D2A42B51FA14009A768D /* TemplateManager.swift */,
+				0FB9D2A22B51FA14009A768D /* TemplateManager+Location.swift */,
+			);
+			path = CarPlay;
+			sourceTree = "<group>";
+		};
+		216AB188C872C88DAB2B2823 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		AB689DBA601D4B679B81BAAA /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				37785E970A85AE69BC2DAB31 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F2FFCED2B60807600FA4731 /* HoagiePushServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2FFCFA2B60807700FA4731 /* Build configuration list for PBXNativeTarget "HoagiePushServer" */;
+			buildPhases = (
+				0F2FFCEA2B60807600FA4731 /* Sources */,
+				0F2FFCEB2B60807600FA4731 /* Frameworks */,
+				0F2FFCEC2B60807600FA4731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoagiePushServer;
+			productName = HoagiePushServer;
+			productReference = 0F2FFCEE2B60807600FA4731 /* HoagiePushServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F9EF5262B5F286B0079707C /* OrderStatusExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F9EF53A2B5F286D0079707C /* Build configuration list for PBXNativeTarget "OrderStatusExtension" */;
+			buildPhases = (
+				0F9EF5232B5F286B0079707C /* Sources */,
+				0F9EF5242B5F286B0079707C /* Frameworks */,
+				0F9EF5252B5F286B0079707C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderStatusExtension;
+			productName = OrderStatusExtension;
+			productReference = 0F9EF5272B5F286B0079707C /* OrderStatusExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0FB9D28F2B51F9EB009A768D /* Hoagies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FB9D29E2B51F9ED009A768D /* Build configuration list for PBXNativeTarget "Hoagies" */;
+			buildPhases = (
+				0FB9D28C2B51F9EB009A768D /* Sources */,
+				0FB9D28D2B51F9EB009A768D /* Frameworks */,
+				0FB9D28E2B51F9EB009A768D /* Resources */,
+				0F9EF53D2B5F286D0079707C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F9EF5382B5F286D0079707C /* PBXTargetDependency */,
+			);
+			name = Hoagies;
+			productName = Hoagies;
+			productReference = 0FB9D2902B51F9EB009A768D /* Hoagies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FB9D2882B51F9EB009A768D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					0F2FFCED2B60807600FA4731 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					0F9EF5262B5F286B0079707C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					0FB9D28F2B51F9EB009A768D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 0FB9D28B2B51F9EB009A768D /* Build configuration list for PBXProject "Hoagies" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FB9D2872B51F9EB009A768D;
+			productRefGroup = 0FB9D2912B51F9EB009A768D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FB9D28F2B51F9EB009A768D /* Hoagies */,
+				0F9EF5262B5F286B0079707C /* OrderStatusExtension */,
+				0F2FFCED2B60807600FA4731 /* HoagiePushServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F2FFCEC2B60807600FA4731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2FFCF82B60807700FA4731 /* Preview Assets.xcassets in Resources */,
+				0F2FFCF52B60807700FA4731 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F9EF5252B5F286B0079707C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9EF5352B5F286D0079707C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB9D28E2B51F9EB009A768D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB9D29B2B51F9ED009A768D /* Preview Assets.xcassets in Resources */,
+				0FB9D2982B51F9ED009A768D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F2FFCEA2B60807600FA4731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2FFCF32B60807600FA4731 /* ContentView.swift in Sources */,
+				0F7C2ABF2B61C4430084DEFD /* Theme.swift in Sources */,
+				0F2FFCF12B60807600FA4731 /* HoagiePushServerApp.swift in Sources */,
+				0F8626352B6B57C2002F0021 /* APNS.swift in Sources */,
+				0F2FFCFE2B60807F00FA4731 /* FalseData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F9EF5232B5F286B0079707C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9EF5332B5F286B0079707C /* OrderStatus.swift in Sources */,
+				0F7C2AC52B61CBE80084DEFD /* OrderStatusIcon.swift in Sources */,
+				0F7C2ABE2B61C4420084DEFD /* Theme.swift in Sources */,
+				0F8626362B6BB94B002F0021 /* OrderingService.swift in Sources */,
+				0F9EF52F2B5F286B0079707C /* OrderStatusBundle.swift in Sources */,
+				0F8626372B6BBA03002F0021 /* Logger.swift in Sources */,
+				0F9EF5652B60729C0079707C /* FalseData.swift in Sources */,
+				0F2FFCE72B60792400FA4731 /* ActivityAttributes.swift in Sources */,
+				0F7C2AC22B61CB400084DEFD /* OrderStatusView.swift in Sources */,
+				0F9EF5312B5F286B0079707C /* OrderStatusLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB9D28C2B51F9EB009A768D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB9D2A92B51FA15009A768D /* MKPlacemark+Extension.swift in Sources */,
+				0FB9D2B32B51FC0B009A768D /* SceneDelegate.swift in Sources */,
+				0FB9D2A82B51FA15009A768D /* TemplateManager.swift in Sources */,
+				0F2FFCE62B60792400FA4731 /* ActivityAttributes.swift in Sources */,
+				0FB9D2962B51F9EB009A768D /* ContentView.swift in Sources */,
+				0F7C2AC12B61CB400084DEFD /* OrderStatusView.swift in Sources */,
+				0FB9D2A62B51FA15009A768D /* TemplateManager+Location.swift in Sources */,
+				0FB9D2AF2B51FA9D009A768D /* Logger.swift in Sources */,
+				0FB9D2AC2B51FA1E009A768D /* AppDelegate.swift in Sources */,
+				0F7C2ABD2B61C4400084DEFD /* Theme.swift in Sources */,
+				0FB9D2AD2B51FA1E009A768D /* CarPlayTemplateApplicationSceneDelegate.swift in Sources */,
+				0FB9D2942B51F9EB009A768D /* HoagiesApp.swift in Sources */,
+				0F7C2AC42B61CBE80084DEFD /* OrderStatusIcon.swift in Sources */,
+				0FE4A9172B5A0BF000DB8120 /* OrderingService.swift in Sources */,
+				0FB9D2A72B51FA15009A768D /* FalseData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F9EF5382B5F286D0079707C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F9EF5262B5F286B0079707C /* OrderStatusExtension */;
+			targetProxy = 0F9EF5372B5F286D0079707C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F2FFCFB2B60807700FA4731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HoagiePushServer/HoagiePushServer.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HoagiePushServer/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Hoagies${SAMPLE_CODE_DISAMBIGUATOR}.HoagiePushServer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0F2FFCFC2B60807700FA4731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HoagiePushServer/HoagiePushServer.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HoagiePushServer/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Hoagies${SAMPLE_CODE_DISAMBIGUATOR}.HoagiePushServer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0F9EF53B2B5F286D0079707C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OrderStatusExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OrderStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Hoagies${SAMPLE_CODE_DISAMBIGUATOR}.OrderStatus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F9EF53C2B5F286D0079707C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OrderStatusExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OrderStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Hoagies${SAMPLE_CODE_DISAMBIGUATOR}.OrderStatus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FB9D29C2B51F9ED009A768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FB9D29D2B51F9ED009A768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FB9D29F2B51F9ED009A768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hoagies/Hoagies.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hoagies/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hoagies/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hoagies;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to provide directions to the Hoagie Shop, we need access to your location while using the app.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Hoagies${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0FB9D2A02B51F9ED009A768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C4AD6190E1827BE9BCAB0F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hoagies/Hoagies.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hoagies/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hoagies/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hoagies;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to provide directions to the Hoagie Shop, we need access to your location while using the app.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Hoagies${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F2FFCFA2B60807700FA4731 /* Build configuration list for PBXNativeTarget "HoagiePushServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2FFCFB2B60807700FA4731 /* Debug */,
+				0F2FFCFC2B60807700FA4731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F9EF53A2B5F286D0079707C /* Build configuration list for PBXNativeTarget "OrderStatusExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F9EF53B2B5F286D0079707C /* Debug */,
+				0F9EF53C2B5F286D0079707C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FB9D28B2B51F9EB009A768D /* Build configuration list for PBXProject "Hoagies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB9D29C2B51F9ED009A768D /* Debug */,
+				0FB9D29D2B51F9ED009A768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FB9D29E2B51F9ED009A768D /* Build configuration list for PBXNativeTarget "Hoagies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB9D29F2B51F9ED009A768D /* Debug */,
+				0FB9D2A02B51F9ED009A768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FB9D2882B51F9EB009A768D /* Project object */;
+}

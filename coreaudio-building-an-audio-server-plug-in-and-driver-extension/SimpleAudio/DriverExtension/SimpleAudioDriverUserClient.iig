@@ -1,0 +1,33 @@
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+A minimal user-space driver.
+*/
+
+
+/*==================================================================================================
+	SimpleAudioDriverUserClient.iig
+==================================================================================================*/
+#if !defined(__SimpleAudioDriverUserClient_h__)
+#define __SimpleAudioDriverUserClient_h__
+
+#include <Availability.h>
+#include <DriverKit/IOUserClient.iig>
+
+class SimpleAudioDriverUserClient
+:
+	public IOUserClient
+{
+public:
+    virtual bool			init() override;
+    virtual void			free() override;
+
+    virtual kern_return_t	Start(IOService* in_provider) override;
+    virtual kern_return_t	Stop(IOService* in_provider) override;
+
+    virtual kern_return_t	CopyClientMemoryForType(uint64_t in_type, uint64_t* out_options, IOMemoryDescriptor** out_descriptor) override;
+    virtual kern_return_t	ExternalMethod(uint64_t in_selector, IOUserClientMethodArguments* in_arguments, const IOUserClientMethodDispatch* in_dispatch, OSObject* in_target, void* in_reference) override;
+};
+
+#endif /* __SimpleAudioDriverUserClient_h__ */

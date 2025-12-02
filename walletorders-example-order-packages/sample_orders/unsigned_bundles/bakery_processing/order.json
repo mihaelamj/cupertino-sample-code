@@ -1,0 +1,48 @@
+{
+    "schemaVersion": 1,
+    "orderTypeIdentifier": "order.com.apple.wallet.dev.bakery",
+    "orderIdentifier": "sample_bakery_order",
+    "orderType": "ecommerce",
+    "orderNumber": "BA050796",
+    "createdAt": "2022-06-02T12:30:00Z",
+    "updatedAt": "2022-06-02T17:00:00Z",
+    "status": "open",
+    "merchant": {
+        "displayName": "Bakery",
+        "merchantIdentifier": "com.example.store",
+        "logo": "bakery_logo.png",
+        "url": "https://www.example.com/"
+    },
+    "payment": {
+        "status": "pending",
+        "total": { "amount": 28.8, "currency": "USD" },
+        "summaryItems": [
+            { "label": "Subtotal", "value": { "amount": 24, "currency": "USD" } },
+            { "label": "Tax", "value": { "amount": 4.8, "currency": "USD" } }
+        ],
+        "paymentMethods": ["•••• 1234"]
+    },
+    "lineItems": [
+        {
+            "image": "pastry.png",
+            "price": { "amount": 0.8, "currency": "USD" },
+            "quantity": 10,
+            "title": "Pain au Chocolate"
+        },
+        {
+            "image": "cheesecake.png",
+            "price": { "amount": 1.2, "currency": "USD" },
+            "quantity": 5,
+            "subtitle": "May contain nuts",
+            "title": "Cheesecake Slice"
+        },
+        {
+            "image": "spongecake.png",
+            "price": { "amount": 1.2, "currency": "USD" },
+            "quantity": 10,
+            "subtitle": "May contain nuts",
+            "title": "Sponge Cake Slice"
+        }
+    ],
+    "orderManagementURL": "https://www.example.com/"
+}

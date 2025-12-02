@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ActionViewController" customModule="RemoveOpacityAction" customModuleProvider="target">
+            <connections>
+                <outlet property="colorPopUpButton" destination="Ugq-UW-gAH" id="Pzu-Ct-2ta"/>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="127"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aNc-0i-CWK">
+                    <rect key="frame" x="18" y="90" width="120" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Background Color" id="0xp-rC-2gr" customClass="SHKShareTitleFieldCell">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ugq-UW-gAH">
+                    <rect key="frame" x="18" y="58" width="263" height="25"/>
+                    <popUpButtonCell key="cell" type="push" title="Red" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="rnV-iS-rZ4" id="4sR-SB-dlV">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="Ndd-O1-bQq">
+                            <items>
+                                <menuItem title="Red" state="on" image="RedSquare" id="rnV-iS-rZ4"/>
+                                <menuItem title="Green" image="GreenSquare" id="R4u-hS-ecs"/>
+                                <menuItem title="Blue" image="BlueSquare" id="yRo-ME-kQY"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ddl-Ae-e4Q">
+                    <rect key="frame" x="80" y="20" width="94" height="25"/>
+                    <buttonCell key="cell" type="square" title="Cancel" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eog-Qn-pPg">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancel:" target="-2" id="lE2-Kc-2dx"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VL2-vd-Dzy">
+                    <rect key="frame" x="184" y="20" width="94" height="25"/>
+                    <buttonCell key="cell" type="square" title="Make Opaque" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5W6-3Q-39x">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="send:" target="-2" id="tHN-0y-Wck"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VL2-vd-Dzy" firstAttribute="leading" secondItem="Ddl-Ae-e4Q" secondAttribute="trailing" constant="10" symbolic="YES" id="19h-My-Ox4"/>
+                <constraint firstItem="Ddl-Ae-e4Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="6e5-0q-ryY"/>
+                <constraint firstItem="aNc-0i-CWK" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="7AY-JR-FMq"/>
+                <constraint firstAttribute="bottom" secondItem="VL2-vd-Dzy" secondAttribute="bottom" constant="20" symbolic="YES" id="AdR-ut-Tn9"/>
+                <constraint firstItem="Ugq-UW-gAH" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="BM1-2N-WWs"/>
+                <constraint firstAttribute="trailing" secondItem="VL2-vd-Dzy" secondAttribute="trailing" constant="20" symbolic="YES" id="C9U-Dm-jhu"/>
+                <constraint firstItem="Ugq-UW-gAH" firstAttribute="top" secondItem="aNc-0i-CWK" secondAttribute="bottom" constant="8" symbolic="YES" id="Fgp-mU-LXT"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aNc-0i-CWK" secondAttribute="trailing" constant="20" symbolic="YES" id="Of2-8i-Pd0"/>
+                <constraint firstItem="VL2-vd-Dzy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ugq-UW-gAH" secondAttribute="bottom" constant="8" symbolic="YES" id="T2u-8c-g9A"/>
+                <constraint firstItem="VL2-vd-Dzy" firstAttribute="width" secondItem="Ddl-Ae-e4Q" secondAttribute="width" id="aqz-hH-amt"/>
+                <constraint firstAttribute="trailing" secondItem="Ugq-UW-gAH" secondAttribute="trailing" constant="20" symbolic="YES" id="cAw-QR-YNF"/>
+                <constraint firstItem="Ddl-Ae-e4Q" firstAttribute="top" secondItem="VL2-vd-Dzy" secondAttribute="top" id="k49-n8-Skb"/>
+                <constraint firstItem="aNc-0i-CWK" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="zYf-6e-UgN"/>
+            </constraints>
+            <point key="canvasLocation" x="94" y="127.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="BlueSquare" width="15" height="15"/>
+        <image name="GreenSquare" width="15" height="15"/>
+        <image name="RedSquare" width="15" height="15"/>
+    </resources>
+</document>

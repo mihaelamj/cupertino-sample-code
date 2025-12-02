@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9611FA0A2A12F06E008BE5D1 /* RatingPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611FA092A12F06E008BE5D1 /* RatingPicker.swift */; };
+		962F94E72A035A0E001DE996 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F94E62A035A0E001DE996 /* GroceryList.swift */; };
+		962F94E92A0464F2001DE996 /* ChecklistToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F94E82A0464F2001DE996 /* ChecklistToggleStyle.swift */; };
+		962F94EB2A05AB28001DE996 /* RelatedRecipeLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F94EA2A05AB27001DE996 /* RelatedRecipeLink.swift */; };
+		963BFFD929F8FAFF00B4087F /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963BFFD829F8FAFF00B4087F /* GroceryListView.swift */; };
+		96648C512A1698410049A29C /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96648C502A1698410049A29C /* Rating.swift */; };
+		96F932322A1198D5006C73C9 /* RecipeCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F932312A1198D5006C73C9 /* RecipeCommands.swift */; };
+		AD231258283EED1200254BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD231257283EED1200254BBF /* Assets.xcassets */; };
+		AD23125C283EED1200254BBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD23125B283EED1200254BBF /* Preview Assets.xcassets */; };
+		AD231263283EF16900254BBF /* FocusCookbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D613FD327FB91380018C5F3 /* FocusCookbookApp.swift */; };
+		AD231264283EF16900254BBF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A797727FF62E9009CCB40 /* Category.swift */; };
+		AD231265283EF16900254BBF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A797427FF629F009CCB40 /* DataModel.swift */; };
+		AD231266283EF16900254BBF /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A797A27FF6329009CCB40 /* Ingredient.swift */; };
+		AD231267283EF16900254BBF /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A796127FD4409009CCB40 /* NavigationModel.swift */; };
+		AD231268283EF16900254BBF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A797D27FF6350009CCB40 /* Recipe.swift */; };
+		AD23126A283EF16900254BBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D613FD427FB91380018C5F3 /* ContentView.swift */; };
+		AD23126B283EF16900254BBF /* GroceryListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A797027FF5ED9009CCB40 /* GroceryListButton.swift */; };
+		AD23126D283EF16900254BBF /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A798027FF7731009CCB40 /* RecipeDetail.swift */; };
+		AD23126E283EF16900254BBF /* RecipeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A798327FF7EF2009CCB40 /* RecipeGrid.swift */; };
+		AD23126F283EF16900254BBF /* RecipePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B1108282471950010C99B /* RecipePhoto.swift */; };
+		AD231270283EF16900254BBF /* RecipeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEE8D3280DD0F10054F7BD /* RecipeTile.swift */; };
+		AD231273283EF16900254BBF /* RecipeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A796A27FF5E55009CCB40 /* RecipeNavigationView.swift */; };
+		AD7FBFC12A1ED8B000E22DE5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD7FBFC02A1ED8B000E22DE5 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D4B1108282471950010C99B /* RecipePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePhoto.swift; sourceTree = "<group>"; };
+		4D5A796127FD4409009CCB40 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
+		4D5A796A27FF5E55009CCB40 /* RecipeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNavigationView.swift; sourceTree = "<group>"; };
+		4D5A797027FF5ED9009CCB40 /* GroceryListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListButton.swift; sourceTree = "<group>"; };
+		4D5A797427FF629F009CCB40 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		4D5A797727FF62E9009CCB40 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4D5A797A27FF6329009CCB40 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		4D5A797D27FF6350009CCB40 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		4D5A798027FF7731009CCB40 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		4D5A798327FF7EF2009CCB40 /* RecipeGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeGrid.swift; sourceTree = "<group>"; };
+		4D613FD327FB91380018C5F3 /* FocusCookbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCookbookApp.swift; sourceTree = "<group>"; };
+		4D613FD427FB91380018C5F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DCEE8D3280DD0F10054F7BD /* RecipeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTile.swift; sourceTree = "<group>"; };
+		9611FA092A12F06E008BE5D1 /* RatingPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingPicker.swift; sourceTree = "<group>"; };
+		962F94E62A035A0E001DE996 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+		962F94E82A0464F2001DE996 /* ChecklistToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistToggleStyle.swift; sourceTree = "<group>"; };
+		962F94EA2A05AB27001DE996 /* RelatedRecipeLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedRecipeLink.swift; sourceTree = "<group>"; };
+		963BFFD829F8FAFF00B4087F /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
+		96648C502A1698410049A29C /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		96F932312A1198D5006C73C9 /* RecipeCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipeCommands.swift; path = FocusCookbook/Views/RecipeCommands.swift; sourceTree = SOURCE_ROOT; };
+		9D44F54630030276BBC1642E /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		A0695E430E7E2A150F9DD5CA /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		AD231251283EED1000254BBF /* Focus Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus Cookbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD231257283EED1200254BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD231259283EED1200254BBF /* FocusCookbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusCookbook.entitlements; sourceTree = "<group>"; };
+		AD23125B283EED1200254BBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD7FBFC02A1ED8B000E22DE5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD23124E283EED1000254BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E7B392080A768EFE695C202 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A0695E430E7E2A150F9DD5CA /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		4D613FCD27FB91380018C5F3 = {
+			isa = PBXGroup;
+			children = (
+				AD7FBFC02A1ED8B000E22DE5 /* README.md */,
+				AD231252283EED1000254BBF /* FocusCookbook */,
+				4D613FDB27FB913A0018C5F3 /* Products */,
+				0E7B392080A768EFE695C202 /* Configuration */,
+				7618C6F3AF12B1DA4E138A4A /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		4D613FDB27FB913A0018C5F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD231251283EED1000254BBF /* Focus Cookbook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7618C6F3AF12B1DA4E138A4A /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				9D44F54630030276BBC1642E /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		96648C4E2A1697FF0049A29C /* Rating Picker */ = {
+			isa = PBXGroup;
+			children = (
+				96648C502A1698410049A29C /* Rating.swift */,
+				9611FA092A12F06E008BE5D1 /* RatingPicker.swift */,
+			);
+			path = "Rating Picker";
+			sourceTree = "<group>";
+		};
+		96648C4F2A1698210049A29C /* Grocery List */ = {
+			isa = PBXGroup;
+			children = (
+				962F94E82A0464F2001DE996 /* ChecklistToggleStyle.swift */,
+				962F94E62A035A0E001DE996 /* GroceryList.swift */,
+				4D5A797027FF5ED9009CCB40 /* GroceryListButton.swift */,
+				963BFFD829F8FAFF00B4087F /* GroceryListView.swift */,
+			);
+			path = "Grocery List";
+			sourceTree = "<group>";
+		};
+		AD231252283EED1000254BBF /* FocusCookbook */ = {
+			isa = PBXGroup;
+			children = (
+				4D613FD327FB91380018C5F3 /* FocusCookbookApp.swift */,
+				AD231260283EEF6F00254BBF /* Resources */,
+				AD231262283EEFA000254BBF /* Models */,
+				AD231261283EEF8200254BBF /* Views */,
+				96648C4F2A1698210049A29C /* Grocery List */,
+				96648C4E2A1697FF0049A29C /* Rating Picker */,
+			);
+			path = FocusCookbook;
+			sourceTree = "<group>";
+		};
+		AD23125A283EED1200254BBF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD23125B283EED1200254BBF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD231260283EEF6F00254BBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD231257283EED1200254BBF /* Assets.xcassets */,
+				AD231259283EED1200254BBF /* FocusCookbook.entitlements */,
+				AD23125A283EED1200254BBF /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD231261283EEF8200254BBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D613FD427FB91380018C5F3 /* ContentView.swift */,
+				4D5A798027FF7731009CCB40 /* RecipeDetail.swift */,
+				4D5A798327FF7EF2009CCB40 /* RecipeGrid.swift */,
+				4D5A796A27FF5E55009CCB40 /* RecipeNavigationView.swift */,
+				4D4B1108282471950010C99B /* RecipePhoto.swift */,
+				4DCEE8D3280DD0F10054F7BD /* RecipeTile.swift */,
+				962F94EA2A05AB27001DE996 /* RelatedRecipeLink.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD231262283EEFA000254BBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D5A797727FF62E9009CCB40 /* Category.swift */,
+				4D5A797427FF629F009CCB40 /* DataModel.swift */,
+				4D5A797A27FF6329009CCB40 /* Ingredient.swift */,
+				4D5A796127FD4409009CCB40 /* NavigationModel.swift */,
+				4D5A797D27FF6350009CCB40 /* Recipe.swift */,
+				96F932312A1198D5006C73C9 /* RecipeCommands.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD231250283EED1000254BBF /* Focus Cookbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD23125F283EED1200254BBF /* Build configuration list for PBXNativeTarget "Focus Cookbook" */;
+			buildPhases = (
+				AD23124D283EED1000254BBF /* Sources */,
+				AD23124E283EED1000254BBF /* Frameworks */,
+				AD23124F283EED1000254BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Focus Cookbook";
+			productName = FocusCookbook;
+			productReference = AD231251283EED1000254BBF /* Focus Cookbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D613FCE27FB91380018C5F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					AD231250283EED1000254BBF = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 4D613FD127FB91380018C5F3 /* Build configuration list for PBXProject "FocusCookbook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D613FCD27FB91380018C5F3;
+			productRefGroup = 4D613FDB27FB913A0018C5F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD231250283EED1000254BBF /* Focus Cookbook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD23124F283EED1000254BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7FBFC12A1ED8B000E22DE5 /* README.md in Resources */,
+				AD23125C283EED1200254BBF /* Preview Assets.xcassets in Resources */,
+				AD231258283EED1200254BBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD23124D283EED1000254BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD231263283EF16900254BBF /* FocusCookbookApp.swift in Sources */,
+				AD231264283EF16900254BBF /* Category.swift in Sources */,
+				AD231265283EF16900254BBF /* DataModel.swift in Sources */,
+				AD231266283EF16900254BBF /* Ingredient.swift in Sources */,
+				AD231267283EF16900254BBF /* NavigationModel.swift in Sources */,
+				AD231268283EF16900254BBF /* Recipe.swift in Sources */,
+				AD23126A283EF16900254BBF /* ContentView.swift in Sources */,
+				96F932322A1198D5006C73C9 /* RecipeCommands.swift in Sources */,
+				96648C512A1698410049A29C /* Rating.swift in Sources */,
+				AD23126B283EF16900254BBF /* GroceryListButton.swift in Sources */,
+				9611FA0A2A12F06E008BE5D1 /* RatingPicker.swift in Sources */,
+				AD23126D283EF16900254BBF /* RecipeDetail.swift in Sources */,
+				AD23126E283EF16900254BBF /* RecipeGrid.swift in Sources */,
+				AD23126F283EF16900254BBF /* RecipePhoto.swift in Sources */,
+				AD231270283EF16900254BBF /* RecipeTile.swift in Sources */,
+				962F94E92A0464F2001DE996 /* ChecklistToggleStyle.swift in Sources */,
+				963BFFD929F8FAFF00B4087F /* GroceryListView.swift in Sources */,
+				962F94E72A035A0E001DE996 /* GroceryList.swift in Sources */,
+				AD231273283EF16900254BBF /* RecipeNavigationView.swift in Sources */,
+				962F94EB2A05AB28001DE996 /* RelatedRecipeLink.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D613FE927FB913A0018C5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0695E430E7E2A150F9DD5CA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMPILER_INDEX_STORE_ENABLE = No;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D613FEA27FB913A0018C5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0695E430E7E2A150F9DD5CA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMPILER_INDEX_STORE_ENABLE = No;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AD23125D283EED1200254BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0695E430E7E2A150F9DD5CA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FocusCookbook/Resources/FocusCookbook.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusCookbook/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad[sdk=iphoneos*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad[sdk=iphonesimulator*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone[sdk=iphoneos*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone[sdk=iphonesimulator*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.FocusCookbook${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD23125E283EED1200254BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0695E430E7E2A150F9DD5CA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FocusCookbook/Resources/FocusCookbook.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusCookbook/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad[sdk=iphoneos*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad[sdk=iphonesimulator*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone[sdk=iphoneos*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone[sdk=iphonesimulator*]" = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.FocusCookbook${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D613FD127FB91380018C5F3 /* Build configuration list for PBXProject "FocusCookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D613FE927FB913A0018C5F3 /* Debug */,
+				4D613FEA27FB913A0018C5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD23125F283EED1200254BBF /* Build configuration list for PBXNativeTarget "Focus Cookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD23125D283EED1200254BBF /* Debug */,
+				AD23125E283EED1200254BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D613FCE27FB91380018C5F3 /* Project object */;
+}

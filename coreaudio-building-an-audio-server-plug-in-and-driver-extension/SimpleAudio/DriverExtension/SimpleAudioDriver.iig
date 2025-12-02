@@ -1,0 +1,51 @@
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+A minimal user-space driver.
+*/
+
+
+/*==================================================================================================
+	SimpleAudioDriver.iig
+==================================================================================================*/
+#if !defined(__SimpleAudioDriver_h__)
+#define __SimpleAudioDriver_h__
+
+#include <DriverKit/DriverKit.iig>
+
+class SimpleAudioDriver
+:
+	public IOService
+{
+public:
+    virtual bool				init() override;
+    virtual void				free() override;
+
+    virtual kern_return_t		Start(IOService* in_provider) override;
+    virtual kern_return_t		Stop(IOService* in_provider) override;
+
+    virtual kern_return_t		NewUserClient(uint32_t in_type, IOUserClient** out_user_client) override;
+
+//	IO Management
+public:
+	IOMemoryDescriptor*			CopyBuffer(uint64_t in_buffer_type) LOCALONLY;
+	kern_return_t				StartHardware() LOCALONLY;
+	void						StopHardware() LOCALONLY;
+	kern_return_t				GetSampleRate(uint64_t& out_sample_rate) LOCALONLY;
+	kern_return_t				SetSampleRate(uint64_t in_new_sample_rate) LOCALONLY;
+
+private:
+	kern_return_t				StartTimer() LOCALONLY;
+	void						StopTimer() LOCALONLY;
+	void						UpdateTimer() LOCALONLY;
+	virtual void				TimerOccurred(OSAction* action, uint64_t time) TYPE(IOTimerDispatchSource::TimerOccurred);
+
+//	Controls
+public:
+	kern_return_t				GetVolume(uint32_t in_volume_id, uint32_t& out_volume) LOCALONLY;
+	kern_return_t				SetVolume(uint32_t in_volume_id, uint32_t in_new_volume) LOCALONLY;
+
+};
+
+#endif /* __SimpleAudioDriver_h__ */

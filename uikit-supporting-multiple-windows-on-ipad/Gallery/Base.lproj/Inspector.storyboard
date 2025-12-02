@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hgw-g4-A4z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Inspector-->
+        <scene sceneID="Eau-YD-d7w">
+            <objects>
+                <viewController storyboardIdentifier="InspectorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xaW-2J-eC0" userLabel="Inspector" customClass="InspectorViewController" customModule="Gallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uas-gp-sMo">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="162"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q2l-ct-iHP">
+                                <rect key="frame" x="20" y="20" width="360" height="122"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kgQ-jo-ff5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q2l-ct-iHP" firstAttribute="top" secondItem="kgQ-jo-ff5" secondAttribute="top" constant="20" id="5SB-9M-6vb"/>
+                            <constraint firstItem="kgQ-jo-ff5" firstAttribute="trailing" secondItem="q2l-ct-iHP" secondAttribute="trailing" constant="20" id="efD-QS-7Wy"/>
+                            <constraint firstItem="q2l-ct-iHP" firstAttribute="leading" secondItem="kgQ-jo-ff5" secondAttribute="leading" constant="20" id="t8r-F2-9r0"/>
+                            <constraint firstItem="kgQ-jo-ff5" firstAttribute="bottom" secondItem="q2l-ct-iHP" secondAttribute="bottom" constant="20" id="u6Y-B6-DMM"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Inspector" id="o81-Wc-HZz"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="250"/>
+                    <size key="freeformSize" width="400" height="250"/>
+                    <connections>
+                        <outlet property="photoImageView" destination="q2l-ct-iHP" id="4wv-K9-BoX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSY-Fh-6cG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="23"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Okb-Io-U7f">
+            <objects>
+                <navigationController storyboardIdentifier="InspectorNavViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hgw-g4-A4z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Yve-ih-D2k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="compactAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xaW-2J-eC0" kind="relationship" relationship="rootViewController" id="XrL-eo-LN8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNn-De-DYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

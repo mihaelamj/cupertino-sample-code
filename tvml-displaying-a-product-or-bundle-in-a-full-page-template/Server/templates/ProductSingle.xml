@@ -1,0 +1,228 @@
+<document>
+    <head>
+        <style>
+            .banner-left {
+                tv-position: top-left;
+            }
+            .banner-right {
+                tv-position: top-right;
+            }
+            .banner-center {
+                tv-position: top-center;
+                margin: 0 50;
+            }
+            .metadata-text {
+                tv-text-max-lines: 1;
+                tv-text-style: caption1;
+                color: rgba(255, 255, 255, 0.8);
+            }
+            .metadata-tint-color {
+                tv-tint-color: rgba(255, 255, 255, 0.8);
+            }
+
+            .grid_3 {
+                padding: 0 80;
+                tv-interitem-spacing: 40;
+            }
+
+            .info-title {
+                tv-text-style: caption2;
+            }
+
+            .info-text {
+                tv-text-style: caption2;
+                color: rgba(255, 255, 255, 1.0);
+                margin-left: -45;
+            }
+
+            .align-right { itml-align: right; }
+            .tint-color { tv-tint-color: rgb(0, 0, 0); color: rgb(0, 0, 0); }
+            
+            @media (tv-appearance: dark) {
+                .tint-color { tv-tint-color: rgb(255, 255, 255); color: rgb(255, 255, 255); }
+            }
+       </style>
+    </head>
+    <productUberTemplate binding="@theme:{theme};">
+        <background>
+            <mediaContent>
+			    <img binding="@src:{backgroundURL};"/>
+            </mediaContent>
+		</background>
+
+        <banner autoHighlight="true">
+            <!-- left -->
+            <button class="button playbutton banner-left">
+                <text><badge src="resource://button-play" style="margin:0 0 -6" /> Season 1, Ep 1</text>
+            </button>
+            <button class="button addtolibrary banner-left" style="margin-top: 10">
+                <text>Add to Library</text>
+            </button>
+
+            <!-- middle -->
+            <description class="banner-center" style="tv-text-max-lines: 3; text-align: left; width: 900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+            <row class="banner-center" style="margin-top: 10; tv-interitem-spacing: 20">
+                <text class="metadata-text">Thriller</text>
+                <text class="metadata-text">3 seasons</text>
+                <text class="metadata-text">92% <badge class="rt-badge" src="resource://tomato-certified" style="margin:0 0 -3"/></text>
+                <badge class="metadata-tint-color" src="resource://mpaa-pg"/>
+                <badge class="metadata-tint-color" src="resource://hd"/>
+                <badge class="metadata-tint-color" src="resource://cc"/>
+            </row>
+
+            <!-- right -->
+            <infoList class="banner-right" style="width: 300">
+                <info>
+                    <header>
+                        <title class="info-title">Starring</title>
+                    </header>
+                    <text class="info-text">John Doe, Jane Doe, John Smith</text>
+                </info>
+                <info>
+                    <header>
+                        <title class="info-title">Director</title>
+                    </header>
+                    <text class="info-text">Jane Smith</text>
+                </info>
+            </infoList>
+        </banner>
+
+        <collectionList>
+            <header>
+                <img binding="@src:{logoURL};" width="1920" height="100" />
+            </header>
+
+            <shelf class="grid_3">
+                <header>
+                    <title>Shelf 1</title>
+                </header>
+                <section binding="items:{supplementaryItems};">
+                    <prototypes>
+                        <lockup>
+                            <img binding="@src:{artworkURL};" width="560" height="315"/>
+                            <title binding="textContent:{title};"/>
+                        </lockup>
+                    </prototypes>                   
+                </section>
+            </shelf>
+
+            <shelf class="grid_3">
+                <header>
+                    <title>Shelf 2</title>
+                </header>
+                <section binding="items:{supplementaryItems};">
+                    <prototypes>
+                        <lockup>
+                            <img binding="@src:{artworkURL};" width="560" height="315"/>
+                            <title binding="textContent:{title};"/>
+                        </lockup>
+                    </prototypes>                   
+                </section>
+            </shelf>
+
+            <shelf class="grid_3">
+                <header>
+                    <title>Shelf 3</title>
+                </header>
+                <section binding="items:{supplementaryItems};">
+                    <prototypes>
+                        <lockup>
+                            <img binding="@src:{artworkURL};" width="560" height="315"/>
+                            <title binding="textContent:{title};"/>
+                        </lockup>
+                    </prototypes>                   
+                </section>
+            </shelf>
+
+            <separator/>
+
+            <productInfo>
+                <infoTable>
+                    <header>
+                        <title>Information</title>
+                    </header>
+                    <info>
+                        <header>
+                            <title>Studio</title>
+                        </header>
+                        <text>John Smith</text>
+                    </info>
+                    <info>
+                        <header>
+                            <title>Genre</title>
+                        </header>
+                        <text>Kids &amp; Family</text>
+                    </info>
+                    <info>
+                        <header>
+                            <title>Released</title>
+                        </header>
+                        <text>
+                            <date format="MMMM d, yyyy">2015-06-18</date>
+                        </text>
+                    </info>
+                    <info>
+                        <header>
+                            <title>Run Time</title>
+                        </header>
+                        <text>
+                            <duration>1 hr 35 min</duration>
+                        </text>
+                    </info>
+                    <info>
+                        <header>
+                            <title>Format</title>
+                        </header>
+                        <text>Widescreen</text>
+                    </info>
+                    <info>
+                        <header>
+                            <title>Rated</title>
+                        </header>
+                        <text>PG for mild thematic elements and some action.</text>
+                    </info>
+                    <footer>
+                        <text class="copyright">© 2015 Disney/Pixar</text>
+                    </footer>
+                </infoTable>
+                <infoTable>
+                    <header>
+                        <title>Languages</title>
+                    </header>
+                    <info>
+                        <header>
+                            <title>Primary</title>
+                        </header>
+                        <description>English (Dolby Digital Plus 7.1, Dolby Digital 5.1, Subtitles, CC, AD)</description>
+                    </info>
+                    <info>
+                        <header>
+                            <title>Additional</title>
+                        </header>
+                        <description allowsZooming="true" card-type="language" data-select="description">
+                            <text>Spanish (Stereo, Subtitles)</text>
+                            <br/>
+                        </description>
+                    </info>
+                </infoTable>
+                <infoTable class="accessibility-infoTable">
+                    <header>
+                        <title>Accessibility</title>
+                    </header>
+                    <info>
+                        <header>
+                            <badge class="tint-color align-right" src="resource://cc"/>
+                        </header>
+                        <text class="accessibility-info">Closed captions refer to subtitles in the available language with addition of relevant nondialog information.</text>
+                    </info>
+                    <info>
+                        <header>
+                            <textBadge>AD</textBadge>
+                        </header>
+                        <text class="accessibility-info">Audio description refers to a narration track describing what is happening on screen, to provide context for those who are blind or have low vision.</text>
+                    </info>
+                </infoTable>
+            </productInfo>
+        </collectionList>
+    </productUberTemplate>
+</document>

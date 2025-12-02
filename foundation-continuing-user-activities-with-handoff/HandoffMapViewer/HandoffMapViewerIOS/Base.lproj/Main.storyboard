@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dcc-0b-Neb">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="skj-ib-oNP">
+            <objects>
+                <navigationController id="Dcc-0b-Neb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3E0-bL-t6Q">
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kLU-Rb-0nP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhp-YI-a4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666" y="186"/>
+        </scene>
+        <!--Stores-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="HandoffMapViewerIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Cv-bj-Ilt">
+                                <rect key="frame" x="0.0" y="70" width="768" height="954"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Cv-bj-Ilt" secondAttribute="bottom" id="Flu-9b-qpf"/>
+                            <constraint firstItem="3Cv-bj-Ilt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ij9-BJ-45V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Cv-bj-Ilt" secondAttribute="trailing" id="Oab-ZZ-zSa"/>
+                            <constraint firstItem="3Cv-bj-Ilt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c4a-cE-Vjv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stores" id="1rX-cS-bcC"/>
+                    <connections>
+                        <outlet property="mapView" destination="3Cv-bj-Ilt" id="ujV-fh-2lW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="186"/>
+        </scene>
+        <!--Store Detail View Controller-->
+        <scene sceneID="dYH-yJ-hzM">
+            <objects>
+                <viewController storyboardIdentifier="StoreDetailScene" modalPresentationStyle="formSheet" id="IMc-cU-hwz" customClass="StoreDetailViewController" customModule="HandoffMapViewerIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aDz-tb-iQW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X8o-gq-2wM">
+                                <rect key="frame" x="16" y="55" width="51" height="31"/>
+                                <connections>
+                                    <action selector="handleFavoriteSwitchValueChanged" destination="IMc-cU-hwz" eventType="valueChanged" id="oJQ-FP-DNf"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-KP-sSA">
+                                <rect key="frame" x="73" y="36" width="286" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-Wf-wJe">
+                                <rect key="frame" x="16" y="98" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnj-bC-lD0">
+                                <rect key="frame" x="16" y="20" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rbc-Wf-wJe" firstAttribute="top" secondItem="X8o-gq-2wM" secondAttribute="bottom" constant="12" id="5pd-r9-bs7"/>
+                            <constraint firstItem="X8o-gq-2wM" firstAttribute="leading" secondItem="MEY-f5-nkS" secondAttribute="leading" constant="16" id="6Ct-4u-NM7"/>
+                            <constraint firstItem="rbc-Wf-wJe" firstAttribute="trailing" secondItem="3MD-KP-sSA" secondAttribute="trailing" id="6r5-zF-aBI"/>
+                            <constraint firstItem="MEY-f5-nkS" firstAttribute="trailing" secondItem="vnj-bC-lD0" secondAttribute="trailing" constant="16" id="OT8-v6-rVs"/>
+                            <constraint firstItem="MEY-f5-nkS" firstAttribute="trailing" secondItem="3MD-KP-sSA" secondAttribute="trailing" constant="16" id="ZQu-Rc-wlT"/>
+                            <constraint firstItem="vnj-bC-lD0" firstAttribute="top" secondItem="MEY-f5-nkS" secondAttribute="top" id="ZbB-EE-a92"/>
+                            <constraint firstItem="vnj-bC-lD0" firstAttribute="leading" secondItem="MEY-f5-nkS" secondAttribute="leading" constant="16" id="cOp-Gx-xKg"/>
+                            <constraint firstItem="X8o-gq-2wM" firstAttribute="top" secondItem="vnj-bC-lD0" secondAttribute="bottom" constant="6" id="dLl-VM-ssH"/>
+                            <constraint firstItem="3MD-KP-sSA" firstAttribute="centerY" secondItem="X8o-gq-2wM" secondAttribute="centerY" id="g5Y-Yz-3vM"/>
+                            <constraint firstItem="3MD-KP-sSA" firstAttribute="firstBaseline" secondItem="X8o-gq-2wM" secondAttribute="firstBaseline" id="oya-SX-pTg"/>
+                            <constraint firstItem="rbc-Wf-wJe" firstAttribute="leading" secondItem="X8o-gq-2wM" secondAttribute="leading" id="qdu-ao-aAd"/>
+                            <constraint firstItem="3MD-KP-sSA" firstAttribute="leading" secondItem="X8o-gq-2wM" secondAttribute="trailing" constant="8" id="wnw-Ux-jnG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MEY-f5-nkS"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="200"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="200"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="rbc-Wf-wJe" id="lhG-JC-oGi"/>
+                        <outlet property="favoriteSwitch" destination="X8o-gq-2wM" id="SlP-m4-Zxk"/>
+                        <outlet property="storeNameLabel" destination="vnj-bC-lD0" id="bUC-2f-RE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3GW-IR-2rX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639" y="-56"/>
+        </scene>
+    </scenes>
+</document>

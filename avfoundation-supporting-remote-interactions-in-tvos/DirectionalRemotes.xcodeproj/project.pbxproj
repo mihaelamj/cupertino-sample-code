@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4EAEBBB29AD3B6A000C8435 /* CustomPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEB9C29AD3B69000C8435 /* CustomPlayerViewController.swift */; };
+		C4EAEBBC29AD3B6A000C8435 /* CustomPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEB9D29AD3B69000C8435 /* CustomPlayer.swift */; };
+		C4EAEBBD29AD3B6A000C8435 /* CustomPlayerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEB9E29AD3B69000C8435 /* CustomPlayerUtilities.swift */; };
+		C4EAEBBE29AD3B6A000C8435 /* CustomPlayerFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEB9F29AD3B69000C8435 /* CustomPlayerFeedbackView.swift */; };
+		C4EAEBBF29AD3B6A000C8435 /* CustomPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBA029AD3B69000C8435 /* CustomPlayerView.swift */; };
+		C4EAEBC029AD3B6A000C8435 /* SystemPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBA229AD3B69000C8435 /* SystemPlayerViewController.swift */; };
+		C4EAEBC129AD3B6A000C8435 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBA329AD3B69000C8435 /* MenuViewController.swift */; };
+		C4EAEBC229AD3B6A000C8435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBA429AD3B69000C8435 /* AppDelegate.swift */; };
+		C4EAEBC329AD3B6A000C8435 /* GuideProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBA629AD3B69000C8435 /* GuideProgramCell.swift */; };
+		C4EAEBC429AD3B6A000C8435 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBA729AD3B69000C8435 /* GuideViewController.swift */; };
+		C4EAEBC529AD3B6A000C8435 /* GuideChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBA829AD3B69000C8435 /* GuideChannelCell.swift */; };
+		C4EAEBC629AD3B6A000C8435 /* SampleAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C4EAEBAB29AD3B6A000C8435 /* SampleAudio.m4a */; };
+		C4EAEBC729AD3B6A000C8435 /* RemoteEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBAC29AD3B6A000C8435 /* RemoteEventsView.swift */; };
+		C4EAEBC829AD3B6A000C8435 /* RemoteEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBAD29AD3B6A000C8435 /* RemoteEventsCell.swift */; };
+		C4EAEBC929AD3B6A000C8435 /* RemoteEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBAE29AD3B6A000C8435 /* RemoteEventsViewController.swift */; };
+		C4EAEBCA29AD3B6A000C8435 /* RemoteEventsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBAF29AD3B6A000C8435 /* RemoteEventsPlayer.swift */; };
+		C4EAEBCB29AD3B6A000C8435 /* RemoteEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBB129AD3B6A000C8435 /* RemoteEvent.swift */; };
+		C4EAEBCC29AD3B6A000C8435 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBB229AD3B6A000C8435 /* Utilities.swift */; };
+		C4EAEBCD29AD3B6A000C8435 /* RemoteCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBB329AD3B6A000C8435 /* RemoteCommand.swift */; };
+		C4EAEBCE29AD3B6A000C8435 /* UIViewController+GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBB529AD3B6A000C8435 /* UIViewController+GestureRecognizer.swift */; };
+		C4EAEBCF29AD3B6A000C8435 /* AVPlayerItem+Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBB629AD3B6A000C8435 /* AVPlayerItem+Channel.swift */; };
+		C4EAEBD029AD3B6A000C8435 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBB829AD3B6A000C8435 /* Channel.swift */; };
+		C4EAEBD129AD3B6A000C8435 /* TVSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBB929AD3B6A000C8435 /* TVSchedule.swift */; };
+		C4EAEBD229AD3B6A000C8435 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAEBBA29AD3B6A000C8435 /* Program.swift */; };
+		C4FCC68329AD1C4600708B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FCC68129AD1C4600708B7E /* Main.storyboard */; };
+		C4FCC68529AD1C4700708B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FCC68429AD1C4700708B7E /* Assets.xcassets */; };
+		C4FCC68829AD1C4700708B7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FCC68629AD1C4700708B7E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08D14F58F9A3DBEDDB97EF2A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		0CEB4D265B310C48CD666977 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		65B199D2B106472E0BC6068C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C4EA784F29AD1EC900D4C975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C4EAEB9C29AD3B69000C8435 /* CustomPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlayerViewController.swift; sourceTree = "<group>"; };
+		C4EAEB9D29AD3B69000C8435 /* CustomPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlayer.swift; sourceTree = "<group>"; };
+		C4EAEB9E29AD3B69000C8435 /* CustomPlayerUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlayerUtilities.swift; sourceTree = "<group>"; };
+		C4EAEB9F29AD3B69000C8435 /* CustomPlayerFeedbackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlayerFeedbackView.swift; sourceTree = "<group>"; };
+		C4EAEBA029AD3B69000C8435 /* CustomPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlayerView.swift; sourceTree = "<group>"; };
+		C4EAEBA229AD3B69000C8435 /* SystemPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemPlayerViewController.swift; sourceTree = "<group>"; };
+		C4EAEBA329AD3B69000C8435 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C4EAEBA429AD3B69000C8435 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4EAEBA629AD3B69000C8435 /* GuideProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideProgramCell.swift; sourceTree = "<group>"; };
+		C4EAEBA729AD3B69000C8435 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		C4EAEBA829AD3B69000C8435 /* GuideChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideChannelCell.swift; sourceTree = "<group>"; };
+		C4EAEBAB29AD3B6A000C8435 /* SampleAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleAudio.m4a; sourceTree = "<group>"; };
+		C4EAEBAC29AD3B6A000C8435 /* RemoteEventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteEventsView.swift; sourceTree = "<group>"; };
+		C4EAEBAD29AD3B6A000C8435 /* RemoteEventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteEventsCell.swift; sourceTree = "<group>"; };
+		C4EAEBAE29AD3B6A000C8435 /* RemoteEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteEventsViewController.swift; sourceTree = "<group>"; };
+		C4EAEBAF29AD3B6A000C8435 /* RemoteEventsPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteEventsPlayer.swift; sourceTree = "<group>"; };
+		C4EAEBB129AD3B6A000C8435 /* RemoteEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteEvent.swift; sourceTree = "<group>"; };
+		C4EAEBB229AD3B6A000C8435 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C4EAEBB329AD3B6A000C8435 /* RemoteCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCommand.swift; sourceTree = "<group>"; };
+		C4EAEBB529AD3B6A000C8435 /* UIViewController+GestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GestureRecognizer.swift"; sourceTree = "<group>"; };
+		C4EAEBB629AD3B6A000C8435 /* AVPlayerItem+Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayerItem+Channel.swift"; sourceTree = "<group>"; };
+		C4EAEBB829AD3B6A000C8435 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		C4EAEBB929AD3B6A000C8435 /* TVSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVSchedule.swift; sourceTree = "<group>"; };
+		C4EAEBBA29AD3B6A000C8435 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		C4FCC67A29AD1C4600708B7E /* DirectionalRemotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectionalRemotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FCC68229AD1C4600708B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4FCC68429AD1C4700708B7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4FCC68729AD1C4700708B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4FCC67729AD1C4600708B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		086F0F2E359C637D5526E8F3 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				08D14F58F9A3DBEDDB97EF2A /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = "";
+			sourceTree = "<group>";
+		};
+		40C4A478068D9A465784B366 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0CEB4D265B310C48CD666977 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		C4EAEB9B29AD3B69000C8435 /* Custom Player */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEB9C29AD3B69000C8435 /* CustomPlayerViewController.swift */,
+				C4EAEB9D29AD3B69000C8435 /* CustomPlayer.swift */,
+				C4EAEB9E29AD3B69000C8435 /* CustomPlayerUtilities.swift */,
+				C4EAEB9F29AD3B69000C8435 /* CustomPlayerFeedbackView.swift */,
+				C4EAEBA029AD3B69000C8435 /* CustomPlayerView.swift */,
+			);
+			path = "Custom Player";
+			sourceTree = "<group>";
+		};
+		C4EAEBA129AD3B69000C8435 /* System Player */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBA229AD3B69000C8435 /* SystemPlayerViewController.swift */,
+			);
+			path = "System Player";
+			sourceTree = "<group>";
+		};
+		C4EAEBA529AD3B69000C8435 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBA629AD3B69000C8435 /* GuideProgramCell.swift */,
+				C4EAEBA729AD3B69000C8435 /* GuideViewController.swift */,
+				C4EAEBA829AD3B69000C8435 /* GuideChannelCell.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		C4EAEBA929AD3B6A000C8435 /* Remote Events */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBAA29AD3B6A000C8435 /* Resources */,
+				C4EAEBAC29AD3B6A000C8435 /* RemoteEventsView.swift */,
+				C4EAEBAD29AD3B6A000C8435 /* RemoteEventsCell.swift */,
+				C4EAEBAE29AD3B6A000C8435 /* RemoteEventsViewController.swift */,
+				C4EAEBAF29AD3B6A000C8435 /* RemoteEventsPlayer.swift */,
+			);
+			path = "Remote Events";
+			sourceTree = "<group>";
+		};
+		C4EAEBAA29AD3B6A000C8435 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBAB29AD3B6A000C8435 /* SampleAudio.m4a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4EAEBB029AD3B6A000C8435 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBB129AD3B6A000C8435 /* RemoteEvent.swift */,
+				C4EAEBB329AD3B6A000C8435 /* RemoteCommand.swift */,
+				C4EAEBB429AD3B6A000C8435 /* Extensions */,
+				C4EAEBB729AD3B6A000C8435 /* Data */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C4EAEBB429AD3B6A000C8435 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBB529AD3B6A000C8435 /* UIViewController+GestureRecognizer.swift */,
+				C4EAEBB629AD3B6A000C8435 /* AVPlayerItem+Channel.swift */,
+				C4EAEBB229AD3B6A000C8435 /* Utilities.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4EAEBB729AD3B6A000C8435 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBB829AD3B6A000C8435 /* Channel.swift */,
+				C4EAEBB929AD3B6A000C8435 /* TVSchedule.swift */,
+				C4EAEBBA29AD3B6A000C8435 /* Program.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4FCC67129AD1C4600708B7E = {
+			isa = PBXGroup;
+			children = (
+				65B199D2B106472E0BC6068C /* README.md */,
+				C4FCC67C29AD1C4600708B7E /* DirectionalRemotes */,
+				C4FCC67B29AD1C4600708B7E /* Products */,
+				40C4A478068D9A465784B366 /* Configuration */,
+				086F0F2E359C637D5526E8F3 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		C4FCC67B29AD1C4600708B7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4FCC67A29AD1C4600708B7E /* DirectionalRemotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4FCC67C29AD1C4600708B7E /* DirectionalRemotes */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAEBA429AD3B69000C8435 /* AppDelegate.swift */,
+				C4EAEBA329AD3B69000C8435 /* MenuViewController.swift */,
+				C4EAEBB029AD3B6A000C8435 /* Shared */,
+				C4EAEBA129AD3B69000C8435 /* System Player */,
+				C4EAEB9B29AD3B69000C8435 /* Custom Player */,
+				C4EAEBA929AD3B6A000C8435 /* Remote Events */,
+				C4EAEBA529AD3B69000C8435 /* Guide */,
+				C4FCC68429AD1C4700708B7E /* Assets.xcassets */,
+				C4FCC68129AD1C4600708B7E /* Main.storyboard */,
+				C4FCC68629AD1C4700708B7E /* LaunchScreen.storyboard */,
+				C4EA784F29AD1EC900D4C975 /* Info.plist */,
+			);
+			path = DirectionalRemotes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4FCC67929AD1C4600708B7E /* DirectionalRemotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FCC68B29AD1C4700708B7E /* Build configuration list for PBXNativeTarget "DirectionalRemotes" */;
+			buildPhases = (
+				C4FCC67629AD1C4600708B7E /* Sources */,
+				C4FCC67729AD1C4600708B7E /* Frameworks */,
+				C4FCC67829AD1C4600708B7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DirectionalRemotes;
+			productName = DirectionalRemotes;
+			productReference = C4FCC67A29AD1C4600708B7E /* DirectionalRemotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4FCC67229AD1C4600708B7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					C4FCC67929AD1C4600708B7E = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = C4FCC67529AD1C4600708B7E /* Build configuration list for PBXProject "DirectionalRemotes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4FCC67129AD1C4600708B7E;
+			productRefGroup = C4FCC67B29AD1C4600708B7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4FCC67929AD1C4600708B7E /* DirectionalRemotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4FCC67829AD1C4600708B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FCC68829AD1C4700708B7E /* LaunchScreen.storyboard in Resources */,
+				C4FCC68529AD1C4700708B7E /* Assets.xcassets in Resources */,
+				C4FCC68329AD1C4600708B7E /* Main.storyboard in Resources */,
+				C4EAEBC629AD3B6A000C8435 /* SampleAudio.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4FCC67629AD1C4600708B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EAEBC229AD3B6A000C8435 /* AppDelegate.swift in Sources */,
+				C4EAEBC729AD3B6A000C8435 /* RemoteEventsView.swift in Sources */,
+				C4EAEBC029AD3B6A000C8435 /* SystemPlayerViewController.swift in Sources */,
+				C4EAEBBB29AD3B6A000C8435 /* CustomPlayerViewController.swift in Sources */,
+				C4EAEBC829AD3B6A000C8435 /* RemoteEventsCell.swift in Sources */,
+				C4EAEBCD29AD3B6A000C8435 /* RemoteCommand.swift in Sources */,
+				C4EAEBCE29AD3B6A000C8435 /* UIViewController+GestureRecognizer.swift in Sources */,
+				C4EAEBD029AD3B6A000C8435 /* Channel.swift in Sources */,
+				C4EAEBC429AD3B6A000C8435 /* GuideViewController.swift in Sources */,
+				C4EAEBCA29AD3B6A000C8435 /* RemoteEventsPlayer.swift in Sources */,
+				C4EAEBC329AD3B6A000C8435 /* GuideProgramCell.swift in Sources */,
+				C4EAEBC529AD3B6A000C8435 /* GuideChannelCell.swift in Sources */,
+				C4EAEBBE29AD3B6A000C8435 /* CustomPlayerFeedbackView.swift in Sources */,
+				C4EAEBD229AD3B6A000C8435 /* Program.swift in Sources */,
+				C4EAEBCC29AD3B6A000C8435 /* Utilities.swift in Sources */,
+				C4EAEBCB29AD3B6A000C8435 /* RemoteEvent.swift in Sources */,
+				C4EAEBC129AD3B6A000C8435 /* MenuViewController.swift in Sources */,
+				C4EAEBD129AD3B6A000C8435 /* TVSchedule.swift in Sources */,
+				C4EAEBBD29AD3B6A000C8435 /* CustomPlayerUtilities.swift in Sources */,
+				C4EAEBCF29AD3B6A000C8435 /* AVPlayerItem+Channel.swift in Sources */,
+				C4EAEBBC29AD3B6A000C8435 /* CustomPlayer.swift in Sources */,
+				C4EAEBC929AD3B6A000C8435 /* RemoteEventsViewController.swift in Sources */,
+				C4EAEBBF29AD3B6A000C8435 /* CustomPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4FCC68129AD1C4600708B7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4FCC68229AD1C4600708B7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4FCC68629AD1C4700708B7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4FCC68729AD1C4700708B7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4FCC68929AD1C4700708B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEB4D265B310C48CD666977 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Debug;
+		};
+		C4FCC68A29AD1C4700708B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEB4D265B310C48CD666977 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4FCC68C29AD1C4700708B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEB4D265B310C48CD666977 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DirectionalRemotes/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DirectionalRemotes${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		C4FCC68D29AD1C4700708B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEB4D265B310C48CD666977 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DirectionalRemotes/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DirectionalRemotes${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4FCC67529AD1C4600708B7E /* Build configuration list for PBXProject "DirectionalRemotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FCC68929AD1C4700708B7E /* Debug */,
+				C4FCC68A29AD1C4700708B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FCC68B29AD1C4700708B7E /* Build configuration list for PBXNativeTarget "DirectionalRemotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FCC68C29AD1C4700708B7E /* Debug */,
+				C4FCC68D29AD1C4700708B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4FCC67229AD1C4600708B7E /* Project object */;
+}
